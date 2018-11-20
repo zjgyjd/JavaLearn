@@ -69,7 +69,9 @@ class CashierDesk{
 	
 	private void faceMune(){
 		System.out.println("========================================");
-		System.out.println("               1.开始使用       		");
+		System.out.println("               1.开始使用");
+		System.out.println("	       2.设置");
+		System.out.println("	       3.退出");
 		System.out.println("========================================");
 	}
 	
