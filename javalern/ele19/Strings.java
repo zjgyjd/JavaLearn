@@ -23,11 +23,7 @@ public class Strings{
 	   } 
 		return s.toString();
     }
-    public static void main(String[] args){
-		System.out.println(fillAfter("abc",'A',2));
-		System.out.println(removeAll("aa-bb-cc-dd", "-"));
-		System.out.println(reverse("abcd"));
-	}
+   
     
      /**
      * 将已有字符串填充为规定长度，如果已有字符串超过这个长度则返回这个字符串
@@ -111,9 +107,30 @@ public class Strings{
        if(str == null){
 		   return "";
 	   }
-       StringBuffer s = new StringBuffer(str);
-	   s.reverse();
-	   return s.toString();
+       StringBuffer s1 = new StringBuffer(str);
+	   StringBuffer s2 = new StringBuffer();
+	   for(int i = 0; i < s1.length();i++){
+		   s2.append(s1.charAt(s1.length()-i-1));
+	   }
+	   return s2.toString();
     }
 
+	 public static void main(String[] args){
+		System.out.println(repeat('a' , 5));
+		System.out.println(repeat('a' , -1));
+		System.out.println();
+		
+		System.out.println(fillBefore("abc",'A',5));
+		System.out.println(fillBefore("abc",'A',2));
+		System.out.println();
+		
+		System.out.println(fillAfter("abc",'A',5));
+		System.out.println(fillAfter("abc",'A',2));
+		System.out.println();
+		
+		System.out.println(removeAll("aa-bb-cc-dd", "-"));
+		System.out.println();
+		
+		System.out.println(reverse("hello"));
+	}
 }
