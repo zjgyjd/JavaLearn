@@ -14,7 +14,7 @@ public class Strings{
      * @return 重复字符字符串
      */
     public static String repeat(char c, int count) {
-       StringBuffer s = new StringBuffer(c);
+       StringBuffer s = new StringBuffer();
 	   if(count < 0 ){
 		return "";   
 	   }
@@ -132,5 +132,6 @@ public class Strings{
 		System.out.println();
 		
 		System.out.println(reverse("hello"));
+		
 	}
 }

@@ -37,7 +37,7 @@ class CashierDesk{
 				while(true){
 					System.out.println();
 					System.out.println();
-					System.out.println("[1]添加商品,[2]移出商品,[3]返回,[4]修改商品");
+					System.out.println("[1]添加商品,[2]移出商品,[3]返回,[4]修改商品,[5]清空货架");
 					shopList();
 					if(this.usedSize == 0){
 						System.out.println("目前还没有商品上架,请添加商品");
@@ -158,14 +158,9 @@ class CashierDesk{
 			remove();
 		}else if(key == 5){
 			if(usedSize == 0){
-				System.out.println("没有商品需要结算!!");
+				System.out.println("没有商品,请添加商品");
 			}else{
-				int sum = 0; 
-				for(int i = 0;i < usedSize;i++){
-					sum += s[i].getprice();
-				}
-			System.out.println("开始结算.....");
-			System.out.println("总共为 "+ sum +"元");
+			System.out.println("已为您清空货架");
 			this.empty();
 			}
 		}else{
