@@ -1,6 +1,6 @@
 import typeinfo.pets.*;
 import java.util.*;
-import static net.mindview.util.Print.*;
+import static javalern.elesix.Print.*;
 public class ListFeatures{
 	public static void main(String[] args){
 		Random rand = new Random(47);
