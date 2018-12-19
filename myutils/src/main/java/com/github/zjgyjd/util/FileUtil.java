@@ -519,7 +519,9 @@ public final class FileUtil {
                     }
                 }
             }
+            System.out.println("目录重命名成功");
         }
+
         del(file);
         return tempFile;
     }
@@ -534,8 +536,11 @@ public final class FileUtil {
      * @return 文件路径是否相同
      */
     public static boolean pathEquals(File file1, File file2) {
-        //TODO
-        return false;
+       if(isWindows()){
+          return file1.getAbsolutePath().equals(file2.getAbsolutePath());
+       }else{
+        return  file1.getAbsolutePath().toUpperCase().equals(file2.getAbsolutePath().toUpperCase());
+       }
     }
 
 
@@ -546,8 +551,12 @@ public final class FileUtil {
      * @return 扩展名
      */
     public static String extName(File file) {
-        //TODO
+        if(!file.exists()||!file.isFile()){
         return null;
+        }
+        int property = file.getName().lastIndexOf(".");
+        StringBuilder tempName = new StringBuilder().append(file.getName()).delete(property,file.getName().length());
+        return tempName.toString();
     }
 
 
@@ -566,8 +575,10 @@ public final class FileUtil {
      * @return 路径File，如果不存在返回null
      */
     public static File getParent(File file, int level) {
-        //TODO
-        return null;
+        for (int i = level; i > 0; i--) {
+            file =file.getParentFile();
+        }
+        return file;
     }
 
 }
