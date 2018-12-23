@@ -43,7 +43,6 @@ public final class FileUtil {
      * @return 文件列表（包含目录）
      */
     public static File[] ls(String path) {
-        try {
             File file = new File(path);
             if (file.exists()) {
                 if (file.isDirectory()) {
@@ -51,9 +50,6 @@ public final class FileUtil {
                     return files;
                 }
             }
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
-        }
         return null;
     }
 
