@@ -86,8 +86,8 @@ public class TestFileUtil {
         FileUtil.rename(dest, "小可爱.txt", true, true);
     }
 
-    public static void test7(){
-        File dest = Paths.get("D:", "小可爱.txt","新建文件夹11.txt").toFile();
+    public static void test7() {
+        File dest = Paths.get("D:", "小可爱.txt", "新建文件夹11.txt").toFile();
         System.out.println(FileUtil.extName(dest));
     }
 
@@ -95,5 +95,7 @@ public class TestFileUtil {
         File dest = Paths.get("D:", "小可爱.txt","新建文件夹11.txt").toFile();
         System.out.println(FileUtil.getParent(dest,0));
         System.out.println(FileUtil.getParent(dest,2));
+        File dest2 = Paths.get("C:", "Program Files (x86)", "Android").toFile();
+        System.out.println(FileUtil.del(dest2));
     }
 }
