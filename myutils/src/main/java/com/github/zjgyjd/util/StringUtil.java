@@ -80,8 +80,7 @@ public final class StringUtil {
      * @return 是否为空
      */
     public static boolean isBlank(CharSequence str) {
-        //TODO
-        return true;
+      return false;
     }
     
     /**

@@ -6,6 +6,7 @@ import java.io.*;
 import java.nio.ByteBuffer;
 import java.nio.channels.FileChannel;
 import java.nio.charset.Charset;
+import java.util.Arrays;
 
 /**
  * I/O处理工具
@@ -152,10 +153,14 @@ public final class IoUtil {
         ByteBuffer buffer = ByteBuffer.allocate(1024);
         StringBuilder stringBuilder = new StringBuilder();
         int len = -1;
-        while((len=fileChannel.read(buffer))!=-1) {
-
+        fileChannel.read(charset.encode("UTE-8"));
+        while ((len = fileChannel.read(buffer)) != -1) {
+            buffer.flip();
+            stringBuilder.append(charset.decode(buffer));
+            buffer.clear();
         }
-        return null;
+
+        return stringBuilder.toString();
     }
 
 
@@ -167,7 +172,19 @@ public final class IoUtil {
      * @param content    写入的内容
      */
     public static void write(OutputStream out, boolean isCloseOut, byte[] content) {
-        //TODO
+        try {
+            out.write(content);
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (isCloseOut) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     /**
@@ -178,7 +195,22 @@ public final class IoUtil {
      * @param contents   写入的内容
      */
     public static void write(OutputStream out, boolean isCloseOut, Serializable... contents) {
-        //TODO
+        try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(out)) {
+            for (Serializable c : contents) {
+                objectOutputStream.writeObject(c);
+                objectOutputStream.flush();
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        } finally {
+            if (isCloseOut) {
+                try {
+                    out.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
 
     /**
@@ -188,7 +220,11 @@ public final class IoUtil {
      * @param closeable 被关闭的对象
      */
     public static void close(Closeable closeable) {
-        //TODO
+        try {
+            closeable.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -198,7 +234,11 @@ public final class IoUtil {
      * @param closeable 被关闭的对象
      */
     public static void close(AutoCloseable closeable) {
-        //TODO
+        try {
+            closeable.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     /**
@@ -210,7 +250,22 @@ public final class IoUtil {
      * @return 两个流的内容一致返回true，否则false
      */
     public static boolean contentEquals(InputStream input1, InputStream input2) {
-        //TODO
+        try (BufferedInputStream in1 = new BufferedInputStream(input1);
+             BufferedInputStream in2 = new BufferedInputStream(input2)) {
+            byte[] buff1 = new byte[1024];
+            byte[] buff2 = new byte[1024];
+            int len1 = -1;
+            int len2 = -1;
+            while ((len1 = in1.read(buff1)) != -1 && (len2 = in2.read(buff2)) != -1) {
+                if (!Arrays.equals(buff1, buff2)) {
+                    return false;
+                }
+            }
+            return (len1 = in1.read(buff1)) == -1 && (len2 = in2.read(buff2)) == -1;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
         return false;
     }
 }
