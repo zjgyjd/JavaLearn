@@ -316,8 +316,7 @@ public final class ArrayUtil {
      * @return 元素类型
      */
     public static Class<?> getComponentType(Object array) {
-        //TODO
-        return null;
+        return array.getClass();
     }
 
     /**
@@ -327,8 +326,7 @@ public final class ArrayUtil {
      * @return 元素类型
      */
     public static Class<?> getComponentType(Class<?> arrayClass) {
-        //TODO
-        return null;
+        return arrayClass.getComponentType();
     }
 
     /**
@@ -339,8 +337,8 @@ public final class ArrayUtil {
      * @return 数组类型
      */
     public static Class<?> getArrayType(Class<?> componentType) {
-        //TODO
-        return null;
+        Object  re=Array.newInstance(componentType,20);
+        return re.getClass();
     }
 
     /**
