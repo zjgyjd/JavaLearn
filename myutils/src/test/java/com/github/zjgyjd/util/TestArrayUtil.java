@@ -1,7 +1,7 @@
 package com.github.zjgyjd.util;
 
 public class TestArrayUtil {
-    public static void main(String[] args) {
+    public static void code1(){
         Object[] array1 = {null,1,2};
         System.out.println(ArrayUtil.firstNonNull(array1));//1
 
@@ -22,4 +22,16 @@ public class TestArrayUtil {
         Class test1 = j.getClass().getComponentType();
         System.out.println(test1.getName());
     }
+    public static void main(String[] args) {
+    Parent[] test = new Parent[10];
+    Object[] s = ArrayUtil.cast(son.class,test);
+        System.out.println(s.getClass());
+    }
+}
+
+class Parent{
+
+}
+class son extends Parent{
+
 }
