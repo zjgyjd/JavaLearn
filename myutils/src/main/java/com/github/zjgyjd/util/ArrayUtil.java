@@ -399,10 +399,10 @@ public final class ArrayUtil {
                 + newElements.length);
         for (int i = 0; i < Array.getLength(array)
                 + newElements.length; i++) {
-            if(i<Array.getLength(array)){
-                Array.set(temp,i,Array.get(array,i));
-            }else{
-                Array.set(temp,i,newElements[i-Array.getLength(array)]);
+            if (i < Array.getLength(array)) {
+                Array.set(temp, i, Array.get(array, i));
+            } else {
+                Array.set(temp, i, newElements[i - Array.getLength(array)]);
             }
         }
 
@@ -423,8 +423,63 @@ public final class ArrayUtil {
      */
     @SuppressWarnings("unchecked")
     public static <T> T[] insert(T[] buffer, int index, T... newElements) {
-        //TODO
-        return null;
+        int len = buffer.length + newElements.length;//7
+        int flag = 0;
+        if (index >= len) {
+            len = len + (index - (len - 1));//7+15-6
+        } else {
+            if (index < 0) {//-7
+                if (-index >= len) {//7>=7
+                    len = len + (-index - (len - 1));//7+(7-6)=8
+                }
+            }
+        }
+
+        Object[] temp = new Object[len];
+        int id = 0;
+        for (int i = 0; i < len; i++) {
+            if (index >= 0) {
+                if (i == index || flag == 1) {
+                    temp[i] = newElements[i - index];
+                    flag = 1;
+                    if ((i - index) == (newElements.length - 1)) {
+                        flag = 2;
+                    }
+                } else {
+                    if (flag != 2) {
+                        if (i <= buffer.length - 1) {
+                        temp[i] = buffer[i];
+                        }else{
+                            temp[i] = null;
+                        }
+                    } else {
+                        temp[i] = buffer[index++];
+                    }
+                }
+            } else {
+                if (i == (len - 1) + index || flag == 1) {//7-7
+                    int count = i - ((len - 1) + index);//0-0
+                    if (count <= newElements.length - 1) {
+                        temp[i] = newElements[count];
+                        flag = 1;
+                    } else if (i < (len - buffer.length) - 1) {
+                        temp[i] = null;
+                    } else {
+                        flag = 2;
+                    }
+
+                } else {
+                    if (flag != 2) {
+                        temp[i] = buffer[i];
+                        id = (len - 1) + index;
+                    } else {
+                        temp[i] = buffer[id];
+                        ++id;
+                    }
+                }
+            }
+        }
+        return (T[]) temp;
     }
 
     /**
@@ -440,8 +495,11 @@ public final class ArrayUtil {
      */
     @SuppressWarnings("unchecked")
     public static <T> Object insert(Object array, int index, T... newElements) {
-        //TODO
-        return null;
+        Object[] temp = new Object[Array.getLength(array)];
+        for (int i = 0; i < Array.getLength(array); i++) {
+            temp[i] = Array.get(array,i);
+        }
+        return insert(temp,index,newElements);
     }
 
     /**
