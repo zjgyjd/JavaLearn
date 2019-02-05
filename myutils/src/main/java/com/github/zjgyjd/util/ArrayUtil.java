@@ -448,8 +448,8 @@ public final class ArrayUtil {
                 } else {
                     if (flag != 2) {
                         if (i <= buffer.length - 1) {
-                        temp[i] = buffer[i];
-                        }else{
+                            temp[i] = buffer[i];
+                        } else {
                             temp[i] = null;
                         }
                     } else {
@@ -497,9 +497,9 @@ public final class ArrayUtil {
     public static <T> Object insert(Object array, int index, T... newElements) {
         Object[] temp = new Object[Array.getLength(array)];
         for (int i = 0; i < Array.getLength(array); i++) {
-            temp[i] = Array.get(array,i);
+            temp[i] = Array.get(array, i);
         }
-        return insert(temp,index,newElements);
+        return insert(temp, index, newElements);
     }
 
     /**
@@ -513,8 +513,13 @@ public final class ArrayUtil {
      * @return 调整后的新数组
      */
     public static <T> T[] resize(T[] buffer, int newSize, Class<?> componentType) {
-        //TODO
-        return null;
+        T[] temp = (T[]) Array.newInstance(componentType, newSize);
+        for (int i = 0; i < newSize; i++) {
+            if (i < buffer.length) {
+                Array.set(temp, i, buffer[i]);
+            }
+        }
+        return temp;
     }
 
     /**
@@ -527,8 +532,13 @@ public final class ArrayUtil {
      * @return 调整后的新数组
      */
     public static <T> T[] resize(T[] buffer, int newSize) {
-        //TODO
-        return null;
+        T[] temp = (T[]) new Object[newSize];
+        for (int i = 0; i < newSize; i++) {
+            if (i < buffer.length) {
+                temp[i] = buffer[i];
+            }
+        }
+        return temp;
     }
 
     /**
@@ -541,8 +551,23 @@ public final class ArrayUtil {
      */
     @SafeVarargs
     public static <T> T[] addAll(T[]... arrays) {
-        //TODO
-        return null;
+        int len = arrays.length;
+        for (int i = 0; i < arrays.length; i++) {
+            if (arrays[i] != null) {
+                len = len + arrays[i].length;
+            }
+        }
+        T[] temp = (T[]) new Object[len];
+        len = 0;
+        for (int i = 0; i < arrays.length; i++) {
+            if (arrays[i] != null) {
+                for (int j = 0; j < arrays[i].length; j++) {
+                    temp[len] = arrays[i][j];
+                    len++;
+                }
+            }
+        }
+        return temp;
     }
 
 
@@ -553,8 +578,11 @@ public final class ArrayUtil {
      * @return 数字列表
      */
     public static int[] range(int excludedEnd) {
-        //TODO
-        return null;
+        int[] temp = new int[excludedEnd];
+        for (int i = 0; i < excludedEnd; i++) {
+            temp[i] = i;
+        }
+        return temp;
     }
 
     /**

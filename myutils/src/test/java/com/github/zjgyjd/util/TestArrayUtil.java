@@ -30,13 +30,19 @@ public class TestArrayUtil {
 
         String[] insert = {"Ok", "HaHa", "HeHe", "Java", "C++", "Go"};
         Object[] change = ArrayUtil.insert(insert, -7, "PP");
+        Object[] change3 = null;
         Object[] change1 = ArrayUtil.insert(insert, 7, "PP");
+        Object[] change2 = ArrayUtil.addAll(change,change1,change3);
         for (Object s : change
         ) {
             System.out.println(s);
         }
 
         for (Object s : change1) {
+            System.out.println(s);
+        }
+        for (Object s: change2
+             ) {
             System.out.println(s);
         }
     }
