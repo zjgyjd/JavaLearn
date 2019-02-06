@@ -24,15 +24,17 @@ public class TestArrayUtil {
         Parent[] test12 = new Parent[10];
         Object[] s = ArrayUtil.cast(son.class, test);
         System.out.println(s.getClass());
+
     }
 
-    public static void main(String[] args) {
-
-        String[] insert = {"Ok", "HaHa", "HeHe", "Java", "C++", "Go"};
+    public static void code2() {
+        String[] insert = {"Ok", "HaHa", "HeHe", "Java", "C++", "Go", null, null, null};
+        System.out.println(insert.length);
         Object[] change = ArrayUtil.insert(insert, -7, "PP");
         Object[] change3 = null;
         Object[] change1 = ArrayUtil.insert(insert, 7, "PP");
-        Object[] change2 = ArrayUtil.addAll(change,change1,change3);
+        Object[] change2 = ArrayUtil.addAll(change, change1, change3);
+
         for (Object s : change
         ) {
             System.out.println(s);
@@ -41,13 +43,37 @@ public class TestArrayUtil {
         for (Object s : change1) {
             System.out.println(s);
         }
-        for (Object s: change2
-             ) {
+        for (Object s : change2
+        ) {
             System.out.println(s);
         }
     }
 
+    public static void code3() {
+        int[] range = ArrayUtil.range(-5, -3);
+        int[] range2 = ArrayUtil.range(-6, -3, 2);
 
+        for (int s : range
+        ) {
+            System.out.println(s);
+        }
+        System.out.println();
+        System.out.println("长度为" + range2.length);
+        for (int s : range2) {
+            System.out.println(s);
+        }
+    }
+
+    public static void main(String[] args) {
+        byte[] temp = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+        byte[][] split = ArrayUtil.split(temp,2);
+        for (int i = 0; i < split.length; i++) {
+            for (int j = 0; j < split[i].length; j++) {
+                System.out.print(split[i][j]+" ");
+            }
+            System.out.println();
+        }
+    }
 }
 
 class Parent {

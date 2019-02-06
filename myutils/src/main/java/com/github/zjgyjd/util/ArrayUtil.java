@@ -594,8 +594,18 @@ public final class ArrayUtil {
      * @return 数字列表
      */
     public static int[] range(int includedStart, int excludedEnd) {
-        //TODO
-        return null;
+        int len = includedStart < excludedEnd ? excludedEnd - includedStart
+                : includedStart - excludedEnd;
+
+        if (len == 0) {
+            return null;
+        }
+
+        int[] temp = new int[len];
+        for (int i = 0; i < temp.length; i++) {
+            temp[i] = includedStart < excludedEnd ? includedStart++ : includedStart--;
+        }
+        return temp;
     }
 
     /**
@@ -608,8 +618,21 @@ public final class ArrayUtil {
      * @return 数字列表
      */
     public static int[] range(int includedStart, int excludedEnd, int step) {
-        //TODO
-        return null;
+        int len = includedStart < excludedEnd ? ((excludedEnd - includedStart) % step != 0 ? 1 : 0)
+                + (excludedEnd - includedStart) / step
+                : ((includedStart - excludedEnd) % step != 0 ? 1 : 0)
+                + (includedStart - excludedEnd) / step;
+
+
+        if (len == 0) {
+            return null;
+        }
+        int[] temp = new int[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = includedStart;
+            includedStart = includedStart < excludedEnd ? len + includedStart : len - includedStart;
+        }
+        return temp;
     }
 
     /**
@@ -620,7 +643,20 @@ public final class ArrayUtil {
      * @return 拆分后的数组
      */
     public static byte[][] split(byte[] array, int len) {
-        //TODO
+        int line = (array.length % len != 0 ? 1 : 0);
+        int row = array.length / len + line;
+        byte[][] temp = new byte[row][];
+        int flag = 0;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < (line = (array.length/len==i?array.length%len:len)) ; j++) {
+                temp[i] = new byte[line];
+                temp[i][j] = array[flag];
+                ++flag;
+                if(flag==array.length){
+                    return temp;
+                }
+            }
+        }
         return null;
     }
 
