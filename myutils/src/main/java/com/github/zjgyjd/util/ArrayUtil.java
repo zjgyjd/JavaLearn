@@ -648,11 +648,11 @@ public final class ArrayUtil {
         byte[][] temp = new byte[row][];
         int flag = 0;
         for (int i = 0; i < row; i++) {
-            for (int j = 0; j < (line = (array.length/len==i?array.length%len:len)) ; j++) {
+            for (int j = 0; j < (line = (array.length / len == i ? array.length % len : len)); j++) {
                 temp[i] = new byte[line];
                 temp[i][j] = array[flag];
                 ++flag;
-                if(flag==array.length){
+                if (flag == array.length) {
                     return temp;
                 }
             }
@@ -710,7 +710,11 @@ public final class ArrayUtil {
      * @return 数组中指定元素所在位置，未找到返回{@link #INDEX_NOT_FOUND}
      */
     public static <T> int indexOf(T[] array, Object value) {
-        //TODO
+        for (int i = 0; i < array.length; i++) {
+            if (value.equals(array[i])) {
+                return i;
+            }
+        }
         return INDEX_NOT_FOUND;
     }
 
@@ -722,7 +726,11 @@ public final class ArrayUtil {
      * @return 数组中指定元素所在位置，未找到返回{@link #INDEX_NOT_FOUND}
      */
     public static int indexOfIgnoreCase(CharSequence[] array, CharSequence value) {
-        //TODO
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].toString().toUpperCase().equals(value.toString().toUpperCase())) {
+                return i;
+            }
+        }
         return INDEX_NOT_FOUND;
     }
 
@@ -735,7 +743,15 @@ public final class ArrayUtil {
      * @return 数组中指定元素所在位置，未找到返回{@link #INDEX_NOT_FOUND}
      */
     public static <T> int lastIndexOf(T[] array, Object value) {
-        //TODO
+        int flag = -1;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i].equals(value)) {
+                flag = i;
+            }
+        }
+        if (flag >= 0) {
+            return flag;
+        }
         return INDEX_NOT_FOUND;
     }
 
