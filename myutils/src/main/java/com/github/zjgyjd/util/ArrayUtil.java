@@ -764,9 +764,15 @@ public final class ArrayUtil {
      * @return 是否包含
      */
     public static <T> boolean contains(T[] array, T value) {
-        //TODO
+        int len = array.length;
+        for (int i = 0; i < len; i++) {
+            if (array[i] == value) {
+                return true;
+            }
+        }
         return false;
     }
+
 
     /**
      * 数组中是否包含元素，忽略大小写
@@ -776,7 +782,12 @@ public final class ArrayUtil {
      * @return 是否包含
      */
     public static boolean containsIgnoreCase(CharSequence[] array, CharSequence value) {
-        //TODO
+        int len = array.length;
+        for (int i = 0; i < len; i++) {
+            if (array[i].toString().toUpperCase().equals(value.toString().toUpperCase())) {
+                return true;
+            }
+        }
         return false;
     }
 
@@ -788,7 +799,12 @@ public final class ArrayUtil {
      * @return 数组中指定元素所在位置，未找到返回{@link #INDEX_NOT_FOUND}
      */
     public static int indexOf(long[] array, long value) {
-        //TODO
+        int len = array.length;
+        for (int i = 0; i < len; i++) {
+            if (array[i] == value) {
+                return i;
+            }
+        }
         return INDEX_NOT_FOUND;
     }
 
@@ -800,8 +816,17 @@ public final class ArrayUtil {
      * @return 数组中指定元素所在位置，未找到返回{@link #INDEX_NOT_FOUND}
      */
     public static int lastIndexOf(long[] array, long value) {
-        //TODO
+        int flag = -1;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == (value)) {
+                flag = i;
+            }
+        }
+        if (flag >= 0) {
+            return flag;
+        }
         return INDEX_NOT_FOUND;
+
     }
 
     /**
@@ -812,7 +837,12 @@ public final class ArrayUtil {
      * @return 是否包含
      */
     public static boolean contains(long[] array, long value) {
-        //TODO
+        int len = array.length;
+        for (int i = 0; i < len; i++) {
+            if (array[i] == value) {
+                return true;
+            }
+        }
         return false;
     }
 
@@ -824,7 +854,12 @@ public final class ArrayUtil {
      * @return 数组中指定元素所在位置，未找到返回{@link #INDEX_NOT_FOUND}
      */
     public static int indexOf(int[] array, int value) {
-        //TODO
+        int len = array.length;
+        for (int i = 0; i < len; i++) {
+            if (array[i] == value) {
+                return i;
+            }
+        }
         return INDEX_NOT_FOUND;
     }
 
@@ -836,7 +871,15 @@ public final class ArrayUtil {
      * @return 数组中指定元素所在位置，未找到返回{@link #INDEX_NOT_FOUND}
      */
     public static int lastIndexOf(int[] array, int value) {
-        //TODO
+        int flag = -1;
+        for (int i = 0; i < array.length; i++) {
+            if (array[i] == (value)) {
+                flag = i;
+            }
+        }
+        if (flag >= 0) {
+            return flag;
+        }
         return INDEX_NOT_FOUND;
     }
 
@@ -848,7 +891,12 @@ public final class ArrayUtil {
      * @return 是否包含
      */
     public static boolean contains(int[] array, int value) {
-        //TODO
+        int len = array.length;
+        for (int i = 0; i < len; i++) {
+            if (array[i] == value) {
+                return true;
+            }
+        }
         return false;
     }
 
@@ -860,7 +908,12 @@ public final class ArrayUtil {
      * @return 数组中指定元素所在位置，未找到返回{@link #INDEX_NOT_FOUND}
      */
     public static int indexOf(short[] array, short value) {
-        //TODO
+        int len = array.length;
+        for (int i = 0; i < len; i++) {
+            if (array[i] == value) {
+                return i;
+            }
+        }
         return INDEX_NOT_FOUND;
     }
 
@@ -872,7 +925,16 @@ public final class ArrayUtil {
      * @return 数组中指定元素所在位置，未找到返回{@link #INDEX_NOT_FOUND}
      */
     public static int lastIndexOf(short[] array, short value) {
-        //TODO
+        int len = array.length;
+        int flag = -1;
+        for (int i = 0; i < len; i++) {
+            if (array[i] == value) {
+                flag = i;
+            }
+        }
+        if (flag >= 0) {
+            return flag;
+        }
         return INDEX_NOT_FOUND;
     }
 
@@ -884,7 +946,12 @@ public final class ArrayUtil {
      * @return 是否包含
      */
     public static boolean contains(short[] array, short value) {
-        //TODO
+        int len = array.length;
+        for (int i = 0; i < len; i++) {
+            if (array[i] == value) {
+                return true;
+            }
+        }
         return false;
     }
 
@@ -896,7 +963,12 @@ public final class ArrayUtil {
      * @return 数组中指定元素所在位置，未找到返回{@link #INDEX_NOT_FOUND}
      */
     public static int indexOf(char[] array, char value) {
-        //TODO
+        int len = array.length;
+        for (int i = 0; i < len; i++) {
+            if (array[i] == value) {
+                return i;
+            }
+        }
         return INDEX_NOT_FOUND;
     }
 
@@ -908,7 +980,16 @@ public final class ArrayUtil {
      * @return 数组中指定元素所在位置，未找到返回{@link #INDEX_NOT_FOUND}
      */
     public static int lastIndexOf(char[] array, char value) {
-        //TODO
+        int len = array.length;
+        int flag = -1;
+        for (int i = 0; i < len; i++) {
+            if(array[i]==value){
+                flag =i;
+            }
+        }
+        if(flag>=0){
+            return flag;
+        }
         return INDEX_NOT_FOUND;
     }
 
@@ -920,7 +1001,12 @@ public final class ArrayUtil {
      * @return 是否包含
      */
     public static boolean contains(char[] array, char value) {
-        //TODO
+        int len = array.length;
+        for (int i = 0; i < len; i++) {
+            if(array[i]==value){
+                return true;
+            }
+        }
         return false;
     }
 
