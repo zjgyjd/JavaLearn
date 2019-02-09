@@ -1018,7 +1018,12 @@ public final class ArrayUtil {
      * @return 数组中指定元素所在位置，未找到返回{@link #INDEX_NOT_FOUND}
      */
     public static int indexOf(byte[] array, byte value) {
-        //TODO
+        int len = array.length;
+        for (int i = 0; i < len; i++) {
+            if(array[i]==value){
+                return i;
+            }
+        }
         return INDEX_NOT_FOUND;
     }
 
