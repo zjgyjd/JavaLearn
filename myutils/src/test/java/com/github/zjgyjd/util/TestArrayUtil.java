@@ -1,5 +1,7 @@
 package com.github.zjgyjd.util;
 
+import java.lang.reflect.Array;
+
 public class TestArrayUtil {
     public static void code1() {
         Object[] array1 = {null, 1, 2};
@@ -64,14 +66,32 @@ public class TestArrayUtil {
         }
     }
 
-    public static void main(String[] args) {
+    public static void code4() {
         byte[] temp = {10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
-        byte[][] split = ArrayUtil.split(temp,2);
+        byte[][] split = ArrayUtil.split(temp, 2);
         for (int i = 0; i < split.length; i++) {
             for (int j = 0; j < split[i].length; j++) {
-                System.out.print(split[i][j]+" ");
+                System.out.print(split[i][j] + " ");
             }
             System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        Integer[] test = {
+                0,1,2,3,4,5,6,7,8,9
+        };
+        Object[] testEnd0 =  ArrayUtil.getAny(test,2,6);
+        Integer[] testEnd1 = (Integer[]) ArrayUtil.sub(test,2,6);
+
+        for (Object s: testEnd0
+        ) {
+            System.out.println(s);
+        }
+        System.out.println();
+        for (Object s: testEnd1
+             ) {
+            System.out.println(s);
         }
     }
 }

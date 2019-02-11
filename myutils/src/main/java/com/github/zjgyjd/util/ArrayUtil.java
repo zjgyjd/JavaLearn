@@ -1,5 +1,6 @@
 package com.github.zjgyjd.util;
 
+import java.io.ByteArrayOutputStream;
 import java.lang.reflect.Array;
 import java.nio.ByteBuffer;
 import java.util.Collection;
@@ -1241,8 +1242,15 @@ public final class ArrayUtil {
      * @return 包装类型数组
      */
     public static Integer[] wrap(int... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        Integer[] temp = new Integer[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1252,8 +1260,15 @@ public final class ArrayUtil {
      * @return 原始类型数组
      */
     public static int[] unWrap(Integer... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        int[] temp = new int[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1263,8 +1278,15 @@ public final class ArrayUtil {
      * @return 包装类型数组
      */
     public static Long[] wrap(long... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        Long[] temp = new Long[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1274,8 +1296,15 @@ public final class ArrayUtil {
      * @return 原始类型数组
      */
     public static long[] unWrap(Long... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        long[] temp = new long[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1285,8 +1314,15 @@ public final class ArrayUtil {
      * @return 包装类型数组
      */
     public static Character[] wrap(char... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        Character[] temp = new Character[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1296,8 +1332,15 @@ public final class ArrayUtil {
      * @return 原始类型数组
      */
     public static char[] unWrap(Character... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        char[] temp = new char[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1307,8 +1350,15 @@ public final class ArrayUtil {
      * @return 包装类型数组
      */
     public static Byte[] wrap(byte... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        Byte[] temp = new Byte[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1318,8 +1368,15 @@ public final class ArrayUtil {
      * @return 原始类型数组
      */
     public static byte[] unWrap(Byte... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        byte[] temp = new byte[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1329,8 +1386,15 @@ public final class ArrayUtil {
      * @return 包装类型数组
      */
     public static Short[] wrap(short... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        Short[] temp = new Short[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1340,8 +1404,15 @@ public final class ArrayUtil {
      * @return 原始类型数组
      */
     public static short[] unWrap(Short... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        short[] temp = new short[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1351,8 +1422,15 @@ public final class ArrayUtil {
      * @return 包装类型数组
      */
     public static Float[] wrap(float... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        Float[] temp = new Float[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1362,8 +1440,15 @@ public final class ArrayUtil {
      * @return 原始类型数组
      */
     public static float[] unWrap(Float... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        float[] temp = new float[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1373,8 +1458,15 @@ public final class ArrayUtil {
      * @return 包装类型数组
      */
     public static Double[] wrap(double... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        Double[] temp = new Double[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1384,8 +1476,15 @@ public final class ArrayUtil {
      * @return 原始类型数组
      */
     public static double[] unWrap(Double... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        double[] temp = new double[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1395,8 +1494,15 @@ public final class ArrayUtil {
      * @return 包装类型数组
      */
     public static Boolean[] wrap(boolean... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        Boolean[] temp = new Boolean[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1406,8 +1512,15 @@ public final class ArrayUtil {
      * @return 原始类型数组
      */
     public static boolean[] unWrap(Boolean... values) {
-        //TODO
-        return null;
+        if (values == null) {
+            return null;
+        }
+        int len = values.length;
+        boolean[] temp = new boolean[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = values[i];
+        }
+        return temp;
     }
 
     /**
@@ -1417,8 +1530,15 @@ public final class ArrayUtil {
      * @return 包装类型数组或对象数组
      */
     public static Object[] wrap(Object obj) {
-        //TODO
-        return null;
+        if (obj == null) {
+            return null;
+        }
+        int len = Array.getLength(obj);
+        Object[] temp = new Object[len];
+        for (int i = 0; i < len; i++) {
+            temp[i] = Array.get(obj, i);
+        }
+        return temp;
     }
 
     /**
@@ -1428,8 +1548,11 @@ public final class ArrayUtil {
      * @return 是否为数组对象，如果为{@code null} 返回false
      */
     public static boolean isArray(Object obj) {
-        //TODO
-        return false;
+        if (obj == null) {
+            return false;
+        }
+
+        return obj.getClass().isArray();
     }
 
     /**
@@ -1442,8 +1565,11 @@ public final class ArrayUtil {
      */
     @SuppressWarnings("unchecked")
     public static <T> T get(Object array, int index) {
-        //TODO
-        return null;
+        if (index >= 0) {
+            return (T) Array.get(array, index);
+        } else {
+            return (T) Array.get(array, Array.getLength(array) + index);
+        }
     }
 
     /**
@@ -1455,8 +1581,12 @@ public final class ArrayUtil {
      * @return 结果
      */
     public static <T> T[] getAny(Object array, int... indexes) {
-        //TODO
-        return null;
+        int len = indexes.length;
+        Object temp = Array.newInstance(array.getClass().getComponentType(),len);
+        for (int i = 0; i < len; i++) {
+            Array.set(temp, i, Array.get(array, indexes[i]));
+        }
+        return (T[]) temp;
     }
 
     /**
@@ -1468,8 +1598,13 @@ public final class ArrayUtil {
      * @return 新的数组
      */
     public static Object[] sub(Object array, int start, int end) {
-        //TODO
-        return null;
+        int len = end - start;
+        Object temp = Array.newInstance(array.getClass().getComponentType(),len);
+        for (int i = 0; i < len; i++) {
+            Array.set(temp,i,Array.get(array,start));
+            ++start;
+        }
+        return (Object[]) temp;
     }
 
     /**
