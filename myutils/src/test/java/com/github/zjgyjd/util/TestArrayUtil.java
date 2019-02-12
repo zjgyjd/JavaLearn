@@ -1,6 +1,8 @@
 package com.github.zjgyjd.util;
 
 import java.lang.reflect.Array;
+import java.nio.ByteBuffer;
+import java.util.ArrayList;
 
 public class TestArrayUtil {
     public static void code1() {
@@ -77,22 +79,38 @@ public class TestArrayUtil {
         }
     }
 
-    public static void main(String[] args) {
+    public static void code5(){
         Integer[] test = {
                 0,1,2,3,4,5,6,7,8,9
         };
+        Object[] test2 = new Object[1];
+        long[] test3 = {1,2,3,4,5,6};
         Object[] testEnd0 =  ArrayUtil.getAny(test,2,6);
         Integer[] testEnd1 = (Integer[]) ArrayUtil.sub(test,2,6);
+        System.out.println(ArrayUtil.length(test2));
 
-        for (Object s: testEnd0
-        ) {
-            System.out.println(s);
+        System.out.println(ArrayUtil.join(test3,"*"));
+        System.out.println(ArrayUtil.toString(testEnd0));
+        System.out.println(ArrayUtil.toString(testEnd1));
+        System.out.println(ArrayUtil.toString(test2));
+    }
+
+    public static void main(String[] args) {
+        byte[] s = {1,2,3,4,5,8,6,7,9,10};
+        ArrayList<Byte> test1= new ArrayList<>(10);
+        for (int i = 0; i < 10; i++) {
+            test1.add(s[i]);
+
         }
-        System.out.println();
-        for (Object s: testEnd1
-             ) {
-            System.out.println(s);
-        }
+        System.out.println(test1.get(0).getClass());
+        Class test3 = test1.get(0).getClass();
+        System.out.println(Byte.class);
+        Byte[] end = ArrayUtil.toArray(test1,test3);
+
+        System.out.println(ArrayUtil.toString(end));
+        ByteBuffer test = ByteBuffer.allocate(10);
+        test.put(s);
+        System.out.println(ArrayUtil.toString(ArrayUtil.toArray(test)));
     }
 }
 

@@ -1582,7 +1582,7 @@ public final class ArrayUtil {
      */
     public static <T> T[] getAny(Object array, int... indexes) {
         int len = indexes.length;
-        Object temp = Array.newInstance(array.getClass().getComponentType(),len);
+        Object temp = Array.newInstance(array.getClass().getComponentType(), len);
         for (int i = 0; i < len; i++) {
             Array.set(temp, i, Array.get(array, indexes[i]));
         }
@@ -1599,9 +1599,9 @@ public final class ArrayUtil {
      */
     public static Object[] sub(Object array, int start, int end) {
         int len = end - start;
-        Object temp = Array.newInstance(array.getClass().getComponentType(),len);
+        Object temp = Array.newInstance(array.getClass().getComponentType(), len);
         for (int i = 0; i < len; i++) {
-            Array.set(temp,i,Array.get(array,start));
+            Array.set(temp, i, Array.get(array, start));
             ++start;
         }
         return (Object[]) temp;
@@ -1617,8 +1617,16 @@ public final class ArrayUtil {
      * @return 新的数组
      */
     public static Object[] sub(Object array, int start, int end, int step) {
-        //TODO
-        return null;
+        if (array == null) {
+            return null;
+        }
+        int len = (end - start) / step + (end - start) % step != 0 ? 1 : 0;
+        Object temp = Array.newInstance(array.getClass().getComponentType(), len);
+        for (int i = 0; i < len; i++) {
+            Array.set(temp, i, Array.get(array, start));
+            ++start;
+        }
+        return (Object[]) temp;
     }
 
     /**
@@ -1628,8 +1636,17 @@ public final class ArrayUtil {
      * @return 数组字符串，与集合转字符串格式相同
      */
     public static String toString(Object obj) {
-        //TODO
-        return null;
+        if (obj == null) {
+            return null;
+        }
+        StringBuilder temp = new StringBuilder();
+        int len = Array.getLength(obj);
+        temp.append("[ ");
+        for (int i = 0; i < len; i++) {
+            temp.append(Array.get(obj, i)).append(" ");
+        }
+        temp.append("]");
+        return temp.toString();
     }
 
     /**
@@ -1651,8 +1668,10 @@ public final class ArrayUtil {
      * @see Array#getLength(Object)
      */
     public static int length(Object array) throws IllegalArgumentException {
-        //TODO
-        return -1;
+        if (array == null) {
+            return 0;
+        }
+        return Array.getLength(array);
     }
 
 
@@ -1664,8 +1683,15 @@ public final class ArrayUtil {
      * @return 连接后的字符串
      */
     public static String join(long[] array, CharSequence conjunction) {
-        //TODO
-        return null;
+        if (array == null) {
+            return null;
+        }
+        StringBuilder temp = new StringBuilder();
+        for (int i = 0; i < array.length; i++) {
+            temp.append(array[i]).append(conjunction.toString());
+
+        }
+        return temp.toString();
     }
 
     /**
@@ -1676,8 +1702,15 @@ public final class ArrayUtil {
      * @return 连接后的字符串
      */
     public static String join(int[] array, CharSequence conjunction) {
-        //TODO
-        return null;
+        if (array == null) {
+            return null;
+        }
+        StringBuilder temp = new StringBuilder();
+        for (int i = 0; i < array.length; i++) {
+            temp.append(array[i]).append(conjunction.toString());
+
+        }
+        return temp.toString();
     }
 
     /**
@@ -1688,8 +1721,15 @@ public final class ArrayUtil {
      * @return 连接后的字符串
      */
     public static String join(short[] array, CharSequence conjunction) {
-        //TODO
-        return null;
+        if (array == null) {
+            return null;
+        }
+        StringBuilder temp = new StringBuilder();
+        for (int i = 0; i < array.length; i++) {
+            temp.append(array[i]).append(conjunction.toString());
+
+        }
+        return temp.toString();
     }
 
     /**
@@ -1700,8 +1740,15 @@ public final class ArrayUtil {
      * @return 连接后的字符串
      */
     public static String join(char[] array, CharSequence conjunction) {
-        //TODO
-        return null;
+        if (array == null) {
+            return null;
+        }
+        StringBuilder temp = new StringBuilder();
+        for (int i = 0; i < array.length; i++) {
+            temp.append(array[i]).append(conjunction.toString());
+
+        }
+        return temp.toString();
     }
 
     /**
@@ -1712,8 +1759,15 @@ public final class ArrayUtil {
      * @return 连接后的字符串
      */
     public static String join(byte[] array, CharSequence conjunction) {
-        //TODO
-        return null;
+        if (array == null) {
+            return null;
+        }
+        StringBuilder temp = new StringBuilder();
+        for (int i = 0; i < array.length; i++) {
+            temp.append(array[i]).append(conjunction.toString());
+
+        }
+        return temp.toString();
     }
 
     /**
@@ -1724,8 +1778,15 @@ public final class ArrayUtil {
      * @return 连接后的字符串
      */
     public static String join(boolean[] array, CharSequence conjunction) {
-        //TODO
-        return null;
+        if (array == null) {
+            return null;
+        }
+        StringBuilder temp = new StringBuilder();
+        for (int i = 0; i < array.length; i++) {
+            temp.append(array[i]).append(conjunction.toString());
+
+        }
+        return temp.toString();
     }
 
     /**
@@ -1736,8 +1797,15 @@ public final class ArrayUtil {
      * @return 连接后的字符串
      */
     public static String join(float[] array, CharSequence conjunction) {
-        //TODO
-        return null;
+        if (array == null) {
+            return null;
+        }
+        StringBuilder temp = new StringBuilder();
+        for (int i = 0; i < array.length; i++) {
+            temp.append(array[i]).append(conjunction.toString());
+
+        }
+        return temp.toString();
     }
 
     /**
@@ -1748,8 +1816,15 @@ public final class ArrayUtil {
      * @return 连接后的字符串
      */
     public static String join(double[] array, CharSequence conjunction) {
-        //TODO
-        return null;
+        if (array == null) {
+            return null;
+        }
+        StringBuilder temp = new StringBuilder();
+        for (int i = 0; i < array.length; i++) {
+            temp.append(array[i]).append(conjunction.toString());
+
+        }
+        return temp.toString();
     }
 
     /**
@@ -1760,8 +1835,16 @@ public final class ArrayUtil {
      * @return 连接后的字符串
      */
     public static String join(Object array, CharSequence conjunction) {
-        //TODO
-        return null;
+        if (array == null) {
+            return null;
+        }
+        StringBuilder temp = new StringBuilder();
+        int len = Array.getLength(array);
+        for (int i = 0; i < len; i++) {
+            temp.append(Array.get(array,i)).append(conjunction.toString());
+
+        }
+        return temp.toString();
     }
 
     /**
@@ -1771,8 +1854,7 @@ public final class ArrayUtil {
      * @return byte数组
      */
     public static byte[] toArray(ByteBuffer bytebuffer) {
-        //TODO
-        return null;
+    return bytebuffer.array();
     }
 
     /**
@@ -1784,8 +1866,8 @@ public final class ArrayUtil {
      * @return 数组
      */
     public static <T> T[] toArray(Collection<T> collection, Class<T> componentType) {
-        //TODO
-        return null;
+        return collection.toArray((T[])Array.newInstance(componentType
+                ,collection.size()));
     }
 
     // ---------------------------------------------------------------------- remove
