@@ -1841,7 +1841,7 @@ public final class ArrayUtil {
         StringBuilder temp = new StringBuilder();
         int len = Array.getLength(array);
         for (int i = 0; i < len; i++) {
-            temp.append(Array.get(array,i)).append(conjunction.toString());
+            temp.append(Array.get(array, i)).append(conjunction.toString());
 
         }
         return temp.toString();
@@ -1854,7 +1854,7 @@ public final class ArrayUtil {
      * @return byte数组
      */
     public static byte[] toArray(ByteBuffer bytebuffer) {
-    return bytebuffer.array();
+        return bytebuffer.array();
     }
 
     /**
@@ -1866,8 +1866,8 @@ public final class ArrayUtil {
      * @return 数组
      */
     public static <T> T[] toArray(Collection<T> collection, Class<T> componentType) {
-        return collection.toArray((T[])Array.newInstance(componentType
-                ,collection.size()));
+        return collection.toArray((T[]) Array.newInstance(componentType
+                , collection.size()));
     }
 
     // ---------------------------------------------------------------------- remove
@@ -1884,8 +1884,20 @@ public final class ArrayUtil {
      */
     @SuppressWarnings("unchecked")
     public static <T> T[] remove(T[] array, int index) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        if (index < 0 || index >= len) {
+            return array;
+        }
+
+        T[] temp = (T[]) Array.newInstance(array.getClass().getComponentType(),len-1);
+        for (int i = 0; i < len - 1; i++) {
+            if (i >= index) {
+                temp[i] = array[i + 1];
+            } else {
+                temp[i] = array[i];
+            }
+        }
+        return temp;
     }
 
     /**
@@ -1898,8 +1910,21 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static long[] remove(long[] array, int index) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        if (index < 0 || index >= len) {
+            return array;
+        }
+
+        long[] temp = new long[len -1];
+        for (int i = 0; i < len - 1; i++) {
+            if (i >= index) {
+                temp[i] = array[i + 1];
+            } else {
+                temp[i] = array[i];
+            }
+        }
+        return temp;
+
     }
 
     /**
@@ -1912,8 +1937,21 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static int[] remove(int[] array, int index) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        if (index < 0 || index >= len) {
+            return array;
+        }
+
+        int[] temp = new int[len -1];
+        for (int i = 0; i < len - 1; i++) {
+            if (i >= index) {
+                temp[i] = array[i + 1];
+            } else {
+                temp[i] = array[i];
+            }
+        }
+        return temp;
+
     }
 
     /**
@@ -1926,8 +1964,21 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static short[] remove(short[] array, int index) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        if (index < 0 || index >= len) {
+            return array;
+        }
+
+        short[] temp = new short[len -1];
+        for (int i = 0; i < len - 1; i++) {
+            if (i >= index) {
+                temp[i] = array[i + 1];
+            } else {
+                temp[i] = array[i];
+            }
+        }
+        return temp;
+
     }
 
     /**
@@ -1940,8 +1991,21 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static char[] remove(char[] array, int index) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        if (index < 0 || index >= len) {
+            return array;
+        }
+
+        char[] temp = new char[len -1];
+        for (int i = 0; i < len - 1; i++) {
+            if (i >= index) {
+                temp[i] = array[i + 1];
+            } else {
+                temp[i] = array[i];
+            }
+        }
+        return temp;
+
     }
 
     /**
@@ -1954,8 +2018,21 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static byte[] remove(byte[] array, int index) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        if (index < 0 || index >= len) {
+            return array;
+        }
+
+        byte[] temp = new byte[len -1];
+        for (int i = 0; i < len - 1; i++) {
+            if (i >= index) {
+                temp[i] = array[i + 1];
+            } else {
+                temp[i] = array[i];
+            }
+        }
+        return temp;
+
     }
 
     /**
@@ -1968,8 +2045,21 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static double[] remove(double[] array, int index) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        if (index < 0 || index >= len) {
+            return array;
+        }
+
+        double[] temp = new double[len -1];
+        for (int i = 0; i < len - 1; i++) {
+            if (i >= index) {
+                temp[i] = array[i + 1];
+            } else {
+                temp[i] = array[i];
+            }
+        }
+        return temp;
+
     }
 
     /**
@@ -1982,8 +2072,20 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static float[] remove(float[] array, int index) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        if (index < 0 || index >= len) {
+            return array;
+        }
+
+        float[] temp = new float[len -1];
+        for (int i = 0; i < len - 1; i++) {
+            if (i >= index) {
+                temp[i] = array[i + 1];
+            } else {
+                temp[i] = array[i];
+            }
+        }
+        return temp;
     }
 
     /**
@@ -1996,8 +2098,21 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static boolean[] remove(boolean[] array, int index) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        if (index < 0 || index >= len) {
+            return array;
+        }
+
+        boolean[] temp = new boolean[len -1];
+        for (int i = 0; i < len - 1; i++) {
+            if (i >= index) {
+                temp[i] = array[i + 1];
+            } else {
+                temp[i] = array[i];
+            }
+        }
+        return temp;
+
     }
 
     /**
@@ -2010,8 +2125,20 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static Object remove(Object array, int index) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = Array.getLength(array);
+        if (index < 0 || index >= len) {
+            return array;
+        }
+
+        Object temp = Array.newInstance(array.getClass(),len-1);
+        for (int i = 0; i < len - 1; i++) {
+            if (i >= index) {
+                Array.set(temp,i,Array.get(array,i+1));
+            } else {
+                Array.set(temp,i,Array.get(array,i));
+            }
+        }
+        return temp;
     }
 
     // ---------------------------------------------------------------------- remove
