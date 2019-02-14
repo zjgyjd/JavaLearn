@@ -1889,7 +1889,7 @@ public final class ArrayUtil {
             return array;
         }
 
-        T[] temp = (T[]) Array.newInstance(array.getClass().getComponentType(),len-1);
+        T[] temp = (T[]) Array.newInstance(array.getClass().getComponentType(), len - 1);
         for (int i = 0; i < len - 1; i++) {
             if (i >= index) {
                 temp[i] = array[i + 1];
@@ -1915,7 +1915,7 @@ public final class ArrayUtil {
             return array;
         }
 
-        long[] temp = new long[len -1];
+        long[] temp = new long[len - 1];
         for (int i = 0; i < len - 1; i++) {
             if (i >= index) {
                 temp[i] = array[i + 1];
@@ -1942,7 +1942,7 @@ public final class ArrayUtil {
             return array;
         }
 
-        int[] temp = new int[len -1];
+        int[] temp = new int[len - 1];
         for (int i = 0; i < len - 1; i++) {
             if (i >= index) {
                 temp[i] = array[i + 1];
@@ -1969,7 +1969,7 @@ public final class ArrayUtil {
             return array;
         }
 
-        short[] temp = new short[len -1];
+        short[] temp = new short[len - 1];
         for (int i = 0; i < len - 1; i++) {
             if (i >= index) {
                 temp[i] = array[i + 1];
@@ -1996,7 +1996,7 @@ public final class ArrayUtil {
             return array;
         }
 
-        char[] temp = new char[len -1];
+        char[] temp = new char[len - 1];
         for (int i = 0; i < len - 1; i++) {
             if (i >= index) {
                 temp[i] = array[i + 1];
@@ -2023,7 +2023,7 @@ public final class ArrayUtil {
             return array;
         }
 
-        byte[] temp = new byte[len -1];
+        byte[] temp = new byte[len - 1];
         for (int i = 0; i < len - 1; i++) {
             if (i >= index) {
                 temp[i] = array[i + 1];
@@ -2050,7 +2050,7 @@ public final class ArrayUtil {
             return array;
         }
 
-        double[] temp = new double[len -1];
+        double[] temp = new double[len - 1];
         for (int i = 0; i < len - 1; i++) {
             if (i >= index) {
                 temp[i] = array[i + 1];
@@ -2077,7 +2077,7 @@ public final class ArrayUtil {
             return array;
         }
 
-        float[] temp = new float[len -1];
+        float[] temp = new float[len - 1];
         for (int i = 0; i < len - 1; i++) {
             if (i >= index) {
                 temp[i] = array[i + 1];
@@ -2103,7 +2103,7 @@ public final class ArrayUtil {
             return array;
         }
 
-        boolean[] temp = new boolean[len -1];
+        boolean[] temp = new boolean[len - 1];
         for (int i = 0; i < len - 1; i++) {
             if (i >= index) {
                 temp[i] = array[i + 1];
@@ -2130,12 +2130,12 @@ public final class ArrayUtil {
             return array;
         }
 
-        Object temp = Array.newInstance(array.getClass(),len-1);
+        Object temp = Array.newInstance(array.getClass(), len - 1);
         for (int i = 0; i < len - 1; i++) {
             if (i >= index) {
-                Array.set(temp,i,Array.get(array,i+1));
+                Array.set(temp, i, Array.get(array, i + 1));
             } else {
-                Array.set(temp,i,Array.get(array,i));
+                Array.set(temp, i, Array.get(array, i));
             }
         }
         return temp;
@@ -2154,8 +2154,23 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static <T> T[] removeEle(T[] array, T element) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+
+        T[] temp = (T[]) Array.newInstance(array.getClass().getComponentType()
+                , len - 1);
+        int flag = 0;
+        for (int i = 0; i < len - 1; i++) {
+            if (array[i] == element || flag == 1) {
+                temp[i] = array[i + 1];
+                flag = 1;
+            } else {
+                temp[i] = array[i];
+            }
+            if (i == len - 2 && flag == 0 && array[i + 1] != element) {
+                return array;
+            }
+        }
+        return temp;
     }
 
     /**
@@ -2168,8 +2183,22 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static long[] removeEle(long[] array, long element) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        long[] temp = new long[len - 1];
+        int flag = 0;
+        for (int i = 0; i < len - 1; i++) {
+            if (array[i] == element || flag == 1) {
+                temp[i] = array[i + 1];
+                flag = 1;
+            } else {
+                temp[i] = array[i];
+            }
+
+            if (i == len - 2 && flag == 0 && array[i + 1] != element) {
+                return array;
+            }
+        }
+        return temp;
     }
 
     /**
@@ -2182,8 +2211,22 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static int[] removeEle(int[] array, int element) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        int[] temp = new int[len - 1];
+        int flag = 0;
+        for (int i = 0; i < len - 1; i++) {
+            if (array[i] == element || flag == 1) {
+                temp[i] = array[i + 1];
+                flag = 1;
+            } else {
+                temp[i] = array[i];
+            }
+
+            if (i == len - 2 && flag == 0 && array[i + 1] != element) {
+                return array;
+            }
+        }
+        return temp;
     }
 
     /**
@@ -2196,8 +2239,22 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static short[] removeEle(short[] array, short element) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        short[] temp = new short[len - 1];
+        int flag = 0;
+        for (int i = 0; i < len - 1; i++) {
+            if (array[i] == element || flag == 1) {
+                temp[i] = array[i + 1];
+                flag = 1;
+            } else {
+                temp[i] = array[i];
+            }
+
+            if (i == len - 2 && flag == 0 && array[i + 1] != element) {
+                return array;
+            }
+        }
+        return temp;
     }
 
     /**
@@ -2210,8 +2267,22 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static char[] removeEle(char[] array, char element) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        char[] temp = new char[len - 1];
+        int flag = 0;
+        for (int i = 0; i < len - 1; i++) {
+            if (array[i] == element || flag == 1) {
+                temp[i] = array[i + 1];
+                flag = 1;
+            } else {
+                temp[i] = array[i];
+            }
+
+            if (i == len - 2 && flag == 0 && array[i + 1] != element) {
+                return array;
+            }
+        }
+        return temp;
     }
 
     /**
@@ -2224,8 +2295,22 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static byte[] removeEle(byte[] array, byte element) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        byte[] temp = new byte[len - 1];
+        int flag = 0;
+        for (int i = 0; i < len - 1; i++) {
+            if (array[i] == element || flag == 1) {
+                temp[i] = array[i + 1];
+                flag = 1;
+            } else {
+                temp[i] = array[i];
+            }
+
+            if (i == len - 2 && flag == 0 && array[i + 1] != element) {
+                return array;
+            }
+        }
+        return temp;
     }
 
     /**
@@ -2238,8 +2323,22 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static double[] removeEle(double[] array, double element) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        double[] temp = new double[len - 1];
+        int flag = 0;
+        for (int i = 0; i < len - 1; i++) {
+            if (array[i] == element || flag == 1) {
+                temp[i] = array[i + 1];
+                flag = 1;
+            } else {
+                temp[i] = array[i];
+            }
+
+            if (i == len - 2 && flag == 0 && array[i + 1] != element) {
+                return array;
+            }
+        }
+        return temp;
     }
 
     /**
@@ -2252,8 +2351,22 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static float[] removeEle(float[] array, float element) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        float[] temp = new float[len - 1];
+        int flag = 0;
+        for (int i = 0; i < len - 1; i++) {
+            if (array[i] == element || flag == 1) {
+                temp[i] = array[i + 1];
+                flag = 1;
+            } else {
+                temp[i] = array[i];
+            }
+
+            if (i == len - 2 && flag == 0 && array[i + 1] != element) {
+                return array;
+            }
+        }
+        return temp;
     }
 
     /**
@@ -2266,8 +2379,22 @@ public final class ArrayUtil {
      * @throws IllegalArgumentException 参数对象不为数组对象
      */
     public static boolean[] removeEle(boolean[] array, boolean element) throws IllegalArgumentException {
-        //TODO
-        return null;
+        int len = array.length;
+        boolean[] temp = new boolean[len - 1];
+        int flag = 0;
+        for (int i = 0; i < len - 1; i++) {
+            if (array[i] == element || flag == 1) {
+                temp[i] = array[i + 1];
+                flag = 1;
+            } else {
+                temp[i] = array[i];
+            }
+
+            if (i == len - 2 && flag == 0 && array[i + 1] != element) {
+                return array;
+            }
+        }
+        return temp;
     }
 
     /**
@@ -2280,8 +2407,27 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static <T> T[] reverse(final T[] array, final int startIndexInclusive, final int endIndexExclusive) {
-        //TODO
-        return null;
+        int len = array.length;
+        if (startIndexInclusive == endIndexExclusive || array == null
+                || startIndexInclusive > endIndexExclusive || endIndexExclusive > len ||
+                startIndexInclusive < 0) {
+            return array;
+        }
+
+        int start = startIndexInclusive;
+        int end = endIndexExclusive;
+
+        while (true) {
+            T temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            ++start;
+            --end;
+            if (end - start <= 0) {
+                return array;
+            }
+
+        }
     }
 
     /**
@@ -2292,8 +2438,16 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static <T> T[] reverse(final T[] array) {
-        //TODO
-        return null;
+        if (array == null || array.length == 0) {
+            return array;
+        }
+        int end = array.length - 1;
+        for (int i = 0; end - i > 0; i++, end--) {
+            T temp = array[i];
+            array[i] = array[end];
+            array[end] = temp;
+        }
+        return array;
     }
 
     /**
@@ -2305,8 +2459,27 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static long[] reverse(final long[] array, final int startIndexInclusive, final int endIndexExclusive) {
-        //TODO
-        return null;
+        int len = array.length;
+        if (startIndexInclusive == endIndexExclusive || array == null
+                || startIndexInclusive > endIndexExclusive || endIndexExclusive > len ||
+                startIndexInclusive < 0) {
+            return array;
+        }
+
+        int start = startIndexInclusive;
+        int end = endIndexExclusive;
+
+        while (true) {
+            long temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            ++start;
+            --end;
+            if (end - start <= 0) {
+                return array;
+            }
+
+        }
     }
 
     /**
@@ -2316,8 +2489,16 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static long[] reverse(final long[] array) {
-        //TODO
-        return null;
+        if (array == null || array.length == 0) {
+            return array;
+        }
+        int end = array.length - 1;
+        for (int i = 0; end - i > 0; i++, end--) {
+            long temp = array[i];
+            array[i] = array[end];
+            array[end] = temp;
+        }
+        return array;
     }
 
     /**
@@ -2329,8 +2510,27 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static int[] reverse(final int[] array, final int startIndexInclusive, final int endIndexExclusive) {
-        //TODO
-        return null;
+        int len = array.length;
+        if (startIndexInclusive == endIndexExclusive || array == null
+                || startIndexInclusive > endIndexExclusive || endIndexExclusive > len ||
+                startIndexInclusive < 0) {
+            return array;
+        }
+
+        int start = startIndexInclusive;
+        int end = endIndexExclusive;
+
+        while (true) {
+            int temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            ++start;
+            --end;
+            if (end - start <= 0) {
+                return array;
+            }
+
+        }
     }
 
     /**
@@ -2340,8 +2540,16 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static int[] reverse(final int[] array) {
-        //TODO
-        return null;
+        if (array == null || array.length == 0) {
+            return array;
+        }
+        int end = array.length - 1;
+        for (int i = 0; end - i > 0; i++, end--) {
+            int temp = array[i];
+            array[i] = array[end];
+            array[end] = temp;
+        }
+        return array;
     }
 
     /**
@@ -2353,8 +2561,27 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static short[] reverse(final short[] array, final int startIndexInclusive, final int endIndexExclusive) {
-        //TODO
-        return null;
+        int len = array.length;
+        if (startIndexInclusive == endIndexExclusive || array == null
+                || startIndexInclusive > endIndexExclusive || endIndexExclusive > len ||
+                startIndexInclusive < 0) {
+            return array;
+        }
+
+        int start = startIndexInclusive;
+        int end = endIndexExclusive;
+
+        while (true) {
+            short temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            ++start;
+            --end;
+            if (end - start <= 0) {
+                return array;
+            }
+
+        }
     }
 
     /**
@@ -2364,8 +2591,16 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static short[] reverse(final short[] array) {
-        //TODO
-        return null;
+        if (array == null || array.length == 0) {
+            return array;
+        }
+        int end = array.length - 1;
+        for (int i = 0; end - i > 0; i++, end--) {
+            short temp = array[i];
+            array[i] = array[end];
+            array[end] = temp;
+        }
+        return array;
     }
 
     /**
@@ -2377,8 +2612,27 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static char[] reverse(final char[] array, final int startIndexInclusive, final int endIndexExclusive) {
-        //TODO
-        return null;
+        int len = array.length;
+        if (startIndexInclusive == endIndexExclusive || array == null
+                || startIndexInclusive > endIndexExclusive || endIndexExclusive > len ||
+                startIndexInclusive < 0) {
+            return array;
+        }
+
+        int start = startIndexInclusive;
+        int end = endIndexExclusive;
+
+        while (true) {
+            char temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            ++start;
+            --end;
+            if (end - start <= 0) {
+                return array;
+            }
+
+        }
     }
 
     /**
@@ -2388,8 +2642,16 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static char[] reverse(final char[] array) {
-        //TODO
-        return null;
+        if (array == null || array.length == 0) {
+            return array;
+        }
+        int end = array.length - 1;
+        for (int i = 0; end - i > 0; i++, end--) {
+            char temp = array[i];
+            array[i] = array[end];
+            array[end] = temp;
+        }
+        return array;
     }
 
     /**
@@ -2401,8 +2663,27 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static byte[] reverse(final byte[] array, final int startIndexInclusive, final int endIndexExclusive) {
-        //TODO
-        return null;
+        int len = array.length;
+        if (startIndexInclusive == endIndexExclusive || array == null
+                || startIndexInclusive > endIndexExclusive || endIndexExclusive > len ||
+                startIndexInclusive < 0) {
+            return array;
+        }
+
+        int start = startIndexInclusive;
+        int end = endIndexExclusive;
+
+        while (true) {
+            byte temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            ++start;
+            --end;
+            if (end - start <= 0) {
+                return array;
+            }
+
+        }
     }
 
     /**
@@ -2412,8 +2693,16 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static byte[] reverse(final byte[] array) {
-        //TODO
-        return null;
+        if (array == null || array.length == 0) {
+            return array;
+        }
+        int end = array.length - 1;
+        for (int i = 0; end - i > 0; i++, end--) {
+            byte temp = array[i];
+            array[i] = array[end];
+            array[end] = temp;
+        }
+        return array;
     }
 
     /**
@@ -2425,8 +2714,27 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static double[] reverse(final double[] array, final int startIndexInclusive, final int endIndexExclusive) {
-        //TODO
-        return null;
+        int len = array.length;
+        if (startIndexInclusive == endIndexExclusive || array == null
+                || startIndexInclusive > endIndexExclusive || endIndexExclusive > len ||
+                startIndexInclusive < 0) {
+            return array;
+        }
+
+        int start = startIndexInclusive;
+        int end = endIndexExclusive;
+
+        while (true) {
+            double temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            ++start;
+            --end;
+            if (end - start <= 0) {
+                return array;
+            }
+
+        }
     }
 
     /**
@@ -2436,8 +2744,16 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static double[] reverse(final double[] array) {
-        //TODO
-        return null;
+        if (array == null || array.length == 0) {
+            return array;
+        }
+        int end = array.length - 1;
+        for (int i = 0; end - i > 0; i++, end--) {
+            double temp = array[i];
+            array[i] = array[end];
+            array[end] = temp;
+        }
+        return array;
     }
 
     /**
@@ -2449,8 +2765,27 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static float[] reverse(final float[] array, final int startIndexInclusive, final int endIndexExclusive) {
-        //TODO
-        return null;
+        int len = array.length;
+        if (startIndexInclusive == endIndexExclusive || array == null
+                || startIndexInclusive > endIndexExclusive || endIndexExclusive > len ||
+                startIndexInclusive < 0) {
+            return array;
+        }
+
+        int start = startIndexInclusive;
+        int end = endIndexExclusive;
+
+        while (true) {
+            float temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            ++start;
+            --end;
+            if (end - start <= 0) {
+                return array;
+            }
+
+        }
     }
 
     /**
@@ -2460,8 +2795,16 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static float[] reverse(final float[] array) {
-        //TODO
-        return null;
+        if (array == null || array.length == 0) {
+            return array;
+        }
+        int end = array.length - 1;
+        for (int i = 0; end - i > 0; i++, end--) {
+            float temp = array[i];
+            array[i] = array[end];
+            array[end] = temp;
+        }
+        return array;
     }
 
     /**
@@ -2473,8 +2816,27 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static boolean[] reverse(final boolean[] array, final int startIndexInclusive, final int endIndexExclusive) {
-        //TODO
-        return null;
+        int len = array.length;
+        if (startIndexInclusive == endIndexExclusive || array == null
+                || startIndexInclusive > endIndexExclusive || endIndexExclusive > len ||
+                startIndexInclusive < 0) {
+            return array;
+        }
+
+        int start = startIndexInclusive;
+        int end = endIndexExclusive;
+
+        while (true) {
+            boolean temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            ++start;
+            --end;
+            if (end - start <= 0) {
+                return array;
+            }
+
+        }
     }
 
     /**
@@ -2484,8 +2846,16 @@ public final class ArrayUtil {
      * @return 变更后的原数组
      */
     public static boolean[] reverse(final boolean[] array) {
-        //TODO
-        return null;
+        if (array == null || array.length == 0) {
+            return array;
+        }
+        int end = array.length - 1;
+        for (int i = 0; end - i > 0; i++, end--) {
+            boolean temp = array[i];
+            array[i] = array[end];
+            array[end] = temp;
+        }
+        return array;
     }
 
     /**
@@ -2496,8 +2866,17 @@ public final class ArrayUtil {
      * @return 最小值
      */
     public static <T extends Comparable<? super T>> T min(T[] numberArray) {
-        //TODO
-        return null;
+        if (numberArray == null) {
+            return null;
+        }
+        int len = numberArray.length;
+        T min = numberArray[0];
+        for (int i = 0; i < len; i++) {
+            if (min.compareTo(numberArray[i]) > 0) {
+                min = numberArray[i];
+            }
+        }
+        return min;
     }
 
     /**
@@ -2507,8 +2886,14 @@ public final class ArrayUtil {
      * @return 最小值
      */
     public static long min(long... numberArray) {
-        //TODO
-        return -1L;
+        long min = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (numberArray[i] < min) {
+                min = numberArray[i];
+            }
+        }
+        return min;
     }
 
     /**
@@ -2518,8 +2903,14 @@ public final class ArrayUtil {
      * @return 最小值
      */
     public static int min(int... numberArray) {
-        //TODO
-        return -1;
+        int min = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (numberArray[i] < min) {
+                min = numberArray[i];
+            }
+        }
+        return min;
     }
 
     /**
@@ -2529,8 +2920,14 @@ public final class ArrayUtil {
      * @return 最小值
      */
     public static short min(short... numberArray) {
-        //TODO
-        return -1;
+        short min = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (numberArray[i] < min) {
+                min = numberArray[i];
+            }
+        }
+        return min;
     }
 
     /**
@@ -2540,8 +2937,14 @@ public final class ArrayUtil {
      * @return 最小值
      */
     public static char min(char... numberArray) {
-        //TODO
-        return '0';
+        char min = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (numberArray[i] < min) {
+                min = numberArray[i];
+            }
+        }
+        return min;
     }
 
     /**
@@ -2551,8 +2954,14 @@ public final class ArrayUtil {
      * @return 最小值
      */
     public static byte min(byte... numberArray) {
-        //TODO
-        return -1;
+        byte min = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (numberArray[i] < min) {
+                min = numberArray[i];
+            }
+        }
+        return min;
     }
 
     /**
@@ -2562,8 +2971,14 @@ public final class ArrayUtil {
      * @return 最小值
      */
     public static double min(double... numberArray) {
-        //TODO
-        return -1D;
+        double min = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (numberArray[i] < min) {
+                min = numberArray[i];
+            }
+        }
+        return min;
     }
 
     /**
@@ -2573,8 +2988,14 @@ public final class ArrayUtil {
      * @return 最小值
      */
     public static float min(float... numberArray) {
-        //TODO
-        return -1F;
+        float min = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (numberArray[i] < min) {
+                min = numberArray[i];
+            }
+        }
+        return min;
     }
 
     /**
@@ -2585,8 +3006,14 @@ public final class ArrayUtil {
      * @return 最大值
      */
     public static <T extends Comparable<? super T>> T max(T[] numberArray) {
-        //TODO
-        return null;
+        T max = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (max.compareTo(numberArray[i]) < 0) {
+                max = numberArray[i];
+            }
+        }
+        return max;
     }
 
     /**
@@ -2596,8 +3023,14 @@ public final class ArrayUtil {
      * @return 最大值
      */
     public static long max(long... numberArray) {
-        //TODO
-        return -1L;
+        long max = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (numberArray[i] > max) {
+                max = numberArray[i];
+            }
+        }
+        return max;
     }
 
     /**
@@ -2607,8 +3040,14 @@ public final class ArrayUtil {
      * @return 最大值
      */
     public static int max(int... numberArray) {
-        //TODO
-        return -1;
+        int max = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (numberArray[i] > max) {
+                max = numberArray[i];
+            }
+        }
+        return max;
     }
 
     /**
@@ -2618,8 +3057,14 @@ public final class ArrayUtil {
      * @return 最大值
      */
     public static short max(short... numberArray) {
-        //TODO
-        return -1;
+        short max = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (numberArray[i] > max) {
+                max = numberArray[i];
+            }
+        }
+        return max;
     }
 
     /**
@@ -2629,8 +3074,14 @@ public final class ArrayUtil {
      * @return 最大值
      */
     public static char max(char... numberArray) {
-        //TODO
-        return '0';
+        char max = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (numberArray[i] > max) {
+                max = numberArray[i];
+            }
+        }
+        return max;
     }
 
     /**
@@ -2640,8 +3091,14 @@ public final class ArrayUtil {
      * @return 最大值
      */
     public static byte max(byte... numberArray) {
-        //TODO
-        return -1;
+        byte max = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (numberArray[i] > max) {
+                max = numberArray[i];
+            }
+        }
+        return max;
     }
 
     /**
@@ -2651,8 +3108,14 @@ public final class ArrayUtil {
      * @return 最大值
      */
     public static double max(double... numberArray) {
-        //TODO
-        return -1D;
+        double max = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (numberArray[i] > max) {
+                max = numberArray[i];
+            }
+        }
+        return max;
     }
 
     /**
@@ -2662,8 +3125,14 @@ public final class ArrayUtil {
      * @return 最大值
      */
     public static float max(float... numberArray) {
-        //TODO
-        return -1F;
+        float max = numberArray[0];
+        int len = numberArray.length;
+        for (int i = 0; i < len; i++) {
+            if (numberArray[i] > max) {
+                max = numberArray[i];
+            }
+        }
+        return max;
     }
 
     /**
@@ -2675,8 +3144,10 @@ public final class ArrayUtil {
      * @return 交换后的数组，与传入数组为同一对象
      */
     public static int[] swap(int[] array, int index1, int index2) {
-        //TODO
-        return null;
+        int temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+        return array;
     }
 
     /**
@@ -2688,8 +3159,10 @@ public final class ArrayUtil {
      * @return 交换后的数组，与传入数组为同一对象
      */
     public static long[] swap(long[] array, int index1, int index2) {
-        //TODO
-        return null;
+        long temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+        return array;
     }
 
     /**
@@ -2701,8 +3174,10 @@ public final class ArrayUtil {
      * @return 交换后的数组，与传入数组为同一对象
      */
     public static double[] swap(double[] array, int index1, int index2) {
-        //TODO
-        return null;
+        double temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+        return array;
     }
 
     /**
@@ -2714,8 +3189,10 @@ public final class ArrayUtil {
      * @return 交换后的数组，与传入数组为同一对象
      */
     public static float[] swap(float[] array, int index1, int index2) {
-        //TODO
-        return null;
+        float temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+        return array;
     }
 
     /**
@@ -2727,8 +3204,10 @@ public final class ArrayUtil {
      * @return 交换后的数组，与传入数组为同一对象
      */
     public static boolean[] swap(boolean[] array, int index1, int index2) {
-        //TODO
-        return null;
+        boolean temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+        return array;
     }
 
     /**
@@ -2740,8 +3219,10 @@ public final class ArrayUtil {
      * @return 交换后的数组，与传入数组为同一对象
      */
     public static byte[] swap(byte[] array, int index1, int index2) {
-        //TODO
-        return null;
+        byte temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+        return array;
     }
 
     /**
@@ -2753,8 +3234,10 @@ public final class ArrayUtil {
      * @return 交换后的数组，与传入数组为同一对象
      */
     public static char[] swap(char[] array, int index1, int index2) {
-        //TODO
-        return null;
+        char temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+        return array;
     }
 
     /**
@@ -2766,8 +3249,10 @@ public final class ArrayUtil {
      * @return 交换后的数组，与传入数组为同一对象
      */
     public static short[] swap(short[] array, int index1, int index2) {
-        //TODO
-        return null;
+        short temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+        return array;
     }
 
     /**
@@ -2780,8 +3265,10 @@ public final class ArrayUtil {
      * @return 交换后的数组，与传入数组为同一对象
      */
     public static <T> T[] swap(T[] array, int index1, int index2) {
-        //TODO
-        return null;
+        T temp = array[index1];
+        array[index1] = array[index2];
+        array[index2] = temp;
+        return array;
     }
 
     /**
@@ -2793,7 +3280,9 @@ public final class ArrayUtil {
      * @return 交换后的数组，与传入数组为同一对象
      */
     public static Object swap(Object array, int index1, int index2) {
-        //TODO
-        return null;
+        Object temp = Array.get(array,index1);
+        Array.set(array,index1,Array.get(array,index2));
+        Array.set(array,index2,temp);
+        return array;
     }
 }
