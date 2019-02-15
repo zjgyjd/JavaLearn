@@ -4,7 +4,9 @@ import java.io.ByteArrayOutputStream;
 import java.lang.reflect.Array;
 import java.nio.ByteBuffer;
 import java.util.Collection;
+import java.util.HashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 import static java.lang.reflect.Array.*;
 
@@ -49,7 +51,7 @@ public final class ArrayUtil {
         if (array == null) {
             return true;
         }
-        if (!(array instanceof Array) || 0 != getLength(array)) {
+        if (!(array.getClass().isArray()) || 0 != getLength(array)) {
             return false;
         }
         return true;
@@ -675,11 +677,21 @@ public final class ArrayUtil {
      * @param keys    键列表
      * @param values  值列表
      * @param isOrder 是否有序
-     * @return Map
+     * @return Map -->HashMap 无序  LinkedHashMap 有序
      */
     public static <K, V> Map<K, V> zip(K[] keys, V[] values, boolean isOrder) {
-        //TODO
-        return null;
+        Map<K, V> temp = isOrder ? new TreeMap<>() : new HashMap<>();
+        int lenK = keys.length;
+        int lenV = values.length;
+        int len = lenK;
+        if (lenK != lenV) {
+            len = Math.min(lenK, lenV);
+        }
+        for (int i = 0; i < len; i++) {
+            temp.put(keys[i], values[i]);
+        }
+        return temp;
+
     }
 
     /**
@@ -697,8 +709,18 @@ public final class ArrayUtil {
      * @return Map
      */
     public static <K, V> Map<K, V> zip(K[] keys, V[] values) {
-        //TODO
-        return null;
+        Map<K, V> temp = new HashMap<>();
+        int lenK = keys.length;
+        int lenV = values.length;
+        int len = lenK;
+        if (lenK != lenV) {
+            len = Math.min(lenK, lenV);
+        }
+        for (int i = 0; i < len; i++) {
+            temp.put(keys[i], values[i]);
+        }
+        return temp;
+
     }
 
 
@@ -3280,9 +3302,9 @@ public final class ArrayUtil {
      * @return 交换后的数组，与传入数组为同一对象
      */
     public static Object swap(Object array, int index1, int index2) {
-        Object temp = Array.get(array,index1);
-        Array.set(array,index1,Array.get(array,index2));
-        Array.set(array,index2,temp);
+        Object temp = Array.get(array, index1);
+        Array.set(array, index1, Array.get(array, index2));
+        Array.set(array, index2, temp);
         return array;
     }
 }

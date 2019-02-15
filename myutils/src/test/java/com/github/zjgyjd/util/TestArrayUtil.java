@@ -118,12 +118,16 @@ public class TestArrayUtil {
         byte[] end0 =  ArrayUtil.remove(test0,4);
         long[] test1 = {1,2,3,4,5,6,7,8,9};
         long[] end1 = ArrayUtil.removeEle(test1,10);
+        byte[] test5 = new byte[0];
+       Object array = Array.newInstance(Object.class,0);
+        System.out.println(array.getClass().isArray());
+
         Byte[] test2 = {1,2,3,4,56,8,9,10};
         Byte[] end2 = (Byte[]) ArrayUtil.removeEle(test2, (byte) 56);
         Byte[] end2_0 = ArrayUtil.reverse(test2,2,5);
         Integer[] test3 = {8,7,6,5,4,3,2,1,0};
 
-
+        System.out.println(ArrayUtil.isEmpty(test5));
         System.out.println(ArrayUtil.toString(ArrayUtil.swap(test3,0,1)));
         System.out.println(ArrayUtil.min(test3));
         System.out.println(ArrayUtil.toString(ArrayUtil.reverse(test3)));
