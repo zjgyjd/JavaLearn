@@ -45,7 +45,10 @@ public final class CharUtil {
      * @return true表示为ASCII字符，ASCII字符位于0~127之间
      */
     public static boolean isAscii(char ch) {
-        //TODO
+        int check = ch;
+        if(check <= 127){
+            return true;
+        }
         return false;
     }
     
@@ -65,8 +68,7 @@ public final class CharUtil {
      * @return true表示为ASCII可见字符，可见字符位于32~126之间
      */
     public static boolean isAsciiPrintable(char ch) {
-        //TODO
-        return false;
+        return (int) ch >= 32 && (int) ch <= 126;
     }
     
     /**
@@ -85,8 +87,7 @@ public final class CharUtil {
      * @return true表示为控制符，控制符位于0~31和127
      */
     public static boolean isAsciiControl(final char ch) {
-        //TODO
-        return false;
+        return !isAsciiPrintable(ch);
     }
     
     /**
@@ -106,8 +107,7 @@ public final class CharUtil {
      * @return true表示为字母（包括大写字母和小写字母）字母包括A~Z和a~z
      */
     public static boolean isLetter(char ch) {
-        //TODO
-        return false;
+        return ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z';
     }
     
     /**
@@ -128,8 +128,7 @@ public final class CharUtil {
      * @return true表示为大写字母，大写字母包括A~Z
      */
     public static boolean isLetterUpper(final char ch) {
-        //TODO
-        return false;
+        return ch >= 'A' && ch <= 'Z';
     }
     
     /**
@@ -150,8 +149,7 @@ public final class CharUtil {
      * @return true表示为小写字母，小写字母指a~z
      */
     public static boolean isLetterLower(final char ch) {
-        //TODO
-        return false;
+        return ch >= 'a' && ch <= 'z';
     }
     
     /**
@@ -172,8 +170,7 @@ public final class CharUtil {
      * @return true表示为数字字符，数字字符指0~9
      */
     public static boolean isNumber(char ch) {
-        //TODO
-        return false;
+        return ch >= '0' && ch <= '9';
     }
     
     /**
@@ -188,8 +185,7 @@ public final class CharUtil {
      * @return 是否为16进制规范的字符
      */
     public static boolean isHexChar(char c) {
-        //TODO
-        return false;
+        return c >= 'a' && c <= 'f' || c >= 'A' && c <= 'F' || c >= '0' && c <= '9';
     }
     
     /**
@@ -208,8 +204,7 @@ public final class CharUtil {
      * @return true表示为字符或数字，包括A~Z、a~z、0~9
      */
     public static boolean isLetterOrNumber(final char ch) {
-        //TODO
-        return false;
+        return ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z' || ch >= '0' && ch <= '9';
     }
     
     
@@ -225,8 +220,7 @@ public final class CharUtil {
      * @return true表示为字符类
      */
     public static boolean isCharClass(Class<?> clazz) {
-        //TODO
-        return false;
+        return clazz.getName().equals(Character.class.getName())||clazz.getName().equals(char.class.getName());
     }
     
     /**
