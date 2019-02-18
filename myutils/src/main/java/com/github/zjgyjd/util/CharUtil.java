@@ -235,8 +235,7 @@ public final class CharUtil {
      * @return true表示为字符类
      */
     public static boolean isChar(Object value) {
-        //TODO
-        return false;
+        return value.getClass().getName().equals(Character.class.getName())||value.getClass().getName().equals(char.class.getName());
     }
     
     /**
@@ -249,8 +248,7 @@ public final class CharUtil {
      * @see Character#isSpaceChar(int)
      */
     public static boolean isBlankChar(char c) {
-        //TODO
-        return false;
+        return Character.isWhitespace(c);
     }
     
     /**
