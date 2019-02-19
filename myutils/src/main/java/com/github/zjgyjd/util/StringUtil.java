@@ -14,7 +14,7 @@ import java.util.Set;
 /**
  * 字符串处理工具类
  * <p>
- * Author: secondriver
+ * Author: zjgyjd
  * Created: 2018/10/16
  */
 public final class StringUtil {

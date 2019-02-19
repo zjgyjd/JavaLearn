@@ -26,7 +26,7 @@ import java.util.Collection;
  * <li>https://github.com/venusdrogon/feilong-core/wiki/one-jdk7-bug-thinking</li>
  * </ul>
  * <p>
- * Author: secondriver
+ * Author: zjgyjd
  * Created: 2018/10/16
  */
 public final class NumberUtil {

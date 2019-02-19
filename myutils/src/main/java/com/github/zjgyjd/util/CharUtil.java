@@ -1,11 +1,11 @@
 package com.github.zjgyjd.util;
 
 /**
- * Author: secondriver
+ * Author: zjgyjd
  * Created: 2018/10/16
  */
 public final class CharUtil {
-    
+
     public static final char SPACE = ' ';
     public static final char TAB = '	';
     public static final char DOT = '.';
@@ -24,11 +24,11 @@ public final class CharUtil {
     public static final char DOUBLE_QUOTES = '"';
     public static final char SINGLE_QUOTE = '\'';
     public static final char AMP = '&';
-    
+
     private CharUtil() {
     }
-    
-    
+
+
     /**
      * 是否为ASCII字符，ASCII字符位于0~127之间
      *
@@ -45,13 +45,9 @@ public final class CharUtil {
      * @return true表示为ASCII字符，ASCII字符位于0~127之间
      */
     public static boolean isAscii(char ch) {
-        int check = ch;
-        if(check <= 127){
-            return true;
-        }
-        return false;
+        return (int) ch <= 127;
     }
-    
+
     /**
      * 是否为可见ASCII字符，可见字符位于32~126之间
      *
@@ -70,7 +66,7 @@ public final class CharUtil {
     public static boolean isAsciiPrintable(char ch) {
         return (int) ch >= 32 && (int) ch <= 126;
     }
-    
+
     /**
      * 是否为ASCII控制符（不可见字符），控制符位于0~31和127
      *
@@ -89,7 +85,7 @@ public final class CharUtil {
     public static boolean isAsciiControl(final char ch) {
         return !isAsciiPrintable(ch);
     }
-    
+
     /**
      * 判断是否为字母（包括大写字母和小写字母）<br>
      * 字母包括A~Z和a~z
@@ -109,7 +105,7 @@ public final class CharUtil {
     public static boolean isLetter(char ch) {
         return ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z';
     }
-    
+
     /**
      * <p>
      * 判断是否为大写字母，大写字母包括A~Z
@@ -130,7 +126,7 @@ public final class CharUtil {
     public static boolean isLetterUpper(final char ch) {
         return ch >= 'A' && ch <= 'Z';
     }
-    
+
     /**
      * <p>
      * 检查字符是否为小写字母，小写字母指a~z
@@ -151,7 +147,7 @@ public final class CharUtil {
     public static boolean isLetterLower(final char ch) {
         return ch >= 'a' && ch <= 'z';
     }
-    
+
     /**
      * <p>
      * 检查是否为数字字符，数字字符指0~9
@@ -172,7 +168,7 @@ public final class CharUtil {
     public static boolean isNumber(char ch) {
         return ch >= '0' && ch <= '9';
     }
-    
+
     /**
      * 是否为16进制规范的字符，判断是否为如下字符
      * <pre>
@@ -187,7 +183,7 @@ public final class CharUtil {
     public static boolean isHexChar(char c) {
         return c >= 'a' && c <= 'f' || c >= 'A' && c <= 'F' || c >= '0' && c <= '9';
     }
-    
+
     /**
      * 是否为字符或数字，包括A~Z、a~z、0~9
      *
@@ -206,8 +202,8 @@ public final class CharUtil {
     public static boolean isLetterOrNumber(final char ch) {
         return ch >= 'a' && ch <= 'z' || ch >= 'A' && ch <= 'Z' || ch >= '0' && ch <= '9';
     }
-    
-    
+
+
     /**
      * 给定类名是否为字符类，字符类包括：
      *
@@ -220,9 +216,9 @@ public final class CharUtil {
      * @return true表示为字符类
      */
     public static boolean isCharClass(Class<?> clazz) {
-        return clazz.getName().equals(Character.class.getName())||clazz.getName().equals(char.class.getName());
+        return clazz.getName().equals(Character.class.getName()) || clazz.getName().equals(char.class.getName());
     }
-    
+
     /**
      * 给定对象对应的类是否为字符类，字符类包括：
      *
@@ -235,9 +231,9 @@ public final class CharUtil {
      * @return true表示为字符类
      */
     public static boolean isChar(Object value) {
-        return value.getClass().getName().equals(Character.class.getName())||value.getClass().getName().equals(char.class.getName());
+        return value.getClass().isInstance(Character.class) || value.getClass().isInstance(char.class);
     }
-    
+
     /**
      * 是否空白符<br>
      * 空白符包括空格、制表符、全角空格和不间断空格<br>
@@ -250,7 +246,7 @@ public final class CharUtil {
     public static boolean isBlankChar(char c) {
         return Character.isWhitespace(c);
     }
-    
+
     /**
      * 是否空白符<br>
      * 空白符包括空格、制表符、全角空格和不间断空格<br>
@@ -261,11 +257,11 @@ public final class CharUtil {
      * @see Character#isSpaceChar(int)
      */
     public static boolean isBlankChar(int c) {
-        //TODO
-        return false;
+        char temp = (char) c;
+        return CharUtil.isBlankChar(temp);
     }
-    
-    
+
+
     /**
      * 是否为Windows或者Linux（Unix）文件分隔符<br>
      * Windows平台下分隔符为\，Linux（Unix）为/
@@ -274,10 +270,12 @@ public final class CharUtil {
      * @return 是否为Windows或者Linux（Unix）文件分隔符
      */
     public static boolean isFileSeparator(char c) {
-        //TODO
+        if (c == SLASH || c == BACKSLASH) {
+            return true;
+        }
         return false;
     }
-    
+
     /**
      * 比较两个字符是否相同
      *
@@ -287,7 +285,17 @@ public final class CharUtil {
      * @return 是否相同
      */
     public static boolean equals(char c1, char c2, boolean ignoreCase) {
-        //TODO
-        return false;
+        if (ignoreCase && CharUtil.isLetter(c1) && CharUtil.isLetter(c2)) {
+            if (CharUtil.isLetterLower(c1) && CharUtil.isLetterLower(c2)
+                    || CharUtil.isLetterUpper(c1) && CharUtil.isLetterUpper(c2)) {
+                return c1 == c2;
+            } else if (c1 - c2 > 0) {
+                return c1 - 32 == c2;
+            } else {
+                return c1 + 32 == c2;
+            }
+        } else {
+            return c1 == c2;
+        }
     }
 }

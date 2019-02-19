@@ -7,7 +7,7 @@ import java.util.Map;
 /**
  * 断言<br>
  * 断言某些对象或值是否符合规定，否则抛出异常。经常用于做变量检查
- * Author: secondriver
+ * Author: zjgyjd
  * Created: 2018/10/16
  */
 public final class AssertUtil {
