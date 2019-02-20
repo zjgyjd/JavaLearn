@@ -34,11 +34,11 @@ public final class NumberUtil {
      * 默认除法运算精度
      */
     private static final int DEFAULT_DIV_SCALE = 10;
-    
+
     private NumberUtil() {
-    
+
     }
-    
+
     /**
      * 提供精确的加法运算
      *
@@ -47,10 +47,11 @@ public final class NumberUtil {
      * @return 和
      */
     public static double add(float v1, float v2) {
-        //TODO
-        return -1D;
+        BigDecimal b1 = new BigDecimal(Float.toString(v1));
+        BigDecimal b2 = new BigDecimal(Float.toString(v2));
+        return b1.add(b2).doubleValue();
     }
-    
+
     /**
      * 提供精确的加法运算
      *
@@ -59,10 +60,11 @@ public final class NumberUtil {
      * @return 和
      */
     public static double add(float v1, double v2) {
-        //TODO
-        return -1D;
+        BigDecimal b1 = new BigDecimal(Float.toString(v1));
+        BigDecimal b2 = new BigDecimal(Double.toString(v2));
+        return b1.add(b2).doubleValue();
     }
-    
+
     /**
      * 提供精确的加法运算
      *
@@ -71,10 +73,11 @@ public final class NumberUtil {
      * @return 和
      */
     public static double add(double v1, float v2) {
-        //TODO
-        return -1D;
+        BigDecimal b1 = new BigDecimal(Float.toString(v2));
+        BigDecimal b2 = new BigDecimal(Double.toString(v1));
+        return b1.add(b2).doubleValue();
     }
-    
+
     /**
      * 提供精确的加法运算
      *
@@ -83,10 +86,12 @@ public final class NumberUtil {
      * @return 和
      */
     public static double add(double v1, double v2) {
-        //TODO
-        return -1D;
+        BigDecimal b1 = new BigDecimal(Double.toString(v1));
+        BigDecimal b2 = new BigDecimal(Double.toString(v2));
+        return b1.add(b2).doubleValue();
+
     }
-    
+
     /**
      * 提供精确的加法运算
      *
@@ -95,10 +100,12 @@ public final class NumberUtil {
      * @return 和
      */
     public static double add(Double v1, Double v2) {
-        //TODO
-        return -1D;
+        BigDecimal b1 = new BigDecimal(Double.toString(v1));
+        BigDecimal b2 = new BigDecimal(Double.toString(v2));
+        return b1.add(b2).doubleValue();
+
     }
-    
+
     /**
      * 提供精确的加法运算<br>
      * 如果传入多个值为null或者空，则返回0
@@ -108,10 +115,14 @@ public final class NumberUtil {
      * @return 和
      */
     public static BigDecimal add(Number v1, Number v2) {
-        //TODO
-        return null;
+        if (v1 == null || v2 == null) {
+            return BigDecimal.valueOf(0);
+        }
+        BigDecimal b1 = new BigDecimal(v1.toString());
+        BigDecimal b2 = new BigDecimal(v2.toString());
+        return b1.add(b2);
     }
-    
+
     /**
      * 提供精确的加法运算<br>
      * 如果传入多个值为null或者空，则返回0
@@ -120,10 +131,16 @@ public final class NumberUtil {
      * @return 和
      */
     public static BigDecimal add(Number... values) {
-        //TODO
-        return null;
+        BigDecimal sum = BigDecimal.valueOf(0);
+        int len = values.length;
+        if (values.length == 0 || ArrayUtil.hasNull(values)) {
+            for (int i = 0; i < len; i++) {
+                sum = sum.add(new BigDecimal(values[0].toString()));
+            }
+        }
+        return sum;
     }
-    
+
     /**
      * 提供精确的加法运算<br>
      * 如果传入多个值为null或者空，则返回0
@@ -135,7 +152,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供精确的加法运算<br>
      * 如果传入多个值为null或者空，则返回0
@@ -147,7 +164,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供精确的减法运算
      *
@@ -159,7 +176,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供精确的减法运算
      *
@@ -171,7 +188,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供精确的减法运算
      *
@@ -183,7 +200,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供精确的减法运算
      *
@@ -195,7 +212,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供精确的减法运算
      *
@@ -207,7 +224,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供精确的减法运算<br>
      * 如果传入多个值为null或者空，则返回0
@@ -220,7 +237,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供精确的减法运算<br>
      * 如果传入多个值为null或者空，则返回0
@@ -232,7 +249,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供精确的减法运算<br>
      * 如果传入多个值为null或者空，则返回0
@@ -244,7 +261,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供精确的减法运算<br>
      * 如果传入多个值为null或者空，则返回0
@@ -256,7 +273,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供精确的乘法运算
      *
@@ -268,7 +285,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供精确的乘法运算
      *
@@ -280,7 +297,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供精确的乘法运算
      *
@@ -292,7 +309,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供精确的乘法运算
      *
@@ -304,7 +321,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供精确的乘法运算<br>
      * 如果传入多个值为null或者空，则返回0
@@ -317,7 +334,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供精确的乘法运算<br>
      * 如果传入多个值为null或者空，则返回0
@@ -330,7 +347,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供精确的乘法运算<br>
      * 如果传入多个值为null或者空，则返回0
@@ -342,7 +359,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供精确的乘法运算
      *
@@ -354,7 +371,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供精确的乘法运算<br>
      * 如果传入多个值为null或者空，则返回0
@@ -366,7 +383,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供精确的乘法运算<br>
      * 如果传入多个值为null或者空，则返回0
@@ -378,7 +395,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况的时候,精确到小数点后10位,后面的四舍五入
      *
@@ -390,7 +407,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况的时候,精确到小数点后10位,后面的四舍五入
      *
@@ -402,7 +419,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况的时候,精确到小数点后10位,后面的四舍五入
      *
@@ -414,7 +431,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况的时候,精确到小数点后10位,后面的四舍五入
      *
@@ -426,7 +443,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况的时候,精确到小数点后10位,后面的四舍五入
      *
@@ -438,7 +455,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况的时候,精确到小数点后10位,后面的四舍五入
      *
@@ -450,7 +467,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况的时候,精确到小数点后10位,后面的四舍五入
      *
@@ -462,7 +479,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度,后面的四舍五入
      *
@@ -475,7 +492,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度,后面的四舍五入
      *
@@ -488,7 +505,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度,后面的四舍五入
      *
@@ -501,7 +518,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度,后面的四舍五入
      *
@@ -514,7 +531,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度,后面的四舍五入
      *
@@ -527,7 +544,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度,后面的四舍五入
      *
@@ -540,7 +557,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度,后面的四舍五入
      *
@@ -553,7 +570,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度
      *
@@ -567,7 +584,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度
      *
@@ -581,7 +598,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度
      *
@@ -595,7 +612,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度
      *
@@ -609,7 +626,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度
      *
@@ -623,7 +640,7 @@ public final class NumberUtil {
         //TODO
         return -1D;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度
      *
@@ -637,7 +654,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度
      *
@@ -651,7 +668,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供(相对)精确的除法运算,当发生除不尽的情况时,由scale指定精确度
      *
@@ -665,9 +682,9 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     // ------------------------------------------------------------------------------------------- round
-    
+
     /**
      * 保留固定位数小数<br>
      * 采用四舍五入策略 {@link RoundingMode#HALF_UP}<br>
@@ -681,7 +698,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 保留固定位数小数<br>
      * 采用四舍五入策略 {@link RoundingMode#HALF_UP}<br>
@@ -695,7 +712,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 保留固定位数小数<br>
      * 采用四舍五入策略 {@link RoundingMode#HALF_UP}<br>
@@ -709,7 +726,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 保留固定位数小数<br>
      * 采用四舍五入策略 {@link RoundingMode#HALF_UP}<br>
@@ -723,7 +740,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 保留固定位数小数<br>
      * 采用四舍五入策略 {@link RoundingMode#HALF_UP}<br>
@@ -737,7 +754,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 保留固定位数小数<br>
      * 例如保留四位小数：123.456789 =》 123.4567
@@ -751,7 +768,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 保留固定位数小数<br>
      * 例如保留四位小数：123.456789 =》 123.4567
@@ -765,7 +782,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 保留固定位数小数<br>
      * 例如保留四位小数：123.456789 =》 123.4567
@@ -779,7 +796,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 保留固定位数小数<br>
      * 例如保留四位小数：123.456789 =》 123.4567
@@ -793,7 +810,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 保留固定位数小数<br>
      * 例如保留四位小数：123.456789 =》 123.4567
@@ -807,7 +824,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 四舍六入五成双计算法
      * <p>
@@ -831,7 +848,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 四舍六入五成双计算法
      * <p>
@@ -855,7 +872,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 保留固定小数位数，舍去多余位数
      *
@@ -867,7 +884,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 保留固定小数位数，舍去多余位数
      *
@@ -879,9 +896,9 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     // ------------------------------------------------------------------------------------------- decimalFormat
-    
+
     /**
      * 格式化double<br>
      * 对 {@link DecimalFormat} 做封装<br>
@@ -904,7 +921,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 格式化double<br>
      * 对 {@link DecimalFormat} 做封装<br>
@@ -927,7 +944,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 格式化金额输出，每三位用逗号分隔
      *
@@ -938,7 +955,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 格式化百分比，小数采用四舍五入方式
      *
@@ -950,9 +967,9 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     // ------------------------------------------------------------------------------------------- isXXX
-    
+
     /**
      * 是否为数字
      *
@@ -963,7 +980,7 @@ public final class NumberUtil {
         //TODO
         return false;
     }
-    
+
     /**
      * 判断String是否是整数<br>
      * 支持8、10、16进制
@@ -975,7 +992,7 @@ public final class NumberUtil {
         //TODO
         return false;
     }
-    
+
     /**
      * 判断字符串是否是Long类型<br>
      * 支持8、10、16进制
@@ -987,7 +1004,7 @@ public final class NumberUtil {
         //TODO
         return false;
     }
-    
+
     /**
      * 判断字符串是否是浮点数
      *
@@ -998,7 +1015,7 @@ public final class NumberUtil {
         //TODO
         return false;
     }
-    
+
     /**
      * 是否是质数<br>
      * 质数表的质数又称素数。指整数在一个大于1的自然数中,除了1和此整数自身外,没法被其他自然数整除的数。
@@ -1010,9 +1027,9 @@ public final class NumberUtil {
         //TODO
         return false;
     }
-    
+
     // ------------------------------------------------------------------------------------------- generateXXX
-    
+
     /**
      * 生成不重复随机数 根据给定的最小数字和最大数字，以及随机数的个数，产生指定的不重复的数组
      *
@@ -1025,7 +1042,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 生成不重复随机数 根据给定的最小数字和最大数字，以及随机数的个数，产生指定的不重复的数组
      *
@@ -1038,9 +1055,9 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     // ------------------------------------------------------------------------------------------- range
-    
+
     /**
      * 从0开始给定范围内的整数列表，步进为1
      *
@@ -1051,7 +1068,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 给定范围内的整数列表，步进为1
      *
@@ -1063,7 +1080,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 给定范围内的整数列表
      *
@@ -1076,7 +1093,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 将给定范围内的整数添加到已有集合中，步进为1
      *
@@ -1089,7 +1106,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 将给定范围内的整数添加到已有集合中
      *
@@ -1103,9 +1120,9 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     // ------------------------------------------------------------------------------------------- others
-    
+
     /**
      * 计算阶乘
      * <p>
@@ -1120,7 +1137,7 @@ public final class NumberUtil {
         //TODO
         return -1L;
     }
-    
+
     /**
      * 计算阶乘
      * <p>
@@ -1133,7 +1150,7 @@ public final class NumberUtil {
     public static long factorial(long n) {
         return factorial(n, 1);
     }
-    
+
     /**
      * 平方根算法<br>
      * 推荐使用 {@link Math#sqrt(double)}
@@ -1145,7 +1162,7 @@ public final class NumberUtil {
         //TODO
         return -1L;
     }
-    
+
     /**
      * 可以用于计算双色球、大乐透注数的方法<br>
      * 比如大乐透35选5可以这样调用processMultiple(7,5); 就是数学中的：C75=7*6/2*1
@@ -1158,7 +1175,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 最大公约数
      *
@@ -1170,7 +1187,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 最小公倍数
      *
@@ -1182,7 +1199,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 获得数字对应的二进制字符串
      *
@@ -1193,7 +1210,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 二进制转int
      *
@@ -1204,7 +1221,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 二进制转long
      *
@@ -1215,9 +1232,9 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     // ------------------------------------------------------------------------------------------- compare
-    
+
     /**
      * 比较两个值的大小
      *
@@ -1230,7 +1247,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 比较两个值的大小
      *
@@ -1243,7 +1260,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 比较两个值的大小
      *
@@ -1256,7 +1273,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 比较两个值的大小
      *
@@ -1269,7 +1286,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 比较两个值的大小
      *
@@ -1282,7 +1299,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 比较两个值的大小
      *
@@ -1295,7 +1312,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 比较大小，参数1 &gt; 参数2 返回true
      *
@@ -1307,7 +1324,7 @@ public final class NumberUtil {
         //TODO
         return false;
     }
-    
+
     /**
      * 比较大小，参数1 &gt;= 参数2 返回true
      *
@@ -1319,7 +1336,7 @@ public final class NumberUtil {
         //TODO
         return false;
     }
-    
+
     /**
      * 比较大小，参数1 &lt; 参数2 返回true
      *
@@ -1331,7 +1348,7 @@ public final class NumberUtil {
         //TODO
         return false;
     }
-    
+
     /**
      * 比较大小，参数1&lt;=参数2 返回true
      *
@@ -1343,7 +1360,7 @@ public final class NumberUtil {
         //TODO
         return false;
     }
-    
+
     /**
      * 比较大小，值相等 返回true<br>
      * 此方法通过调用{@link BigDecimal#compareTo(BigDecimal)}方法来判断是否相等<br>
@@ -1357,7 +1374,7 @@ public final class NumberUtil {
         //TODO
         return false;
     }
-    
+
     /**
      * 比较两个字符是否相同
      *
@@ -1371,7 +1388,7 @@ public final class NumberUtil {
         //TODO
         return false;
     }
-    
+
     /**
      * 取最小值
      *
@@ -1385,7 +1402,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 取最小值
      *
@@ -1397,7 +1414,7 @@ public final class NumberUtil {
         //TODO
         return 1L;
     }
-    
+
     /**
      * 取最小值
      *
@@ -1410,7 +1427,7 @@ public final class NumberUtil {
         //TODO
         return 1;
     }
-    
+
     /**
      * 取最小值
      *
@@ -1423,7 +1440,7 @@ public final class NumberUtil {
         //TODO
         return 1;
     }
-    
+
     /**
      * 取最小值
      *
@@ -1436,7 +1453,7 @@ public final class NumberUtil {
         //TODO
         return 1D;
     }
-    
+
     /**
      * 取最小值
      *
@@ -1448,7 +1465,7 @@ public final class NumberUtil {
         //TODO
         return 1F;
     }
-    
+
     /**
      * 取最大值
      *
@@ -1462,7 +1479,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 取最大值
      *
@@ -1474,7 +1491,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 取最大值
      *
@@ -1486,7 +1503,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 取最大值
      *
@@ -1498,7 +1515,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 取最大值
      *
@@ -1510,7 +1527,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 取最大值
      *
@@ -1522,7 +1539,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 数字转字符串<br>
      * 调用{@link Number#toString()}，并去除尾小数点儿后多余的0
@@ -1535,7 +1552,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 数字转字符串<br>
      * 调用{@link Number#toString()}，并去除尾小数点儿后多余的0
@@ -1547,8 +1564,8 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
-    
+
+
     /**
      * 检查是否为有效的数字<br>
      * 检查Double和Float是否为无限大，或者Not a Number<br>
@@ -1561,7 +1578,7 @@ public final class NumberUtil {
         //TODO
         return false;
     }
-    
+
     /**
      * 数字转{@link BigDecimal}
      *
@@ -1572,7 +1589,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 数字转{@link BigDecimal}
      *
@@ -1583,8 +1600,8 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
-    
+
+
     /**
      * 计算等份个数
      *
@@ -1596,7 +1613,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 空转0
      *
@@ -1607,7 +1624,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 如果给定值为0，返回1，否则返回原值
      *
@@ -1618,7 +1635,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 创建{@link BigInteger}，支持16进制、10进制和8进制，如果传入空白串返回null<br>
      * from Apache Common Lang
@@ -1630,7 +1647,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 判断两个数字是否相邻，例如1和2相邻，1和3不相邻<br>
      * 判断方法为做差取绝对值判断是否为1
@@ -1643,7 +1660,7 @@ public final class NumberUtil {
         //TODO
         return false;
     }
-    
+
     /**
      * 判断两个数字是否相邻，例如1和2相邻，1和3不相邻<br>
      * 判断方法为做差取绝对值判断是否为1
@@ -1656,7 +1673,7 @@ public final class NumberUtil {
         //TODO
         return false;
     }
-    
+
     /**
      * 把给定的总数平均分成N份，返回每份的个数<br>
      * 当除以分数有余数时每份+1
@@ -1669,7 +1686,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 把给定的总数平均分成N份，返回每份的个数<br>
      * 如果isPlusOneWhenHasRem为true，则当除以分数有余数时每份+1，否则丢弃余数部分
@@ -1683,7 +1700,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 提供精确的幂运算
      *
@@ -1695,7 +1712,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 提供精确的幂运算
      *
@@ -1707,7 +1724,7 @@ public final class NumberUtil {
         //TODO
         return null;
     }
-    
+
     /**
      * 解析转换数字字符串为int型数字，规则如下：
      *
@@ -1728,7 +1745,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 解析转换数字字符串为long型数字，规则如下：
      *
@@ -1746,7 +1763,7 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
+
     /**
      * 将指定字符串转换为{@link Number} 对象
      *
@@ -1757,8 +1774,8 @@ public final class NumberUtil {
         //TODO
         return -1;
     }
-    
-    
+
+
     private static int mathSubnode(int selectNum, int minNum) {
         if (selectNum == minNum) {
             return 1;
@@ -1766,7 +1783,7 @@ public final class NumberUtil {
             return selectNum * mathSubnode(selectNum - 1, minNum);
         }
     }
-    
+
     private static int mathNode(int selectNum) {
         if (selectNum == 0) {
             return 1;
