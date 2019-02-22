@@ -133,9 +133,9 @@ public final class NumberUtil {
     public static BigDecimal add(Number... values) {
         BigDecimal sum = BigDecimal.valueOf(0);
         int len = values.length;
-        if (values.length == 0 || ArrayUtil.hasNull(values)) {
+        if (values.length != 0 && !ArrayUtil.hasNull(values)) {
             for (int i = 0; i < len; i++) {
-                sum = sum.add(new BigDecimal(values[0].toString()));
+                sum = sum.add(new BigDecimal(values[i].toString()));
             }
         }
         return sum;
@@ -149,8 +149,14 @@ public final class NumberUtil {
      * @return 和
      */
     public static BigDecimal add(String... values) {
-        //TODO
-        return null;
+        BigDecimal sum = BigDecimal.valueOf(0);
+        int len = values.length;
+        if (len != 0 && !ArrayUtil.hasNull(values)) {
+            for (int i = 0; i < len; i++) {
+                sum = sum.add(new BigDecimal(values[i]));
+            }
+        }
+        return sum;
     }
 
     /**
@@ -161,8 +167,14 @@ public final class NumberUtil {
      * @return 和
      */
     public static BigDecimal add(BigDecimal... values) {
-        //TODO
-        return null;
+        BigDecimal sum = BigDecimal.valueOf(0);
+        int len = values.length;
+        if (len != 0 && !ArrayUtil.hasNull(values)) {
+            for (BigDecimal value : values) {
+                sum = sum.add(value);
+            }
+        }
+        return sum;
     }
 
     /**
@@ -173,8 +185,9 @@ public final class NumberUtil {
      * @return 差
      */
     public static double sub(float v1, float v2) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        return value1.subtract(value2).doubleValue();
     }
 
     /**
@@ -185,8 +198,9 @@ public final class NumberUtil {
      * @return 差
      */
     public static double sub(float v1, double v2) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        return value1.subtract(value2).doubleValue();
     }
 
     /**
@@ -197,8 +211,9 @@ public final class NumberUtil {
      * @return 差
      */
     public static double sub(double v1, float v2) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        return value1.subtract(value2).doubleValue();
     }
 
     /**
@@ -209,8 +224,9 @@ public final class NumberUtil {
      * @return 差
      */
     public static double sub(double v1, double v2) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        return value1.subtract(value2).doubleValue();
     }
 
     /**
@@ -221,8 +237,9 @@ public final class NumberUtil {
      * @return 差
      */
     public static double sub(Double v1, Double v2) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        return value1.subtract(value2).doubleValue();
     }
 
     /**
@@ -234,8 +251,9 @@ public final class NumberUtil {
      * @return 差
      */
     public static BigDecimal sub(Number v1, Number v2) {
-        //TODO
-        return null;
+        BigDecimal value1 = new BigDecimal(v1.toString());
+        BigDecimal value2 = new BigDecimal(v2.toString());
+        return value1.subtract(value2);
     }
 
     /**
@@ -246,8 +264,14 @@ public final class NumberUtil {
      * @return 差
      */
     public static BigDecimal sub(Number... values) {
-        //TODO
-        return null;
+        BigDecimal sub = BigDecimal.valueOf(0);
+        int len = values.length;
+        if (len != 0 && !ArrayUtil.hasNull(values)) {
+            for (int i = 0; i < len; i++) {
+                sub = sub.subtract(new BigDecimal(values[i].toString()));
+            }
+        }
+        return sub;
     }
 
     /**
@@ -258,8 +282,14 @@ public final class NumberUtil {
      * @return 差
      */
     public static BigDecimal sub(String... values) {
-        //TODO
-        return null;
+        BigDecimal sub = BigDecimal.valueOf(0);
+        int len = values.length;
+        if (len != 0 && !ArrayUtil.hasNull(values)) {
+            for (int i = 0; i < len; i++) {
+                sub = sub.subtract(new BigDecimal(values[i]));
+            }
+        }
+        return sub;
     }
 
     /**
@@ -270,8 +300,14 @@ public final class NumberUtil {
      * @return 差
      */
     public static BigDecimal sub(BigDecimal... values) {
-        //TODO
-        return null;
+        BigDecimal sub = BigDecimal.valueOf(0);
+        int len = values.length;
+        if (len != 0 && !ArrayUtil.hasNull(values)) {
+            for (BigDecimal value : values) {
+                sub = sub.subtract(value);
+            }
+        }
+        return sub;
     }
 
     /**
@@ -282,8 +318,9 @@ public final class NumberUtil {
      * @return 积
      */
     public static double mul(float v1, float v2) {
-        //TODO
-        return -1D;
+        BigDecimal mul1 = BigDecimal.valueOf(v1);
+        BigDecimal mul2 = BigDecimal.valueOf(v2);
+        return mul1.multiply(mul2).doubleValue();
     }
 
     /**
@@ -294,8 +331,9 @@ public final class NumberUtil {
      * @return 积
      */
     public static double mul(float v1, double v2) {
-        //TODO
-        return -1D;
+        BigDecimal mul1 = BigDecimal.valueOf(v1);
+        BigDecimal mul2 = BigDecimal.valueOf(v2);
+        return mul1.multiply(mul2).doubleValue();
     }
 
     /**
@@ -306,8 +344,9 @@ public final class NumberUtil {
      * @return 积
      */
     public static double mul(double v1, float v2) {
-        //TODO
-        return -1D;
+        BigDecimal mul1 = BigDecimal.valueOf(v1);
+        BigDecimal mul2 = BigDecimal.valueOf(v2);
+        return mul1.multiply(mul2).doubleValue();
     }
 
     /**
@@ -318,8 +357,9 @@ public final class NumberUtil {
      * @return 积
      */
     public static double mul(double v1, double v2) {
-        //TODO
-        return -1D;
+        BigDecimal mul1 = BigDecimal.valueOf(v1);
+        BigDecimal mul2 = BigDecimal.valueOf(v2);
+        return mul1.multiply(mul2).doubleValue();
     }
 
     /**
@@ -331,8 +371,9 @@ public final class NumberUtil {
      * @return 积
      */
     public static double mul(Double v1, Double v2) {
-        //TODO
-        return -1D;
+        BigDecimal mul1 = BigDecimal.valueOf(v1);
+        BigDecimal mul2 = BigDecimal.valueOf(v2);
+        return mul1.multiply(mul2).doubleValue();
     }
 
     /**
@@ -344,8 +385,9 @@ public final class NumberUtil {
      * @return 积
      */
     public static BigDecimal mul(Number v1, Number v2) {
-        //TODO
-        return null;
+        BigDecimal mul1 =new BigDecimal(v1.toString());
+        BigDecimal mul2 =new  BigDecimal(v2.toString());
+        return mul1.multiply(mul2);
     }
 
     /**
@@ -356,8 +398,14 @@ public final class NumberUtil {
      * @return 积
      */
     public static BigDecimal mul(Number... values) {
-        //TODO
-        return null;
+        BigDecimal mul = BigDecimal.valueOf(0);
+        int len =values.length;
+        if(len!=0&&!ArrayUtil.hasNull(values)){
+            for (Number value : values) {
+                mul.multiply(new BigDecimal(value.toString()));
+            }
+        }
+        return mul;
     }
 
     /**
