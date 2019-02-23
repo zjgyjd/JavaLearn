@@ -385,8 +385,8 @@ public final class NumberUtil {
      * @return 积
      */
     public static BigDecimal mul(Number v1, Number v2) {
-        BigDecimal mul1 =new BigDecimal(v1.toString());
-        BigDecimal mul2 =new  BigDecimal(v2.toString());
+        BigDecimal mul1 = new BigDecimal(v1.toString());
+        BigDecimal mul2 = new BigDecimal(v2.toString());
         return mul1.multiply(mul2);
     }
 
@@ -399,8 +399,8 @@ public final class NumberUtil {
      */
     public static BigDecimal mul(Number... values) {
         BigDecimal mul = BigDecimal.valueOf(0);
-        int len =values.length;
-        if(len!=0&&!ArrayUtil.hasNull(values)){
+        int len = values.length;
+        if (len != 0 && !ArrayUtil.hasNull(values)) {
             for (Number value : values) {
                 mul.multiply(new BigDecimal(value.toString()));
             }
@@ -416,8 +416,9 @@ public final class NumberUtil {
      * @return 积
      */
     public static BigDecimal mul(String v1, String v2) {
-        //TODO
-        return null;
+        BigDecimal value1 = new BigDecimal(v1);
+        BigDecimal value2 = new BigDecimal(v2);
+        return value1.multiply(value2);
     }
 
     /**
@@ -428,8 +429,14 @@ public final class NumberUtil {
      * @return 积
      */
     public static BigDecimal mul(String... values) {
-        //TODO
-        return null;
+        BigDecimal mul = BigDecimal.valueOf(0);
+        int len = values.length;
+        if (len != 0 && !ArrayUtil.hasNull(values)) {
+            for (String value : values) {
+                mul.multiply(new BigDecimal(value));
+            }
+        }
+        return mul;
     }
 
     /**
@@ -440,8 +447,14 @@ public final class NumberUtil {
      * @return 积
      */
     public static BigDecimal mul(BigDecimal... values) {
-        //TODO
-        return null;
+        BigDecimal mul = BigDecimal.valueOf(0);
+        int len = values.length;
+        if (len != 0 && !ArrayUtil.hasNull(values)) {
+            for (BigDecimal value : values) {
+                mul.multiply(value);
+            }
+        }
+        return mul;
     }
 
     /**
@@ -452,8 +465,11 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(float v1, float v2) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        BigDecimal div = value1.divide(value2, 10,
+                BigDecimal.ROUND_HALF_UP);
+        return div.doubleValue();
     }
 
     /**
@@ -464,8 +480,11 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(float v1, double v2) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        BigDecimal div = value1.divide(value2, 10,
+                BigDecimal.ROUND_HALF_UP);
+        return div.doubleValue();
     }
 
     /**
@@ -476,8 +495,11 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(double v1, float v2) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        BigDecimal div = value1.divide(value2, 10,
+                BigDecimal.ROUND_HALF_UP);
+        return div.doubleValue();
     }
 
     /**
@@ -488,8 +510,11 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(double v1, double v2) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        BigDecimal div = value1.divide(value2, 10,
+                BigDecimal.ROUND_HALF_UP);
+        return div.doubleValue();
     }
 
     /**
@@ -500,8 +525,11 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(Double v1, Double v2) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        BigDecimal div = value1.divide(value2, 10,
+                BigDecimal.ROUND_HALF_UP);
+        return div.doubleValue();
     }
 
     /**
@@ -512,8 +540,11 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static BigDecimal div(Number v1, Number v2) {
-        //TODO
-        return null;
+        BigDecimal value1 = new BigDecimal(v1.toString());
+        BigDecimal value2 = new BigDecimal(v2.toString());
+        BigDecimal div = value1.divide(value2, 10,
+                BigDecimal.ROUND_HALF_UP);
+        return div;
     }
 
     /**
@@ -524,8 +555,11 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static BigDecimal div(String v1, String v2) {
-        //TODO
-        return null;
+        BigDecimal value1 = new BigDecimal(v1);
+        BigDecimal value2 = new BigDecimal(v2);
+        BigDecimal div = value1.divide(value2, 10,
+                BigDecimal.ROUND_HALF_UP);
+        return div;
     }
 
     /**
@@ -537,8 +571,11 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(float v1, float v2, int scale) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        BigDecimal div = value1.divide(value2, Math.abs(scale),
+                BigDecimal.ROUND_HALF_UP);
+        return div.doubleValue();
     }
 
     /**
@@ -550,8 +587,11 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(float v1, double v2, int scale) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        BigDecimal div = value1.divide(value2, Math.abs(scale),
+                BigDecimal.ROUND_HALF_UP);
+        return div.doubleValue();
     }
 
     /**
@@ -563,8 +603,11 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(double v1, float v2, int scale) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        BigDecimal div = value1.divide(value2, Math.abs(scale),
+                BigDecimal.ROUND_HALF_UP);
+        return div.doubleValue();
     }
 
     /**
@@ -576,8 +619,11 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(double v1, double v2, int scale) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        BigDecimal div = value1.divide(value2, Math.abs(scale),
+                BigDecimal.ROUND_HALF_UP);
+        return div.doubleValue();
     }
 
     /**
@@ -589,8 +635,11 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(Double v1, Double v2, int scale) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        BigDecimal div = value1.divide(value2, Math.abs(scale),
+                BigDecimal.ROUND_HALF_UP);
+        return div.doubleValue();
     }
 
     /**
@@ -602,8 +651,10 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static BigDecimal div(Number v1, Number v2, int scale) {
-        //TODO
-        return null;
+        BigDecimal value1 = new BigDecimal(v1.toString());
+        BigDecimal value2 = new BigDecimal(v2.toString());
+        return value1.divide(value2, Math.abs(scale),
+                BigDecimal.ROUND_HALF_UP);
     }
 
     /**
@@ -615,8 +666,10 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static BigDecimal div(String v1, String v2, int scale) {
-        //TODO
-        return null;
+        BigDecimal value1 = new BigDecimal(v1);
+        BigDecimal value2 = new BigDecimal(v2);
+        return value1.divide(value2, Math.abs(scale),
+                BigDecimal.ROUND_HALF_UP);
     }
 
     /**
@@ -629,8 +682,10 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(float v1, float v2, int scale, RoundingMode roundingMode) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        return value1.divide(value2, Math.abs(scale),
+                roundingMode).doubleValue();
     }
 
     /**
@@ -643,8 +698,10 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(float v1, double v2, int scale, RoundingMode roundingMode) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        return value1.divide(value2, Math.abs(scale),
+                roundingMode).doubleValue();
     }
 
     /**
@@ -657,8 +714,10 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(double v1, float v2, int scale, RoundingMode roundingMode) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        return value1.divide(value2, Math.abs(scale),
+                roundingMode).doubleValue();
     }
 
     /**
@@ -671,8 +730,10 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(double v1, double v2, int scale, RoundingMode roundingMode) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        return value1.divide(value2, Math.abs(scale),
+                roundingMode).doubleValue();
     }
 
     /**
@@ -685,8 +746,10 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static double div(Double v1, Double v2, int scale, RoundingMode roundingMode) {
-        //TODO
-        return -1D;
+        BigDecimal value1 = BigDecimal.valueOf(v1);
+        BigDecimal value2 = BigDecimal.valueOf(v2);
+        return value1.divide(value2, Math.abs(scale),
+                roundingMode).doubleValue();
     }
 
     /**
@@ -699,8 +762,10 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static BigDecimal div(Number v1, Number v2, int scale, RoundingMode roundingMode) {
-        //TODO
-        return null;
+        BigDecimal value1 =new BigDecimal(v1.toString());
+        BigDecimal value2 =new BigDecimal(v2.toString());
+        return value1.divide(value2, Math.abs(scale),
+                roundingMode);
     }
 
     /**
@@ -713,8 +778,10 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static BigDecimal div(String v1, String v2, int scale, RoundingMode roundingMode) {
-        //TODO
-        return null;
+        BigDecimal value1 =new BigDecimal(v1);
+        BigDecimal value2 =new BigDecimal(v2);
+        return value1.divide(value2, Math.abs(scale),
+                roundingMode);
     }
 
     /**
@@ -727,8 +794,8 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static BigDecimal div(BigDecimal v1, BigDecimal v2, int scale, RoundingMode roundingMode) {
-        //TODO
-        return null;
+        return v1.divide(v2, Math.abs(scale),
+                roundingMode);
     }
 
     // ------------------------------------------------------------------------------------------- round
