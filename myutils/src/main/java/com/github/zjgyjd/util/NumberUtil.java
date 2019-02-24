@@ -762,8 +762,8 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static BigDecimal div(Number v1, Number v2, int scale, RoundingMode roundingMode) {
-        BigDecimal value1 =new BigDecimal(v1.toString());
-        BigDecimal value2 =new BigDecimal(v2.toString());
+        BigDecimal value1 = new BigDecimal(v1.toString());
+        BigDecimal value2 = new BigDecimal(v2.toString());
         return value1.divide(value2, Math.abs(scale),
                 roundingMode);
     }
@@ -778,8 +778,8 @@ public final class NumberUtil {
      * @return 两个参数的商
      */
     public static BigDecimal div(String v1, String v2, int scale, RoundingMode roundingMode) {
-        BigDecimal value1 =new BigDecimal(v1);
-        BigDecimal value2 =new BigDecimal(v2);
+        BigDecimal value1 = new BigDecimal(v1);
+        BigDecimal value2 = new BigDecimal(v2);
         return value1.divide(value2, Math.abs(scale),
                 roundingMode);
     }
@@ -810,8 +810,8 @@ public final class NumberUtil {
      * @return 新值
      */
     public static BigDecimal round(double v, int scale) {
-        //TODO
-        return null;
+        BigDecimal value = BigDecimal.valueOf(v);
+        return value.setScale(scale, RoundingMode.HALF_UP);
     }
 
     /**
@@ -824,8 +824,8 @@ public final class NumberUtil {
      * @return 新值
      */
     public static String roundStr(double v, int scale) {
-        //TODO
-        return null;
+        BigDecimal value = BigDecimal.valueOf(v);
+        return value.setScale(scale, RoundingMode.HALF_UP).toString();
     }
 
     /**
@@ -838,8 +838,8 @@ public final class NumberUtil {
      * @return 新值
      */
     public static BigDecimal round(String numberStr, int scale) {
-        //TODO
-        return null;
+        BigDecimal value = new BigDecimal(numberStr);
+        return value.setScale(scale, RoundingMode.HALF_UP);
     }
 
     /**
@@ -852,8 +852,7 @@ public final class NumberUtil {
      * @return 新值
      */
     public static BigDecimal round(BigDecimal number, int scale) {
-        //TODO
-        return null;
+        return number.setScale(scale, RoundingMode.HALF_UP);
     }
 
     /**
@@ -866,8 +865,8 @@ public final class NumberUtil {
      * @return 新值
      */
     public static String roundStr(String numberStr, int scale) {
-        //TODO
-        return null;
+        BigDecimal value = new BigDecimal(numberStr);
+        return value.setScale(scale, RoundingMode.HALF_UP).toString();
     }
 
     /**
@@ -880,8 +879,8 @@ public final class NumberUtil {
      * @return 新值
      */
     public static BigDecimal round(double v, int scale, RoundingMode roundingMode) {
-        //TODO
-        return null;
+        BigDecimal value = BigDecimal.valueOf(v);
+        return value.setScale(scale, roundingMode);
     }
 
     /**
@@ -894,8 +893,8 @@ public final class NumberUtil {
      * @return 新值
      */
     public static String roundStr(double v, int scale, RoundingMode roundingMode) {
-        //TODO
-        return null;
+        BigDecimal value = BigDecimal.valueOf(v);
+        return value.setScale(scale, roundingMode).toString();
     }
 
     /**
@@ -908,8 +907,8 @@ public final class NumberUtil {
      * @return 新值
      */
     public static BigDecimal round(String numberStr, int scale, RoundingMode roundingMode) {
-        //TODO
-        return null;
+        BigDecimal value = new BigDecimal(numberStr);
+        return value.setScale(scale, roundingMode);
     }
 
     /**
@@ -922,8 +921,7 @@ public final class NumberUtil {
      * @return 新值
      */
     public static BigDecimal round(BigDecimal number, int scale, RoundingMode roundingMode) {
-        //TODO
-        return null;
+        return number.setScale(scale, roundingMode);
     }
 
     /**
@@ -936,8 +934,8 @@ public final class NumberUtil {
      * @return 新值
      */
     public static String roundStr(String numberStr, int scale, RoundingMode roundingMode) {
-        //TODO
-        return null;
+        BigDecimal value = new BigDecimal(numberStr);
+        return value.setScale(scale, roundingMode).toString();
     }
 
     /**
