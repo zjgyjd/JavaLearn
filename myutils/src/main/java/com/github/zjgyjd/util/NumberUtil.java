@@ -958,8 +958,56 @@ public final class NumberUtil {
      * @return 结果
      */
     public static BigDecimal roundHalfEven(Number number, int scale) {
-        //TODO
-        return null;
+        String temp = number.toString();
+        int point = temp.indexOf('.');
+        StringBuilder fine = new StringBuilder();
+        fine.append(temp);
+
+        if (point == -1) {
+            point = temp.length();
+            fine.append('.');
+        }
+
+        int len = point + scale + 2 - temp.length();
+        int done = 0;
+
+
+        if (len >= 0) {
+            for (int i = 0; i <= len; i++) {
+                fine.append('0');
+            }
+        }
+        String end = fine.toString();
+
+        fine.delete(0, end.length());
+        fine.append(end, 0, point + scale);
+
+        char flag0 = end.charAt(point + scale);
+        char flag1 = (char) (end.charAt(point + scale) + 1);
+
+
+        if (end.charAt(point + scale + 1) > '5') {
+            fine.append(flag1);
+        } else if (end.charAt(point + scale + 1) == '5') {
+            boolean s = false;
+            for (int i = point + scale + 2; i < end.length(); i++) {
+                if (end.charAt(i) != '0') {
+                    s = true;
+                }
+            }
+            if (s) {
+                fine.append(flag1);
+            } else if ((end.charAt(point + scale) - '0') % 2 != 0) {
+                fine.append(flag1);
+            } else {
+                fine.append(flag0);
+            }
+        } else {
+            fine.append(flag0);
+        }
+
+
+        return new BigDecimal(fine.toString());
     }
 
     /**
@@ -982,8 +1030,56 @@ public final class NumberUtil {
      * @return 结果
      */
     public static BigDecimal roundHalfEven(BigDecimal value, int scale) {
-        //TODO
-        return null;
+        String temp = value.toString();
+        int point = temp.indexOf('.');
+        StringBuilder fine = new StringBuilder();
+        fine.append(temp);
+
+        if (point == -1) {
+            point = temp.length();
+            fine.append('.');
+        }
+
+        int len = point + scale + 2 - temp.length();
+        int done = 0;
+
+
+        if (len >= 0) {
+            for (int i = 0; i <= len; i++) {
+                fine.append('0');
+            }
+        }
+        String end = fine.toString();
+
+        fine.delete(0, end.length());
+        fine.append(end, 0, point + scale);
+
+        char flag0 = end.charAt(point + scale);
+        char flag1 = (char) (end.charAt(point + scale) + 1);
+
+
+        if (end.charAt(point + scale + 1) > '5') {
+            fine.append(flag1);
+        } else if (end.charAt(point + scale + 1) == '5') {
+            boolean s = false;
+            for (int i = point + scale + 2; i < end.length(); i++) {
+                if (end.charAt(i) != '0') {
+                    s = true;
+                }
+            }
+            if (s) {
+                fine.append(flag1);
+            } else if ((end.charAt(point + scale) - '0') % 2 != 0) {
+                fine.append(flag1);
+            } else {
+                fine.append(flag0);
+            }
+        } else {
+            fine.append(flag0);
+        }
+
+
+        return new BigDecimal(fine.toString());
     }
 
     /**
@@ -994,8 +1090,29 @@ public final class NumberUtil {
      * @return 结果
      */
     public static BigDecimal roundDown(Number number, int scale) {
-        //TODO
-        return null;
+        String target = number.toString();
+        int point = target.indexOf('.');
+        StringBuilder fine = new StringBuilder();
+        fine.append(target);
+
+        if (point == -1) {
+            point = target.length();
+            fine.append('.');
+        }
+
+        int len = point + scale - target.length();
+        int allLen = target.length();
+
+        if (len >= 0) {
+            for (int i = 0; i <= len; i++) {
+                fine.append('0');
+                allLen++;
+            }
+        }
+
+        fine.delete(point + scale + 1, allLen);
+        String end = fine.toString();
+        return new BigDecimal(end);
     }
 
     /**
