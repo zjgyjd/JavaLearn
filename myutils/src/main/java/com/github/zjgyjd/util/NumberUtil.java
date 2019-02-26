@@ -1123,8 +1123,29 @@ public final class NumberUtil {
      * @return 结果
      */
     public static BigDecimal roundDown(BigDecimal value, int scale) {
-        //TODO
-        return null;
+        String target = value.toString();
+        int point = target.indexOf('.');
+        StringBuilder fine = new StringBuilder();
+        fine.append(target);
+
+        if (point == -1) {
+            point = target.length();
+            fine.append('.');
+        }
+
+        int len = point + scale - target.length();
+        int allLen = target.length();
+
+        if (len >= 0) {
+            for (int i = 0; i <= len; i++) {
+                fine.append('0');
+                allLen++;
+            }
+        }
+
+        fine.delete(point + scale + 1, allLen);
+        String end = fine.toString();
+        return new BigDecimal(end);
     }
 
     // ------------------------------------------------------------------------------------------- decimalFormat
@@ -1148,8 +1169,7 @@ public final class NumberUtil {
      * @return 格式化后的值
      */
     public static String decimalFormat(String pattern, double value) {
-        //TODO
-        return null;
+        return new DecimalFormat(pattern).format(value);
     }
 
     /**
@@ -1171,8 +1191,7 @@ public final class NumberUtil {
      * @return 格式化后的值
      */
     public static String decimalFormat(String pattern, long value) {
-        //TODO
-        return null;
+        return new DecimalFormat(pattern).format(value);
     }
 
     /**
@@ -1182,8 +1201,12 @@ public final class NumberUtil {
      * @return 格式化后的值
      */
     public static String decimalFormatMoney(double value) {
-        //TODO
-        return null;
+        String select = Double.toString(value);
+        int point = select.indexOf('.');
+        if (point == -1) {
+            return new DecimalFormat(",###").format(value);
+        }
+        return new DecimalFormat(",###.00").format(value);
     }
 
     /**
@@ -1194,8 +1217,17 @@ public final class NumberUtil {
      * @return 百分比
      */
     public static String formatPercent(double number, int scale) {
-        //TODO
-        return null;
+        StringBuilder pattern = new StringBuilder();
+        if (scale <= 0) {
+            pattern.append('#').append('%');
+        } else {
+            pattern.append('#').append('.');
+            for (int i = 0; i < scale; i++) {
+                pattern.append('#');
+            }
+            pattern.append('%');
+        }
+        return new DecimalFormat(pattern.toString()).format(number);
     }
 
     // ------------------------------------------------------------------------------------------- isXXX
@@ -1207,8 +1239,50 @@ public final class NumberUtil {
      * @return 是否为数字
      */
     public static boolean isNumber(String str) {
-        //TODO
-        return false;
+        int len = str.length();
+        int flag = 0;
+
+
+        int i = 0;
+        boolean isSix = false;
+        boolean iseight = false;
+        if (str.charAt(0) == '0') {
+            if (str.charAt(1) == 'x') {
+                i = 2;
+                isSix = true;
+            } else {
+                i = 1;
+                iseight = true;
+            }
+        }
+
+        while (i < len) {
+            if (str.charAt(i) == '.') {
+                if (flag == 0) {
+                    flag = 1;
+                    i++;
+                    continue;
+                } else {
+                    return false;
+                }
+            }
+            if (!Character.isDigit(str.charAt(i))) {
+                if (isSix
+                        && str.charAt(i) >= 'a'
+                        && str.charAt(i) <= 'z'
+                        && str.charAt(i) >= 'A'
+                        && str.charAt(i) <= 'Z') {
+                    continue;
+                }
+                return false;
+            } else {
+                if (iseight && str.charAt(i) >= '8') {
+                    return false;
+                }
+            }
+            i++;
+        }
+        return true;
     }
 
     /**
@@ -1219,8 +1293,12 @@ public final class NumberUtil {
      * @return 是否为整数
      */
     public static boolean isInteger(String s) {
-        //TODO
-        return false;
+        try{
+            int i = Integer.decode(s);
+            return true;
+        }catch (Exception e){
+            return false;
+        }
     }
 
     /**
@@ -1231,8 +1309,12 @@ public final class NumberUtil {
      * @return 是否为{@link Long}类型
      */
     public static boolean isLong(String s) {
-        //TODO
-        return false;
+        try{
+            long i = Long.decode(s);
+            return true;
+        }catch (Exception e){
+            return false;
+        }
     }
 
     /**
@@ -1242,8 +1324,12 @@ public final class NumberUtil {
      * @return 是否为{@link Double}类型
      */
     public static boolean isDouble(String s) {
-        //TODO
-        return false;
+        try{
+            double i = Double.valueOf(s);
+            return true;
+        }catch (Exception e){
+            return false;
+        }
     }
 
     /**
@@ -1254,8 +1340,13 @@ public final class NumberUtil {
      * @return 是否是质数
      */
     public static boolean isPrimes(int n) {
-        //TODO
-        return false;
+        int temp =(int) Math.sqrt(n);
+        for (int i = 2; i < temp; i++) {
+            if(n % i==0){
+                return false;
+            }
+        }
+        return true;
     }
 
     // ------------------------------------------------------------------------------------------- generateXXX
