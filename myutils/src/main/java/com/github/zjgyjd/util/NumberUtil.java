@@ -5,6 +5,7 @@ import java.math.BigInteger;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.Collection;
+import java.util.Random;
 
 /**
  * 数字工具类<br>
@@ -1293,10 +1294,10 @@ public final class NumberUtil {
      * @return 是否为整数
      */
     public static boolean isInteger(String s) {
-        try{
+        try {
             int i = Integer.decode(s);
             return true;
-        }catch (Exception e){
+        } catch (Exception e) {
             return false;
         }
     }
@@ -1309,10 +1310,10 @@ public final class NumberUtil {
      * @return 是否为{@link Long}类型
      */
     public static boolean isLong(String s) {
-        try{
+        try {
             long i = Long.decode(s);
             return true;
-        }catch (Exception e){
+        } catch (Exception e) {
             return false;
         }
     }
@@ -1324,10 +1325,10 @@ public final class NumberUtil {
      * @return 是否为{@link Double}类型
      */
     public static boolean isDouble(String s) {
-        try{
+        try {
             double i = Double.valueOf(s);
             return true;
-        }catch (Exception e){
+        } catch (Exception e) {
             return false;
         }
     }
@@ -1340,9 +1341,9 @@ public final class NumberUtil {
      * @return 是否是质数
      */
     public static boolean isPrimes(int n) {
-        int temp =(int) Math.sqrt(n);
+        int temp = (int) Math.sqrt(n);
         for (int i = 2; i < temp; i++) {
-            if(n % i==0){
+            if (n % i == 0) {
                 return false;
             }
         }
@@ -1360,8 +1361,27 @@ public final class NumberUtil {
      * @return 随机int数组
      */
     public static int[] generateRandomNumber(int begin, int end, int size) {
-        //TODO
-        return null;
+        if (end - begin < size) {
+            throw new RuntimeException();
+        }
+        Random temp = new Random();
+        int[] result = new int[size];
+        int i = 0;
+        while (i < size) {
+            boolean done = false;
+            int s = temp.ints(begin, end).findFirst().getAsInt();
+            for (int j = 0; j < i; j++) {
+                if (result[j] == s) {
+                    done = true;
+                    break;
+                }
+            }
+            if (!done) {
+                result[i] = s;
+                ++i;
+            }
+        }
+        return result;
     }
 
     /**
@@ -1373,8 +1393,27 @@ public final class NumberUtil {
      * @return 随机int数组
      */
     public static Integer[] generateBySet(int begin, int end, int size) {
-        //TODO
-        return null;
+        if (end - begin < size) {
+            throw new RuntimeException();
+        }
+        Random temp = new Random();
+        Integer[] result = new Integer[size];
+        int i = 0;
+        while (i < size) {
+            boolean done = false;
+            int s = temp.ints(begin, end).findFirst().getAsInt();
+            for (int j = 0; j < i; j++) {
+                if (result[j] == s) {
+                    done = true;
+                    break;
+                }
+            }
+            if (!done) {
+                result[i] = s;
+                ++i;
+            }
+        }
+        return result;
     }
 
     // ------------------------------------------------------------------------------------------- range
@@ -1386,8 +1425,11 @@ public final class NumberUtil {
      * @return 整数列表
      */
     public static int[] range(int stop) {
-        //TODO
-        return null;
+        int[] list = new int[stop + 1];
+        for (int i = 0; i < stop + 1; i++) {
+            list[i] = i;
+        }
+        return list;
     }
 
     /**
@@ -1398,8 +1440,13 @@ public final class NumberUtil {
      * @return 整数列表
      */
     public static int[] range(int start, int stop) {
-        //TODO
-        return null;
+        int len = stop - start + 1;
+        int[] list = new int[len];
+        for (int i = 0; i < len; i++) {
+            list[i] = start;
+            ++start;
+        }
+        return list;
     }
 
     /**
@@ -1411,8 +1458,14 @@ public final class NumberUtil {
      * @return 整数列表
      */
     public static int[] range(int start, int stop, int step) {
-        //TODO
-        return null;
+        int len = (stop - start + 1) / step +
+                ((stop - start + 1) % step !=0?1:0);
+        int[] list = new int[len];
+        for (int i = 0; i < len; i++) {
+            list[i] = start;
+            start+=step;
+        }
+        return list;
     }
 
     /**

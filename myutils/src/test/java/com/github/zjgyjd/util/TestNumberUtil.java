@@ -54,7 +54,7 @@ public class TestNumberUtil {
         System.out.println(NumberUtil.decimalFormat("#米/秒", c));
     }
 
-    public static void main(String[] args) {
+    public static void code3(){
         String test0 = "12.12.3";
         String test1 = "1@22.3";
         String test2 = "122.3";
@@ -66,6 +66,12 @@ public class TestNumberUtil {
         System.out.println(NumberUtil.isNumber(test2));//true
         System.out.println(NumberUtil.isNumber(test3));//true
         System.out.println(NumberUtil.isInteger(test3));//true
+    }
 
+    public static void main(String[] args) {
+        int[] test0 = NumberUtil.generateRandomNumber(8,120,5);
+        System.out.println(ArrayUtil.toString(test0));
+        int[] test1 = NumberUtil.range(5,13,2);
+        System.out.println(ArrayUtil.toString(test1));
     }
 }
