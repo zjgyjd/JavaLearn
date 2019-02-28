@@ -3,6 +3,7 @@ package com.github.zjgyjd.util;
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
+import java.util.ArrayList;
 
 public class TestNumberUtil {
 
@@ -71,7 +72,17 @@ public class TestNumberUtil {
     public static void main(String[] args) {
         int[] test0 = NumberUtil.generateRandomNumber(8,120,5);
         System.out.println(ArrayUtil.toString(test0));
+
         int[] test1 = NumberUtil.range(5,13,2);
         System.out.println(ArrayUtil.toString(test1));
+
+        ArrayList<Integer> test2 = new ArrayList<>();
+        System.out.println(NumberUtil.appendRange(3,10,test2));
+
+        System.out.println(NumberUtil.factorial(8,1));
+
+        int test3 = 20;
+        int test4 = 10;
+        System.out.println(NumberUtil.divisor(test3,test4));
     }
 }

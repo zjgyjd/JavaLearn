@@ -1459,11 +1459,11 @@ public final class NumberUtil {
      */
     public static int[] range(int start, int stop, int step) {
         int len = (stop - start + 1) / step +
-                ((stop - start + 1) % step !=0?1:0);
+                ((stop - start + 1) % step != 0 ? 1 : 0);
         int[] list = new int[len];
         for (int i = 0; i < len; i++) {
             list[i] = start;
-            start+=step;
+            start += step;
         }
         return list;
     }
@@ -1477,8 +1477,12 @@ public final class NumberUtil {
      * @return 集合
      */
     public static Collection<Integer> appendRange(int start, int stop, Collection<Integer> values) {
-        //TODO
-        return null;
+        int len = stop - start + 1;
+        for (int i = 0; i < len; i++) {
+            values.add(start);
+            ++start;
+        }
+        return values;
     }
 
     /**
@@ -1491,8 +1495,13 @@ public final class NumberUtil {
      * @return 集合
      */
     public static Collection<Integer> appendRange(int start, int stop, int step, Collection<Integer> values) {
-        //TODO
-        return null;
+        int len = (stop - start + 1) / step +
+                ((stop - start + 1) % step != 0 ? 1 : 0);
+        for (int i = 0; i < len; i++) {
+            values.add(start);
+            start += step;
+        }
+        return values;
     }
 
     // ------------------------------------------------------------------------------------------- others
@@ -1508,8 +1517,13 @@ public final class NumberUtil {
      * @return 结果
      */
     public static long factorial(long start, long end) {
-        //TODO
-        return -1L;
+        long times = start - end + 1;
+        long factor = 1;
+        for (int i = 0; i < times; i++) {
+            factor *= start;
+            --start;
+        }
+        return factor;
     }
 
     /**
@@ -1533,21 +1547,28 @@ public final class NumberUtil {
      * @return 平方根
      */
     public static long sqrt(long x) {
-        //TODO
-        return -1L;
+        return x * x;
     }
 
     /**
      * 可以用于计算双色球、大乐透注数的方法<br>
-     * 比如大乐透35选5可以这样调用processMultiple(7,5); 就是数学中的：C75=7*6/2*1
+     * 比如大乐透35选5可以这样调用processMultiple(7,2); 就是数学中的：C72=7*6/2*1
      *
      * @param selectNum 选中小球个数
      * @param minNum    最少要选中多少个小球
      * @return 注数
      */
     public static int processMultiple(int selectNum, int minNum) {
-        //TODO
-        return -1;
+        int sum1 = 1;
+        int sum2 = 1;
+        int times = minNum;
+        for (int i = 0; i < minNum; i++) {
+            sum1 *= selectNum;
+            --selectNum;
+            sum2 *= times;
+            --times;
+        }
+        return sum1 / sum2;
     }
 
     /**
@@ -1558,8 +1579,16 @@ public final class NumberUtil {
      * @return 最大公约数
      */
     public static int divisor(int m, int n) {
-        //TODO
-        return -1;
+        int temp = m;
+        if (n > m) {
+            m = n;
+            n = temp;
+        }
+        while ((temp = m % n) != 0) {
+            m = n;
+            n = temp;
+        }
+        return n;
     }
 
     /**
@@ -1570,8 +1599,7 @@ public final class NumberUtil {
      * @return 最小公倍数
      */
     public static int multiple(int m, int n) {
-        //TODO
-        return -1;
+        return m * n / divisor(m, n);
     }
 
     /**
@@ -1581,7 +1609,8 @@ public final class NumberUtil {
      * @return 二进制字符串
      */
     public static String getBinaryStr(Number number) {
-        //TODO
+        int[] digits = {0, 1};
+        char[] buff = new char[32];
         return null;
     }
 
