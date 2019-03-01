@@ -152,9 +152,9 @@ public final class IoUtil {
     public static String read(FileChannel fileChannel, Charset charset) throws IOException {
         ByteBuffer buffer = ByteBuffer.allocate(1024);
         StringBuilder stringBuilder = new StringBuilder();
-        int len = -1;
+
         fileChannel.read(charset.encode("UTE-8"));
-        while ((len = fileChannel.read(buffer)) != -1) {
+        while (fileChannel.read(buffer) != -1) {
             buffer.flip();
             stringBuilder.append(charset.decode(buffer));
             buffer.clear();

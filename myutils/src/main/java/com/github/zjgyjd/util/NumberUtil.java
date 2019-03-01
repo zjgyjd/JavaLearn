@@ -1609,9 +1609,14 @@ public final class NumberUtil {
      * @return 二进制字符串
      */
     public static String getBinaryStr(Number number) {
-        int[] digits = {0, 1};
-        char[] buff = new char[32];
-        return null;
+        String temp = number.toString();
+        int s = Integer.valueOf(temp);
+        StringBuilder test = new StringBuilder();
+        do {
+            test.append(s & 1);
+            s = s >> 1;
+        } while (s != 0);
+        return test.toString();
     }
 
     /**
@@ -1621,8 +1626,13 @@ public final class NumberUtil {
      * @return int
      */
     public static int binaryToInt(String binaryStr) {
-        //TODO
-        return -1;
+        int temp = Integer.valueOf(binaryStr);
+        StringBuilder test = new StringBuilder();
+        do {
+            test.append(temp & 1);
+            temp = temp >> 1;
+        } while (temp != 0);
+        return Integer.valueOf(test.toString());
     }
 
     /**
@@ -1632,8 +1642,13 @@ public final class NumberUtil {
      * @return long
      */
     public static long binaryToLong(String binaryStr) {
-        //TODO
-        return -1;
+        long test = Long.valueOf(binaryStr);
+        StringBuilder temp = new StringBuilder();
+        do{
+            temp.append(test&1);
+            test = test>>1;
+        }while(test != 0);
+        return Long.valueOf(temp.toString());
     }
 
     // ------------------------------------------------------------------------------------------- compare
@@ -1643,12 +1658,16 @@ public final class NumberUtil {
      *
      * @param x 第一个值
      * @param y 第二个值
-     * @return x==y返回0，x&lt;y返回-1，x&gt;y返回1
+     * @return x==y返回0，x< y返回-1，x> y返回1
      * @see Character#compare(char, char)
      */
     public static int compare(char x, char y) {
-        //TODO
-        return -1;
+      if(x > y){
+          return 1;
+      }else if(x==y){
+          return 0;
+      }
+          return -1;
     }
 
     /**
@@ -1656,11 +1675,15 @@ public final class NumberUtil {
      *
      * @param x 第一个值
      * @param y 第二个值
-     * @return x==y返回0，x&lt;y返回-1，x&gt;y返回1
+     * @return x==y返回0，x< y返回-1，x> y返回1
      * @see Double#compare(double, double)
      */
     public static int compare(double x, double y) {
-        //TODO
+        if(x > y){
+            return 1;
+        }else if(x==y){
+            return 0;
+        }
         return -1;
     }
 
@@ -1669,11 +1692,15 @@ public final class NumberUtil {
      *
      * @param x 第一个值
      * @param y 第二个值
-     * @return x==y返回0，x&lt;y返回-1，x&gt;y返回1
+     * @return x==y返回0，x< y返回-1，x> y返回1
      * @see Integer#compare(int, int)
      */
     public static int compare(int x, int y) {
-        //TODO
+        if(x > y){
+            return 1;
+        }else if(x==y){
+            return 0;
+        }
         return -1;
     }
 
@@ -1682,11 +1709,15 @@ public final class NumberUtil {
      *
      * @param x 第一个值
      * @param y 第二个值
-     * @return x==y返回0，x&lt;y返回-1，x&gt;y返回1
+     * @return x==y返回0，x< y返回-1，x> y返回1
      * @see Long#compare(long, long)
      */
     public static int compare(long x, long y) {
-        //TODO
+        if(x > y){
+            return 1;
+        }else if(x==y){
+            return 0;
+        }
         return -1;
     }
 
@@ -1695,11 +1726,15 @@ public final class NumberUtil {
      *
      * @param x 第一个值
      * @param y 第二个值
-     * @return x==y返回0，x&lt;y返回-1，x&gt;y返回1
+     * @return x==y返回0，x< y返回-1，x> y返回1
      * @see Short#compare(short, short)
      */
     public static int compare(short x, short y) {
-        //TODO
+        if(x > y){
+            return 1;
+        }else if(x==y){
+            return 0;
+        }
         return -1;
     }
 
@@ -1708,11 +1743,15 @@ public final class NumberUtil {
      *
      * @param x 第一个值
      * @param y 第二个值
-     * @return x==y返回0，x&lt;y返回-1，x&gt;y返回1
+     * @return x==y返回0，x< y 返回-1，x> y返回1
      * @see Byte#compare(byte, byte)
      */
     public static int compare(byte x, byte y) {
-        //TODO
+        if(x > y){
+            return 1;
+        }else if(x==y){
+            return 0;
+        }
         return -1;
     }
 
