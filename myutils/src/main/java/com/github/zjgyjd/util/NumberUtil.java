@@ -1644,10 +1644,10 @@ public final class NumberUtil {
     public static long binaryToLong(String binaryStr) {
         long test = Long.valueOf(binaryStr);
         StringBuilder temp = new StringBuilder();
-        do{
-            temp.append(test&1);
-            test = test>>1;
-        }while(test != 0);
+        do {
+            temp.append(test & 1);
+            test = test >> 1;
+        } while (test != 0);
         return Long.valueOf(temp.toString());
     }
 
@@ -1662,12 +1662,12 @@ public final class NumberUtil {
      * @see Character#compare(char, char)
      */
     public static int compare(char x, char y) {
-      if(x > y){
-          return 1;
-      }else if(x==y){
-          return 0;
-      }
-          return -1;
+        if (x > y) {
+            return 1;
+        } else if (x == y) {
+            return 0;
+        }
+        return -1;
     }
 
     /**
@@ -1679,9 +1679,9 @@ public final class NumberUtil {
      * @see Double#compare(double, double)
      */
     public static int compare(double x, double y) {
-        if(x > y){
+        if (x > y) {
             return 1;
-        }else if(x==y){
+        } else if (x == y) {
             return 0;
         }
         return -1;
@@ -1696,9 +1696,9 @@ public final class NumberUtil {
      * @see Integer#compare(int, int)
      */
     public static int compare(int x, int y) {
-        if(x > y){
+        if (x > y) {
             return 1;
-        }else if(x==y){
+        } else if (x == y) {
             return 0;
         }
         return -1;
@@ -1713,9 +1713,9 @@ public final class NumberUtil {
      * @see Long#compare(long, long)
      */
     public static int compare(long x, long y) {
-        if(x > y){
+        if (x > y) {
             return 1;
-        }else if(x==y){
+        } else if (x == y) {
             return 0;
         }
         return -1;
@@ -1730,9 +1730,9 @@ public final class NumberUtil {
      * @see Short#compare(short, short)
      */
     public static int compare(short x, short y) {
-        if(x > y){
+        if (x > y) {
             return 1;
-        }else if(x==y){
+        } else if (x == y) {
             return 0;
         }
         return -1;
@@ -1747,9 +1747,9 @@ public final class NumberUtil {
      * @see Byte#compare(byte, byte)
      */
     public static int compare(byte x, byte y) {
-        if(x > y){
+        if (x > y) {
             return 1;
-        }else if(x==y){
+        } else if (x == y) {
             return 0;
         }
         return -1;
@@ -1763,8 +1763,7 @@ public final class NumberUtil {
      * @return 是否大于
      */
     public static boolean isGreater(BigDecimal bigNum1, BigDecimal bigNum2) {
-        //TODO
-        return false;
+        return bigNum1.compareTo(bigNum2) > 0;
     }
 
     /**
@@ -1775,8 +1774,7 @@ public final class NumberUtil {
      * @return 是否大于等于
      */
     public static boolean isGreaterOrEqual(BigDecimal bigNum1, BigDecimal bigNum2) {
-        //TODO
-        return false;
+        return bigNum1.compareTo(bigNum2) >= 0;
     }
 
     /**
@@ -1787,8 +1785,7 @@ public final class NumberUtil {
      * @return 是否小于
      */
     public static boolean isLess(BigDecimal bigNum1, BigDecimal bigNum2) {
-        //TODO
-        return false;
+        return bigNum1.compareTo(bigNum2) < 0;
     }
 
     /**
@@ -1799,8 +1796,7 @@ public final class NumberUtil {
      * @return 是否小于等于
      */
     public static boolean isLessOrEqual(BigDecimal bigNum1, BigDecimal bigNum2) {
-        //TODO
-        return false;
+        return bigNum1.compareTo(bigNum2) <= 0;
     }
 
     /**
@@ -1813,8 +1809,7 @@ public final class NumberUtil {
      * @return 是否相等
      */
     public static boolean equals(BigDecimal bigNum1, BigDecimal bigNum2) {
-        //TODO
-        return false;
+        return bigNum1.compareTo(bigNum2) == 0;
     }
 
     /**
@@ -1827,8 +1822,15 @@ public final class NumberUtil {
      * @see CharUtil#equals(char, char, boolean)
      */
     public static boolean equals(char c1, char c2, boolean ignoreCase) {
-        //TODO
-        return false;
+        if (ignoreCase) {
+            if (c1 >= 'a' && c1 <= 'z') {
+                c1 = (char) (c1 + 32);
+            }
+            if (c2 >= 'a' && c2 <= 'z') {
+                c2 = (char) (c2 + 32);
+            }
+        }
+        return c1 == c2;
     }
 
     /**
@@ -1841,8 +1843,7 @@ public final class NumberUtil {
      */
     @SuppressWarnings("unchecked")
     public static <T extends Comparable<? super T>> T min(T... numberArray) {
-        //TODO
-        return null;
+        return ArrayUtil.min(numberArray);
     }
 
     /**
@@ -1853,8 +1854,7 @@ public final class NumberUtil {
      * @see ArrayUtil#min(long...)
      */
     public static long min(long... numberArray) {
-        //TODO
-        return 1L;
+        return ArrayUtil.min(numberArray);
     }
 
     /**
@@ -1863,11 +1863,9 @@ public final class NumberUtil {
      * @param numberArray 数字数组
      * @return 最小值
      * @see ArrayUtil#min(int...)
-     * @since 4.0.7
      */
     public static int min(int... numberArray) {
-        //TODO
-        return 1;
+        return ArrayUtil.min(numberArray);
     }
 
     /**
@@ -1876,11 +1874,9 @@ public final class NumberUtil {
      * @param numberArray 数字数组
      * @return 最小值
      * @see ArrayUtil#min(short...)
-     * @since 4.0.7
      */
     public static short min(short... numberArray) {
-        //TODO
-        return 1;
+        return ArrayUtil.min(numberArray);
     }
 
     /**
@@ -1889,11 +1885,9 @@ public final class NumberUtil {
      * @param numberArray 数字数组
      * @return 最小值
      * @see ArrayUtil#min(double...)
-     * @since 4.0.7
      */
     public static double min(double... numberArray) {
-        //TODO
-        return 1D;
+        return ArrayUtil.min(numberArray);
     }
 
     /**
@@ -1904,8 +1898,7 @@ public final class NumberUtil {
      * @see ArrayUtil#min(float...)
      */
     public static float min(float... numberArray) {
-        //TODO
-        return 1F;
+        return ArrayUtil.min(numberArray);
     }
 
     /**
@@ -1918,8 +1911,7 @@ public final class NumberUtil {
      */
     @SuppressWarnings("unchecked")
     public static <T extends Comparable<? super T>> T max(T... numberArray) {
-        //TODO
-        return null;
+        return ArrayUtil.max(numberArray);
     }
 
     /**
@@ -1930,8 +1922,7 @@ public final class NumberUtil {
      * @see ArrayUtil#max(long...)
      */
     public static long max(long... numberArray) {
-        //TODO
-        return -1;
+        return ArrayUtil.max(numberArray);
     }
 
     /**
@@ -1942,8 +1933,7 @@ public final class NumberUtil {
      * @see ArrayUtil#max(int...)
      */
     public static int max(int... numberArray) {
-        //TODO
-        return -1;
+        return ArrayUtil.max(numberArray);
     }
 
     /**
@@ -1954,8 +1944,7 @@ public final class NumberUtil {
      * @see ArrayUtil#max(short...)
      */
     public static short max(short... numberArray) {
-        //TODO
-        return -1;
+        return ArrayUtil.max(numberArray);
     }
 
     /**
@@ -1966,8 +1955,7 @@ public final class NumberUtil {
      * @see ArrayUtil#max(double...)
      */
     public static double max(double... numberArray) {
-        //TODO
-        return -1;
+        return ArrayUtil.max(numberArray);
     }
 
     /**
@@ -1978,8 +1966,7 @@ public final class NumberUtil {
      * @see ArrayUtil#max(float...)
      */
     public static float max(float... numberArray) {
-        //TODO
-        return -1;
+        return ArrayUtil.max(numberArray);
     }
 
     /**
@@ -1991,8 +1978,22 @@ public final class NumberUtil {
      * @return A String.
      */
     public static String toStr(Number number, String defaultValue) {
-        //TODO
-        return null;
+        if (number == null) {
+            return defaultValue;
+        }
+
+        String temp = number.toString();
+        int point = temp.indexOf('.');
+        int index = temp.length() - 1;
+        if (point >= 0) {
+            for (int i = temp.length() - 1; i >= point; i--) {
+                if (temp.charAt(i) != '0') {
+                    index = i + 1;
+                    break;
+                }
+            }
+        }
+        return temp.substring(0, index);
     }
 
     /**
@@ -2003,22 +2004,23 @@ public final class NumberUtil {
      * @return A String.
      */
     public static String toStr(Number number) {
-        //TODO
-        return null;
+        return toStr(number, "0");
     }
 
 
     /**
      * 检查是否为有效的数字<br>
      * 检查Double和Float是否为无限大，或者Not a Number<br>
-     * 非数字类型和Null将返回true
+     * 非数字类型和Null将返回false
      *
      * @param obj 被检查类型
-     * @return 检查结果，非数字类型和Null将返回true
+     * @return 检查结果，非数字类型和Null将返回false
      */
     public static boolean isValidIfNumber(Object obj) {
-        //TODO
-        return false;
+        if (obj == null) {
+            return false;
+        }
+        return obj instanceof Number;
     }
 
     /**
@@ -2039,8 +2041,7 @@ public final class NumberUtil {
      * @return {@link BigDecimal}
      */
     public static BigDecimal toBigDecimal(String number) {
-        //TODO
-        return null;
+        return new BigDecimal(number);
     }
 
 
@@ -2052,8 +2053,7 @@ public final class NumberUtil {
      * @return 分成了几份
      */
     public static int count(int total, int part) {
-        //TODO
-        return -1;
+        return total / part + total % part != 0 ? 1 : 0;
     }
 
     /**
@@ -2063,8 +2063,10 @@ public final class NumberUtil {
      * @return {@link BigDecimal}参数为空时返回0的值
      */
     public static BigDecimal null2Zero(BigDecimal decimal) {
-        //TODO
-        return null;
+        if (decimal == null) {
+            return BigDecimal.valueOf(0);
+        }
+        return decimal;
     }
 
     /**
@@ -2074,8 +2076,10 @@ public final class NumberUtil {
      * @return 1或非0值
      */
     public static int zero2One(int value) {
-        //TODO
-        return -1;
+        if (value == 0) {
+            return 1;
+        }
+        return value;
     }
 
     /**
@@ -2086,8 +2090,11 @@ public final class NumberUtil {
      * @return {@link BigInteger}
      */
     public static BigInteger newBigInteger(String str) {
-        //TODO
-        return null;
+        try {
+            return new BigInteger(str);
+        } catch (NumberFormatException e) {
+            return null;
+        }
     }
 
     /**
@@ -2099,7 +2106,9 @@ public final class NumberUtil {
      * @return 是否相邻
      */
     public static boolean isBeside(long number1, long number2) {
-        //TODO
+        if (number1 - number2 == 1 || number1 - number2 == -1) {
+            return true;
+        }
         return false;
     }
 
@@ -2112,8 +2121,11 @@ public final class NumberUtil {
      * @return 是否相邻
      */
     public static boolean isBeside(int number1, int number2) {
-        //TODO
+        if (number1 - number2 == 1 || number1 - number2 == -1) {
+            return true;
+        }
         return false;
+
     }
 
     /**
@@ -2125,8 +2137,7 @@ public final class NumberUtil {
      * @return 每份的个数
      */
     public static int partValue(int total, int partCount) {
-        //TODO
-        return -1;
+        return total / partCount + total % partCount != 1 ? 1 : 0;
     }
 
     /**
@@ -2139,8 +2150,11 @@ public final class NumberUtil {
      * @return 每份的个数
      */
     public static int partValue(int total, int partCount, boolean isPlusOneWhenHasRem) {
-        //TODO
-        return -1;
+        if(isPlusOneWhenHasRem){
+            return total / partCount + total % partCount != 1 ? 1 : 0;
+        }else{
+            return total / partCount;
+        }
     }
 
     /**
@@ -2151,8 +2165,9 @@ public final class NumberUtil {
      * @return 幂的积
      */
     public static BigDecimal pow(Number number, int n) {
-        //TODO
-        return null;
+        BigDecimal temp = new BigDecimal(number.toString());
+
+         return temp.pow(n);
     }
 
     /**
@@ -2163,8 +2178,7 @@ public final class NumberUtil {
      * @return 幂的积
      */
     public static BigDecimal pow(BigDecimal number, int n) {
-        //TODO
-        return null;
+        return number.pow(n);
     }
 
     /**
@@ -2184,8 +2198,13 @@ public final class NumberUtil {
      * @throws NumberFormatException 数字格式异常
      */
     public static int parseInt(String number) throws NumberFormatException {
-        //TODO
-        return -1;
+        int point = number.indexOf('.');
+       if(point > 0){
+          number = number.substring(0,point);
+       }else if(point == 0){
+           number = "0";
+       }
+       return Integer.decode(number);
     }
 
     /**
@@ -2202,8 +2221,13 @@ public final class NumberUtil {
      * @return long
      */
     public static long parseLong(String number) {
-        //TODO
-        return -1;
+        int point = number.indexOf('.');
+        if(point > 0){
+            number = number.substring(0,point);
+        }else if(point == 0){
+            number = "0";
+        }
+        return Long.decode(number);
     }
 
     /**
@@ -2213,8 +2237,7 @@ public final class NumberUtil {
      * @return Number对象
      */
     public static Number parseNumber(String numberStr) {
-        //TODO
-        return -1;
+        return new BigDecimal(numberStr);
     }
 
 

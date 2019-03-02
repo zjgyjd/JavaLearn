@@ -113,13 +113,13 @@ public class TestArrayUtil {
         System.out.println(ArrayUtil.toString(ArrayUtil.toArray(test)));
     }
 
-    public static void main(String[] args) {
+    public static void code7(){
         byte[] test0 = {1,2,3,5,8,6,8};
         byte[] end0 =  ArrayUtil.remove(test0,4);
         long[] test1 = {1,2,3,4,5,6,7,8,9};
         long[] end1 = ArrayUtil.removeEle(test1,10);
         byte[] test5 = new byte[0];
-       Object array = Array.newInstance(Object.class,0);
+        Object array = Array.newInstance(Object.class,0);
         System.out.println(array.getClass().isArray());
 
         Byte[] test2 = {1,2,3,4,56,8,9,10};
@@ -137,6 +137,23 @@ public class TestArrayUtil {
 
         System.out.println(ArrayUtil.toString(end0));
         System.out.println(ArrayUtil.toString(test0));
+    }
+
+    public static boolean isArray0(Object obj){
+        if(obj == null){
+            return false;
+        }
+        return obj instanceof Array;
+    }
+
+    public static void main(String[] args) {
+        Object test1 = new Integer[]{1,2,3,4,5,6,8,9};
+        Object test2 = 5;
+
+        System.out.println(isArray0(test1));//false
+        System.out.println(isArray0(test2));//false
+        System.out.println(ArrayUtil.isArray(test1));//true
+        System.out.println(ArrayUtil.isArray(test2));//false
     }
 }
 

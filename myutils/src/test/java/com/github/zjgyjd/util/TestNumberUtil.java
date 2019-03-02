@@ -69,7 +69,7 @@ public class TestNumberUtil {
         System.out.println(NumberUtil.isInteger(test3));//true
     }
 
-    public static void main(String[] args) {
+    public static void code4(){
         int[] test0 = NumberUtil.generateRandomNumber(8,120,5);
         System.out.println(ArrayUtil.toString(test0));
 
@@ -84,5 +84,18 @@ public class TestNumberUtil {
         int test3 = 20;
         int test4 = 10;
         System.out.println(NumberUtil.divisor(test3,test4));
+    }
+
+    public static void main(String[] args) {
+        double test0 = 0.23500;
+        Object s = test0;
+        String test1 = "546";
+
+        System.out.println(BigDecimal.valueOf(0.1));
+
+        System.out.println(NumberUtil.toStr(test0));
+        System.out.println(NumberUtil.isValidIfNumber(test0));//true
+        System.out.println(NumberUtil.isValidIfNumber(test1));//false
+        System.out.println(s instanceof Number);//true
     }
 }
