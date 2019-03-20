@@ -11,8 +11,12 @@ public class MulThreadClient {
     public static void main(String[] args) {
         try {
             Socket client = new Socket("127.0.0.1", 6666);
+            modeMap();
 
             if (start(client)) {
+                /*操作模块*/
+                modePrint(client);
+                /*聊天模块线程*/
                 new ReadData(client).start();
                 new WriteData(client).start();
             }
@@ -21,6 +25,23 @@ public class MulThreadClient {
             e.printStackTrace();
         }
     }
+
+    private static void modePrint(Socket client) throws IOException {
+        InputStream message = client.getInputStream();
+        Scanner scanner1 = new Scanner(message);
+        modeMap();
+    }
+
+    private static void modeMap() {
+        System.out.println("+--__-------------------------------------------------+");
+        System.out.println("| |00|       用户名:                                  |");
+        System.out.println("|/|ZZ|\\                                             |");
+        System.out.println("| |__|                                              |");
+        System.out.println("|/|\\/|\\                                             |");
+
+
+    }
+
 
     private static boolean start(Socket client) {
         try {
