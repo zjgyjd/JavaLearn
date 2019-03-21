@@ -25,6 +25,8 @@ public class HanderClient implements Runnable {
 
     private final Socket client;
 
+    private int friends = 0;
+
     static {
         try (FileReader reader = new FileReader(USERDATA_UP);
              BufferedReader in = new BufferedReader(reader)
@@ -33,6 +35,7 @@ public class HanderClient implements Runnable {
             while ((lineTXT = in.readLine()) != null) {
                 String[] temp = lineTXT.split(":");
                 USERDATA_DOWN.put(temp[0], temp[1]);
+
             }
 
         } catch (IOException e) {
