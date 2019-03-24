@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ttMaven:war">
+    <output-path>$PROJECT_DIR$/../ttMaven/target</output-path>
+    <root id="archive" name="ttMaven-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="ttMaven:war exploded" />
+    </root>
+  </artifact>
+</component>
