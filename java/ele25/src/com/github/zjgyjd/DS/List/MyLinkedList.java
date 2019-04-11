@@ -122,4 +122,116 @@ public class MyLinkedList {
             cur.next = node;
         }
     }
+
+    /**
+     * 链表的逆置
+     */
+    Node Reverse(Node head) {
+        if (head == null) {
+            return null;
+        }
+        Node cur = null;
+        Node per = null;
+        while (head != null) {
+            per = cur;
+            cur = head;
+            head = head.next;
+            cur.next = per;
+        }
+        return cur;
+    }
+
+    /**
+     * 合并有序链表
+     */
+    Node Merge(Node listA, Node listB) {
+        Node nB = listA;
+        Node nA = listB;
+
+        if (nA == null) return nB;
+        if (nB == null) return nA;
+
+        Node result = null;
+        Node last = result;
+
+        while (nA != null && nB != null) {
+            if (nA.value <= nB.value) {
+                if (result == null) {
+                    result = nA;
+                    last = nA;
+                } else {
+                    last.next = nA;
+                    last = nA;
+                }
+                nA = nA.next;
+            } else {
+                if (result == null) {
+                    result = nB;
+                    last = nB;
+                } else {
+                    last.next = nB;
+                    last = nB;
+                }
+                nB = nB.next;
+            }
+        }
+        if (nA == null) {
+            last.next = nB;
+        } else {
+            last.next = nA;
+        }
+        return result;
+    }
+
+    RNode CopyRandomList(RNode head) {
+        if (head == null) {
+            return null;
+        }
+
+        //1.
+        RNode cur = head;
+        while (cur != null) {
+            RNode newNode = new RNode(cur.val);
+            newNode.next = cur.next;
+            cur.next = newNode;
+            cur = cur.next.next;
+        }
+
+        //2.
+        cur = head;
+        while (cur != null) {
+            if (cur.random == null) {
+                cur.next.random = null;
+            }else{
+                cur.next.random = cur.random.next;
+            }
+
+            cur = cur.next.next;
+        }
+
+        //3.
+        RNode result = head.next;
+        cur = head;
+        while (cur != null) {
+            RNode newNode = cur.next;
+            if(cur.next.next == null){
+                cur.next = null;
+            }else{
+            cur.next = cur.next.next;
+            newNode.next = newNode.next.next;
+            }
+            cur = cur.next;
+        }
+        return result;
+    }
+}
+
+class RNode {
+    int val;
+    RNode next;
+    RNode random;
+
+    public RNode(int val) {
+        this.val = val;
+    }
 }
