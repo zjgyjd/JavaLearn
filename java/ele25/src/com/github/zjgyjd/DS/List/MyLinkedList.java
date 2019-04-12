@@ -4,17 +4,17 @@ public class MyLinkedList {
     /**
      * 链表中的一个节点
      */
-    public class Node {
+    public class ListNode {
         public int value;    //要保存的数据
-        public Node next;   //下一个节点线索
+        public ListNode next;   //下一个节点线索
 
-        public Node(int value) {
+        public ListNode(int value) {
             this.value = value;
             this.next = null;
         }
     }
 
-    private Node head;      //报存第一个节点引用,如果一个没有就等于null
+    private ListNode head;      //报存第一个节点引用,如果一个没有就等于null
 
     MyLinkedList() {
         this.head = null;
@@ -28,9 +28,9 @@ public class MyLinkedList {
      * @param item
      */
     void pushFront(int item) {
-        Node node = new Node(item);
-        node.next = this.head;
-        this.head = node;
+        ListNode listNode = new ListNode(item);
+        listNode.next = this.head;
+        this.head = listNode;
     }
 
     //O(1)
@@ -52,8 +52,8 @@ public class MyLinkedList {
      *
      * @return
      */
-    private Node getLast() {
-        Node cur = this.head;
+    private ListNode getLast() {
+        ListNode cur = this.head;
         while (cur.next != null) {
             cur = cur.next;
         }
@@ -67,14 +67,14 @@ public class MyLinkedList {
      * @param item
      */
     public void pushBack(int item) {
-        Node node = new Node(item);
+        ListNode listNode = new ListNode(item);
         if (this.head == null) {
-            this.head = node;
+            this.head = listNode;
         } else {
             //找到当前最后一个
-            Node cur = getLast();
+            ListNode cur = getLast();
             //插入值
-            cur.next = node;
+            cur.next = listNode;
         }
     }
 
@@ -83,8 +83,8 @@ public class MyLinkedList {
      *
      * @return
      */
-    private Node getLastLast() {
-        Node cur = this.head;
+    private ListNode getLastLast() {
+        ListNode cur = this.head;
         while (cur.next.next != null) {
             cur = cur.next;
         }
@@ -104,34 +104,34 @@ public class MyLinkedList {
         if (this.head.next == null) {
             this.head = null;
         } else {
-            Node cur = this.getLastLast();
+            ListNode cur = this.getLastLast();
             cur.next = null;
         }
     }
 
-    public void pushFront(Node node) {
-        node.next = head;
-        this.head = node;
+    public void pushFront(ListNode listNode) {
+        listNode.next = head;
+        this.head = listNode;
     }
 
-    public void pushBack(Node node) {
+    public void pushBack(ListNode listNode) {
         if (this.head == null) {
-            this.head = node;
+            this.head = listNode;
         } else {
-            Node cur = getLast();
-            cur.next = node;
+            ListNode cur = getLast();
+            cur.next = listNode;
         }
     }
 
     /**
      * 链表的逆置
      */
-    Node Reverse(Node head) {
+    ListNode Reverse(ListNode head) {
         if (head == null) {
             return null;
         }
-        Node cur = null;
-        Node per = null;
+        ListNode cur = null;
+        ListNode per = null;
         while (head != null) {
             per = cur;
             cur = head;
@@ -144,15 +144,15 @@ public class MyLinkedList {
     /**
      * 合并有序链表
      */
-    Node Merge(Node listA, Node listB) {
-        Node nB = listA;
-        Node nA = listB;
+    ListNode Merge(ListNode listA, ListNode listB) {
+        ListNode nB = listA;
+        ListNode nA = listB;
 
         if (nA == null) return nB;
         if (nB == null) return nA;
 
-        Node result = null;
-        Node last = result;
+        ListNode result = null;
+        ListNode last = result;
 
         while (nA != null && nB != null) {
             if (nA.value <= nB.value) {
@@ -183,6 +183,84 @@ public class MyLinkedList {
         return result;
     }
 
+    /**
+     * 找到x,将小的放到右边大的在左边,不改变原来顺序
+     *
+     * @param pHead
+     * @param x
+     * @return
+     */
+    public ListNode partition(ListNode pHead, int x) {
+        ListNode cur = pHead;
+        ListNode small = null;
+        ListNode big = null;
+        ListNode last1 = null;
+        ListNode last2 = null;
+
+        while (cur != null) {
+            ListNode next = cur.next;
+            cur.next = null;
+            if (cur.value < x) {
+                if (small == null) {
+                    small = cur;
+                } else {
+                    last1.next = cur;
+                }
+                last1 = cur;
+            } else {
+                if (big == null) {
+                    big = cur;
+                } else {
+                    last2.next = cur;
+                }
+                last2 = cur;
+            }
+            cur = next;
+        }
+
+        if (small == null) {
+            return big;
+        } else {
+            last1.next = big;
+
+        }
+        return small;
+    }
+
+    /**
+     * 链表有序,请删除该链表中重复的结点
+     *
+     * @return
+     * @parm pHead
+     */
+
+    public ListNode deleteDuplication(ListNode pHead) {
+        if (pHead == null) return null;
+        if (pHead.next == null) return pHead;
+        ListNode cur;
+
+        //对重复结点的处理
+        if (pHead.value == pHead.next.value) {
+            cur = pHead.next.next;
+            //遍历到没有重复结点的位置
+            while (cur != null && cur.value == pHead.value) {
+                cur = cur.next;
+            }
+            return deleteDuplication(cur);
+        }
+
+        //该结点不重复，递归下一个结点
+        cur = pHead.next;
+        pHead.next = deleteDuplication(cur);
+        return pHead;
+    }
+
+    /**
+     * 带随机引用的链表深度复制
+     *
+     * @param head
+     * @return
+     */
     RNode CopyRandomList(RNode head) {
         if (head == null) {
             return null;
@@ -202,7 +280,7 @@ public class MyLinkedList {
         while (cur != null) {
             if (cur.random == null) {
                 cur.next.random = null;
-            }else{
+            } else {
                 cur.next.random = cur.random.next;
             }
 
@@ -214,11 +292,11 @@ public class MyLinkedList {
         cur = head;
         while (cur != null) {
             RNode newNode = cur.next;
-            if(cur.next.next == null){
+            if (cur.next.next == null) {
                 cur.next = null;
-            }else{
-            cur.next = cur.next.next;
-            newNode.next = newNode.next.next;
+            } else {
+                cur.next = cur.next.next;
+                newNode.next = newNode.next.next;
             }
             cur = cur.next;
         }
