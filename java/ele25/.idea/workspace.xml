@@ -51,7 +51,7 @@
     <session id="-586755750">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="65" />
+          <entry key="project.closed" value="68" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="2" />
@@ -65,7 +65,7 @@
           <entry key="project.open.time.34" value="9" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.36" value="3" />
-          <entry key="project.open.time.37" value="3" />
+          <entry key="project.open.time.37" value="4" />
           <entry key="project.open.time.38" value="6" />
           <entry key="project.open.time.39" value="6" />
           <entry key="project.open.time.4" value="2" />
@@ -73,20 +73,20 @@
           <entry key="project.open.time.41" value="2" />
           <entry key="project.open.time.42" value="1" />
           <entry key="project.open.time.43" value="2" />
-          <entry key="project.open.time.44" value="2" />
+          <entry key="project.open.time.44" value="3" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="68" />
+          <entry key="project.opened" value="70" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="class" value="1" />
           <entry key="iml" value="2" />
-          <entry key="java" value="418" />
+          <entry key="java" value="420" />
           <entry key="properties" value="1" />
         </counts>
       </usages-collector>
@@ -94,35 +94,29 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="418" />
+          <entry key="JAVA" value="420" />
           <entry key="Properties" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="60764" />
+          <entry key="java" value="61548" />
           <entry key="properties" value="64" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="60764" />
+          <entry key="JAVA" value="61548" />
           <entry key="Properties" value="64" />
         </counts>
       </usages-collector>
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="ele25" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/MyQueueByStack.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="153" column="57" selection-start-line="153" selection-start-column="57" selection-end-line="153" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Fibonacci.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -133,10 +127,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Control.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+            <state relative-caret-position="115">
+              <caret line="183" column="35" lean-forward="true" selection-start-line="183" selection-start-column="35" selection-end-line="183" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -145,10 +139,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Exceptions/ArrayUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/TreeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="50">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+            <state relative-caret-position="230">
+              <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+              <folding>
+                <element signature="e#152#153#0" expanded="true" />
+                <element signature="e#186#187#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Control.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="367">
+              <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -165,7 +175,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ListRemoveElement.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="314">
+            <state relative-caret-position="460">
               <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
             </state>
           </provider>
@@ -278,11 +288,11 @@
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/MyStack/MyStackTest.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/MyStack/MyQueue.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/TreeNode.java" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Valid.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/MyQueueByStack.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Exceptions/ArrayUtils.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Control.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Solution.java" />
       </list>
     </option>
   </component>
@@ -298,7 +308,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-228" />
     <option name="y" value="4" />
     <option name="width" value="1346" />
@@ -312,7 +322,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -337,6 +346,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
               <item name="DS" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ele25" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ele25" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
+              <item name="DS" type="462c0819:PsiDirectoryNode" />
+              <item name="BinaryTree" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ele25" type="b2602c69:ProjectViewProjectNode" />
@@ -429,13 +446,14 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="TreeNode&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap.TreeNode&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap&#10;invokeShift&#9;PSI&#9;JAVA://jdk.nashorn.internal.runtime.ListAdapter#invokeShift&#10;AssertionError&#9;PSI&#9;JAVA://java.lang.AssertionError&#10;Integer&#9;PSI&#9;JAVA://java.lang.Integer" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555506257906" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555595022930" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -467,7 +485,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Control">
+  <component name="RunManager" selected="Application.Solution">
     <configuration name="Control" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.Control" />
       <module name="ele25" />
@@ -542,10 +560,10 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Solution" />
         <item itemvalue="Application.Control" />
         <item itemvalue="Application.MyQueueByStack" />
         <item itemvalue="Application.Valid" />
-        <item itemvalue="Application.Solution" />
         <item itemvalue="Application.StackToQueue" />
       </list>
     </recent_temporary>
@@ -629,12 +647,14 @@
       <workItem from="1555068023254" duration="1622000" />
       <workItem from="1555119358706" duration="10378000" />
       <workItem from="1555330446605" duration="4886000" />
-      <workItem from="1555475010353" duration="13557000" />
+      <workItem from="1555475010353" duration="14160000" />
+      <workItem from="1555562116096" duration="1188000" />
+      <workItem from="1555583667869" duration="8715000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="436831000" />
+    <option name="totallyTimeSpent" value="447337000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -647,18 +667,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.10772834" visible="true" weight="0.33131617" />
-      <window_info id="Structure" order="1" sideWeight="0.89227164" side_tool="true" weight="0.22617246" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.17540984" visible="true" weight="0.34114978" />
+      <window_info id="Structure" order="1" sideWeight="0.82459015" side_tool="true" weight="0.34114978" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Favorites" order="4" sideWeight="0.82459015" side_tool="true" weight="0.34114978" />
       <window_info id="Image Layers" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49848714" visible="true" weight="0.2409836" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49848714" weight="0.2409836" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39508197" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -910,27 +929,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/TreeNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2760">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Valid.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1058">
           <caret line="47" column="50" selection-start-line="47" selection-start-column="50" selection-end-line="47" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -938,6 +940,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="207">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/MyQueueByStack.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3381">
+          <caret line="153" column="57" selection-start-line="153" selection-start-column="57" selection-end-line="153" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Exceptions/ArrayUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/bubble_Sort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ListRemoveElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="460">
+          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -965,31 +995,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/MyQueueByStack.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Control.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="153" column="57" selection-start-line="153" selection-start-column="57" selection-end-line="153" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Exceptions/ArrayUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ListRemoveElement.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="314">
-          <caret line="20" column="5" selection-start-line="20" selection-start-column="5" selection-end-line="20" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/bubble_Sort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="41" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        <state relative-caret-position="367">
+          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1000,10 +1012,21 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Control.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/TreeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+        <state relative-caret-position="230">
+          <caret line="10" column="1" lean-forward="true" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+          <folding>
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#186#187#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Solution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="183" column="35" lean-forward="true" selection-start-line="183" selection-start-column="35" selection-end-line="183" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,6 +1,9 @@
 package com.github.zjgyjd.DS.BinaryTree;
 
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Solution {
     private static int count = 0;
 
@@ -103,26 +106,100 @@ public class Solution {
             return root;
         } else {
             TreeNode result = find(root.left, v);
-           if( result == null){
-               return find(root.right,v);
-           }else {
-               return result;
-           }
+            if (result == null) {
+                return find(root.right, v);
+            } else {
+                return result;
+            }
         }
     }
 
-    public static boolean isMirror(TreeNode p,TreeNode q){
-        if(p== null&&q==null){
+    public static boolean isMirror(TreeNode p, TreeNode q) {
+        if (p == null && q == null) {
             return true;
         }
-        if(p== null||q==null){
+        if (p == null || q == null) {
             return false;
         }
 
-        return p.value ==q.value
-                &&isMirror(p.left,q.right)
-                &&isMirror(p.left,q.right);
+        return p.value == q.value
+                && isMirror(p.left, q.right)
+                && isMirror(p.left, q.right);
     }
+
+
+    /**
+     * 通过带空节点的前序遍历创建树
+     *
+     * @param preOrder
+     * @return
+     */
+    public static Rv createTree(char[] preOrder) {
+        if (preOrder.length == 0) {
+            return new Rv(null, 0);
+        }
+        char rootT = preOrder[0];
+        if (rootT == '#') {
+            return new Rv(null, 1);
+        }
+        TreeNode root = new TreeNode(rootT);
+
+        //2.创建左边节点
+        int length = preOrder.length;
+        char[] leftArray = Arrays.copyOfRange(preOrder, 1, length);
+        Rv left = createTree(leftArray);
+        //3.创建右边节点
+        char[] rightArray = Arrays.copyOfRange(preOrder, 1 + left.used, length);
+        Rv right = createTree(rightArray);
+        //4.将左右连续起来
+        root.left = left.node;
+        root.right = right.node;
+        return new Rv(root, left.used + right.used + 1);
+    }
+
+    /**
+     * 用于返回两个返回值
+     */
+    public static class Rv {
+        TreeNode node;
+        int used;
+
+        public Rv(TreeNode node, int used) {
+            this.node = node;
+            this.used = used;
+        }
+    }
+
+    public int find(int[] s,int v){
+        for(int i = 0;i< s.length;i++){
+            if(s[i] == v){
+                return i;
+            }
+        }
+        return -1;
+    }
+    public TreeNode buildTree(int[] inorder, int[] postorder) {
+        int lengthI = inorder.length;
+        int lengthP = postorder.length;
+        if(lengthI==0&&lengthP==0){
+            return null;
+        }
+
+        int root = postorder[lengthP-1];
+        int leftCode = find(inorder,root);
+        TreeNode rootP = new TreeNode(root);
+
+        int[] forInorderL = Arrays.copyOfRange(inorder,0,leftCode);
+        int[] forPostorderL = Arrays.copyOfRange(postorder,0,leftCode);
+        rootP.left = buildTree(forInorderL,forPostorderL);
+
+        int[] forInorderR = Arrays.copyOfRange(inorder,leftCode +1,leftCode);
+        int[] forPostorderR = Arrays.copyOfRange(postorder,leftCode,lengthP - 1);
+        rootP.right = buildTree(forInorderR,forPostorderR);
+        return rootP;
+    }
+
+
 
     public static void main(String[] args) {
         int[] test0 = {1, 2, 4, 7, 3, 5, 6, 8};
