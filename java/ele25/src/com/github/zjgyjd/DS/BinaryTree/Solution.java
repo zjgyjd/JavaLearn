@@ -3,6 +3,9 @@ package com.github.zjgyjd.DS.BinaryTree;
 
 import java.lang.reflect.Array;
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.LinkedList;
+import java.util.List;
 
 public class Solution {
     private static int count = 0;
@@ -170,35 +173,67 @@ public class Solution {
         }
     }
 
-    public int find(int[] s,int v){
-        for(int i = 0;i< s.length;i++){
-            if(s[i] == v){
+    public int find(int[] s, int v) {
+        for (int i = 0; i < s.length; i++) {
+            if (s[i] == v) {
                 return i;
             }
         }
         return -1;
     }
+
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         int lengthI = inorder.length;
         int lengthP = postorder.length;
-        if(lengthI==0&&lengthP==0){
+        if (lengthI == 0 && lengthP == 0) {
             return null;
         }
 
-        int root = postorder[lengthP-1];
-        int leftCode = find(inorder,root);
+        int root = postorder[lengthP - 1];
+        int leftCode = find(inorder, root);
         TreeNode rootP = new TreeNode(root);
 
-        int[] forInorderL = Arrays.copyOfRange(inorder,0,leftCode);
-        int[] forPostorderL = Arrays.copyOfRange(postorder,0,leftCode);
-        rootP.left = buildTree(forInorderL,forPostorderL);
+        int[] forInorderL = Arrays.copyOfRange(inorder, 0, leftCode);
+        int[] forPostorderL = Arrays.copyOfRange(postorder, 0, leftCode);
+        rootP.left = buildTree(forInorderL, forPostorderL);
 
-        int[] forInorderR = Arrays.copyOfRange(inorder,leftCode +1,leftCode);
-        int[] forPostorderR = Arrays.copyOfRange(postorder,leftCode,lengthP - 1);
-        rootP.right = buildTree(forInorderR,forPostorderR);
+        int[] forInorderR = Arrays.copyOfRange(inorder, leftCode + 1, leftCode);
+        int[] forPostorderR = Arrays.copyOfRange(postorder, leftCode, lengthP - 1);
+        rootP.right = buildTree(forInorderR, forPostorderR);
         return rootP;
     }
 
+    List<List<Integer>> listAll = new LinkedList<>();
+
+    public List<List<Integer>> levelOrderBottom(TreeNode root) {
+        //dfs
+        traverse(root, 0);
+        //List反转
+        Collections.reverse(listAll);
+        return listAll;
+    }
+
+    public void traverse(TreeNode root, int level) {
+
+        if (root == null) {
+            return;
+        }
+
+        //每个level一个List
+        //若第一次访问该层次，则new一个新的list并加入listAll
+        if (listAll.size() <= level) {
+            List<Integer> listLevel = new LinkedList<>();
+            listAll.add(listLevel);
+        }
+        //得到当前level的list
+        List temp = listAll.get(level);
+        //添加当前node的值到该list
+        temp.add(root.value);
+        //递归左子树
+        traverse(root.left, level + 1);
+        //递归右子树
+        traverse(root.right, level + 1);
+    }
 
 
     public static void main(String[] args) {
