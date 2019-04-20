@@ -2,10 +2,7 @@ package com.github.zjgyjd.DS.BinaryTree;
 
 
 import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 public class Solution {
     private static int count = 0;
@@ -45,7 +42,7 @@ public class Solution {
             if (in[i] == pre[pStart]) {//pre[pStart] 永远指向当前根节点
                 //找到中序遍历根所在位置
 
-                root.left = reConstructBinaryTree(pre, pStart + 1,//根向后左移动
+                root.left = reConstructBinaryTree(pre, pStart + 1,//根向后移动
                         pStart + i - inStart,//找到前序根的左半边
                         in, inStart, i - 1);//找到中序根的左半边
 
@@ -236,7 +233,43 @@ public class Solution {
     }
 
 
+    /**
+     * 非递归写法的前序
+     */
+    public static void perOrdeNoR(TreeNode root){
+        TreeNode cur = root;
+        Stack<TreeNode> stack = new Stack<>();
+
+        while (!stack.empty() || cur != null){
+            while(cur != null){
+            System.out.println(cur.value);
+            stack.push(cur);
+            cur = cur.left;
+            }
+            TreeNode pop = stack.pop();//此处改为peek造成第三次相遇,写出后序,有三种情况
+            /*
+            一开始定义一个TreeNode last = null;
+            TreeNode peek = stack.peek();
+            后序:1.右边为空,直接打印出栈
+                if(peek.right == null){
+                    打印stack.pop();
+                    标记last = peek;
+                }
+                2.标记最后一个打印的节点,如果当前的右边为该节点,说明为第三次经过,打印出栈
+                else if(peek.right == last){
+                    打印stack.pop();
+                    标记last = peek;
+                }
+                3.除去两种情况说明并不是第三次经过,还需要往右走 即 cur = peek.right
+             */
+            //若在此处打印就是中序,相当于第二次遇见时打印
+            cur = pop.right;
+        }
+    }
+
     public static void main(String[] args) {
+        List<Integer> s = new LinkedList<>();
+
         int[] test0 = {1, 2, 4, 7, 3, 5, 6, 8};
         int[] test1 = {4, 2, 7, 1, 5, 3, 8, 6};
         TreeNode test2 = reConstructBinaryTree(test0, test1);
