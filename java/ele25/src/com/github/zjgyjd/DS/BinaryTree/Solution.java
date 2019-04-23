@@ -129,6 +129,39 @@ public class Solution {
 
 
     /**
+     * 判别一棵树是不是另一棵树的子树
+     */
+    //对s按层逐个和t对比，它们的值相同时，比较二者是否相同的树，如果是则返回true，否则继续对比
+    public boolean isSubtree(TreeNode s, TreeNode t) {
+        Queue<TreeNode> q = new LinkedList<>();
+        q.offer(s);
+        while (q.peek() != null) {
+            TreeNode r = q.poll();
+            if (r.value == t.value) {
+                if (isSame(r, t)) return true;
+            }
+            if (r.left != null) q.offer(r.left);
+            if (r.right != null) q.offer(r.right);
+        }
+        return false;
+    }
+
+    //对比两棵树是否相同，和判断两棵树是否对称很相似，需满足：
+    //1.根值相同
+    //2.每棵树的左子树与另一棵树的左子树相同
+    //3.每棵树的右子树与另一棵树的右子树相同
+    private boolean isSame(TreeNode t1, TreeNode t2) {
+        if (t1 == null && t2 == null) return true;
+        if (t1 != null && t2 != null) {
+            return (t1.value == t2.value)
+                    && isSame(t1.left, t2.left)
+                    && isSame(t1.right, t2.right);
+        }
+        return false;
+    }
+
+
+    /**
      * 通过带空节点的前序遍历创建树
      *
      * @param preOrder
@@ -236,15 +269,15 @@ public class Solution {
     /**
      * 非递归写法的前序
      */
-    public static void perOrdeNoR(TreeNode root){
+    public static void perOrdeNoR(TreeNode root) {
         TreeNode cur = root;
         Stack<TreeNode> stack = new Stack<>();
 
-        while (!stack.empty() || cur != null){
-            while(cur != null){
-            System.out.println(cur.value);
-            stack.push(cur);
-            cur = cur.left;
+        while (!stack.empty() || cur != null) {
+            while (cur != null) {
+                System.out.println(cur.value);
+                stack.push(cur);
+                cur = cur.left;
             }
             TreeNode pop = stack.pop();//此处改为peek造成第三次相遇,写出后序,有三种情况
             /*
