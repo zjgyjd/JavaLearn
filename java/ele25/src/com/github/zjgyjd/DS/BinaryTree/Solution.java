@@ -146,6 +146,23 @@ public class Solution {
         return false;
     }
 
+    /**
+     * 给定一个二叉树，判断它是否是高度平衡的二叉树。
+     * 一个二叉树每个节点 的左右两个子树的高度差的绝对值不超过1。
+     *
+     * @return
+     */
+    public boolean isBalanced(TreeNode root) {
+        if (root == null) {
+            return true;
+        }
+        int height = height(root.right) - height(root.left);
+        if (height > 1 || height < -1) {
+            return false;
+        }
+        return isBalanced(root.left) && isBalanced(root.right);
+    }
+
     //对比两棵树是否相同，和判断两棵树是否对称很相似，需满足：
     //1.根值相同
     //2.每棵树的左子树与另一棵树的左子树相同
