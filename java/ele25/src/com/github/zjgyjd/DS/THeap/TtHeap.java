@@ -64,7 +64,7 @@ public class TtHeap {
         int t = array[p];
         array[p] = array[index];
         array[index] = t;
-
+        heapify(array,index,size);
         adjustUp(array,size,p);
     }
 
