@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27d73038-8d91-42c1-b8de-e739e1ed927f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../catchcsdn/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../catchcsdn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../catchcsdn/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../catchcsdn/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../catchcsdn/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../catchcsdn/src/main/java/com/zjgyjd/CatchBlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../catchcsdn/src/main/java/com/zjgyjd/CatchBlog.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../ttMaven/target/" />
@@ -167,7 +168,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="2" />
     <option name="y" value="1" />
     <option name="width" value="1346" />
@@ -278,7 +279,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556551010998" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556554943918" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ttMaven" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -389,7 +390,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
