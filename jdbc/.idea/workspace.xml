@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27d73038-8d91-42c1-b8de-e739e1ed927f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../catchcsdn/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../catchcsdn/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../catchcsdn/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../catchcsdn/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../catchcsdn/src/main/java/com/zjgyjd/CatchBlog.java" beforeDir="false" afterPath="$PROJECT_DIR$/../catchcsdn/src/main/java/com/zjgyjd/CatchBlog.java" afterDir="false" />
-    </list>
+    <list default="true" id="27d73038-8d91-42c1-b8de-e739e1ed927f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/../ttMaven/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -32,7 +28,7 @@
     <session id="1706917008">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.20" value="1" />
           <entry key="project.open.time.32" value="1" />
           <entry key="project.open.time.34" value="1" />
@@ -77,8 +73,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/zjgyjd/Testjdbc.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+            <state relative-caret-position="414">
+              <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -279,7 +275,7 @@
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556554943918" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556555014962" />
     <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../ttMaven" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -373,12 +369,12 @@
       <workItem from="1553525608982" duration="1992000" />
       <workItem from="1553592856130" duration="1793000" />
       <workItem from="1553695506359" duration="2735000" />
-      <workItem from="1556543628741" duration="2174000" />
+      <workItem from="1556543628741" duration="2177000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20358000" />
+    <option name="totallyTimeSpent" value="20361000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -391,7 +387,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2647504" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -537,8 +532,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/zjgyjd/Testjdbc.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="67" selection-start-line="23" selection-start-column="67" selection-end-line="23" selection-end-column="67" />
+        <state relative-caret-position="414">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
