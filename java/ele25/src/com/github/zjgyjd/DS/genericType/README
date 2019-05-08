@@ -1,0 +1,8 @@
+泛型(Generic Type)
+1.泛型类型
+    class GT<E>{
+
+    }
+
+2.泛型方法
+    public <E> void method(E e){}
