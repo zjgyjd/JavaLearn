@@ -70,7 +70,11 @@ public class SeqList<E> implements List<E> {
 
     @Override
     public Object[] toArray() {
-        return new Object[0];
+        Object[] temp = new Object[this.size];
+        for (int i = 0; i < size; i++) {
+            temp[i] = this.array[i];
+        }
+        return temp;
     }
 
     @Override
@@ -86,12 +90,18 @@ public class SeqList<E> implements List<E> {
 
     @Override
     public boolean remove(Object o) {
+        for (int i = 0; i < size; i++) {
+            if(array[i].equals(o)){
+                remove(i);
+                return true;
+            }
+        }
         return false;
     }
 
     @Override
     public boolean containsAll(Collection<?> c) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     @Override
@@ -101,17 +111,17 @@ public class SeqList<E> implements List<E> {
 
     @Override
     public boolean addAll(Collection<? extends E> c) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public boolean addAll(int index, Collection<? extends E> c) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public boolean removeAll(Collection<?> c) {
-        return false;
+        throw new UnsupportedOperationException();
     }
 
     @Override
@@ -148,6 +158,9 @@ public class SeqList<E> implements List<E> {
 
     @Override
     public E remove(int index) {
+        if(size==0||index>=size){
+            throw new ArrayIndexOutOfBoundsException();
+        }
         E oldValue = array[index];
         for (int i = index; i < size - 1; i++) {
             array[i] = array[i + 1];
@@ -178,12 +191,13 @@ public class SeqList<E> implements List<E> {
 
     @Override
     public ListIterator<E> listIterator() {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     @Override
     public ListIterator<E> listIterator(int index) {
-        return null;
+
+        throw new UnsupportedOperationException();
     }
 
     @Override

@@ -6,3 +6,4 @@
 
 2.泛型方法
     public <E> void method(E e){}
+
