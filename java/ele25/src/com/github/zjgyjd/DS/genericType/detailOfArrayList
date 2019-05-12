@@ -1,0 +1,322 @@
+   /*< p >可调整数组实现的列表接口。实现了所有可选列表操作，并允许所有元素，包括null。除了实现List接口外，
+     这个类提供了操作数组大小的方法内部用于存储列表。(这个类大致相当于向量，但它是不同步的
+   */
+
+   /*< p >size、isEmpty、get、set、iterator和listIterator操作在常量时间内运行。加法运算在平摊常数时间内进行，
+      也就是说，添加n个元素需要O(n)时间。所有其他操作都在线性时间内运行(粗略地说)。常数因子比较低
+      对于LinkedList实现。
+   */
+
+   /*< p >每个ArrayList实例都有一个容量。容量是用于存储列表中元素的数组的大小。它总是至少和列表大小一样大。当元
+     素被添加到ArrayList中时，它的容量会自动增长。除了添加一个元素具有恒定的平摊时间代价之外，没有指定增长策
+    略的细节。
+   */
+
+   /*< p >在使用ensureCapacity操作添加大量元素之前，应用程序可以增加ArrayList实例的容量。这可能会减少增量重新
+      分配的数量。
+   */
+
+  /*< p >注意，这个实现不是同步的。
+    如果多个线程同时访问一个ArrayList实例，并且至少有一个线程从结构上修改了这个列表，那么它必须在外部同步。
+    (结构修改是添加或删除一个或多个元素，或显式调整支持数组的大小的任何操作;仅仅设置元素的值并不是结构上的
+    修改。)这通常是通过对一些自然封装列表的对象进行同步来实现的。
+  */
+
+  /*< p >如果不存在这样的对象，则应该使用{@link Collections.synchronizedList Collections“包装”列表。
+    synchronizedList}方法。这最好在创建时完成，以防止对列表的意外非同步访问:
+    List =集合。synchronizedList(new ArrayList (…));
+  */
+
+  /*< p > < name = "快速失败" >
+    *该类的{@link #iterator() iterator}和返回的迭代器
+    {@link #listIterator(int) listIterator}方法是fail-fast:
+    如果在创建迭代器之后，以任何方式在结构上修改列表，除了通过迭代器自己的{@link ListIterator#remove()}
+    或{@link ListIterator#add(Object) add}方法之外，迭代器将抛出{@link ConcurrentModificationException}。
+    因此，在面对并发修改时，迭代器会快速而干净地失败，而不是在将来某个不确定的时间冒着任意的、不确定的行为的风险。
+  */
+
+  /*注意，不能保证迭代器的快速故障行为，因为一般来说，在存在非同步并发修改的情况下，不可能做出任何严格的保证。故障
+    快速迭代器以最大的努力抛出{@code ConcurrentModificationException}。因此，编写一个依赖于这个异常来判断其正确性
+    的程序是错误的:迭代器的快速故障行为应该只用于检测bug
+  */
+
+  /*这个类是
+    < a href = {@docRoot}/../technotes/guides/collections/index.html"> Java集合框架。
+  */
+
+   * @author  Josh Bloch   Java 集合框架创办人，Joshua Bloch 领导了很多 Java 平台特性的设计和实现，包括 JDK 5.0 语言
+                           增强以及屡获殊荣的 Java 集合框架。2004年6月他离开了SUN公司并成为 Google 的首席 Java 架构师。此外他还因为
+                           《Effective Java》一书获得著名的 Jolt 大奖。
+
+   * @author  Neal Gafter  import java.util.Random;                         /*Neal Gafter 曾经出的题*/
+                           // Rhymes,押韵
+                           public class Rhymes {
+                               private static Random rnd = new Random();
+                               /**
+                                * 以下程序的输出有可能是什么?
+                                * (a) Pain ,Gain 或者 Main (根据各个随机数)
+                                * (b) Pain 或者 Main (根据随机数)
+                                * (c) Main (总是这个)
+                                * (d) 以上都不对       /*选D三个错
+                                                            1.  显然,在 switch语句中没有 break
+                                                            2. nextInt(2) 返回的结果只有 0  或者 1
+                                                            3. new new StringBuffer('P')只能将char
+                                                            转换为int当容量大小*/
+                                */
+                               public static void main(String[] args) {
+                                   StringBuffer word = null;
+                                   switch (rnd.nextInt(2)) {
+                                   case 1: word = new StringBuffer('P');
+                                   case 2: word = new StringBuffer('G');
+                                   default: word = new StringBuffer('M');
+                                   }
+                                   word.append('a');
+                                   word.append('i');
+                                   word.append('n');
+                                   System.out.println(word);
+                               }
+                           }
+   * @see     Collection            在写java时,有时需要写注释,而为了更好的描述,需要引用和参考其他代码.为了让阅读者更好
+   * @see     List                  的体验,javadoc中支持链接跳转,这就需要用到注解@see.
+   * @see     LinkedList
+   * @see     Vector
+   * @since   1.2                   开始版本
+   public class ArrayList<E> extends AbstractList<E>      /*为什么类要首先声明cloneable标记接口，然后重写clone()方法？
+     implements List<E>, RandomAccess, Cloneable, java.io.Serializable    因为不声明cloneable调用clone()方法会抛出
+   {       /*RandomAccess用来表明其支持快速（通常是固定时间）随机访问。*/    CloneNotSupportedException异常 */
+        private static final long serialVersionUID = 8683452581122892189L;/*序列化的版本号*/
+        /*
+        默认初始容量
+        */
+        private static final int DEFAULT_CAPACITY = 10;
+        /*
+        用于共享空的实例
+        */
+        private static final Object[] EMPTY_ELEMENTDATA = {};
+        /*
+       共享空数组实例，用于默认大小的空实例。我们将其与EMPTY_ELEMENTDATA区分开来，以了解添加第一个元素时应该膨胀多少。
+        */
+        private static final Object[] DEFAULTCAPACITY_EMPTY_ELEMENTDATA = {};
+        /*
+        存储ArrayList元素的数组缓冲区。ArrayList的容量是这个数组缓冲区的长度。当添加第一个元素时，任何带有
+        elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA的空ArrayList都将扩展为DEFAULT_CAPACITY。
+        */
+        transient Object[] elementData;/*非私有以简化嵌套类访问*/
+        /*
+        ArrayList的大小(它包含的元素的数量)。注释中的@serial生成序列化供参考的文档界面
+        */
+        private int size;
+        /*
+        构造具有指定初始容量的空列表。
+        @param  initialCapacity 列表的初始容量
+        @throws IllegalArgumentException 如果指定的初始容量为负
+        */
+        public ArrayList(int initialCapacity) {
+                if (initialCapacity > 0) {
+                    this.elementData = new Object[initialCapacity];
+                } else if (initialCapacity == 0) {
+                    this.elementData = EMPTY_ELEMENTDATA;
+                } else {
+                    throw new IllegalArgumentException("Illegal Capacity: "+
+                                                       initialCapacity);
+                }
+        }
+        /*
+        构造一个初始容量为10的空列表。
+        */
+        public ArrayList() {
+                this.elementData = DEFAULTCAPACITY_EMPTY_ELEMENTDATA;
+        }
+        /*
+        构造包含指定集合的元素的列表，按集合的迭代器返回元素的顺序排列。
+        @param c 要将其元素放入此列表的集合
+        @throws NullPointerException 如果指定的集合为空
+        */
+        public ArrayList(Collection<? extends E> c) {
+                elementData = c.toArray();
+                if ((size = elementData.length) != 0) {
+                    // c.toArray 可能 (不正确) 不是 return Object[] (可能是泛型通过反射不是Object.class)
+                    if (elementData.getClass() != Object[].class)
+                        elementData = Arrays.copyOf(elementData, size, Object[].class);
+                } else {
+                    // 替换为 EMPTY_ELEMENTDATA.
+                    this.elementData = EMPTY_ELEMENTDATA;
+                }
+        }
+        /*
+        将这个ArrayList实例的容量缩减为列表的当前大小。应用程序可以使用此操作最小化ArrayList实例的存储。
+        */
+        public void trimToSize() {
+                modCount++;//通过这个数检测是否被更改,然后提供一个fail-fast迭代器
+                if (size < elementData.length) {
+                    elementData = (size == 0)
+                      ? EMPTY_ELEMENTDATA
+                      : Arrays.copyOf(elementData, size);
+                }
+        }
+        /*
+        增加这个ArrayList实例的容量(如果需要的话)，以确保它至少可以容纳由最小容量参数指定的元素数量。
+        @param   minCapacity 所需的最小容量
+        */
+        public void ensureCapacity(int minCapacity) {
+                int minExpand = (elementData != DEFAULTCAPACITY_EMPTY_ELEMENTDATA)
+                 // 任何长度只要不是默认空数组,都需要重新调整
+                 ? 0
+                 // 如果是默认数组,那么长度就是默认大小
+                 : DEFAULT_CAPACITY;
+
+                if (minCapacity > minExpand) {
+                    ensureExplicitCapacity(minCapacity);
+                }
+        }
+        /*
+        计算容量:查看数组是否是默认空数组,是的话找到默认和最小容量中大的那个,如果不是直接返回最小容量
+        */
+        private static int calculateCapacity(Object[] elementData, int minCapacity) {
+                if (elementData == DEFAULTCAPACITY_EMPTY_ELEMENTDATA) {
+                    return Math.max(DEFAULT_CAPACITY, minCapacity);
+                }
+                return minCapacity;
+        }
+        private void ensureCapacityInternal(int minCapacity) {
+                ensureExplicitCapacity(calculateCapacity(elementData, minCapacity));
+        }
+        /*
+        扩容:
+        */
+        private void ensureExplicitCapacity(int minCapacity) {
+                modCount++;
+
+                // 防止溢出代码
+                if (minCapacity - elementData.length > 0)
+                    grow(minCapacity);
+        }
+        /*
+        要分配的数组的最大大小。一些vm在数组中保留一些头信息。试图分配更大的数
+        组可能会导致OutOfMemoryError:请求的数组大小超过VM限制
+        */
+        private static final int MAX_ARRAY_SIZE = Integer.MAX_VALUE - 8;
+        /*
+        增加容量，以确保它至少可以容纳由最小容量参数指定的元素数量。
+        @param minCapacity 所需的最小容量
+        */
+        private void grow(int minCapacity) {
+                // 会溢出的代码
+                int oldCapacity = elementData.length;
+                int newCapacity = oldCapacity + (oldCapacity >> 1);
+                if (newCapacity - minCapacity < 0)
+                    newCapacity = minCapacity;
+                if (newCapacity - MAX_ARRAY_SIZE > 0)
+                    newCapacity = hugeCapacity(minCapacity);
+                // minCapacity 通常接近 size, so this is a win:
+                elementData = Arrays.copyOf(elementData, newCapacity);
+        }
+        /*
+        如果新容量大于提前设置的最大数组长度,则查看最小容量和最大数组长度对比,如果最小容量大则返回Integer.MAX_VALUE
+        否则返回提前设置的最大数组长度
+        */
+        private static int hugeCapacity(int minCapacity) {
+                if (minCapacity < 0) // overflow
+                    throw new OutOfMemoryError();
+                return (minCapacity > MAX_ARRAY_SIZE) ?
+                    Integer.MAX_VALUE :
+                    MAX_ARRAY_SIZE;
+        }
+        /*
+        返回此列表中的元素数量。
+        @return 列表中元素的数量
+        */
+        public int size() {
+                return size;
+        }
+        /*
+        如果没有元素返回true
+        */
+        public boolean isEmpty() {
+                return size == 0;
+        }
+        /*
+        如果存在返回true,元素可以是null
+        */
+        public boolean contains(Object o) {
+                return indexOf(o) >= 0;
+        }
+        /*
+        根据下标寻找,找不到返回-1,元素可以是null
+        */
+        public int indexOf(Object o) {
+                if (o == null) {
+                    for (int i = 0; i < size; i++)
+                        if (elementData[i]==null)
+                            return i;
+                } else {
+                    for (int i = 0; i < size; i++)
+                        if (o.equals(elementData[i]))
+                            return i;
+                }
+                return -1;
+        }
+        /*
+        返回此列表中指定元素的最后一次出现的索引，如果该列表不包含该元素，则返回-1,元素可以是null
+        */
+        public int lastIndexOf(Object o) {
+                if (o == null) {
+                    for (int i = size-1; i >= 0; i--)
+                        if (elementData[i]==null)
+                            return i;
+                } else {
+                    for (int i = size-1; i >= 0; i--)
+                        if (o.equals(elementData[i]))
+                            return i;
+                }
+                return -1;
+        }
+        /*
+        返回此ArrayList实例的浅拷贝。(元素本身不会被复制。)
+        @return 这个ArrayList实例的克隆
+        */
+        public Object clone() {
+                try {
+                    ArrayList<?> v = (ArrayList<?>) super.clone();
+                    v.elementData = Arrays.copyOf(elementData, size);
+                    v.modCount = 0;
+                    return v;
+                } catch (CloneNotSupportedException e) {
+                    // 这个不应该发生,因为实现了Cloneable接口
+                    throw new InternalError(e);
+                }
+        }
+        /*
+        返回一个数组，该数组按适当的顺序(从第一个元素到最后一个元素)包含列表中的所有元素。
+        返回的数组将是“安全的”，因为这个列表不维护对它的引用。(换句话说，这个方法必须分
+        配一个新的数组)。因此，调用者可以自由地修改返回的数组。
+        此方法充当基于数组和基于集合的api之间的桥梁。
+         @return 一个数组，按适当的顺序包含列表中的所有元素
+        */
+        public Object[] toArray() {
+                return Arrays.copyOf(elementData, size);
+        }
+        /*
+        返回一个数组，该数组包含列表中按正确顺序排列的所有元素(从第一个元素到最后一个元素);
+        返回数组的运行时类型是指定数组的运行时类型。如果列表符合指定的数组，则返回其中的列表。
+        否则，将使用指定数组的运行时类型和该列表的大小分配一个新数组。
+
+        如果列表符合指定的数组，并且有多余的空间(即，数组中的元素比列表中的元素多)，集合结束后
+        数组中的元素被设置为null。(当调用者知道列表不包含任何空元素时，这对于确定列表 的长度非常有用。)
+        @param a 如果列表的元素足够大，则将其存储到其中的数组;否则，将为此目的分配相同运行时类型的新数组。
+        @return 包含列表元素的数组
+        @throws ArrayStoreException 如果指定数组的运行时类型不是此列表中每个元素的运行时类型的超类型
+        @throws NullPointerException 如果指定的数组为空
+        */
+        @SuppressWarnings("unchecked")//警告压制
+            public <T> T[] toArray(T[] a) {
+                if (a.length < size)
+                    //为a的运行时类型，但为我的内容创建一个新数组:
+                    return (T[]) Arrays.copyOf(elementData, size, a.getClass());
+                System.arraycopy(elementData, 0, a, 0, size);
+                if (a.length > size)
+                    a[size] = null;
+                return a;
+            }
+   }
+
