@@ -7,7 +7,7 @@
           <element id="module-output" name="module_webDome" />
         </element>
       </element>
-      <element id="javaee-facet-resources" facet="module_webDome/web/webapp" />
+      <element id="javaee-facet-resources" facet="module_webDome/web/Web" />
     </root>
   </artifact>
 </component>
