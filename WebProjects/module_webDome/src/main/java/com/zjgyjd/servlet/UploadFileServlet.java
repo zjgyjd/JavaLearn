@@ -9,12 +9,27 @@ import javax.servlet.http.Part;
 import java.io.*;
 
 @MultipartConfig
-        (location = "D:/upload", maxFileSize = 1048576, maxRequestSize = 5242880, fileSizeThreshold = 5242880)
+        (location = "D:\\JavaLearn\\WebProjects\\out\\artifacts\\module_webDome_war_exploded\\upload",
+                maxFileSize = 1048576, maxRequestSize = 5242880, fileSizeThreshold = 5242880)
 public class UploadFileServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
-        this.doPost(request, response);
+        response.setContentType("text/html; charset = UTF-8");
+        PrintWriter writer = response.getWriter();
+        writer.append("<html>\n" +
+                "<head>\n" +
+                "<meta charset=\"UTF-8\">\n" +
+                "<title>上传的案例</title>\n" +
+                "</head>\n" +
+                "<body>\n" +
+                "<h1>上传图片</h1>\n" +
+                "<form method=\"post\" action='/upload' enctype=\"multipart/form-data\">\n" +
+                "<input type=\"file\" name=\"filename\">\n" +
+                "<input type=\"submit\" value=\"上传文件\">\n" +
+                "</form>\n" +
+                "</body>\n" +
+                "</html>");
     }
 
     @Override
@@ -33,6 +48,7 @@ public class UploadFileServlet extends HttpServlet {
             InputStream is = part.getInputStream();
 
             String appUploadPath = request.getServletContext().getRealPath("/upload");
+            System.out.println(appUploadPath);
             File file = new File(appUploadPath, part.getSubmittedFileName());
             if (!file.getParentFile().exists()) {
                 file.getParentFile().mkdirs();

@@ -309,7 +309,7 @@
         @throws NullPointerException 如果指定的数组为空
         */
         @SuppressWarnings("unchecked")//警告压制
-            public <T> T[] toArray(T[] a) {
+        public <T> T[] toArray(T[] a) {
                 if (a.length < size)
                     //为a的运行时类型，但为我的内容创建一个新数组:
                     return (T[]) Arrays.copyOf(elementData, size, a.getClass());
@@ -317,6 +317,297 @@
                 if (a.length > size)
                     a[size] = null;
                 return a;
+        }
+        //位置访问操作
+        @SuppressWarnings("unchecked")
+        E elementData(int index) {
+                    return (E) elementData[index];
+        }
+        / * *
+        *返回列表中指定位置的元素。
+        *
+        * @param索引要返回的元素的索引
+        * @返回列表中指定位置的元素
+        *抛出IndexOutOfBoundsException {@inheritDoc}
+        */
+        public E get(int index) {
+           rangeCheck(index);
+
+           return elementData(index);
+        }
+        / * *
+        *将列表中指定位置的元素替换为
+        *指定的元素。
+        *
+        * @param索引要替换的元素的索引
+        * @param元素将存储在指定位置
+        * @返回前面指定位置的元素
+        *抛出IndexOutOfBoundsException {@inheritDoc}
+        */
+        public E set(int index, E element) {
+            rangeCheck(index);
+
+            E oldValue = elementData(index);
+            elementData[index] = element;
+            return oldValue;
+        }
+        / * *
+        *将指定的元素追加到此列表的末尾。
+        *
+        * @param e元素添加到此列表
+        * @return true(由{@link Collection#add}指定)
+        */
+        public boolean add(E e) {
+            ensureCapacityInternal(size + 1);  // 增加 modCount!!
+            elementData[size++] = e;
+            return true;
+        }
+        / * *
+        *将指定元素插入其中的指定位置
+        *列表。将当前位于该位置(如果有)的元素移动，并
+        *右边的任何后续元素(将一个元素添加到它们的索引中)。
+        *
+        * @param index 要插入指定元素的索引
+        *@param element 要插入的元素
+        *抛出IndexOutOfBoundsException {@inheritDoc}
+        */
+        public void add(int index, E element) {
+            rangeCheckForAdd(index);
+
+            ensureCapacityInternal(size + 1);  // 增加 modCount!!
+            System.arraycopy(elementData, index, elementData, index + 1,
+                             size - index);
+            elementData[index] = element;
+            size++;
+        }
+        / * *
+        *移除列表中指定位置的元素。
+        *将任何后续元素向左移动(从它们的元素中减去一个)
+        *指数)。
+        *
+        * @param索引要删除的元素的索引
+        * @返回从列表中删除的元素
+        *抛出IndexOutOfBoundsException {@inheritDoc}
+        */
+        public E remove(int index) {
+            rangeCheck(index);
+
+            modCount++;
+            E oldValue = elementData(index);
+
+            int numMoved = size - index - 1;
+            if (numMoved > 0)
+                System.arraycopy(elementData, index+1, elementData, index,
+                                 numMoved);
+            elementData[--size] = null; // clear to let GC do its work
+
+            return oldValue;
+        }
+        / * *
+        *从列表中移除指定元素的第一个出现项，
+        如果有的话。如果列表不包含该元素，则它包含
+        *不变。更正式地说，删除索引最低的元素
+        * i这样
+        * < tt > (o == null  ?得到(i) == null :, o.equals (get (i))) < / tt >
+        *(如果存在这样的元素)。返回true如果这个列表
+        *包含指定的元素(或相等，如果此列表
+        *由于调用而更改)。
+        *
+        * @param o元素，如果存在，将从该列表中删除
+        * @return true如果这个列表包含指定的元素
+        */
+        public boolean remove(Object o) {
+            if (o == null) {
+                for (int index = 0; index < size; index++)
+                    if (elementData[index] == null) {
+                        fastRemove(index);
+                        return true;
+                                         }
+            } else {
+                for (int index = 0; index < size; index++)
+                    if (o.equals(elementData[index])) {
+                        fastRemove(index);
+                        return true;
+                    }
             }
+            return false;
+        }
+        / *
+        *私有删除跳过边界检查和跳过
+        *返回删除的值。
+        */
+        private void fastRemove(int index) {
+            modCount++;
+            int numMoved = size - index - 1;
+            if (numMoved > 0)
+                System.arraycopy(elementData, index+1, elementData, index,
+                                 numMoved);
+            elementData[--size] = null; // 清除，让GC完成它的工作
+        }
+        / * *
+        *从列表中删除所有元素。
+        *返回后为空。
+        */
+        public void clear() {
+            modCount++;
+
+            // clear to let GC do its work
+            for (int i = 0; i < size; i++)
+                elementData[i] = null;
+
+            size = 0;
+        }
+        / * *
+        *将指定集合中的所有元素追加到
+        *此列表，按其返回的顺序排列
+        指定集合的迭代器。这个操作的行为是
+        *如果在操作期间修改了指定的集合，则未定义
+        *正在进行中。(这意味着这个调用的行为是
+        *如果指定的集合是这个列表，则未定义
+        *列表非空。)
+        *
+        * @param c集合，其中包含要添加到此列表中的元素
+        * @return true如果这个列表由于调用而更改
+        * @如果指定的集合为null，则抛出NullPointerException
+        */
+        public boolean addAll(Collection<? extends E> c) {
+            Object[] a = c.toArray();
+            int numNew = a.length;
+            ensureCapacityInternal(size + numNew);  // 增加 modCount
+            System.arraycopy(a, 0, elementData, size, numNew);
+            size += numNew;
+            return numNew != 0;
+        }
+        / * *
+        从指定位置开始，将指定集合中的所有元素插入此列表。将当前位于该位置的元素(如果有的话)和随后的任何元素移动到右边(增加它们的索引)。新元素将按指定集合的迭代器返回它们的顺序出现在列表中。
+        从指定集合中插入第一个元素的索引
+        @param c 包含要添加到此列表中的元素的集合
+        @return true 如果这个列表因为调用而改变
+        @throws IndexOutOfBoundsException {@inheritDoc}
+        如果指定的集合为空，@抛出NullPointerException
+        */
+        public boolean addAll(int index, Collection<? extends E> c) {
+            rangeCheckForAdd(index);
+
+            Object[] a = c.toArray();
+            int numNew = a.length;
+            ensureCapacityInternal(size + numNew);  // Increments modCount
+
+            int numMoved = size - index;
+            if (numMoved > 0)
+                System.arraycopy(elementData, index, elementData, index + numNew,
+                                 numMoved);
+
+            System.arraycopy(a, 0, elementData, index, numNew);
+            size += numNew;
+            return numNew != 0;
+        }
+        / * *
+        从该列表中删除索引位于{@code fromIndex}(包含)和{@code toIndex}(排除)之间
+        的所有元素。将任何后续元素向左移动(减少它们的索引)。这个调用通过
+        {@code (toIndex - fromIndex)}元素缩短列表。
+        (If {@code toIndex==fromIndex},则此操作无效)
+
+        抛出 @throws IndexOutOfBoundsException
+        if {@code fromIndex} or
+             *         {@code toIndex} is out of range
+             *         ({@code fromIndex < 0 ||
+             *          fromIndex >= size() ||
+             *          toIndex > size() ||
+             *          toIndex < fromIndex})
+         **/
+        protected void removeRange(int fromIndex, int toIndex) {
+            modCount++;
+            int numMoved = size - toIndex;
+            System.arraycopy(elementData, toIndex, elementData, fromIndex,
+                             numMoved);
+
+            // 清除方便垃圾回收器回收
+            int newSize = size - (toIndex-fromIndex);
+            for (int i = newSize; i < size; i++) {
+                elementData[i] = null;
+            }
+            size = newSize;
+        }
+        /*
+        检查给定索引是否在范围内。如果没有，则抛出适当的运行时异常。这个方法不
+        检查索引是否为负数:它总是在数组访问之前使用，如果索引为负数，
+        数组访问将抛出一个ArrayIndexOutOfBoundsException
+        */
+        private void rangeCheck(int index) {
+            if (index >= size)
+                throw new IndexOutOfBoundsException(outOfBoundsMsg(index));
+        }
+        /*
+        add和addAll使用的范围检查的版本。
+        */
+        private void rangeCheckForAdd(int index) {
+            if (index > size || index < 0)
+                throw new IndexOutOfBoundsException(outOfBoundsMsg(index));
+        }
+        / * *
+        构造IndexOutOfBoundsException详细信息。在错误处理代码的许多可能重构中，
+        *这个“大纲”在服务器和客户机vm上都表现得最好。
+        */
+        private String outOfBoundsMsg(int index) {
+            return "Index: "+index+", Size: "+size;
+        }
+        / * *
+        *从该列表中删除指定集合中包含的所有元素。
+        *
+        * @param c 集合，其中包含要从此列表中删除的元素
+        * @return {@code true}如果这个列表因为调用而改变
+        * @throw ClassCastException如果列表中元素的类与指定集合不兼容
+        * (< a href = " Collection.html # optional-restrictions " >可选< / >)
+        * @throw NullPointerException，如果该列表包含一个空元素而指定的集合不允许空元素
+        *或指定的集合为空
+        * # @see集合包含(对象)
+        */
+        public boolean removeAll(Collection<?> c) {
+            Objects.requireNonNull(c);//判读c==null如果是抛异常
+            return batchRemove(c, false);
+        }
+        / * *
+        *只保留此列表中包含在指定集合中的元素。换句话说，从这个列表中删除指定集合中不包含的所有元素。
+
+        * @param c集合，其中包含要保留在此列表中的元素
+        * @return返回{@code true}如果这个列表因为调用而改变
+        * @抛出ClassCastException，如果该类是这个列表中的一个元素与指定的集合不兼容
+        * (< a href = " Collection.html # optional-restrictions " >可选< / >)
+        * @抛出NullPointerException，如果该列表包含一个空元素而指定的集合不允许空元素或指定的集合为空
+        * # @see集合包含(对象)
+        */
+        public boolean retainAll(Collection<?> c) {
+            Objects.requireNonNull(c);
+            return batchRemove(c, true);
+        }
+        private boolean batchRemove(Collection<?> c, boolean complement) {
+            final Object[] elementData = this.elementData;
+            int r = 0, w = 0;
+            boolean modified = false;
+            try {
+                for (; r < size; r++)
+                    if (c.contains(elementData[r]) == complement)
+                        elementData[w++] = elementData[r];
+            } finally {
+                // Preserve behavioral compatibility with AbstractCollection,
+                // even if c.contains() throws.
+                if (r != size) {
+                    System.arraycopy(elementData, r,
+                                     elementData, w,
+                                     size - r);
+                    w += size - r;
+                }
+                if (w != size) {
+                    // clear to let GC do its work
+                    for (int i = w; i < size; i++)
+                        elementData[i] = null;
+                    modCount += size - w;
+                    size = w;
+                    modified = true;
+                }
+            }
+            return modified;
+        }
    }
 
