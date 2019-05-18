@@ -4,3 +4,12 @@ Servlet:1.接收请求
 容器:管理对象生命周期的构键,初始化,使用销毁对象(Tomcat)
 在类上写上@WebServlet("/**")方便去浏览器里找到写的页面
 Java Web 是 JavaEE的一个模块
+
+Java Web 分为三层: (Vew) 展现层:发送基于http协议的请求,最终把数据展现出来(jsp(jstl),velocity,Raect,H5)
+                  (Control)控制层:过滤器,查看有没有权限(Spring MVC(Model Vew Control ),Struls,Servlet
+                  (Model)业务层:处理请求,并转发到持久层(Spring
+                       持久层:jdbc访问数据库(Hbmate,MyBatis
+                --------------------
+                       数据库:回应数据(上层以来下层,但下层不依赖上层
+       整个应用程序会被放入一个配置文件,web.xml用于配置各个层的资源,容器技术是Tomcat,整个会打成war包
+       只要完成一个闭环操作,就是一个Session(会话
