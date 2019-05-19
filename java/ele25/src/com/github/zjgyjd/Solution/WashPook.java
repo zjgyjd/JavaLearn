@@ -34,7 +34,6 @@ public class WashPook {
                 if (j==part.length-1) {
                     System.out.println(part[j]);
                 } else {
-
                     System.out.print(part[j] + " ");
                 }
             }

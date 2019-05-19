@@ -581,6 +581,9 @@
             Objects.requireNonNull(c);
             return batchRemove(c, true);
         }
+        /**
+        *移出元素,boolean值为true则留下集合里有的,如果为false则留下集合没有的
+        */
         private boolean batchRemove(Collection<?> c, boolean complement) {
             final Object[] elementData = this.elementData;
             int r = 0, w = 0;
@@ -590,8 +593,7 @@
                     if (c.contains(elementData[r]) == complement)
                         elementData[w++] = elementData[r];
             } finally {
-                // Preserve behavioral compatibility with AbstractCollection,
-                // even if c.contains() throws.
+                // 即使c.contains()抛出，也要保持与AbstractCollection的行为兼容性,防止中途出现异常导致r!=size
                 if (r != size) {
                     System.arraycopy(elementData, r,
                                      elementData, w,
@@ -608,6 +610,148 @@
                 }
             }
             return modified;
+        }
+        /*
+        将ArrayList实例的状态保存到流中(即序列化它)。
+        @serialData返回ArrayList实例的数组的长度(int)，后面跟着它的所有元素(每个对象)，顺序正确。
+        */
+       private void writeObject(java.io.ObjectOutputStream s)
+           throws java.io.IOException{
+           // 写出元素计数和任何隐藏的东西
+           int expectedModCount = modCount;
+           s.defaultWriteObject();//进行序列化
+
+           // 将大小作为与克隆行为兼容的能力()
+           s.writeInt(size);
+
+           // 按正确的顺序写出所有的元素。
+           for (int i=0; i<size; i++) {
+               s.writeObject(elementData[i]);
+           }
+
+           if (modCount != expectedModCount) {
+               throw new ConcurrentModificationException();
+           }
+       }
+
+        /*
+        从流(即反序列化)中重新构造ArrayList实例。
+        */
+        private void readObject(java.io.ObjectInputStream s)
+            throws java.io.IOException, ClassNotFoundException {
+            elementData = EMPTY_ELEMENTDATA;
+
+            // 写出元素计数和任何隐藏的东西
+            s.defaultReadObject();
+
+            // 读取容量
+            s.readInt(); // 忽略
+
+            if (size > 0) {
+                // 类似clone()，根据大小而不是容量分配数组
+                int capacity = calculateCapacity(elementData, size);
+                SharedSecrets.getJavaOISAccess().checkArray(s, Object[].class, capacity);
+                ensureCapacityInternal(size);
+
+                Object[] a = elementData;
+                //按适当的顺序读取所有元素。
+                for (int i=0; i<size; i++) {
+                    a[i] = s.readObject();
+                }
+            }
+        }
+
+        /*
+        返回列表中元素的列表迭代器(按适当的顺序)，从列表中的指定位置开始。指定的索引指示初始
+        调用{@link ListIterator#next}返回的第一个元素。对{@link ListIterator#previous }
+        的初始调用将返回具有指定索引- 1的元素。
+        返回的列表迭代器是fail-fast。
+        */
+        public ListIterator<E> listIterator(int index) {
+            if (index < 0 || index > size)
+                throw new IndexOutOfBoundsException("Index: "+index);
+            return new ListItr(index);
+        }
+        /*
+        返回列表中元素的列表迭代器(按适当的顺序)。
+        */
+        public ListIterator<E> listIterator() {
+            return new ListItr(0);
+        }
+        /*
+        按正确的顺序返回列表中元素的迭代器。
+        */
+        public Iterator<E> iterator() {
+            return new Itr();
+        }
+        /*
+        一个优化版的AbstractList.Itr
+        */
+        private class Itr implements Iterator<E> {
+            int cursor;       // 要返回的下一个元素的索引
+            int lastRet = -1; // 返回的最后一个元素的索引;-1如果没有
+            int expectedModCount = modCount;
+
+            Itr() {}
+
+            public boolean hasNext() {
+                return cursor != size;
+            }
+
+            @SuppressWarnings("unchecked")
+            public E next() {
+                checkForComodification();
+                int i = cursor;
+                if (i >= size)
+                    throw new NoSuchElementException();
+                Object[] elementData = ArrayList.this.elementData;
+                if (i >= elementData.length)
+                    throw new ConcurrentModificationException();
+                cursor = i + 1;
+                return (E) elementData[lastRet = i];
+            }
+
+            public void remove() {
+                if (lastRet < 0)
+                    throw new IllegalStateException();
+                checkForComodification();
+
+                try {
+                    ArrayList.this.remove(lastRet);
+                    cursor = lastRet;
+                    lastRet = -1;
+                    expectedModCount = modCount;
+                } catch (IndexOutOfBoundsException ex) {
+                    throw new ConcurrentModificationException();
+                }
+            }
+
+            @Override
+            @SuppressWarnings("unchecked")
+            public void forEachRemaining(Consumer<? super E> consumer) {
+                Objects.requireNonNull(consumer);
+                final int size = ArrayList.this.size;
+                int i = cursor;
+                if (i >= size) {
+                    return;
+                }
+                final Object[] elementData = ArrayList.this.elementData;
+                if (i >= elementData.length) {
+                    throw new ConcurrentModificationException();
+                }
+                while (i != size && modCount == expectedModCount) {
+                    consumer.accept((E) elementData[i++]);
+                }
+                // update once at end of iteration to reduce heap write traffic
+                cursor = i;
+                lastRet = i - 1;
+                checkForComodification();
+            }
+
+            final void checkForComodification() {
+                if (modCount != expectedModCount)
+                    throw new ConcurrentModificationException();
+            }
         }
    }
 
