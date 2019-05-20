@@ -3,10 +3,10 @@ package com.zjgyjd.db;
 import java.sql.*;
 
 public class DbMessage {
-    public String drives = "com.mysql.jdbc.Driver";
-    public String username = "root";
-    public String password = "1234";
-    public String url = "jdbc:mysql://127.0.0.1:3306/servletdb";
+    private String drives = "com.mysql.jdbc.Driver";
+    private String username = "root";
+    private String password = "1234";
+    private String url = "jdbc:mysql://localhost:3306/servletdb";
 
     public Connection conn = null;
     public Statement state = null;

@@ -24,11 +24,12 @@ public class FormServlet extends HttpServlet {
                 .append("</head>")
                 .append("<body>")
                 .append("<form method='Post' action='/Log'>")//对应的doGet或doPost
-                .append("请输出姓名：")
+                .append("请输出姓名:")
                 .append("<input name='name' type='text' value=''/>")
                 .append("<br/>")
                 .append("请输入密码:")
                 .append("<input name='password' type='password' value=''/>")
+                .append("请输入电话:<input name='number' type='text'>")
                 .append("<input type='submit' value='提交'>")
                 .append("</form>")
                 .append("</body>")

@@ -1,6 +1,7 @@
 package com.github.zjgyjd.DS.genericType;
 
-import java.lang.reflect.Array;
+
+
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -17,9 +18,9 @@ public class Main {
         Iterator<Integer> iterator = list.iterator();
         while (iterator.hasNext()) {
             int item = iterator.next();//自动拆箱
-            System.out.println(item);
+            System.out.print(item);
         }
-
+        System.out.println();
         iterator = list.iterator();
         while (iterator.hasNext()) {
             int item = iterator.next();

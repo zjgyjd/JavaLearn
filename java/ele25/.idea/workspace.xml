@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e43a97d-2330-484a-9356-2c2fcd6806ab" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../新建文本文档.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebProjects/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebProjects/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebProjects/module_webDome/src/main/java/com/zjgyjd/db/DbMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebProjects/module_webDome/src/main/java/com/zjgyjd/db/DbMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../WebProjects/module_webDome/src/main/java/com/zjgyjd/servlet/FormServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebProjects/module_webDome/src/main/java/com/zjgyjd/servlet/FormServlet.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,7 +55,7 @@
     <session id="-586755750">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="93" />
+          <entry key="project.closed" value="96" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="2" />
@@ -66,7 +68,7 @@
           <entry key="project.open.time.33" value="4" />
           <entry key="project.open.time.34" value="9" />
           <entry key="project.open.time.35" value="2" />
-          <entry key="project.open.time.36" value="4" />
+          <entry key="project.open.time.36" value="5" />
           <entry key="project.open.time.37" value="4" />
           <entry key="project.open.time.38" value="11" />
           <entry key="project.open.time.39" value="6" />
@@ -74,7 +76,7 @@
           <entry key="project.open.time.40" value="7" />
           <entry key="project.open.time.41" value="5" />
           <entry key="project.open.time.42" value="3" />
-          <entry key="project.open.time.43" value="2" />
+          <entry key="project.open.time.43" value="3" />
           <entry key="project.open.time.44" value="5" />
           <entry key="project.open.time.45" value="2" />
           <entry key="project.open.time.46" value="2" />
@@ -84,7 +86,8 @@
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.6" value="3" />
-          <entry key="project.opened" value="95" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="98" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -94,7 +97,7 @@
           <entry key="class" value="1" />
           <entry key="detailOfArrayList" value="2" />
           <entry key="iml" value="2" />
-          <entry key="java" value="514" />
+          <entry key="java" value="519" />
           <entry key="properties" value="1" />
           <entry key="questionForArrayList" value="1" />
           <entry key="search" value="1" />
@@ -105,7 +108,7 @@
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="IDEA_MODULE" value="2" />
-          <entry key="JAVA" value="514" />
+          <entry key="JAVA" value="519" />
           <entry key="PLAIN_TEXT" value="11" />
           <entry key="Properties" value="1" />
         </counts>
@@ -114,18 +117,18 @@
         <counts>
           <entry key="README" value="1655" />
           <entry key="Readme" value="206" />
-          <entry key="detailOfArrayList" value="1526" />
-          <entry key="java" value="73078" />
+          <entry key="detailOfArrayList" value="1665" />
+          <entry key="java" value="74244" />
           <entry key="properties" value="64" />
-          <entry key="questionForArrayList" value="251" />
+          <entry key="questionForArrayList" value="310" />
           <entry key="search" value="1852" />
           <entry key="txt" value="1666" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="73078" />
-          <entry key="PLAIN_TEXT" value="7156" />
+          <entry key="JAVA" value="74244" />
+          <entry key="PLAIN_TEXT" value="7354" />
           <entry key="Properties" value="64" />
         </counts>
       </usages-collector>
@@ -139,26 +142,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/SeqList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/detailOfArrayList">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="690" column="45" lean-forward="true" selection-start-line="690" selection-start-column="45" selection-end-line="690" selection-end-column="45" />
+            <state relative-caret-position="253">
+              <caret line="11" column="18" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/questionForArrayList">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/detailOfArrayList">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="54" />
+            <state relative-caret-position="263">
+              <caret line="862" column="13" selection-start-line="862" selection-start-column="13" selection-end-line="862" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -166,14 +160,16 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="843" column="47" lean-forward="true" selection-start-line="843" selection-start-column="7" selection-end-line="843" selection-end-column="47" />
+            <state relative-caret-position="376">
+              <caret line="1017" selection-start-line="1017" selection-end-line="1246" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#6283#6284#0" expanded="true" />
                 <element signature="e#6351#6352#0" expanded="true" />
                 <element signature="e#13713#13714#0" expanded="true" />
                 <element signature="e#13768#13769#0" expanded="true" />
+                <element signature="e#33603#33604#0" expanded="true" />
+                <element signature="e#33645#33646#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -182,7 +178,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/ObjectOutputStream.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
+            <state relative-caret-position="9016">
               <caret line="426" column="22" selection-start-line="424" selection-start-column="7" selection-end-line="428" selection-end-column="6" />
             </state>
           </provider>
@@ -191,8 +187,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Collection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="174" column="49" lean-forward="true" selection-start-line="174" selection-start-column="36" selection-end-line="175" selection-end-column="55" />
+            <state relative-caret-position="3427">
+              <caret line="174" column="49" selection-start-line="174" selection-start-column="36" selection-end-line="175" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -200,11 +196,47 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="54" selection-start-line="54" selection-end-line="54" />
+            <state relative-caret-position="146">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/RCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/QuickSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="343">
+              <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/QuickSort.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Chorus2/ApartField.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="92">
+              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -238,8 +270,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/BinaryTree/TreeNode.java" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Arrays/reverseArrayToMin.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Jump.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/JumpFloor.java" />
@@ -274,21 +304,23 @@
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Control.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ControlL.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ControlV.java" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/README" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/SomeTalked/Hannoi.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/README.txt" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/SeqList.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/README" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/questionForArrayList" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/DList.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/search" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/BSTree.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/search" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/WashPook.java" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/Main.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/detailOfArrayList" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/questionForArrayList" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/RCode.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/QuickSort.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/QuickSort.java" />
       </list>
     </option>
   </component>
@@ -396,6 +428,14 @@
               <item name="ele25" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
+              <item name="DS" type="462c0819:PsiDirectoryNode" />
+              <item name="Sort" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ele25" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ele25" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
               <item name="old" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -470,6 +510,15 @@
               <item name="concurrent" type="462c0819:PsiDirectoryNode" />
               <item name="atomic" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ele25" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="function" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -479,15 +528,15 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="set back&#9;ACTION&#9;Images.SetBackgroundImage&#10;TreeNode&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap.TreeNode&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap&#10;invokeShift&#9;PSI&#9;JAVA://jdk.nashorn.internal.runtime.ListAdapter#invokeShift&#10;AssertionError&#9;PSI&#9;JAVA://java.lang.AssertionError&#10;Integer&#9;PSI&#9;JAVA://java.lang.Integer" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558264201245" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1558364950356" />
     <property name="create.test.in.the.same.root" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../catchcsdn" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -515,22 +564,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.WashPook">
+  <component name="RunManager" selected="Application.QuickSort">
     <configuration name="ControlL" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.ControlL" />
-      <module name="ele25" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.zjgyjd.Solution.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ControlV" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.ControlV" />
       <module name="ele25" />
       <extension name="coverage">
         <pattern>
@@ -555,12 +591,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.DS.SomeTalked.Main" />
+    <configuration name="QuickSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.QuickSort" />
       <module name="ele25" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.github.zjgyjd.DS.SomeTalked.*" />
+          <option name="PATTERN" value="com.github.zjgyjd.Solution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.RCode" />
+      <module name="ele25" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.zjgyjd.Solution.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -582,19 +631,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.ControlL" />
-      <item itemvalue="Application.ControlV" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.WashPook" />
+      <item itemvalue="Application.RCode" />
+      <item itemvalue="Application.QuickSort" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.WashPook" />
+        <item itemvalue="Application.QuickSort" />
+        <item itemvalue="Application.RCode" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.WashPook" />
         <item itemvalue="Application.ControlL" />
-        <item itemvalue="Application.ControlV" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -705,11 +754,14 @@
       <workItem from="1558016048873" duration="314000" />
       <workItem from="1558101200763" duration="6824000" />
       <workItem from="1558261026299" duration="3084000" />
+      <workItem from="1558277233650" duration="3717000" />
+      <workItem from="1558329557787" duration="4137000" />
+      <workItem from="1558356933131" duration="7396000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="591455000" />
+    <option name="totallyTimeSpent" value="606705000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -723,7 +775,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.16802168" visible="true" weight="0.26096824" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.16802168" visible="true" weight="0.27231467" />
       <window_info id="Structure" order="1" sideWeight="0.8319783" side_tool="true" weight="0.25718608" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -761,25 +813,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Thread/Thread3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Thread/TestThreadPool.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="12" column="34" selection-start-line="12" selection-start-column="34" selection-end-line="12" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/generic/BankTeller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-499" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/generic/Coffee.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -860,13 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/QuickSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2139">
-          <caret line="93" column="30" selection-start-line="93" selection-start-column="30" selection-end-line="93" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/bubble_Sort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="483">
@@ -899,13 +925,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1702">
           <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Chorus2/ApartField.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1060,68 +1079,102 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-368">
           <caret line="32" column="51" lean-forward="true" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="174" column="49" lean-forward="true" selection-start-line="174" selection-start-column="36" selection-end-line="175" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="54" selection-start-line="54" selection-end-line="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/ObjectOutputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
-          <caret line="426" column="22" selection-start-line="424" selection-start-column="7" selection-end-line="428" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/questionForArrayList">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="54" lean-forward="true" selection-start-line="7" selection-start-column="50" selection-end-line="7" selection-end-column="54" />
+        <state relative-caret-position="230">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/function/Consumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/io/ObjectOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9016">
+          <caret line="426" column="22" selection-start-line="424" selection-start-column="7" selection-end-line="428" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Collection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3427">
+          <caret line="174" column="49" selection-start-line="174" selection-start-column="36" selection-end-line="175" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Chorus2/ApartField.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/detailOfArrayList">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="862" column="13" selection-start-line="862" selection-start-column="13" selection-end-line="862" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="843" column="47" lean-forward="true" selection-start-line="843" selection-start-column="7" selection-end-line="843" selection-end-column="47" />
+        <state relative-caret-position="376">
+          <caret line="1017" selection-start-line="1017" selection-end-line="1246" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#6283#6284#0" expanded="true" />
             <element signature="e#6351#6352#0" expanded="true" />
             <element signature="e#13713#13714#0" expanded="true" />
             <element signature="e#13768#13769#0" expanded="true" />
+            <element signature="e#33603#33604#0" expanded="true" />
+            <element signature="e#33645#33646#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/SeqList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="18" />
+        <state relative-caret-position="253">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/detailOfArrayList">
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="690" column="45" lean-forward="true" selection-start-line="690" selection-start-column="45" selection-end-line="690" selection-end-column="45" />
+        <state relative-caret-position="146">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/RCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="15" column="22" lean-forward="true" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/QuickSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="95" column="5" selection-start-line="95" selection-start-column="5" selection-end-line="95" selection-end-column="5" />
         </state>
       </provider>
     </entry>
