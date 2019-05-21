@@ -10,7 +10,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="jsp_dome" target="1.7" />
+      <module name="jsp_demo" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

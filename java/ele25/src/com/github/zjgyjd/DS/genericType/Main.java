@@ -1,7 +1,6 @@
 package com.github.zjgyjd.DS.genericType;
 
 
-
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
@@ -31,19 +30,19 @@ public class Main {
         System.out.println(list);
     }
 
-    public static void shallowCopy(){
+    public static void shallowCopy() {
         List<Test> list = new ArrayList<>();
         List<Integer> seqList = new SeqList<>();
         Test[] s = new Test[5];
         for (int i = 0; i < 5; i++) {
-            list.add (new Test(8));
+            list.add(new Test(8));
         }
         Test[] x = new Test[5];
         list.toArray(x);
         //Test[] x = Arrays.copyOf(s,s.length);
         x[0].x = 50;
         list.get(0).x = 70;
-        System.out.println(x[0].getClass()+" "+x[1].getClass());
+        System.out.println(x[0].getClass() + " " + x[1].getClass());
         System.out.println(Arrays.toString(x));
         System.out.println(Arrays.toString(s));
         System.out.println(list);
@@ -52,13 +51,15 @@ public class Main {
 //        testList(seqList);
 //        testList(list);
     }
+
     public static void main(String[] args) {
 
 
     }
 }
-class Test{
-    public int x;
+
+class Test {
+    public int x = 3;
 
     public Test(int x) {
         this.x = x;
