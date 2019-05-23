@@ -4,6 +4,7 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.TreeMap;
 
 public class QuickSort {
     /**
@@ -132,7 +133,9 @@ public class QuickSort {
         int t = array[begin];
         array[begin] = array[end];
         array[end] = t;
+
     }
+
 
 
     public static void quickSort(int[] array) {
