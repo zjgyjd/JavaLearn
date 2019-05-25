@@ -5,12 +5,13 @@
   Time: 21:10
   To change this template use File | Settings | File Templates.
 --%>
-<%@ page contentType="text/html;charset=UTF-8" language="java"  %>
+<%@ page import="javax.servlet.http.*" contentType="text/html;charset=UTF-8" language="java"  %>
 <html>
 <head>
     <title>Title</title>
 </head>
 <body>
+
     <form action="**" method="post">
         <table border="1" width="90" heigth="30">
             <tr>
@@ -24,8 +25,11 @@
         </table>
     </form>
 
-    <%
+    <%--archetypeCatalog   internal--%>
+    <%!
+        public void doPost(HttpServletRequest req,HttpServletResponse resp){
 
+        }
     %>
 </body>
 </html>

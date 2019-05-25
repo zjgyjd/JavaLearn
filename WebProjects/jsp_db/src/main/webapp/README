@@ -1,0 +1,17 @@
+1.动态包含和静态包含
+   动 <jsp:include page="xxx"/> 不合并生成多个class界面
+   静 <%@ include file="xxx"%>  在编译器执行之前就直接包含页面,合并成一个java的class文件
+
+2.sendRedirect  重定向,请求路径会发生变化,会有两个request对象指向不同page,发生了两个会话
+  forward       请求转发,路径不发生变化,来自同一个request,url不改变,总的是一个会话
+
+3.在jsp中使用javaBean
+<jsp:useBean id="user" class="com.zjgyjd.vo.User" scope="request"/>
+scope选定创建对象范围:
+    page:当前页面有效
+    request:只在一个request请求中有用,当request断开就没有了
+    session:只在一个会话中有用
+    application:在应用程序中有用,只要tomcat不关就一直存在
+
+    biz持久层
+
