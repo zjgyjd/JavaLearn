@@ -1,0 +1,26 @@
+HTML(了解):常用标签(使用标签展示效果)
+Css(了解):Cascading Style Sheet:层叠样式表,修饰标签
+Js(DOM编程):JavaScript:进行前后端交互
+前端框架:JQuery:封装的Js
+网页版的计算器(js/JQuery)
+
+ javaWeb: JQuery-ajax(使用Js库实现一个异步操作,局部刷新)
+
+
+HTML:超文本标记语言 Hyper Text Markup Language
+		针对字体大小颜色,图片,视频,音频
+		html:借助工具 DR Hbulider(可以写app)能够自动生成固定标签
+1)文本标签
+	标题标签:h1-h6
+	段落标签:p
+	滚动标签:marquee
+	段落缩进:blockquote:小引用
+	地址:address
+	上下标签:sup和sub
+	原样输出:pre  将内容原封不动的进行输出
+	块标签:div(层级布局)
+	行内标签:span  用于前端校验:有第三方框架:JQuery-validator   前端框架的组件校验
+	列表标签:
+		无序列表 ul li
+		有序列表 ol li
+	

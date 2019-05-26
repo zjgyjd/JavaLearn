@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>超链接标签</title>
+	</head>
+	<body>
+		<!--a标签:
+				属性:herf 指定的URL资源地址
+					target表示打开资源文件的方式,
+					_blank     新建窗口跳转
+					_self(默认)在当前窗口跳转
+					
+					常见的协议:
+					file://本地文件协议
+					http://
+					https://
+					当申请点击百度是 电脑会去这个路径C:\Windows\System32\drivers\etc
+					查找hosts文件 如果在这里找到就是本地文件,找不到则调用网卡驱动进行联网操作
+					联网到DNS服务器(网络运营商端)就能找到大量的地址和服务器ip
+					最后找到百度服务器,百度服务器返回响应
+					电商网站:
+					http服务器将域名和ip进行绑定
+						www.jd.com服务器ip(http服务器"ngiux")
+						searsh.jd.com:搜索系统 提供索引库
+						item.jd.com:商品详情系统 这些都是不同服务器
+						一个hosts文件存很多服务器ip
+						jsonp:跨域访问(在不同的系统之间进行前后端的交互)
+					mail:邮件协议
+					thunder:迅雷协议
+					jdbc:jdbc协议
+					
+			超链接两个作用:
+					1.跳转资源文件
+					2.作为锚链接使用
+								在同一个html页面中使用
+								1.设置一个锚点(即跳转标记)
+								<a name='A'></a>
+								在不同页面使用
+								设置锚点
+								写url#加name
+						---->
+		-->
+		<a href="html_文本标签.html#list">跳到指定位置</a>
+		<a href="#foot" name="head"><font color="red">跳转底部</font></a>
+		<a href="index.html" target="_blank">跳转</a>
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<br /><br /><br /><br /><br /><br /><br /><br /><br />
+		<!--打锚点-->
+		<a name= 'foot' href="#head" ><font color="red">回到顶部</font> </a>
+	</body>
+</html>

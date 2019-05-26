@@ -52,9 +52,21 @@ public class Main {
 //        testList(list);
     }
 
-    public static void main(String[] args) {
-
-
+    public static void main(String sgf[]) {
+        StringBuffer a=new StringBuffer("A");
+        StringBuffer b=new StringBuffer("B");
+        Test s = new Test(1);
+        Test s2 = new Test(2);
+        operate(a,b);
+        System.out.println(s+"."+s2);
+    }
+    static void operate(StringBuffer x,StringBuffer y) {
+        x.append(y);
+        y=x;
+    }
+    static void operate(Test a, Test n){
+        a.x = n.x;
+        n = a;
     }
 }
 

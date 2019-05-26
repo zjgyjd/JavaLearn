@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--image标签
+			    属性: src:加载图片资源
+			    	alt:替代文本(图片打不开时)
+			    	width/height:设置宽高,百分百或像素
+			    	title:鼠标悬浮在图片上的文字提示
+			 		
+			 		在img的指定属性中指定样式属性:style='none'则隐藏
+		-->
+		<script>
+			//点击隐藏和点击显示
+			function hideImage(){
+				var img =document.getElementById("img1");
+				img.style.display="none" ;//隐藏
+			}
+			
+			function showImage(){
+				var img = document.getElementById("img1");
+				img.style.display="block";//显示
+			}
+		</script>
+	</head>
+	<body>
+		<img id ="img1" src="img/011.jpg" width="50%" height="25%" /><br />
+		<button id='show' onclick="showImage()">显示</button>
+		<button id = 'hide' onclick="hideImage()">隐藏</button>
+	</body>
+</html>

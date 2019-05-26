@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body >
+		<!--标题标签:h1-h6 -->
+		<h1>标题</h1>
+		<h2>标题</h2>
+		<h3>标题</h3>
+		<h4>标题</h4>
+		<h5>标题</h5>
+		<h6>标题</h6>
+		<!--段落标签 :P-->
+		<p>第一段</p>
+		<p>第er段</p>
+		<!--段落缩进: blockquote
+			推荐该标签
+		-->
+		<blockquote>
+			关于第二段解释
+		</blockquote>
+		<!--滚动标签
+			常用属性:behivour:滚动方式
+				alternate:来回滚动
+				slide:滚动一边结束
+				scroll:交替滚动,一边进另一边出
+				scrollamount:速度
+				loop:滚动次数
+				direction:滚动方向,不指定从右到左
+				bgcolor:背景颜色
+		-->
+		<marquee behavior="alternate" loop='2' scrollamount="10"
+			direction="right" bgcolor="red">哈哈哈</marquee>
+			<!--地址标签:会让字体自动变为斜体-->
+			<address>陕西省</address>
+			<!--上下标:sup和sub-->
+			数学公式:x^2<br />
+			X<sup>2</sup><br />
+			H2O  H<sub>2</sub>O
+			<hr /><!-- 水平线-->
+			xx公司所有<sup>&copy;</sup><2019-2020<br />
+			<!--html中常用转义字符
+				空格:&nbsp
+				版权所有@:&copy;
+				注册商标r:&reg;
+			-->
+			
+			<!--原样输出pre-->
+			<pre>function check(){
+				var user= document.getelementById("id");
+			}
+			</pre>
+			<!--
+				列表标签:无序列表:ul li  type:指定列表前标记不指定是实心圆
+			-->
+			<a name="list"></a>你的爱好?
+			<ul type="square">
+				<li>足球</li>
+				<li>篮球</li>
+			</ul>
+			<hr />
+			有序列表:-喜欢的明星
+			<ol type="a">
+				<li>姆巴佩</li>
+				<li>梅西</li>
+			</ol>
+			<!--项目组织架构列表 dl dt dd-->
+			<dl>
+				<dt>工程师</dt>
+				<dd>工程师1</dd>
+				<dd>工程师2</dd>
+			</dl>
+			<!--div和span
+				div:占用一行空间,有换行效果,有四个边框借助于Css来进行显示
+			-->
+			<div>div1</div>
+			<div>div2</div>
+			<span>span1</span>
+			<span>span2</span>
+	</body>
+</html>
