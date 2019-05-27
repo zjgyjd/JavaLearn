@@ -51,7 +51,7 @@
     <session id="-586755750">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="101" />
+          <entry key="project.closed" value="102" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="2" />
@@ -61,7 +61,7 @@
           <entry key="project.open.time.28" value="3" />
           <entry key="project.open.time.31" value="4" />
           <entry key="project.open.time.32" value="3" />
-          <entry key="project.open.time.33" value="4" />
+          <entry key="project.open.time.33" value="5" />
           <entry key="project.open.time.34" value="10" />
           <entry key="project.open.time.35" value="2" />
           <entry key="project.open.time.36" value="5" />
@@ -84,7 +84,7 @@
           <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="104" />
+          <entry key="project.opened" value="105" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -141,8 +141,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/TakeBeg.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+            <state relative-caret-position="713">
+              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -151,7 +151,7 @@
         <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="112">
-              <caret line="56" column="45" lean-forward="true" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+              <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -274,6 +274,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -395,7 +396,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -410,7 +410,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -640,11 +640,12 @@
       <workItem from="1558614861462" duration="4327000" />
       <workItem from="1558675857725" duration="4194000" />
       <workItem from="1558794762521" duration="952000" />
+      <workItem from="1558965463894" duration="220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="630517000" />
+    <option name="totallyTimeSpent" value="630737000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -658,7 +659,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.16721311" visible="true" weight="0.18381241" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.16721311" visible="true" weight="0.18683812" />
       <window_info id="Structure" order="1" sideWeight="0.83278686" side_tool="true" weight="0.18154311" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -1059,8 +1060,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/TakeBeg.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        <state relative-caret-position="713">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -1074,7 +1075,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
-          <caret line="56" column="45" lean-forward="true" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
+          <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
         </state>
       </provider>
     </entry>
