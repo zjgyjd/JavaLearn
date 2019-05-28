@@ -23,4 +23,24 @@ HTML:超文本标记语言 Hyper Text Markup Language
 	列表标签:
 		无序列表 ul li
 		有序列表 ol li
-	
+		
+			html中的表单标签
+					form 标签
+							提交到后台的属性:action
+							提交方式:method
+					表单标签中的分类
+					框架标签: frame
+						框架集:frameset 
+							属性:rows/cols
+							
+				CSS: 修饰标签
+					CSS的使用方式
+						3种方式
+							1) 行内样式
+							2)内部样式
+							3) 外部样式
+				--------------------------------
+				HTML的基本认识
+					1)html的结构
+						上节课内容
+					
