@@ -1,15 +1,16 @@
 package com.github.zjgyjd.Solution;
 
-public class test {
+import java.util.Scanner;
 
+public class test {
     public static void main(String[] args) {
         int[] a = {4,5,6};
         sort(a);
-		
+
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
 		int[] array = new int[n];
-		for (int i = 1; i < )
+
 		
     }
 
@@ -20,12 +21,12 @@ public class test {
 
 	public int select(int capacity, int i) {
 		if (capacity == 0) {
-			retrun 1;
+			return 1;
 		}
 		if (i == 0) {
 			return 0;
 		}
-		return select(capacity, i - 1) + select(capacity - array[i], i -1);
+		return select(capacity, i - 1) + select(capacity , i -1);
 	}
 	
     private static void short1(int[] array, int[] brr, int i, int length) {
