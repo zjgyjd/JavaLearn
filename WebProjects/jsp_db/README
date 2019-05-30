@@ -15,3 +15,16 @@ scope选定创建对象范围:
 
     biz持久层
 
+    Jsp -- > main job --->show data
+    (
+            <%%> -->Scriptlet
+            <%=%>--->expression
+            <%!%> ---->declare
+    )
+    JSTL + EL
+
+    Servlet--->
+    1.获取表单参数
+    2.获取业务逻辑
+    3.转交到其他web组件
+

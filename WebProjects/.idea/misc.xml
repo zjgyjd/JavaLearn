@@ -4,6 +4,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/jsp_db" />
     <file type="web" url="file://$PROJECT_DIR$/jsp_demo" />
+    <file type="web" url="file://$PROJECT_DIR$/jstl_el" />
     <file type="web" url="file://$PROJECT_DIR$/module_webDome/jsp_dome" />
   </component>
   <component name="MavenProjectsManager">
@@ -12,6 +13,7 @@
         <option value="$PROJECT_DIR$/module_webDome/pom.xml" />
         <option value="$PROJECT_DIR$/jsp_demo/pom.xml" />
         <option value="$PROJECT_DIR$/jsp_db/pom.xml" />
+        <option value="$PROJECT_DIR$/jstl_el/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

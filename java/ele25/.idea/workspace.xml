@@ -51,7 +51,7 @@
     <session id="-586755750">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="102" />
+          <entry key="project.closed" value="104" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="2" />
@@ -82,9 +82,10 @@
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.54" value="2" />
           <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="106" />
+          <entry key="project.opened" value="107" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -117,7 +118,7 @@
           <entry key="README" value="1655" />
           <entry key="Readme" value="206" />
           <entry key="detailOfArrayList" value="1685" />
-          <entry key="java" value="78514" />
+          <entry key="java" value="78574" />
           <entry key="properties" value="64" />
           <entry key="questionForArrayList" value="310" />
           <entry key="search" value="2171" />
@@ -126,7 +127,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="78514" />
+          <entry key="JAVA" value="78574" />
           <entry key="PLAIN_TEXT" value="7693" />
           <entry key="Properties" value="64" />
         </counts>
@@ -150,7 +151,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
+            <state relative-caret-position="1219">
               <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
             </state>
           </provider>
@@ -159,7 +160,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/AntiOrder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="514">
+            <state relative-caret-position="529">
               <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
             </state>
           </provider>
@@ -180,10 +181,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/hasZero.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Robot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+            <state relative-caret-position="138">
+              <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -194,7 +195,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-46">
+            <state relative-caret-position="92">
               <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
             </state>
           </provider>
@@ -229,7 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/StackToQueen.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/StackToQueue.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Fibonacci.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/listRemoveElement.java" />
@@ -280,6 +280,7 @@
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/test.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/DeleteNum.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/hasZero.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Robot.java" />
       </list>
     </option>
   </component>
@@ -295,7 +296,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="538" />
     <option name="y" value="5" />
     <option name="width" value="1141" />
@@ -310,7 +311,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -432,12 +432,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="set back&#9;ACTION&#9;Images.SetBackgroundImage&#10;TreeNode&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap.TreeNode&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap&#10;invokeShift&#9;PSI&#9;JAVA://jdk.nashorn.internal.runtime.ListAdapter#invokeShift&#10;AssertionError&#9;PSI&#9;JAVA://java.lang.AssertionError&#10;Integer&#9;PSI&#9;JAVA://java.lang.Integer" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559143838072" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559210472096" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../WebProjects" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -473,7 +474,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.hasZero">
+  <component name="RunManager" selected="Application.Robot">
     <configuration name="AVLTree" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.DS.BinaryTree.AVLTree" />
       <module name="ele25" />
@@ -500,8 +501,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TakeBeg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.TakeBeg" />
+    <configuration name="Robot" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.Robot" />
       <module name="ele25" />
       <extension name="coverage">
         <pattern>
@@ -513,8 +514,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="hasZero" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.hasZero" />
+    <configuration name="TakeBeg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.TakeBeg" />
       <module name="ele25" />
       <extension name="coverage">
         <pattern>
@@ -544,11 +545,11 @@
       <item itemvalue="Application.AVLTree" />
       <item itemvalue="Application.TakeBeg" />
       <item itemvalue="Application.DeleteNum" />
-      <item itemvalue="Application.hasZero" />
+      <item itemvalue="Application.Robot" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.hasZero" />
+        <item itemvalue="Application.Robot" />
         <item itemvalue="Application.test" />
         <item itemvalue="Application.DeleteNum" />
         <item itemvalue="Application.TakeBeg" />
@@ -676,12 +677,13 @@
       <workItem from="1558675857725" duration="4194000" />
       <workItem from="1558794762521" duration="952000" />
       <workItem from="1558965463894" duration="220000" />
-      <workItem from="1559119268255" duration="2937000" />
+      <workItem from="1559119268255" duration="3938000" />
+      <workItem from="1559209441791" duration="1012000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="633674000" />
+    <option name="totallyTimeSpent" value="635687000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -694,9 +696,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.16721311" visible="true" weight="0.18986385" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.16721311" visible="true" weight="0.19288956" />
       <window_info id="Structure" order="1" sideWeight="0.83278686" side_tool="true" weight="0.18154311" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -1076,22 +1077,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
+        <state relative-caret-position="1219">
           <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/AntiOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
+        <state relative-caret-position="529">
           <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-46">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1105,10 +1099,17 @@
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/old/CheckStand.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/hasZero.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
+        <state relative-caret-position="92">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="44" lean-forward="true" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="jsp_db" />
         <module name="jsp_demo" />
+        <module name="jstl_el" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

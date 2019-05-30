@@ -12,6 +12,6 @@
 </head>
 <body>
 <jsp:useBean id="user" class="com.zjgyjd.vo.User" scope="request"/>
-<jsp:getProperty name="user" property="username"
+<jsp:getProperty name="user" property="username"/>
 </body>
 </html>
