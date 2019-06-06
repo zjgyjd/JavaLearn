@@ -6,6 +6,7 @@
     <file type="web" url="file://$PROJECT_DIR$/jsp_demo" />
     <file type="web" url="file://$PROJECT_DIR$/jstl_el" />
     <file type="web" url="file://$PROJECT_DIR$/module_webDome/jsp_dome" />
+    <file type="web" url="file://$PROJECT_DIR$/Springdemo" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -18,6 +19,7 @@
     </option>
     <option name="ignoredFiles">
       <set>
+        <option value="$PROJECT_DIR$/jsp_demo/pom.xml" />
         <option value="$PROJECT_DIR$/module_webDome/jsp_dome/pom.xml" />
       </set>
     </option>

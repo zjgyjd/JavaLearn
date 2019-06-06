@@ -11,11 +11,14 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>jsp_demo</artifactId>
-    <packaging>war</packaging>
+    <packaging>pom</packaging>
 
     <name>jsp_demo Maven Webapp</name>
     <!-- FIXME change it to the project's website -->
     <url>http://www.example.com</url>
+    <modules>
+        <module>../Springdemo</module>
+    </modules>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -31,21 +34,8 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/javax.servlet.jsp/javax.servlet.jsp-api -->
-        <dependency>
-            <groupId>javax.servlet.jsp</groupId>
-            <artifactId>javax.servlet.jsp-api</artifactId>
-            <version>2.3.1</version>
-            <scope>provided</scope>
-        </dependency>
 
-        <dependency>
-            <groupId>javax.servlet</groupId>
-            <artifactId>javax.servlet-api</artifactId>
-            <version>4.0.1</version>
-            <scope>provided</scope>
-        </dependency>
-    </dependencies>
+</dependencies>
 
     <build>
         <finalName>jsp_demo</finalName>

@@ -7,11 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jsp_db" />
-        <module name="jsp_demo" />
         <module name="jstl_el" />
+        <module name="Springdemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="jsp_demo" target="1.7" />
       <module name="jsp_dome" target="1.7" />
     </bytecodeTargetLevel>
   </component>
