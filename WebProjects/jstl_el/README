@@ -1,0 +1,139 @@
+1.EL(Expression Language)
+2.JSTL(Java Server Tag Library)
+
+EL表达式
+开头要加 isELIgnored = false;
+1.测试普通表达式
+hello(EL way): ${helloKey}
+hello(EL pageScope,requestScope,SessionScope,applicationScope)以这个顺序进行寻找
+${requestScope.helloKey}可以直接去request范围查找
+
+2.测试结构体
+Group{
+    private String name;
+    Get  Set
+}
+User{
+    String username;
+    int age;
+    Group group
+    Get Set
+}
+ELServlet{
+    doGEt{
+        Group.setName("skjsd")
+        user.sName("sjs")
+        user.sage(s);
+        Set所有
+    }
+    request.setAtribute("userKey",user);
+}
+另一个页面拿到这个
+${userKey.username} 相当于 <% request.getAttribute("userKey"); user.getUsername()%>
+          这个地方的username换算到后面就是getUsername()所以这个方法名字第一个要大写才找得到
+    {userKey.group.name}
+
+3.map的测试
+${myMapKey.key1} 通过key的值调用get(Object key)取得映射的值
+
+4.Array的测试
+${strArrayKey[2]}---->字符串数组
+${userArrayKey[2].username}-->拿到自定义的类的数组,并显示里面的username属性
+
+5.测试空值("" ,null , new ArrayList(), " ")empty 1,2,3,4
+${empty1}   不显示空的      ${empty empty1} 可以判断到底是不是空 所以会显示 true
+${empty2}  不显示空的
+${empty3}  显示:{}
+${empty4}  有空格但无法显示       ${empty empty1} 可以判断到底是不是空 所以会显示 false
+
+6.测试计算
+1+1 = ${1 + 1}
+10/5 = ${10/5}   ${10 div 5}默认为double
+10 % 5 = ${10 mod 5} ${10 % 5}
+gt-->大于
+lt-->小于
+ge-->大于等于
+le -- > 小于等于
+ne -->不等于
+and --> &&
+
+
+
+JSTL 要配合EL表达式 <%@ taglib prefix="c" uri="xxxx.core"%>此处的uri是jstl的c.tld里面的路径
+核心标签库
+<c:out >
+1.测试普通字符串
+<c:out value="${helloKey}"/>  明显比EL麻烦但要用的原因:当没有东西系的时候,jstl可以设置默认值
+<c:out value"${zjgyjd}" defualt = "test"/> 此时找不到会显示test
+2.测试HTML
+setAttribute("myHtmlKey",<font color = "red">haha</font>)
+<c: out value="${myHtmlKey)"/> 此时无法解析,直接EL可以,需要将escapeXml = "false"就可以了
+
+<c:set>
+<c:set value="arvin" var="myVar"/>设置值,和变量名
+<c:out value="${myVar}/>通过变量名得到值
+
+<c:remove> 从某个范围移出
+<c:remove var="myVar"/>     //不需要EL表达式
+<c:out value="${empty myVar}"/> //此时为true,说明没有东西了
+
+<c:catch> 捕捉异常
+<c:catch var="myError">
+ <%
+ throw new Exception();
+ %>
+ </c:catch>
+<c:out value="${myError}/>
+
+<c:if> 先在Servlet页面中设置几个值  v1= 1 v2=2 v3 = new ArrayList(); v4 = null;
+<c:if test="${v1 lt v2}">
+v1 小于 v2
+</c:if>
+<c:if test="${empty v3}">
+v3 是空
+</c:if>
+<c:if test="${empty v4}">
+v4 是空
+</c:if>
+<c:if test="${empty v5}">    //没有v5 判断是空
+v5 是空
+</c:if>
+
+<c:choose>   即if--else
+<c:choose>
+    <c:when test="${v1 gt v2}">
+      v1 大于  v2
+    </c:when>
+    <c:otherwise>
+      v1 小于 v2
+    </c:otherwise>
+</c:choose>
+
+<c:forEach> 先创建一个list
+<table border="1">
+    <tr>
+        <th>name</th>
+        <th>age</th>
+        <th>group</th>
+    </tr>
+    <c:choose test="${empty userListKey}">
+        <c:when>
+            <tr><td colspan="3">没有数据</td></tr>
+        </c:when>
+        <c:otherwise>
+         <c:forEach items="${userListKey}" var="userObj" begin="2" end="8" step = "2">   //从2开始到8结束
+            <tr>                                                                        //,每次走两个
+                <td>
+                    <c:out value="${userObj.username}"/>            //还有两行一样
+                </td>
+            </tr>
+
+         </c:forEach>
+         </c:otherwise>
+    </c:choose>
+</table>
+
+ <c:forEach items="${userListKey}" var="userObj" varStatus="vs">
+    <c:choose>
+        <c:when test="${vs.count % 2==0}">
+            此时vs可以控制状态得到走几次了,此时就可以是奇数为红色,偶数不变

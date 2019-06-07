@@ -10,11 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb221013-6b7b-4d0d-82c8-86465a88feb0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jsp_demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jsp_demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module_webDome/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/module_webDome/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Springdemo/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Springdemo/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Springdemo/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jstl_el/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jstl_el/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jstl_el/src/main/java/com/zjgyjd/servlet/ELServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jstl_el/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jstl_el/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/jstl_el/src/main/webapp/test.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/module_webDome/target/" />
@@ -47,7 +51,7 @@
     <session id="-1978933735">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="14" />
+          <entry key="project.closed" value="15" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.4" value="1" />
@@ -369,7 +373,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559837569567" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559837706300" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -642,12 +646,12 @@
       <workItem from="1559633917739" duration="5425000" />
       <workItem from="1559818331178" duration="8220000" />
       <workItem from="1559830738541" duration="1550000" />
-      <workItem from="1559834817297" duration="1422000" />
+      <workItem from="1559834817297" duration="1978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="131142000" />
+    <option name="totallyTimeSpent" value="131698000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
