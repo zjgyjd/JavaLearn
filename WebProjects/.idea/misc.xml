@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/jsp_demo/pom.xml" />
         <option value="$PROJECT_DIR$/jsp_db/pom.xml" />
         <option value="$PROJECT_DIR$/jstl_el/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

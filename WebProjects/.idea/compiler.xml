@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="jsp_db" />
         <module name="jstl_el" />
+        <module name="mybatis" />
         <module name="Springdemo" />
       </profile>
     </annotationProcessing>

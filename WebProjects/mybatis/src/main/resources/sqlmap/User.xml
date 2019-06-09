@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    做O到R的映射
+     namespace:区分statement
+-->
+<mapper namespace="mytest">
+
+    <!--
+        parameterType; 输入参数，指的是sql语句的输入值
+        resultType: 输出参数，指的是sql语句执行完成后返回的结果值
+        id : 这个id不是普通的id,它标识整条sql语句执行的标识，我们叫做StatementID
+        #{} : 占位符,如果输入类型是基本类型则它的名字可以是value或者value之外的任何值
+              如果是引用类型，则只能是value(会有一个自带""或'')
+       ${value}就不会
+
+    \-->
+
+    <select id="queryUserById" parameterType="int" resultType="com.zjgyjd.po.User">
+    select * from user where id=#{value};
+</select>
+
+    <select id="queryUserByUser" parameterType="java.lang.String" resultType="com.zjgyjd.po.User">
+        select * from user where username like '%${value}%';
+    </select>
+
+
+</mapper>
