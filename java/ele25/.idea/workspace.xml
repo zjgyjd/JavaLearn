@@ -76,7 +76,7 @@
           <entry key="project.open.time.44" value="5" />
           <entry key="project.open.time.45" value="3" />
           <entry key="project.open.time.46" value="2" />
-          <entry key="project.open.time.47" value="3" />
+          <entry key="project.open.time.47" value="4" />
           <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.52" value="1" />
@@ -86,7 +86,7 @@
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="108" />
+          <entry key="project.opened" value="109" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -96,7 +96,7 @@
           <entry key="class" value="1" />
           <entry key="detailOfArrayList" value="3" />
           <entry key="iml" value="2" />
-          <entry key="java" value="539" />
+          <entry key="java" value="542" />
           <entry key="jpg" value="1" />
           <entry key="properties" value="1" />
           <entry key="questionForArrayList" value="1" />
@@ -109,7 +109,7 @@
           <entry key="CLASS" value="1" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="539" />
+          <entry key="JAVA" value="542" />
           <entry key="PLAIN_TEXT" value="17" />
           <entry key="Properties" value="1" />
         </counts>
@@ -119,7 +119,7 @@
           <entry key="README" value="1655" />
           <entry key="Readme" value="206" />
           <entry key="detailOfArrayList" value="1685" />
-          <entry key="java" value="78679" />
+          <entry key="java" value="78964" />
           <entry key="properties" value="64" />
           <entry key="questionForArrayList" value="310" />
           <entry key="search" value="2171" />
@@ -128,7 +128,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="78679" />
+          <entry key="JAVA" value="78964" />
           <entry key="PLAIN_TEXT" value="7693" />
           <entry key="Properties" value="64" />
         </counts>
@@ -141,75 +141,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/TakeBeg.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/SonString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="713">
-              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1219">
-              <caret line="56" column="45" selection-start-line="56" selection-start-column="45" selection-end-line="56" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/AntiOrder.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="529">
-              <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/DeleteNum.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/old/CheckStand.java">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Robot.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="-15">
+              <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/HowManyNum.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/sourceSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="105">
+              <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="36" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/test.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/String.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+            <state relative-caret-position="217">
+              <caret line="1778" column="15" lean-forward="true" selection-start-line="1778" selection-start-column="15" selection-end-line="1778" selection-end-column="15" />
+              <folding>
+                <element signature="e#66457#66458#0" expanded="true" />
+                <element signature="e#66495#66496#0" expanded="true" />
+                <element signature="e#82971#82972#0" expanded="true" />
+                <element signature="e#83020#83021#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -243,8 +202,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Fibonacci.java" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/listRemoveElement.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ListRemoveElement.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/MyStack/MyStackTest.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/MyStack/MyQueue.java" />
@@ -294,6 +251,8 @@
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/hasZero.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Robot.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/HowManyNum.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/SonString.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/sourceSort.java" />
       </list>
     </option>
   </component>
@@ -440,6 +399,14 @@
               <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
               <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ele25" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -451,7 +418,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="set back&#9;ACTION&#9;Images.SetBackgroundImage&#10;TreeNode&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap.TreeNode&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap&#10;invokeShift&#9;PSI&#9;JAVA://jdk.nashorn.internal.runtime.ListAdapter#invokeShift&#10;AssertionError&#9;PSI&#9;JAVA://java.lang.AssertionError&#10;Integer&#9;PSI&#9;JAVA://java.lang.Integer" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1559314160795" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560181520275" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../WebProjects" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -487,20 +454,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HowManyNum">
-    <configuration name="DeleteNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.DeleteNum" />
-      <module name="ele25" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.zjgyjd.Solution.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.sourceSort">
     <configuration name="HowManyNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.HowManyNum" />
       <module name="ele25" />
@@ -527,8 +481,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TakeBeg" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.TakeBeg" />
+    <configuration name="SonString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.SonString" />
+      <module name="ele25" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.zjgyjd.Solution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sourceSort" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.sourceSort" />
       <module name="ele25" />
       <extension name="coverage">
         <pattern>
@@ -555,18 +522,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.test" />
-      <item itemvalue="Application.TakeBeg" />
-      <item itemvalue="Application.DeleteNum" />
       <item itemvalue="Application.Robot" />
       <item itemvalue="Application.HowManyNum" />
+      <item itemvalue="Application.SonString" />
+      <item itemvalue="Application.sourceSort" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.sourceSort" />
+        <item itemvalue="Application.SonString" />
         <item itemvalue="Application.HowManyNum" />
         <item itemvalue="Application.Robot" />
         <item itemvalue="Application.test" />
-        <item itemvalue="Application.DeleteNum" />
-        <item itemvalue="Application.TakeBeg" />
       </list>
     </recent_temporary>
   </component>
@@ -693,11 +660,12 @@
       <workItem from="1559119268255" duration="3938000" />
       <workItem from="1559209441791" duration="1012000" />
       <workItem from="1559294775927" duration="2019000" />
+      <workItem from="1560173243556" duration="4413000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="637706000" />
+    <option name="totallyTimeSpent" value="642119000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -709,10 +677,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.16721311" visible="true" weight="0.19591528" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.16721311" visible="true" weight="0.19894099" />
       <window_info id="Structure" order="1" sideWeight="0.83278686" side_tool="true" weight="0.18154311" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -781,27 +749,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/bubble_Sort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="35" selection-start-line="21" selection-start-column="35" selection-end-line="21" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/InsertSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="20" selection-end-line="40" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ControlV.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/List/IArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -1107,20 +1054,20 @@
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/old/CheckStand.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Robot.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
+        <state relative-caret-position="115">
           <caret line="6" column="44" selection-start-line="6" selection-start-column="44" selection-end-line="6" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="19" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1131,6 +1078,33 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="1778" column="15" lean-forward="true" selection-start-line="1778" selection-start-column="15" selection-end-line="1778" selection-end-column="15" />
+          <folding>
+            <element signature="e#66457#66458#0" expanded="true" />
+            <element signature="e#66495#66496#0" expanded="true" />
+            <element signature="e#82971#82972#0" expanded="true" />
+            <element signature="e#83020#83021#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/SonString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/sourceSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="36" selection-end-column="43" />
         </state>
       </provider>
     </entry>

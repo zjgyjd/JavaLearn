@@ -1,0 +1,11 @@
+1.关于浅拷贝方面,如何才能深拷贝
+2.(ensureCapacity(int minCapacity))关于增加容量,会对比这个值和当前容量,如果需要增加则先扩充成原来的1.5倍,如果这个值
+还是比容量大的话则采用minCapacity
+3.Arrays.copyOf 是浅拷贝
+4.关于ArrayList的toArray
+5.JAVA中的System.arraycopy 到底是深拷贝还是浅拷贝？相对于数组来说，是深拷贝，相对于数组中每个元素来说，是浅拷贝。
+6.protected方法只有包内和包外子类可见!!ArrayList.removeRange
+7.关于移动数组里面的元素:System.arraycopy(a, 0, elementData, size, numNew);直接调用copy实现
+  关于判断是不是null: Objects.requireNonNull(c);是null则抛出异常
+8.ArrayList.this.modCount有什么用?控制迭代时不发生其他修改,除了迭代对象可以修改它以外,如果发生其他修改操作就会
+抛出异常
