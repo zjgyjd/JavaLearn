@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cookies" />
         <module name="jsp_db" />
         <module name="jstl_el" />
-        <module name="mybatis" />
         <module name="Springdemo" />
       </profile>
     </annotationProcessing>

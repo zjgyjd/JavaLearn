@@ -1,0 +1,9 @@
+由于http的无状态
+所以需要Cookie来记录用户的基本信息,是在客户端进行的,不会跨浏览器存在,一旦禁用Cookie就不会存在
+Session是在服务端存储的,在断开连接后,第二次登录依然可以匹配
+Cookie在客户端容量小,Session在服务端可以有更多的服务容量更大
+两者生命周期没有任何的关系
+当cookie被关闭时,还可以通过URL重写来实现
+会将URL也就是http路径重写,将Session的id直接链接到后面
+response.encode(xxx)//
+response.encodeURL(request.getRequestURL().toString())
