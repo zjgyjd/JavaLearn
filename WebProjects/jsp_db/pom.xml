@@ -7,7 +7,10 @@
     <groupId>com.zjgyjd</groupId>
     <artifactId>jsp_db</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <packaging>war</packaging>
+    <modules>
+        <module>../mybatis_demo2</module>
+    </modules>
+    <packaging>pom</packaging>
 
     <name>jsp_db Maven Webapp</name>
     <!-- FIXME change it to the project's website -->

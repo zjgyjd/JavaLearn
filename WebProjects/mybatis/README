@@ -52,5 +52,11 @@ namespace(用于区分statement空间)
 strFile - "sqlMapConfig.xml";
 需要一个inputStream = Resources.getResourcesAsString(strFile);
 用这个流就可以new SqlSessionFactoryBuilder.build(inputStream);
-
 时候获取sqlSession
+
+利用规则让mybatis进行动态代理
+1.map.xml中的namespace必须是接口所在包的全限定名
+2.接口的命名以Mapper结束
+3.接口中方法的名称是mapper.xml文件中statement的Id的名称
+4.接口中方法的返回值是mapper.xml文件中statement的resultType
+5.接口中方法的参数时mapper.xml文件中statement的parameterType

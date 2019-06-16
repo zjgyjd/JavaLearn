@@ -6,13 +6,14 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="cookies" />
-        <module name="jsp_db" />
         <module name="jstl_el" />
+        <module name="mybatis" />
+        <module name="mybatis_demo2" />
         <module name="Springdemo" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cookies" target="1.7" />
       <module name="jsp_demo" target="1.7" />
       <module name="jsp_dome" target="1.7" />
     </bytecodeTargetLevel>

@@ -10,12 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb221013-6b7b-4d0d-82c8-86465a88feb0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/cookies/src/main/java/com.zjgyjd/Cookies.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jsp_db/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/jsp_db/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/README" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/README" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chat-room/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../chat-room/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/resources/sqlmap/User.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/main/resources/sqlmap/User.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/main/resources/sqlmapconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/test/java/com/zjgyjd/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/test/java/com/zjgyjd/MybatisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/classes/sqlmap/User.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/target/classes/sqlmap/User.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/target/test-classes/com/zjgyjd/MybatisTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/target/test-classes/com/zjgyjd/MybatisTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/module_webDome/target/" />
@@ -26,6 +31,7 @@
     <ignored path="$PROJECT_DIR$/Springdemo/target/" />
     <ignored path="$PROJECT_DIR$/mybatis/target/" />
     <ignored path="$PROJECT_DIR$/cookies/target/" />
+    <ignored path="$PROJECT_DIR$/mybatis_demo2/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,68 +56,76 @@
     <session id="-1978933735">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="17" />
+          <entry key="project.closed" value="20" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.49" value="1" />
-          <entry key="project.open.time.51" value="1" />
+          <entry key="project.open.time.51" value="2" />
           <entry key="project.open.time.52" value="1" />
           <entry key="project.open.time.53" value="3" />
           <entry key="project.open.time.54" value="1" />
+          <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="README" value="16" />
-          <entry key="class" value="4" />
+          <entry key="README" value="19" />
+          <entry key="class" value="7" />
+          <entry key="fxml" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="58" />
+          <entry key="java" value="74" />
           <entry key="jpg" value="1" />
           <entry key="jsp" value="37" />
           <entry key="md" value="1" />
+          <entry key="properties" value="4" />
           <entry key="tld" value="1" />
-          <entry key="xml" value="38" />
+          <entry key="xml" value="56" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="4" />
+          <entry key="CLASS" value="7" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="58" />
+          <entry key="JAVA" value="74" />
           <entry key="JSP" value="37" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="21" />
-          <entry key="XML" value="34" />
+          <entry key="PLAIN_TEXT" value="24" />
+          <entry key="Properties" value="4" />
+          <entry key="XML" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="README" value="4959" />
+          <entry key="README" value="6016" />
           <entry key="class" value="76" />
-          <entry key="java" value="5157" />
+          <entry key="java" value="5471" />
           <entry key="jsp" value="2034" />
           <entry key="md" value="1" />
-          <entry key="xml" value="841" />
+          <entry key="properties" value="6" />
+          <entry key="txt" value="23" />
+          <entry key="xml" value="1274" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="76" />
-          <entry key="JAVA" value="5157" />
+          <entry key="JAVA" value="5471" />
           <entry key="JSP" value="2034" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="4970" />
-          <entry key="SQL" value="1" />
-          <entry key="XML" value="829" />
+          <entry key="PLAIN_TEXT" value="6050" />
+          <entry key="Properties" value="6" />
+          <entry key="SQL" value="3" />
+          <entry key="XML" value="1260" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.core.usages.trigger">
@@ -124,10 +138,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis/src/test/java/com/zjgyjd/MybatisTest.java">
+        <entry file="file://$PROJECT_DIR$/mybatis_demo2/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
+            <state relative-caret-position="203">
+              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/test/java/com/zjgyjd/MybatisTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="73" selection-start-line="73" selection-end-line="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -136,77 +159,72 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cookies/pom.xml">
+        <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/main/resources/log4j.properties">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/main/java/com/zjgyjd/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="338">
-              <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+            <state relative-caret-position="207">
+              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cookies/src/main/java/com.zjgyjd/Cookies.java">
+        <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/main/resources/sqlMapConfig.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jsp_db/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="313">
-              <caret line="33" column="21" selection-start-line="28" selection-start-column="7" selection-end-line="33" selection-end-column="21" />
+            <state relative-caret-position="198">
+              <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cookies/README">
+        <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/main/java/com/zjgyjd/mapper/UserMapper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="184">
-              <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Springdemo/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1196">
-              <caret line="52" selection-start-line="52" selection-end-line="52" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis/src/main/resources/sqlmap/User.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis/src/main/resources/VO+PO.jpg">
-          <provider selected="true" editor-type-id="images" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mybatis/src/main/java/com/zjgyjd/po/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#392#393#0" expanded="true" />
-                <element signature="e#423#424#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/main/java/com/zjgyjd/po/Items.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="46">
+              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/main/java/com/zjgyjd/po/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="407">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="30" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/main/resources/db.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mybatis_demo2/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="290">
+              <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -219,6 +237,8 @@
         <option value="Jsp File" />
         <option value="spring-beans.schema" />
         <option value="Class" />
+        <option value="FxmlFile" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -228,18 +248,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/module_webDome/src/main/java/com/zjgyjd/servlet/PersonServlet.java" />
-        <option value="$PROJECT_DIR$/jsp_demo/src/main/webapp/WEB-INF/demo3.jsp" />
-        <option value="$PROJECT_DIR$/jsp_demo/src/main/webapp/demo3.jsp" />
-        <option value="$PROJECT_DIR$/module_webDome/jsp_dome/pom.xml" />
-        <option value="$PROJECT_DIR$/jsp_demo/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/jsp_demo/src/main/java/DbMessage.java" />
-        <option value="$PROJECT_DIR$/jsp_demo/src/main/webapp/db.jsp" />
-        <option value="$PROJECT_DIR$/jsp_db/pom.xml" />
-        <option value="$PROJECT_DIR$/jsp_db/src/main/java/com/zjgyjd/vo/Users.java" />
-        <option value="$PROJECT_DIR$/jsp_db/src/main/webapp/hander.jsp" />
-        <option value="$PROJECT_DIR$/jsp_db/src/main/webapp/success.jsp" />
-        <option value="$PROJECT_DIR$/jsp_db/src/main/java/com/zjgyjd/Servlet/HandlerServlet.java" />
         <option value="$PROJECT_DIR$/jsp_db/src/main/webapp/login.jsp" />
         <option value="$PROJECT_DIR$/jsp_db/src/main/webapp/fail.jsp" />
         <option value="$PROJECT_DIR$/jsp_db/src/main/webapp/demo/include.jsp" />
@@ -270,15 +278,27 @@
         <option value="$PROJECT_DIR$/Springdemo/src/main/resources/applicationContext-v.xml" />
         <option value="$PROJECT_DIR$/Springdemo/src/main/resources/applicationContext.xml" />
         <option value="$PROJECT_DIR$/Springdemo/src/main/resources/applicationContext-vv.xml" />
-        <option value="$PROJECT_DIR$/mybatis/README" />
-        <option value="$PROJECT_DIR$/mybatis/pom.xml" />
-        <option value="$PROJECT_DIR$/mybatis/src/main/resources/sqlmapconfig.xml" />
         <option value="$PROJECT_DIR$/mybatis/src/main/java/com/zjgyjd/po/User.java" />
-        <option value="$PROJECT_DIR$/mybatis/src/main/resources/sqlmap/User.xml" />
-        <option value="$PROJECT_DIR$/mybatis/src/test/java/com/zjgyjd/MybatisTest.java" />
         <option value="$PROJECT_DIR$/cookies/pom.xml" />
         <option value="$PROJECT_DIR$/cookies/src/main/java/com.zjgyjd/Cookies.java" />
         <option value="$PROJECT_DIR$/cookies/README" />
+        <option value="$PROJECT_DIR$/mybatis/src/main/java/com/zjgyjd/po/Items.java" />
+        <option value="$PROJECT_DIR$/mybatis/src/main/resources/sqlmap/User.xml" />
+        <option value="$PROJECT_DIR$/mybatis/src/main/resources/sqlmapconfig.xml" />
+        <option value="$PROJECT_DIR$/mybatis/src/main/resources/sqlMapConfig.xml.fxml" />
+        <option value="$PROJECT_DIR$/mybatis/src/main/resources/sqlMapConfig.xml" />
+        <option value="$PROJECT_DIR$/mybatis/README" />
+        <option value="$PROJECT_DIR$/mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis/src/test/java/com/zjgyjd/MybatisTest.java" />
+        <option value="$PROJECT_DIR$/mybatis_demo2/README" />
+        <option value="$PROJECT_DIR$/mybatis_demo2/src/main/resources/sqlmap/User.xml" />
+        <option value="$PROJECT_DIR$/mybatis_demo2/src/main/resources/db.properties" />
+        <option value="$PROJECT_DIR$/mybatis_demo2/src/main/java/com/zjgyjd/mapper/User.xml" />
+        <option value="$PROJECT_DIR$/mybatis_demo2/src/main/resources/sqlMapConfig.xml" />
+        <option value="$PROJECT_DIR$/mybatis_demo2/src/main/java/com/zjgyjd/mapper/UserMapper.java" />
+        <option value="$PROJECT_DIR$/mybatis_demo2/src/test/java/com/zjgyjd/MybatisTest.java" />
+        <option value="$PROJECT_DIR$/mybatis_demo2/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_demo2/src/main/java/com/zjgyjd/po/User.java" />
       </list>
     </option>
   </component>
@@ -310,7 +330,23 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mybatis_demo2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mybatis_demo2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="mybatis_demo2" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Plugins" type="7aea1407:MavenProjectsStructure$PluginsNode" />
+          <item name="compiler" type="36feed69:MavenProjectsStructure$PluginNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -346,38 +382,105 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cookies" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cookies" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cookies" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="cookies" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jsp_db" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jstl_el" type="462c0819:PsiDirectoryNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
+              <item name="mapper" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
+              <item name="po" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
@@ -396,31 +499,35 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560433173596" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Springdemo/src/main/resources/applicationContext.xml" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560700359489" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis/src/main/resources" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="web.server" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaLearn\WebProjects\mybatis_demo2\src\main\java\com\zjgyjd\mapper" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis\src\main" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis\src" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis\src\main\java\resources" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis\target\classes" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zjgyjd.po" />
+      <recent name="com.zjgyjd" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaLearn\WebProjects\mybatis\src\main\resources" />
-      <recent name="D:\JavaLearn\WebProjects\mybatis" />
-      <recent name="D:\JavaLearn\WebProjects\Springdemo" />
-      <recent name="D:\JavaLearn\WebProjects\jsp_db" />
-      <recent name="D:\JavaLearn\WebProjects\module_webDome" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaLearn\WebProjects\mybatis_demo2\src\main\resources" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis\target" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -435,7 +542,55 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MybatisTest.testQueryUserById">
+  <component name="RunManager" selected="JUnit.MybatisTest.testQueryUserByUser">
+    <configuration name="MybatisTest.testAddUser (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_demo2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zjgyjd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zjgyjd" />
+      <option name="MAIN_CLASS_NAME" value="com.zjgyjd.MybatisTest" />
+      <option name="METHOD_NAME" value="testAddUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest.testAddUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zjgyjd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zjgyjd" />
+      <option name="MAIN_CLASS_NAME" value="com.zjgyjd.MybatisTest" />
+      <option name="METHOD_NAME" value="testAddUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest.testQueryUserById (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_demo2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zjgyjd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zjgyjd" />
+      <option name="MAIN_CLASS_NAME" value="com.zjgyjd.MybatisTest" />
+      <option name="METHOD_NAME" value="testQueryUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MybatisTest.testQueryUserById" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis" />
       <extension name="coverage">
@@ -447,6 +602,22 @@
       <option name="PACKAGE_NAME" value="com.zjgyjd" />
       <option name="MAIN_CLASS_NAME" value="com.zjgyjd.MybatisTest" />
       <option name="METHOD_NAME" value="testQueryUserById" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MybatisTest.testQueryUserByUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis_demo2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zjgyjd.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zjgyjd" />
+      <option name="MAIN_CLASS_NAME" value="com.zjgyjd.MybatisTest" />
+      <option name="METHOD_NAME" value="testQueryUserByUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -666,10 +837,18 @@
       <item itemvalue="Tomcat Server.jsp_db" />
       <item itemvalue="Tomcat Server.zjgyjd" />
       <item itemvalue="JUnit.MybatisTest.testQueryUserById" />
+      <item itemvalue="JUnit.MybatisTest.testAddUser" />
+      <item itemvalue="JUnit.MybatisTest.testAddUser (1)" />
+      <item itemvalue="JUnit.MybatisTest.testQueryUserById (1)" />
+      <item itemvalue="JUnit.MybatisTest.testQueryUserByUser" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MybatisTest.testQueryUserByUser" />
+        <item itemvalue="JUnit.MybatisTest.testQueryUserById (1)" />
+        <item itemvalue="JUnit.MybatisTest.testAddUser" />
         <item itemvalue="JUnit.MybatisTest.testQueryUserById" />
+        <item itemvalue="JUnit.MybatisTest.testAddUser (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -700,43 +879,46 @@
       <workItem from="1559834817297" duration="1978000" />
       <workItem from="1560042702848" duration="12463000" />
       <workItem from="1560423560708" duration="6637000" />
+      <workItem from="1560649351123" duration="4795000" />
+      <workItem from="1560654366389" duration="18253000" />
+      <workItem from="1560696894533" duration="3186000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MybatisTest_testQueryUserById - 2019.06.09 at 11h 50m 52s.xml">
+    <history-entry file="MybatisTest_testQueryUserById - 2019.06.16 at 14h 53m 16s.xml">
       <configuration name="MybatisTest.testQueryUserById" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_testQueryUserById - 2019.06.09 at 11h 55m 50s.xml">
+    <history-entry file="MybatisTest_testQueryUserById - 2019.06.16 at 14h 58m 52s.xml">
       <configuration name="MybatisTest.testQueryUserById" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_testQueryUserById - 2019.06.09 at 11h 58m 04s.xml">
+    <history-entry file="MybatisTest_testQueryUserById - 2019.06.16 at 15h 02m 13s.xml">
       <configuration name="MybatisTest.testQueryUserById" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_testQueryUserById - 2019.06.09 at 12h 01m 03s.xml">
-      <configuration name="MybatisTest.testQueryUserById" configurationId="JUnit" />
+    <history-entry file="MybatisTest_testAddUser - 2019.06.16 at 15h 06m 50s.xml">
+      <configuration name="MybatisTest.testAddUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_testQueryUserById - 2019.06.09 at 12h 03m 42s.xml">
-      <configuration name="MybatisTest.testQueryUserById" configurationId="JUnit" />
+    <history-entry file="MybatisTest_testQueryUserById_(1) - 2019.06.16 at 22h 57m 43s.xml">
+      <configuration name="MybatisTest.testQueryUserById (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_testQueryUserById - 2019.06.09 at 12h 06m 04s.xml">
-      <configuration name="MybatisTest.testQueryUserById" configurationId="JUnit" />
+    <history-entry file="MybatisTest_testQueryUserById_(1) - 2019.06.16 at 22h 59m 54s.xml">
+      <configuration name="MybatisTest.testQueryUserById (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_testQueryUserById - 2019.06.09 at 12h 06m 43s.xml">
-      <configuration name="MybatisTest.testQueryUserById" configurationId="JUnit" />
+    <history-entry file="MybatisTest_testQueryUserById_(1) - 2019.06.16 at 23h 03m 12s.xml">
+      <configuration name="MybatisTest.testQueryUserById (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_testQueryUserById - 2019.06.09 at 12h 26m 40s.xml">
-      <configuration name="MybatisTest.testQueryUserById" configurationId="JUnit" />
+    <history-entry file="MybatisTest_testQueryUserById_(1) - 2019.06.16 at 23h 07m 40s.xml">
+      <configuration name="MybatisTest.testQueryUserById (1)" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_testQueryUserById - 2019.06.09 at 12h 30m 36s.xml">
-      <configuration name="MybatisTest.testQueryUserById" configurationId="JUnit" />
+    <history-entry file="MybatisTest_testQueryUserByUser - 2019.06.16 at 23h 26m 22s.xml">
+      <configuration name="MybatisTest.testQueryUserByUser" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="MybatisTest_testQueryUserById - 2019.06.09 at 12h 31m 34s.xml">
-      <configuration name="MybatisTest.testQueryUserById" configurationId="JUnit" />
+    <history-entry file="MybatisTest_testQueryUserByUser - 2019.06.16 at 23h 32m 25s.xml">
+      <configuration name="MybatisTest.testQueryUserByUser" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="150798000" />
+    <option name="totallyTimeSpent" value="177032000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -750,7 +932,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3245083" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34114978" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Web" order="2" side_tool="true" />
       <window_info id="Image Layers" order="3" />
@@ -771,7 +953,7 @@
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3295082" />
-      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49848714" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49848714" weight="0.3295082" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -790,138 +972,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/jsp_db/src/main/webapp/demo03/sendRedirect.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="29" selection-start-line="14" selection-start-column="29" selection-end-line="14" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp_db/src/main/webapp/demo03/accept.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="58" selection-start-line="7" selection-start-column="58" selection-end-line="7" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp_db/src/main/webapp/demo4/accept.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="15" column="36" selection-start-line="15" selection-start-column="36" selection-end-line="15" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp_db/src/main/webapp/demo4/forward.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jstl_el/src/main/java/com/zjgyjd/servlet/ELServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_webDome/src/main/java/com/zjgyjd/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="35" column="14" lean-forward="true" selection-start-line="35" selection-start-column="14" selection-end-line="35" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module_webDome/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/servlet/jstl/1.2/jstl-1.2.jar!/META-INF/c.tld">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp_demo/src/main/java/DbMessage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="34" lean-forward="true" selection-start-line="8" selection-start-column="4" selection-end-line="9" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp_db/src/main/java/com/zjgyjd/db/dbManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="39" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp_db/src/main/java/com/zjgyjd/vo/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="6" selection-start-column="3" selection-end-line="32" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp_demo/src/main/webapp/db.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="29" column="60" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="60" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jstl_el/src/main/webapp/test.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jstl_el/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jstl_el/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp_demo/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp_demo/src/main/webapp/demo3.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="28" column="3" selection-start-line="28" selection-start-column="3" selection-end-line="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp_db/src/main/webapp/success.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="13" column="36" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jstl_el/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="874">
-          <caret line="38" column="10" selection-start-line="38" selection-start-column="10" selection-end-line="38" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp_db/src/main/java/com/zjgyjd/Servlet/HandlerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="713">
-          <caret line="42" column="72" selection-start-line="42" selection-start-column="72" selection-end-line="42" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jsp_db/src/main/java/com/zjgyjd/biz/DbBiz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
@@ -1014,27 +1064,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mybatis/src/test/java/com/zjgyjd.java" />
-    <entry file="file://$PROJECT_DIR$/mybatis/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="28" column="20" selection-start-line="28" selection-start-column="20" selection-end-line="28" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1058">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis/src/main/resources/sqlmapconfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/SqlSession.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
@@ -1049,42 +1078,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Springdemo/pom.xml">
+    <entry file="file://$PROJECT_DIR$/cookies/lala.md" />
+    <entry file="file://$PROJECT_DIR$/cookies/src/main/java/com.zjgyjd/Cookies.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
+        <state relative-caret-position="345">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cookies/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="8" column="54" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mybatis/src/main/resources/sqlmap/User.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" column="59" selection-start-line="24" selection-start-column="59" selection-end-line="24" selection-end-column="59" />
+        <state relative-caret-position="621">
+          <caret line="27" column="23" selection-start-line="27" selection-start-column="16" selection-end-line="27" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mybatis/src/main/resources/VO+PO.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis/src/main/java/com/zjgyjd/po/User.java">
+    <entry file="file://$PROJECT_DIR$/mybatis/src/main/resources/sqlMapConfig.xml.fxml" />
+    <entry file="file://$PROJECT_DIR$/mybatis/target/classes/sqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Springdemo/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#392#393#0" expanded="true" />
-            <element signature="e#423#424#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="246">
+          <caret line="52" selection-start-line="52" selection-end-line="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mybatis/src/test/java/com/zjgyjd/MybatisTest.java">
+    <entry file="file://$PROJECT_DIR$/mybatis/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="39" column="37" selection-start-line="39" selection-start-column="37" selection-end-line="39" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="337">
+          <caret line="61" column="47" selection-start-line="61" selection-start-column="47" selection-end-line="61" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cookies/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -1095,35 +1135,130 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cookies/pom.xml">
+    <entry file="file://$PROJECT_DIR$/mybatis/target/test-classes/com/zjgyjd/MybatisTest.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis/target/classes/com/zjgyjd/po/Items.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis/target/classes/com/zjgyjd/po/User.class">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis/src/main/java/com/zjgyjd/po/Items.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="338">
-          <caret line="44" column="21" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cookies/src/main/java/com.zjgyjd/Cookies.java">
+    <entry file="file://$PROJECT_DIR$/mybatis/src/main/java/com/zjgyjd/po/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        <state relative-caret-position="253">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/target/classes/com/zjgyjd/po/User.java" />
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/target/classes/com/zjgyjd/po/Items.java" />
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/target/classes/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis/src/test/java/com/zjgyjd/MybatisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1196">
+          <caret line="62" column="43" selection-start-line="62" selection-start-column="43" selection-end-line="62" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cookies/lala.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/mybatis/src/main/resources/sqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="25" selection-start-line="3" selection-start-column="25" selection-end-line="3" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cookies/README">
+    <entry file="file://$PROJECT_DIR$/mybatis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/target/classes/sqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/main/java/com/zjgyjd/mapper/UserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="52" column="26" lean-forward="true" selection-start-line="52" selection-start-column="26" selection-end-line="52" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/main/resources/sqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/test/java/com/zjgyjd/MybatisTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/main/java/com/zjgyjd/po/Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/main/java/com/zjgyjd/po/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="28" selection-start-column="44" selection-end-line="30" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/src/main/java/com/zjgyjd/mapper/UserMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
-          <caret line="8" column="54" lean-forward="true" selection-start-line="8" selection-start-column="54" selection-end-line="8" selection-end-column="54" />
+          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1217,5 +1352,9 @@
         </settings>
       </state>
     </states>
+  </component>
+  <component name="mavenExecuteGoalHistory">
+    <option value="$PROJECT_DIR$/mybatis" />
+    <option value="compile" />
   </component>
 </project>

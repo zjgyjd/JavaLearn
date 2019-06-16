@@ -1,5 +1,6 @@
 package com.zjgyjd;
 
+import com.zjgyjd.mapper.UserMapper;
 import com.zjgyjd.po.User;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -22,7 +23,7 @@ public class MybatisTest {
     public SqlSessionFactory sqlSessionFactory = null;
 
     @Before
-    public void testInitial(){
+    public void testInitial() {
         String strFile = "sqlMapConfig.xml";
         try {
             InputStream is = Resources.getResourceAsStream(strFile);
@@ -33,35 +34,47 @@ public class MybatisTest {
     }
 
     @Test
-    public void testQueryUserById(){
+    public void testQueryUserById() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
-        try{
-            User user = (User) sqlSession.selectOne("mytest.queryUserById",53);
+        try {
+            User user = (User) sqlSession.selectOne("mytest.queryUserById", 53);
             System.out.println(user);
-            List<User> user2 =  sqlSession.selectList("mytest.queryUserByUser","z");
+            List<User> user2 = sqlSession.selectList("mytest.queryUserByUser", "王");
             System.out.println(user2);
-        }catch(Exception ex){
+        } catch (Exception ex) {
             ex.printStackTrace();
-        }finally {
+        } finally {
             sqlSession.close();//别忘了关我呦
         }
     }
 
     @Test
-    public void testAddUser(){
+    public void testAddUser() {
         SqlSession sqlSession = sqlSessionFactory.openSession();
         User s = new User();
         s.setUsername("YH");
         s.setBirthday(null);
         s.setAddress("SX");
         s.setSex("1");
-        try{
-           sqlSession.selectOne("mytest.addUser",s);
-        }catch(Exception ex){
+        try {
+            sqlSession.selectOne("mytest.addUser", s);
+        } catch (Exception ex) {
             ex.printStackTrace();
-        }finally {
-            sqlSession.commit();//一定要commit
+        } finally {
+            sqlSession.commit();
             sqlSession.close();//别忘了关我呦
+        }
+    }
+
+    @Test
+    public void testQueryUserByUser() {
+        try {
+            SqlSession sqlSession = sqlSessionFactory.openSession();
+            UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
+            List<User> usersList = userMapper.queryUserByUser("王");
+            System.out.println(usersList);
+        } catch (Exception e) {
+            e.printStackTrace();
         }
     }
 

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!--配置数据源相关信息-->
+    <properties resource="db.properties"/>
+    <typeAliases>
+        <!--更改单个别名-->
+        <!-- <typeAlias type="com.ming.po.User" alias="user"/>
+        下面这个是设置该路径下所有的别名,默认是类名小写
+        -->
+        <package name="com.ming.po"/>
+    </typeAliases>
+    <environments default="developer">
+        <environment id="developer">
+            <transactionManager type="JDBC"></transactionManager>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+<mappers>
+    <package name="com.zjgyjd.mapper"/>
+</mappers>
+</configuration>

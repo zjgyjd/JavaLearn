@@ -1,0 +1,42 @@
+动态查询
+利用标签
+<where>
+        <foreach collection="ids" item="" open="(" close=")" separator="or">之后填分隔符语句剩下的是什么
+                         集合名字  叫什么   以什么开始 什么结束   分隔符是什么
+                                  注意这个括号和or就会加到数字上
+ 这样就可以取出List
+
+
+ 但此时会出现很多一样的查询语句,所以使用片段
+ <sql id= "mysqlID"
+    下面填相同片段
+
+ 在原处引用
+    <include refid="mysqlID"/>
+
+
+
+ resultMap属性
+    <resultMap id="myMap" type=""真正的User
+        里面写映射关系如:<id colum"id_" property="id"     即使名字不变也要映射一下2
+                        <result colum"username_" property="result"
+    最后将resultMap = "myMap"
+
+    关联映射
+    定义表和表之间的关系
+    进行多表联查时,有内连接(有交集时)和外连接(没有交集?)
+                                    |左连接    要返回左边表所有数据,下面同理
+                                    |右连接
+                                    |交叉连接(不支持)
+                                    |全连接
+
+    如果resultMap遇见类的时候用,一对一时直接在主表对应的属性上加上副表的类
+    <association property="user" javaType="java.com.zjgyjd.User">
+            <id xxxx
+            <result xxxx
+
+    一对多 使用list
+    此时在resultMap里要写出一对多的关系(collection 代表list
+
+    )
+        <collection property="oderDetailList" javaType="java.com.zjgyjd.OderDetail">

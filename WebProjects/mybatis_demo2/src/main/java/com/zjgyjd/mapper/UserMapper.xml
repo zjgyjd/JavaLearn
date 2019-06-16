@@ -5,7 +5,7 @@
     做O到R的映射
      namespace:区分statement
 -->
-<mapper namespace="mytest">
+<mapper namespace="com.zjgyjd.mapper.UserMapper">
 
     <!--
         parameterType; 输入参数，指的是sql语句的输入值
@@ -26,6 +26,10 @@
     </select>
 
     <select id="addUser" parameterType="com.zjgyjd.po.User">
-        insert into user(username,birthday,sex,address) value (#{username},#{birthday},#{sex},#{address});
+        insert into user(username,birthday,sex,address) value (#{username},#{birthday},#{sex},#{address})
     </select>
+
+
+
+
 </mapper>

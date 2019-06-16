@@ -25,5 +25,7 @@
         select * from user where username like '%${value}%';
     </select>
 
-
+    <select id="addUser" parameterType="com.zjgyjd.po.User">
+        insert into user(username,birthday,sex,address) value (#{username},#{birthday},#{sex},#{address});
+    </select>
 </mapper>
