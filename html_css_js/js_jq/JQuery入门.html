@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--
+        	作者：offline
+        	时间：2019-06-21
+        	描述：JQuery的开发步骤
+        	JQuery:丰富的js库,提供大量的api,快速去使用
+        	1.导入jsku
+        	2.JQuery的程序入口:页面载入事件
+        	3.确定给那个标签派发事件(单击点击或其他)
+        	
+        -->
+        
+		<script>
+			function init(){
+				alert("js的onload1");
+			}
+			function init(){
+				alert("js的onload2");//后面会覆盖前面函数,用JQuery不会覆盖会按顺序进行
+			}
+		</script>
+	</head>
+	<body onload="init()">
+	</body>
+</html>

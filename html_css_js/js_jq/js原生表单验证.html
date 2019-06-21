@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>js表单验证</title>
+		<!--
+        	作者：offline
+        	时间：2019-06-21
+        	描述：用户名由4-14数字或字母
+        		  密码6-16位
+        		  确认密码:一致
+        		  邮箱:.com/.cn
+        -->
+        <script>
+        	function checkUserName(){
+        		var name=document.getElementById("username2").value;
+        		var span=document.getElementById("user_span");
+        		var reg=/^[a-zA-Z0-9]{4,14}$/;
+        		if(reg.test(name)){
+        			span.innerHTML="用户名正确".fontcolor("greenyellow");
+        			return true;
+        		}else{
+        			span.innerHTML="用户名不正确".fontcolor("red");
+        			return false;
+        		}
+        	}
+        	function checkPassWord(){
+        		var pwd = document.getElementById("pwd").value;
+        		var span = document.getElementById("pwd_span");
+        		var reg = /^[a-zA-Z0-9]{6,16}$/;
+        		if(reg.test(pwd)){
+        			span.innerHTML="密码正确".fontcolor("greenyellow");
+        			return true;
+        		}else{
+        			span.innerHTML="密码不正确".fontcolor("red");
+        			return false;
+        		}
+        	}
+        	function checkRePwd(){
+        		var repwd=document.getElementById("repwd").value;
+        		var pwd=document.getElementById("pwd").value;
+        		var span=document.getElementById("repwd_span");
+        		
+        		if(pwd==repwd){
+        			span.innerHTML="密码一致".fontcolor("greenyellow");
+        			return true;
+        		}else{
+        			span.innerHTML="密码不一致".fontcolor("red");
+        			return false;
+        		}
+        	}
+        </script>
+	</head>
+	<body>
+		<!--
+        	作者：offline
+        	时间：2019-06-21
+        	描述：onsubmit时间:表示表单提交是否成功
+        -->
+		<form action="backend.html" method="post"  onsubmit="return checkAll()">
+			用户名:<input type="test" id="username2" onblur="checkUserName()"/><span id="user_span"></span>
+			<br />
+			密&nbsp;&nbsp;&nbsp;码:<input type='password' id="pwd" onblur="checkPassWord()"/><span id="pwd_span"></span>
+			<br />
+			确认密码:<input type="password" id="repwd" onblur="checkRePwd()"/><span id="repwd_span"></span>
+			<br />
+			邮箱:<input type="text" id="email" />
+			<br />
+			<input type="button" value="提交" />
+		</form>
+	</body>
+</html>

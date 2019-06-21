@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DOM编程</title>
+		<!--
+        	作者：offline
+        	时间：2019-06-21
+        	描述：Document Object Module:
+        		文档对象模型编程
+        		
+        		POM: project Object Module
+        			项目对象模型
+        	DOM编程操作步骤:
+        			通过document对象方法控制标签对象,改变他的属性
+        			(innerHTML/src/display)
+        	通过方法获取:
+        		getElementById("id"):页面中id属性值是唯一的,其他的都可以同名
+        		getElementByName("name")
+        		getElementByTagName("tagName")
+        		getElementByClassName("class")
+        	通过内置属性获取:
+        		节点关系
+        -->
+        
+	</head>
+	<body>
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+		<a href="#"></a>
+		<div>jjj</div>
+	</body>
+	<script>
+	//如果没有事件要放下面才能成功
+			var docList = document.all;//获取所有标签
+        	var list = document.links;//返回a标签列表
+        	for(var i = 0;i< list.length;i++){
+        		document.write(list[i].nodeName+"<br />")
+        	}
+    </script>
+    
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>常见的事件分类</title>
+	</head>
+	<script>
+		function testClick(){
+			alert("触发单击")
+		}
+		function testDbclick(){
+			alert("触发双击")
+		}
+		function testFocus(){
+			var input = document.getElementById("username");
+			input.value="";
+		}
+		function testblur(){
+			var input =document.getElementById("username");
+			var span =document.getElementById("user_span");
+			if ("zjgyjd" == input.value){
+				span.innerHTML="用户名可用".fontcolor("greenyellow");
+			}else{
+				span.innerHTML="用户名不可用".fontcolor("red");
+				
+			}
+		}
+		function testChange(){
+			var pro =document.getElementById("province");
+			pro = pro.value;
+			var city=document.getElementById("city");
+			//需要清空
+			city.innerHTML="<option value='请选择'>----请选择----</option>";
+			//判断当前省份是什么
+			if(pro == "陕西省"){
+				var arr = ["西安市","咸阳市","宝鸡市"];
+				for(var i = 0;i < arr.length;i++){
+					city.innerHTML +="<option value='"+arr[i]+"'>"+arr[i]+"</option>";
+				}
+			}
+			if(pro == "广东省"){
+				var arr = ["深圳市","东莞市"];
+				for(var i = 0;i < arr.length;i++){
+					city.innerHTML +="<option value='"+arr[i]+"'>"+arr[i]+"</option>";
+				}
+			}
+			if(pro == "山西省"){
+				var arr = ["太原市"];
+				for(var i = 0;i < arr.length;i++){
+					city.innerHTML +="<option value='"+arr[i]+"'>"+arr[i]+"</option>";
+				}
+			}
+		}
+		function testMouseOver(){
+			alert("鼠标经过");
+		}
+		function testMouseOut(){
+			alert("鼠标移出");
+		}
+		function init(){
+			//alert("页面载入事件")
+		}
+	</script>
+	<style>
+		div{
+			width: 200px;
+			height: 100px;
+			border: 1px solid #000 ;
+		}
+	</style>
+	<body onload="init()">
+		<!--
+        	作者：offline
+        	时间：2019-06-21
+        	描述：单击 onclick/双击ondbclick
+        -->
+        <input type="button" value="单击" onclick="testClick()" />
+        <input type="button" value="双击" onclick="testDbclick()" />
+        <!--
+        	作者：offline
+        	时间：2019-06-21
+        	描述：焦点事件
+        	获取焦点:onfoucs			应用场景:获取焦点后将默认值清空
+        	失去焦点:onblur			原生的表单验证
+        -->
+        <br />
+        用户名:<input type="text" onblur="testblur()" onfocus="testFocus()" value="请输入用户号" id="username"/>
+	<span id="user_span"></span>
+	
+	<!--
+    	作者：offline
+    	时间：2019-06-21
+    	描述：下拉菜单:select
+    					onchange"选项卡是否发生变化"
+    -->
+    <br />
+    <select id="province" onchange="testChange()"> 
+    	<option value="请选择">----请选择----</option>
+    	<option value="陕西省">陕西省</option>
+    	<option value="广东省">广东省</option>
+    	<option value="山西省">山西省</option>
+    </select>
+    <select id="city">
+    	<option value=""></option>
+    </select>
+    <!--
+    	作者：offline
+    	时间：2019-06-21
+    	描述：鼠标经过事件onmouse,鼠标移出事件
+    			
+    -->
+    <div onmouseover="testMouseOver()"  onmouseout="testMouseOut()"></div>
+	</body>
+</html>

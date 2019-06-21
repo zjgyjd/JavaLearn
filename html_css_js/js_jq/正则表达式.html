@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>js正则表达式</title>
+		<!--
+        	作者：offline
+        	时间：2019-06-21
+        	描述：js正则表达式的格式:
+        			var 变量名 = /正则表达式语法/;
+        			内置方法:正则对象.test(表单中的信息匹配){
+        				//成功
+        			}else{
+        				//不超过
+        			}
+        			常见语法:
+        				X+:X字符出现1次或多次
+        				X*:X字符串出现0次或多次
+        				X?:X字符串出现0次或1次
+        				[a-zA-Z0-9]:匹配合适数字和字母
+        				X{n,}:至少出现n次
+        				X{n}:只出现n次
+        				X{n,m}至少n次,最多m次
+        				
+        				弱类型语言必须有边界匹配条件
+        				 ^:以...开头
+        				 $:以..结尾
+        -->
+        <script>
+        	var str = "122";
+        	var reg = /^[0-9]{2}$/;
+        	if(reg.test(str)){
+        		alert("条件成立")
+        	}else{
+        		alert("条件不成立")
+        	}
+        </script>
+	</head>
+	<body>
+	</body>
+</html>

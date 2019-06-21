@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.11.0.js"></script>
+		<script>
+			function jsChange(){
+				var div = document.getElementById("div1");
+				div.innerHTML ="使用Js改变";
+				//js-->jq对象:通过js对象使用$(js对象)
+				var $div = $(div);
+				$div.html("将js改变成jQuery");
+			}
+			$(function(){
+				//给id为btn1派发事件
+				$("#btn1").click(function(){
+					$("#div2").html("使用jq改变div内容");
+					var jsDiv = $("div").get(1);//将所有div标签取出找第一个变成js
+				});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<input type="button" value="js/jq改变内容" onclick="jsChange()"/><br />
+		<div id="div1">
+			这里内容会被Js/Jq改变
+		</div>
+		<input type="button" id="btn1" value="jq/js改变内容"/>
+		<div id="div2">
+			这里将被jq改变,在变成js
+		</div>
+	</body>
+</html>
