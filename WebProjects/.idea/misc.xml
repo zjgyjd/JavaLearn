@@ -2,12 +2,14 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$USER_HOME$/Desktop/ssmdemo01" />
     <file type="web" url="file://$PROJECT_DIR$/cookies" />
     <file type="web" url="file://$PROJECT_DIR$/jsp_db" />
     <file type="web" url="file://$PROJECT_DIR$/jsp_demo" />
     <file type="web" url="file://$PROJECT_DIR$/jstl_el" />
     <file type="web" url="file://$PROJECT_DIR$/module_webDome/jsp_dome" />
     <file type="web" url="file://$PROJECT_DIR$/Springdemo" />
+    <file type="web" url="file://$PROJECT_DIR$/springmvc_spring_mybits" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -17,6 +19,9 @@
         <option value="$PROJECT_DIR$/jsp_db/pom.xml" />
         <option value="$PROJECT_DIR$/jstl_el/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis/pom.xml" />
+        <option value="$USER_HOME$/Desktop/ssmdemo01/pom.xml" />
+        <option value="$PROJECT_DIR$/mybits_reverstar/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

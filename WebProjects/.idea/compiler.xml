@@ -9,7 +9,10 @@
         <module name="jstl_el" />
         <module name="mybatis" />
         <module name="mybatis_demo2" />
+        <module name="mybits_reverstar" />
         <module name="Springdemo" />
+        <module name="springmvc_spring_mybits" />
+        <module name="ssmdemo01" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
