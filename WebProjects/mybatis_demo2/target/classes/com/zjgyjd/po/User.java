@@ -10,7 +10,7 @@ public class User {
     private String address;
 
 
-    public User(){
+    public User() {
 
     }
 

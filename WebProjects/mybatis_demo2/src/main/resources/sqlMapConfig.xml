@@ -11,7 +11,7 @@
         <!-- <typeAlias type="com.ming.po.User" alias="user"/>
         下面这个是设置该路径下所有的别名,默认是类名小写
         -->
-        <package name="com.ming.po"/>
+        <package name="com.zjgyjd.po"/>
     </typeAliases>
     <environments default="developer">
         <environment id="developer">
