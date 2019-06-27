@@ -11,6 +11,7 @@
         <module name="mybatis_demo2" />
         <module name="mybits_reverstar" />
         <module name="Springdemo" />
+        <module name="springmvc" />
         <module name="springmvc_spring_mybits" />
         <module name="ssmdemo01" />
       </profile>
