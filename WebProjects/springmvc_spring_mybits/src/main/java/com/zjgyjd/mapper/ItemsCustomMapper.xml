@@ -13,7 +13,7 @@
 
         </sql>
 
-    <select id="queryItemsByName" parameterType="com.zjgyjd.po.ItemsEx" resultType="com.zjgyjd.po.ItemsEx">
+    <select id="queryItemsByName" parameterType="com.zjgyjd.po.ItemsEx" resultType="com.zjgyjd.po.ItemsCustom">
         select
         *
         from

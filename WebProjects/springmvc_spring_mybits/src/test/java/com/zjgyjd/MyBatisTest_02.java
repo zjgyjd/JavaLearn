@@ -2,6 +2,7 @@ package com.zjgyjd;
 
 import com.zjgyjd.mapper.ItemsCustomMapper;
 import com.zjgyjd.po.Items;
+import com.zjgyjd.po.ItemsCustom;
 import com.zjgyjd.po.ItemsEx;
 import org.junit.Before;
 import org.junit.Test;
@@ -25,7 +26,7 @@ public class MyBatisTest_02 {
                 getBean("itemsCustomMapper");
         ItemsEx itemsEx = new ItemsEx();
         itemsEx.setName("本");
-        List<ItemsEx> itemsExList = itemsCustomMapper.queryItemsByName(itemsEx);
+        List<ItemsCustom> itemsExList = itemsCustomMapper.queryItemsByName(itemsEx);
         System.out.println(itemsExList);
     }
 }

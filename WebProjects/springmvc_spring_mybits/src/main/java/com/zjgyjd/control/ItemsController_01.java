@@ -4,7 +4,6 @@ import com.zjgyjd.mapper.ItemsCustomMapper;
 import com.zjgyjd.po.ItemsCustom;
 import com.zjgyjd.po.ItemsEx;
 import com.zjgyjd.service.ItemsService;
-import com.zjgyjd.service.ItemsServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
@@ -16,14 +15,16 @@ import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 @Controller
-public class ItemsController {
-    @Autowired
-    private ItemsService itemsService;
+public class ItemsController_01 {
 
-    @RequestMapping(value = "/abc")
+
+    @RequestMapping(value = "/c")
     public void queryItemsList(HttpServletRequest request,
                                HttpServletResponse response) throws Exception{
-        List<ItemsCustom> itemsExList = itemsService.queryItemsByName(null);
+        ApplicationContext applicationContext =
+                new ClassPathXmlApplicationContext("spring/applicationContext-mapper.xml");
+        ItemsCustomMapper itemsCustomMapper = (ItemsCustomMapper) applicationContext.getBean("itemsCustomMapper");
+        List<ItemsCustom> itemsExList = itemsCustomMapper.queryItemsByName(null);
         request.setAttribute("itemslistKey",itemsExList);
         request.getRequestDispatcher("/showitems.jsp").forward(request,response);
     }

@@ -1,6 +1,7 @@
 package com.zjgyjd;
 
 import com.zjgyjd.mapper.ItemsCustomMapper;
+import com.zjgyjd.po.ItemsCustom;
 import com.zjgyjd.po.ItemsEx;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -28,7 +29,7 @@ public class MyBatisTest_01 {
         ItemsCustomMapper itemsCustomMapper = sqlSession.getMapper(ItemsCustomMapper.class);
         ItemsEx itemsEx = new ItemsEx();
         itemsEx.setName("本");
-        List<ItemsEx> itemsExList = itemsCustomMapper.queryItemsByName(itemsEx);
+        List<ItemsCustom> itemsExList = itemsCustomMapper.queryItemsByName(itemsEx);
         System.out.println(itemsExList);
     }
 }

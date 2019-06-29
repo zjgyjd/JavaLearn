@@ -17,9 +17,6 @@
        http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 
-    <bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
-    <!--配置扫描器-->
-    <context:component-scan base-package="com.zjgyjd.control"/>
-    <!--注解的适配器+注解的映射器-->
-    <mvc:annotation-driven/>
+    <bean id="itemsService" class="com.zjgyjd.service.ItemsServiceImp"/>
+
 </beans>
