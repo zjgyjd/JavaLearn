@@ -1,7 +1,8 @@
-<%--
+<%@ page import="java.text.SimpleDateFormat" %>
+<%@ page import="java.util.Date" %><%--
   Created by IntelliJ IDEA.
   User: Thinkpad
-  Date: 2019/6/27
+  Date: 2019/6/30
   Time: 20:33
   To change this template use File | Settings | File Templates.
 --%>
@@ -11,7 +12,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Modify</title>
 </head>
 <body>
 <form action="xxxx" method="post">
@@ -21,21 +22,18 @@
             <td>Price</td>
             <td>Detail</td>
             <td>CreateTime</td>
-            <td>Operator</td>
         </tr>
-        <c:forEach items="${itemslistKey}" var="items1" >
-            <tr>
-                <td>${items1.name}</td>
-                <td>${items1.price}</td>
-                <td>${items1.detail}</td>
-                <td>
-                    <fmt:formatDate value="${items1.createtime}" pattern="yyyy-MM-dd HH:mm:ss"/>
-                </td>
-                <td>
-                    <a href="modifyitems.jsp?name=${items1.name}&price=${items1.price}&detail=${items1.detail}&createtime=${items1.createtime}">Modify</a>
-                </td>
-            </tr>
-        </c:forEach>
+                <tr>
+                    <td><%= request.getParameter("name")%></td>
+                    <td><%= request.getParameter("price")%></td>
+                    <td><%= request.getParameter("detail")%></td>
+                    <td>
+                        <%=
+                            new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")
+                                    .format(new Date(request.getParameter("createtime")))
+                        %>
+                    </td>
+                </tr>
     </table>
 </form>
 </body>
