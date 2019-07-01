@@ -18,7 +18,7 @@
 
  resultMap属性
     <resultMap id="myMap" type=""真正的User
-        里面写映射关系如:<id colum"id_" property="id"     即使名字不变也要映射一下2
+        里面写映射关系如:<id colum"id_" property="id"     即使名字不变也要映射一下
                         <result colum"username_" property="result"
     最后将resultMap = "myMap"
 

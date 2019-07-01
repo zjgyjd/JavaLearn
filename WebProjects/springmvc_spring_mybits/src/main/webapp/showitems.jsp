@@ -32,7 +32,7 @@
                     <fmt:formatDate value="${items1.createtime}" pattern="yyyy-MM-dd HH:mm:ss"/>
                 </td>
                 <td>
-                    <a href="modifyitems.jsp?name=${items1.name}&price=${items1.price}&detail=${items1.detail}&createtime=${items1.createtime}">Modify</a>
+                    <a href="/u?id=${items1.id}">Modify</a>
                 </td>
             </tr>
         </c:forEach>

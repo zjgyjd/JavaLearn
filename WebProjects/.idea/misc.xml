@@ -12,6 +12,7 @@
     <file type="web" url="file://$PROJECT_DIR$/Springdemo" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc_spring_mybits" />
+    <file type="web" url="file://D:/springmvc" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
@@ -25,6 +26,7 @@
         <option value="$PROJECT_DIR$/mybits_reverstar/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/pom.xml" />
         <option value="$USER_HOME$/Desktop/springmvc/pom.xml" />
+        <option value="D:/springmvc/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

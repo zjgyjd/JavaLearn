@@ -1,3 +1,7 @@
 1.mybatis
 2.mybatis+spring
 3.mybatis+spring+springmvc
+
+//进行更新
+1.先写mysql语句
+2.redeict//重定向

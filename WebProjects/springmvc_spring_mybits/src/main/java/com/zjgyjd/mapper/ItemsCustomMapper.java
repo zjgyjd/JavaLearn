@@ -7,4 +7,6 @@ import java.util.List;
 
 public interface ItemsCustomMapper {
        public List<ItemsCustom> queryItemsByName(ItemsEx itemsEx) throws  Exception;
+
+       public void updateItemsById(ItemsEx itemsEx) throws Exception;
 }

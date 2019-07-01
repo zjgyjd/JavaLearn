@@ -51,10 +51,10 @@ public class MybatisTest {
     public void testAddUser(){
         SqlSession sqlSession = sqlSessionFactory.openSession();
         User s = new User();
-        s.setUsername("YH");
-        s.setBirthday(null);
-        s.setAddress("SX");
-        s.setSex("1");
+//        s.setUsername("YH");
+//        s.setBirthday(null);
+//        s.setAddress("SX");
+//        s.setSex("1");
         try{
            sqlSession.selectOne("mytest.addUser",s);
         }catch(Exception ex){

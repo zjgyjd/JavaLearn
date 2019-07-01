@@ -11,6 +11,7 @@
         <module name="mybatis_demo2" />
         <module name="mybits_reverstar" />
         <module name="Springdemo" />
+        <module name="springmvc" />
         <module name="springmvc (1) (com.ming)" />
         <module name="springmvc_spring_mybits" />
         <module name="ssmdemo01" />
@@ -20,7 +21,6 @@
       <module name="cookies" target="1.7" />
       <module name="jsp_demo" target="1.7" />
       <module name="jsp_dome" target="1.7" />
-      <module name="springmvc" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

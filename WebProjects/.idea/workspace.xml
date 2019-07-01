@@ -10,7 +10,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb221013-6b7b-4d0d-82c8-86465a88feb0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis/src/test/java/com/zjgyjd/MybatisTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis/src/test/java/com/zjgyjd/MybatisTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis_demo2/README" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis_demo2/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc_spring_mybits/README" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc_spring_mybits/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsCustom.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsCustom.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsEx.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsEx.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/mybatis/sqlMapConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/mybatis/sqlMapConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-transaction.xml" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-transaction.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/showitems.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/showitems.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,6 +43,7 @@
     <ignored path="$PROJECT_DIR$/springmvc_spring_mybits/target/" />
     <ignored path="$PROJECT_DIR$/springmvc/target/" />
     <ignored path="$USER_HOME$/Desktop/springmvc/target/" />
+    <ignored path="D:/springmvc/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,14 +61,37 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="springmvc@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="springmvc@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="springmvc@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="springmvc: schema" type="c314c289:MysqlImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="springmvc@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="springmvc: schema" type="c314c289:MysqlImplModel$Schema" />
+        <item name="items: table" type="98d5ac3d:MysqlImplModel$Table" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FUSProjectUsageTrigger">
     <session id="-1978933735">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="26" />
+          <entry key="project.closed" value="29" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.38" value="1" />
@@ -69,72 +108,82 @@
           <entry key="project.open.time.54" value="1" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.56" value="1" />
+          <entry key="project.open.time.57" value="1" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.63" value="1" />
           <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="27" />
+          <entry key="project.opened" value="29" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="ItemsCustomMapper" value="1" />
           <entry key="MF" value="1" />
-          <entry key="README" value="26" />
-          <entry key="class" value="14" />
+          <entry key="README" value="32" />
+          <entry key="class" value="17" />
           <entry key="fxml" value="1" />
           <entry key="iml" value="1" />
-          <entry key="java" value="171" />
+          <entry key="items" value="2" />
+          <entry key="java" value="214" />
           <entry key="jpg" value="2" />
-          <entry key="jsp" value="53" />
+          <entry key="jsp" value="64" />
           <entry key="md" value="1" />
-          <entry key="properties" value="18" />
+          <entry key="properties" value="19" />
+          <entry key="sql" value="3" />
           <entry key="tld" value="2" />
           <entry key="txt" value="5" />
-          <entry key="xml" value="165" />
+          <entry key="xml" value="186" />
           <entry key="xsd" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="14" />
+          <entry key="CLASS" value="17" />
+          <entry key="Database Element" value="2" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="171" />
-          <entry key="JSP" value="53" />
+          <entry key="JAVA" value="214" />
+          <entry key="JSP" value="64" />
           <entry key="Manifest" value="1" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="39" />
-          <entry key="Properties" value="18" />
-          <entry key="XML" value="162" />
+          <entry key="PLAIN_TEXT" value="45" />
+          <entry key="Properties" value="19" />
+          <entry key="SQL" value="1" />
+          <entry key="Scratch" value="2" />
+          <entry key="XML" value="183" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="ItemsCustomMapper" value="29" />
-          <entry key="README" value="6076" />
+          <entry key="README" value="6112" />
+          <entry key="cell" value="3" />
           <entry key="class" value="76" />
           <entry key="dummy" value="1" />
-          <entry key="java" value="6520" />
-          <entry key="jsp" value="2492" />
+          <entry key="java" value="7516" />
+          <entry key="jsp" value="2741" />
           <entry key="md" value="1" />
-          <entry key="properties" value="10" />
-          <entry key="txt" value="528" />
-          <entry key="xml" value="1748" />
+          <entry key="properties" value="14" />
+          <entry key="sql" value="90" />
+          <entry key="txt" value="537" />
+          <entry key="xml" value="2010" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="76" />
-          <entry key="JAVA" value="6520" />
-          <entry key="JSP" value="2492" />
+          <entry key="JAVA" value="7516" />
+          <entry key="JSP" value="2741" />
           <entry key="Markdown" value="1" />
-          <entry key="PLAIN_TEXT" value="6616" />
+          <entry key="PLAIN_TEXT" value="6661" />
           <entry key="Pointcut Expression" value="2" />
-          <entry key="Properties" value="10" />
-          <entry key="SQL" value="3" />
-          <entry key="XML" value="1761" />
+          <entry key="Properties" value="14" />
+          <entry key="SQL" value="4" />
+          <entry key="Scratch" value="92" />
+          <entry key="XML" value="2023" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.core.usages.trigger">
@@ -150,65 +199,92 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsController_01.java">
+        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsUpdateController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="27" column="28" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="28" />
+            <state relative-caret-position="135">
+              <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/pom.xml">
+        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsCustom.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="176" column="52" selection-start-line="176" selection-start-column="52" selection-end-line="176" selection-end-column="52" />
+            <state relative-caret-position="174">
+              <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/showitems.jsp">
+        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/Items.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="31" column="93" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="93" />
+            <state relative-caret-position="115">
+              <caret line="55" selection-start-line="55" selection-end-line="55" />
+              <folding>
+                <element signature="e#909#910#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/modifyitems.jsp">
+        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            <state relative-caret-position="155">
+              <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/index.jsp">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/resources/spring/applicationContext-controller.xml">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/controller/ItemsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        <entry file="das://49616996-9912-4c28-8e0a-d196a8f9953f/schema/springmvc/table/items">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/controller/ItemsController3.java">
+        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsEx.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+            <state relative-caret-position="93">
+              <caret line="5" column="31" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="31" />
+              <folding>
+                <element signature="e#243#244#0" expanded="true" />
+                <element signature="e#285#286#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/mybatis/sqlMapConfig.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="109">
+              <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsServiceImp.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -217,22 +293,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/controller/itemsController2.java">
+        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="161">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -244,9 +308,9 @@
       <list>
         <option value="spring-beans.schema" />
         <option value="Interface" />
-        <option value="Jsp File" />
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -256,21 +320,9 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/mybatis/src/main/resources/sqlmapconfig.xml" />
-        <option value="$PROJECT_DIR$/mybatis/src/main/resources/sqlMapConfig.xml.fxml" />
-        <option value="$PROJECT_DIR$/mybatis/src/main/resources/sqlMapConfig.xml" />
-        <option value="$PROJECT_DIR$/mybatis/README" />
-        <option value="$PROJECT_DIR$/mybatis/src/test/java/com/zjgyjd/MybatisTest.java" />
-        <option value="$PROJECT_DIR$/mybatis_demo2/README" />
-        <option value="$PROJECT_DIR$/mybatis_demo2/src/main/resources/sqlmap/User.xml" />
-        <option value="$PROJECT_DIR$/mybatis_demo2/src/main/resources/db.properties" />
-        <option value="$PROJECT_DIR$/mybatis_demo2/src/main/java/com/zjgyjd/mapper/User.xml" />
-        <option value="$PROJECT_DIR$/mybatis_demo2/src/main/java/com/zjgyjd/mapper/UserMapper.java" />
-        <option value="$PROJECT_DIR$/mybatis_demo2/src/test/java/com/zjgyjd/MybatisTest.java" />
         <option value="$PROJECT_DIR$/mybatis_demo2/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis_demo2/src/main/java/com/zjgyjd/po/User.java" />
         <option value="$USER_HOME$/Desktop/ssmdemo01/README.txt" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/README" />
         <option value="$PROJECT_DIR$/mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis/src/main/java/com/zjgyjd/po/Items.java" />
         <option value="$PROJECT_DIR$/mybatis/src/main/java/com/zjgyjd/po/User.java" />
@@ -282,31 +334,43 @@
         <option value="$PROJECT_DIR$/mybatis_demo2/src/main/resources/sqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/sqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsEx.java" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/Items.java" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/mybatis/sqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/springmvc/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc/README.txt" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/applicationContext-controller.xml" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-service.xml" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-mapper.xml" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-controller.xml" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-transaction.xml" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/WEB-INF/web.xml" />
         <option value="$USER_HOME$/Desktop/springmvc/src/main/resources/db.properties" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsCustom.java" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.java" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.xml" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsServiceImp.java" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsService.java" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/test/java/com/zjgyjd/MyBatisTest_01.java" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/test/java/com/zjgyjd/MyBatisTest_02.java" />
         <option value="$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/controller/ItemsController_01.java" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/pom.xml" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsController.java" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsController_01.java" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/showitems.jsp" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/modifyitems.jsp" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/Items.java" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-service.xml" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-transaction.xml" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/README" />
+        <option value="$PROJECT_DIR$/mybatis/src/test/java/com/zjgyjd/MybatisTest.java" />
+        <option value="$PROJECT_DIR$/mybatis_demo2/README" />
+        <option value="D:/springmvc/src/main/resources/db.properties" />
+        <option value="D:/springmvc/src/main/java/com/ming/service/ItemsServiceImpl.java" />
+        <option value="D:/springmvc/src/main/java/com/ming/service/ItemsService.java" />
+        <option value="49616996-9912-4c28-8e0a-d196a8f9953f/schema/springmvc/table/items.sql" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/49616996-9912-4c28-8e0a-d196a8f9953f/console_1.sql" />
+        <option value="D:/springmvc/src/main/webapp/WEB-INF/jsp/showitems.jsp" />
+        <option value="D:/springmvc/src/main/java/com/ming/controller/ItemsController3.java" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/showitems.jsp" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/update.jsp" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.java" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsServiceImp.java" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsService.java" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsUpdateController.java" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/mybatis/sqlMapConfig.xml" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsCustom.java" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsEx.java" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.xml" />
       </list>
     </option>
   </component>
@@ -370,7 +434,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="683" />
     <option name="width" value="683" />
     <option name="height" value="728" />
@@ -407,29 +471,29 @@
           <expand>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc (1) (com" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc (1) (com" type="9c53a853:ProjectViewModuleGroupNode" />
+              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
               <item name="springmvc" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc (1) (com" type="9c53a853:ProjectViewModuleGroupNode" />
               <item name="springmvc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc (1) (com" type="9c53a853:ProjectViewModuleGroupNode" />
               <item name="springmvc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc (1) (com" type="9c53a853:ProjectViewModuleGroupNode" />
               <item name="springmvc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -437,7 +501,6 @@
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc (1) (com" type="9c53a853:ProjectViewModuleGroupNode" />
               <item name="springmvc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -446,7 +509,6 @@
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc (1) (com" type="9c53a853:ProjectViewModuleGroupNode" />
               <item name="springmvc" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -456,60 +518,6 @@
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc (1) (com" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ming" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc (1) (com" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ming" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc (1) (com" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc (1) (com" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc (1) (com" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc (1) (com" type="9c53a853:ProjectViewModuleGroupNode" />
-              <item name="springmvc" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
               <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -587,102 +595,68 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="spring" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
-              <item name="control" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
-              <item name="mapper" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
-              <item name="po" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
               <item name="mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
               <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-              <item name="classes" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springmvc_spring_mybits" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="lang" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
@@ -719,18 +693,105 @@
               <item name="spring" type="462c0819:PsiDirectoryNode" />
               <item name="support" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-aop:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-aop-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="org" type="462c0819:PsiDirectoryNode" />
+              <item name="aop" type="462c0819:PsiDirectoryNode" />
+              <item name="support" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-core:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-core:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-core-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-core:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-core-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: org.springframework:spring-core:5.1.5.RELEASE" type="70bed36:NamedLibraryElementNode" />
+              <item name="spring-core-5.1.5.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="springframework" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+              <item name="Database Consoles" type="d62648e6:ScratchProjectViewPane$MyRootNode" />
+              <item name="49616996-9912-4c28-8e0a-d196a8f9953f" type="1e004dc1:ScratchProjectViewPane$MyRootNode$1$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561913960150" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/springmvc" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562001767949" />
+    <property name="database.console.LAST_STATE" value="false" />
+    <property name="last_opened_file_path" value="D:/springmvc" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -739,12 +800,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\resources" />
-      <recent name="D:\JavaLearn\WebProjects\mybits_reverstar\src\main\resources" />
-      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\java\com\zjgyjd\po" />
-      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\java\com\zjgyjd\mapper" />
-      <recent name="D:\JavaLearn\WebProjects\mybatis_demo2\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\resources\mybatis" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis_demo2\src\main\java\com\zjgyjd\mapper" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis\src\main" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis\src" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis\src\main\java\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ming.controller" />
@@ -753,12 +814,12 @@
       <recent name="com.zjgyjd" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\resources\mybatis" />
-      <recent name="D:\JavaLearn\WebProjects\mybatis_demo2\src\main\java\com\zjgyjd\mapper" />
-      <recent name="D:\JavaLearn\WebProjects\mybatis\src\main" />
-      <recent name="D:\JavaLearn\WebProjects\mybatis\src" />
-      <recent name="D:\JavaLearn\WebProjects\mybatis\src\main\java\resources" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\resources" />
+      <recent name="D:\JavaLearn\WebProjects\mybits_reverstar\src\main\resources" />
+      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\java\com\zjgyjd\po" />
+      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\java\com\zjgyjd\mapper" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis_demo2\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -884,7 +945,7 @@
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
-        <artifact name="springmvc (1) (com.ming):war exploded">
+        <artifact name="springmvc:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
           </settings>
@@ -949,7 +1010,7 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="springmvc (1) (com.ming):war exploded" />
+          <artifact name="springmvc:war exploded" />
         </option>
       </method>
     </configuration>
@@ -1368,7 +1429,9 @@
       <workItem from="1561625761441" duration="12760000" />
       <workItem from="1561651609578" duration="636000" />
       <workItem from="1561799741108" duration="16358000" />
-      <workItem from="1561907509570" duration="6387000" />
+      <workItem from="1561907509570" duration="6449000" />
+      <workItem from="1561956612188" duration="3337000" />
+      <workItem from="1561975291236" duration="21340000" />
     </task>
     <servers />
   </component>
@@ -1405,7 +1468,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="240384000" />
+    <option name="totallyTimeSpent" value="265123000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1418,27 +1481,27 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49388754" visible="true" weight="0.36535552" />
-      <window_info id="Structure" order="1" sideWeight="0.50611246" side_tool="true" visible="true" weight="0.36535552" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49144253" visible="true" weight="0.3774584" />
+      <window_info id="Structure" order="1" sideWeight="0.50855744" side_tool="true" weight="0.3774584" />
       <window_info id="Web" order="2" sideWeight="0.50611246" side_tool="true" weight="0.36535552" />
       <window_info id="Image Layers" order="3" />
       <window_info id="Designer" order="4" />
       <window_info id="UI Designer" order="5" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Favorites" order="7" sideWeight="0.50491804" side_tool="true" weight="0.3600605" />
+      <window_info anchor="bottom" id="Database Console" weight="0.3327869" />
       <window_info anchor="bottom" id="Spring" order="0" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="3" visible="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Run" order="3" weight="0.3229508" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.3295082" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3295082" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.3295082" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.3295082" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3295082" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49848714" weight="0.3295082" />
@@ -1447,7 +1510,7 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" weight="0.32980332" />
+      <window_info anchor="right" id="Database" order="5" visible="true" weight="0.32980332" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" weight="0.32980332" />
@@ -1493,241 +1556,34 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/springmvc/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jsp_db/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/webapp/index.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="9" selection-start-line="9" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/resources/mybatis/sqlMapConfig.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/po/ItemsExample.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/po/ItemsCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsEx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/mapper/ItemsMapperCustom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="19" column="99" selection-start-line="19" selection-start-column="99" selection-end-line="19" selection-end-column="99" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/mapper/ItemsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-138" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/po/ItemsVO.java">
+    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/controller/ItemsController3.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/test/java/com/zjgyjd/MyBatisTest_01.java">
+    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/controller/ItemsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/test/java/com/zjgyjd/MyBatisTest_02.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="316">
-          <caret line="28" column="18" lean-forward="true" selection-start-line="28" selection-start-column="18" selection-end-line="28" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="15" column="50" selection-start-line="15" selection-start-column="50" selection-end-line="15" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="15" column="32" selection-start-line="15" selection-start-column="16" selection-end-line="15" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/Items.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="337">
-          <caret line="66" column="18" selection-start-line="66" selection-start-column="18" selection-end-line="66" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="38" selection-start-line="2" selection-start-column="38" selection-end-line="2" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="13" column="28" lean-forward="true" selection-start-line="13" selection-start-column="28" selection-end-line="14" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-controller.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/webapp/WEB-INF/jsp/showitems.jsp">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/target/classes/spring/applicationContext-service.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/target/classes/com/zjgyjd/mapper/OrdersMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/mapper/ItemsMapperCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="10" column="61" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/vo/Items.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="4" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/service/ItemsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        <state relative-caret-position="-127">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/resources/applicationContext-controller.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="21" selection-end-line="42" selection-end-column="24" />
+        <state relative-caret-position="391">
+          <caret line="53" column="40" selection-start-line="53" selection-start-column="38" selection-end-line="53" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/resources/db.properties">
+    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/controller/itemsController2.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/resources/spring/applicationContext-mapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="37" column="62" lean-forward="true" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-transaction.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="35" column="93" selection-start-line="35" selection-start-column="93" selection-end-line="35" selection-end-column="93" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="19" column="59" lean-forward="true" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-mapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/resources/spring/applicationContext-service.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/resources/spring/applicationContext-transaction.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-276">
-          <caret line="19" column="19" selection-start-line="19" selection-start-column="19" selection-end-line="20" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/service/ItemsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="31" column="5" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="352">
+          <caret line="35" column="37" lean-forward="true" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -1741,78 +1597,324 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3841">
-          <caret line="167" selection-start-line="21" selection-start-column="2" selection-end-line="167" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/resources/spring/applicationContext-controller.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/controller/ItemsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/controller/ItemsController3.java">
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/README">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/controller/itemsController2.java">
+    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/mapper/ItemsMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        <state relative-caret-position="84">
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsController.java">
+    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/java/com/ming/po/Items.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="24" column="78" selection-start-line="24" selection-start-column="78" selection-end-line="24" selection-end-column="78" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="322">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/pom.xml">
+    <entry file="file://$PROJECT_DIR$/mybatis/src/test/java/com/zjgyjd/MybatisTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="176" column="52" selection-start-line="176" selection-start-column="52" selection-end-line="176" selection-end-column="52" />
+        <state relative-caret-position="219">
+          <caret line="53" column="9" selection-start-line="53" selection-start-column="9" selection-end-line="56" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/index.jsp">
+    <entry file="file://$USER_HOME$/Desktop/springmvc/src/main/webapp/WEB-INF/jsp/showitems.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-290" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module_webDome/README">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsController_01.java">
+    <entry file="file://$PROJECT_DIR$/mybatis/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="27" column="28" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="28" />
+        <state relative-caret-position="1403">
+          <caret line="61" column="45" selection-start-line="61" selection-start-column="45" selection-end-line="61" selection-end-column="47" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/showitems.jsp">
+    <entry file="file://$PROJECT_DIR$/mybatis_demo2/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="31" column="93" selection-start-line="31" selection-start-column="74" selection-end-line="31" selection-end-column="93" />
+        <state relative-caret-position="356">
+          <caret line="20" column="62" selection-start-line="20" selection-start-column="62" selection-end-line="20" selection-end-column="62" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/modifyitems.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        <state relative-caret-position="382">
+          <caret line="32" column="51" selection-start-line="32" selection-start-column="51" selection-end-line="32" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/springmvc/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/springmvc/src/main/java/com/ming/service/ItemsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/springmvc/src/main/java/com/ming/service/ItemsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/49616996-9912-4c28-8e0a-d196a8f9953f/console.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="das://49616996-9912-4c28-8e0a-d196a8f9953f/schema/springmvc/table/items.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="13" column="25" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/49616996-9912-4c28-8e0a-d196a8f9953f/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/springmvc/src/main/java/com/ming/mapper/ItemsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/springmvc/src/main/java/com/ming/mapper/ItemsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/springmvc/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/springmvc/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybits_reverstar/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-621" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mybits_reverstar/src/main/resources/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="29" column="38" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/springmvc/src/main/webapp/WEB-INF/jsp/showitems.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="92" column="43" selection-start-line="92" selection-start-column="43" selection-end-line="92" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/showitems.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="117" selection-start-line="117" selection-end-line="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="10" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/springmvc/src/main/java/com/ming/controller/ItemsController3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="269">
+          <caret line="48" column="61" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="61" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsController_01.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="313">
+          <caret line="29" column="5" selection-start-line="20" selection-start-column="3" selection-end-line="29" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="23" column="53" selection-start-line="23" selection-start-column="53" selection-end-line="23" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-transaction.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="290">
+          <caret line="20" column="11" lean-forward="true" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-service.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-mapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="474">
+          <caret line="26" column="4" selection-start-line="26" selection-start-column="4" selection-end-line="26" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/update.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="20" column="47" selection-start-line="20" selection-start-column="47" selection-end-line="20" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.5.RELEASE/spring-core-5.1.5.RELEASE.jar!/org/springframework/util/ReflectionUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="222" selection-start-line="222" selection-end-line="222" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.5.RELEASE/spring-aop-5.1.5.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="76" selection-start-line="76" selection-end-line="76" />
+          <folding>
+            <element signature="e#3153#3154#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.5.RELEASE/spring-aop-5.1.5.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="131" selection-start-line="131" selection-end-line="131" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-controller.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsServiceImp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/mybatis/sqlMapConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/Items.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="e#909#910#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsUpdateController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="41" column="11" selection-start-line="41" selection-start-column="11" selection-end-line="41" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsEx.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="5" column="31" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="31" />
+          <folding>
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#285#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://49616996-9912-4c28-8e0a-d196a8f9953f/schema/springmvc/table/items">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="155">
+          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
         </state>
       </provider>
     </entry>
