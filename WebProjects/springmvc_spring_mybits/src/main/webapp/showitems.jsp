@@ -15,6 +15,10 @@
 </head>
 <body>
 <form action="xxxx" method="post">
+    <div align="right">
+    <input type="button" value="Delete" >
+    <input type="button" value="Add" >
+    </div>
     <table width="100%" border="1" align="center">
         <tr>
             <td>Name</td>
@@ -31,8 +35,9 @@
                 <td>
                     <fmt:formatDate value="${items1.createtime}" pattern="yyyy-MM-dd HH:mm:ss"/>
                 </td>
-                <td>
+                <td align="center">
                     <a href="/u?id=${items1.id}">Modify</a>
+                    |    <a href="/d?id=${items1.id}">Del</a>
                 </td>
             </tr>
         </c:forEach>

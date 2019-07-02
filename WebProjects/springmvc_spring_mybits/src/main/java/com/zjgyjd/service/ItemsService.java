@@ -10,5 +10,8 @@ public interface ItemsService {
     public List<ItemsCustom> queryItemsByName(ItemsEx itemsEx) throws  Exception;
 
     public void updateItemsById(ItemsEx itemsEx)throws Exception;
+
     public ItemsCustom selectByPrimaryKey(int id);
+
+    public void deleteByPrimaryKey(Integer id);
 }

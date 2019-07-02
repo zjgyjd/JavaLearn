@@ -31,4 +31,8 @@ public class ItemsServiceImp implements ItemsService {
         BeanUtils.copyProperties(items, itemsCustom);
         return itemsCustom;
     }
+
+    public void deleteByPrimaryKey(Integer id){
+        itemsMapper.deleteByPrimaryKey(id);
+    }
 }
