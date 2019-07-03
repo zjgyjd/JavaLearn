@@ -34,4 +34,13 @@ public class ItemsController {
         itemsService.deleteByPrimaryKey(id);
         return "forward:abc";
     }
+
+    @RequestMapping(value = "/deleteIds")
+    public String deleteIds(HttpServletRequest request, HttpServletResponse response){
+        String[] ids = request.getParameterValues("selItem");
+        for (int i = 0; i < ids.length; i++) {
+            itemsService.deleteByPrimaryKey(Integer.parseInt(ids[i]));
+        }
+        return "forward:abc";
+    }
 }

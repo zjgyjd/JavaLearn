@@ -41,7 +41,7 @@ public class ItemsUpdateController {
             DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             itemsEx.setCreatetime(df.parse(time));
         }
-        itemsService.updateItemsById(itemsEx);
+        itemsService.insert(itemsEx);
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("/abc");
         return modelAndView;

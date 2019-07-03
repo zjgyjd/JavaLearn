@@ -1,5 +1,6 @@
 package com.zjgyjd.service;
 
+import com.zjgyjd.po.Items;
 import com.zjgyjd.po.ItemsCustom;
 import com.zjgyjd.po.ItemsEx;
 
@@ -14,4 +15,6 @@ public interface ItemsService {
     public ItemsCustom selectByPrimaryKey(int id);
 
     public void deleteByPrimaryKey(Integer id);
+
+    public void insert(Items items);
 }

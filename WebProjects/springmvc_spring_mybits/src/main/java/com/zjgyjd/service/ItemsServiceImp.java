@@ -35,4 +35,8 @@ public class ItemsServiceImp implements ItemsService {
     public void deleteByPrimaryKey(Integer id){
         itemsMapper.deleteByPrimaryKey(id);
     }
+
+    public void insert(Items items){
+        itemsMapper.insert(items);
+    }
 }

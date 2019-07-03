@@ -13,6 +13,7 @@
     <file type="web" url="file://$PROJECT_DIR$/springmvc" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc_spring_mybits" />
     <file type="web" url="file://D:/springmvc" />
+    <type id="Spring" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
