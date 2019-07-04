@@ -17,4 +17,24 @@
     http://www.springframework.org/schema/aop/spring-aop.xsd
     http://www.springframework.org/schema/util
     http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <!-- 此处配置类 -->
+    <bean id="circular" class="com.zjgyjd.Compute.Circular">
+        <constructor-arg name="radius" value="20"/>
+    </bean>
+
+    <bean id="rectangle" class="com.zjgyjd.Compute.Rectangle">
+        <constructor-arg name="width" value="10"/>
+        <constructor-arg name="height" value="20"/>
+    </bean>
+    <bean id="triangle" class="com.zjgyjd.Compute.Triangle">
+        <constructor-arg name="a" value="10"/>
+        <constructor-arg name="b" value="24"/>
+        <constructor-arg name="c" value="30"/>
+    </bean>
+    <bean id="shapeCompute" class="com.zjgyjd.Compute.XmlShapeComputer">
+        <property name="circular" ref="circular"/>
+        <property name="rectangle" ref="rectangle"/>
+        <property name="triangle" ref="triangle"/>
+    </bean>
 </beans>
