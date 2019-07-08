@@ -13,7 +13,7 @@
     <title>Title</title>
 </head>
 <body>
-    <form action="/t" method="post">
+    <form action="/up" method="post">
         <input type="hidden" name ="id" value="${items.id}">
         name:<input type="text" name="name" value="${items.name}"><br>
         price:<input type="text" name="price" value="${items.price}"><br>

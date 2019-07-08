@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="springmvc_spring_mybits:war exploded" />
+      <artifact name="springmvc (1):war exploded" />
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
@@ -10,10 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb221013-6b7b-4d0d-82c8-86465a88feb0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springdemo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Springdemo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springdemo/src/main/resources/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Springdemo/src/main/resources/applicationContext.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Springdemo/target/classes/applicationContext.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Springdemo/target/classes/applicationContext.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsUpdateController.java" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsUpdateController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/update.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/update.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/module_webDome/target/" />
@@ -31,6 +33,8 @@
     <ignored path="$PROJECT_DIR$/springmvc/target/" />
     <ignored path="$USER_HOME$/Desktop/springmvc/target/" />
     <ignored path="D:/springmvc/target/" />
+    <ignored path="D:/上课代码及文件/ssmdemo_03/target/" />
+    <ignored path="D:/上课代码及文件/SSMDemoFinal/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,8 +82,9 @@
     <session id="-1978933735">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="33" />
+          <entry key="project.closed" value="35" />
           <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.293" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.38" value="1" />
           <entry key="project.open.time.4" value="1" />
@@ -99,12 +104,12 @@
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.60" value="1" />
           <entry key="project.open.time.63" value="1" />
-          <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.65" value="2" />
           <entry key="project.open.time.66" value="1" />
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="33" />
+          <entry key="project.opened" value="35" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -115,34 +120,34 @@
           <entry key="class" value="18" />
           <entry key="fxml" value="1" />
           <entry key="iml" value="1" />
-          <entry key="items" value="4" />
-          <entry key="java" value="245" />
+          <entry key="items" value="5" />
+          <entry key="java" value="260" />
           <entry key="jpg" value="2" />
-          <entry key="jsp" value="83" />
+          <entry key="jsp" value="91" />
           <entry key="md" value="1" />
-          <entry key="properties" value="21" />
-          <entry key="sql" value="7" />
+          <entry key="properties" value="28" />
+          <entry key="sql" value="10" />
           <entry key="tld" value="2" />
           <entry key="txt" value="5" />
-          <entry key="xml" value="204" />
+          <entry key="xml" value="222" />
           <entry key="xsd" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="18" />
-          <entry key="Database Element" value="4" />
+          <entry key="Database Element" value="5" />
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="2" />
-          <entry key="JAVA" value="245" />
-          <entry key="JSP" value="83" />
+          <entry key="JAVA" value="260" />
+          <entry key="JSP" value="91" />
           <entry key="Manifest" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="45" />
-          <entry key="Properties" value="21" />
-          <entry key="SQL" value="1" />
-          <entry key="Scratch" value="6" />
-          <entry key="XML" value="201" />
+          <entry key="Properties" value="28" />
+          <entry key="SQL" value="2" />
+          <entry key="Scratch" value="8" />
+          <entry key="XML" value="219" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -152,11 +157,11 @@
           <entry key="cell" value="3" />
           <entry key="class" value="76" />
           <entry key="dummy" value="12" />
-          <entry key="java" value="8069" />
-          <entry key="jsp" value="3236" />
+          <entry key="java" value="8168" />
+          <entry key="jsp" value="3243" />
           <entry key="md" value="1" />
-          <entry key="properties" value="14" />
-          <entry key="sql" value="91" />
+          <entry key="properties" value="22" />
+          <entry key="sql" value="92" />
           <entry key="txt" value="537" />
           <entry key="xml" value="2055" />
         </counts>
@@ -164,20 +169,20 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="CLASS" value="76" />
-          <entry key="JAVA" value="8069" />
-          <entry key="JSP" value="3236" />
+          <entry key="JAVA" value="8168" />
+          <entry key="JSP" value="3243" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="6672" />
           <entry key="Pointcut Expression" value="2" />
-          <entry key="Properties" value="14" />
+          <entry key="Properties" value="22" />
           <entry key="SQL" value="4" />
-          <entry key="Scratch" value="93" />
+          <entry key="Scratch" value="94" />
           <entry key="XML" value="2068" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.spring.core.usages.trigger">
         <counts>
-          <entry key="fixes.SpringFacetInspection.AddFacetFix" value="1" />
+          <entry key="fixes.SpringFacetInspection.AddFacetFix" value="3" />
         </counts>
       </usages-collector>
     </session>
@@ -188,128 +193,67 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-transaction.xml">
+        <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-            </state>
+            <state relative-caret-position="-815" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Springdemo/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="460">
-              <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Springdemo/src/main/resources/applicationContext-vv.xml">
+        <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/resources/log4j.properties">
           <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Springdemo/src/main/resources/applicationContext.xml">
+        <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/resources/db.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="35" column="32" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="32" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/Shape.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/Circular.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#129#130#0" expanded="true" />
-                <element signature="e#165#166#0" expanded="true" />
-                <element signature="e#199#200#0" expanded="true" />
-                <element signature="e#251#252#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
-                <element signature="e#328#329#0" expanded="true" />
-                <element signature="e#360#361#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/Rectangle.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding>
-                <element signature="e#259#260#0" expanded="true" />
-                <element signature="e#296#297#0" expanded="true" />
-                <element signature="e#330#331#0" expanded="true" />
-                <element signature="e#373#374#0" expanded="true" />
-                <element signature="e#405#406#0" expanded="true" />
-                <element signature="e#434#435#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/XmlShapeComputer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding>
-                <element signature="e#698#699#0" expanded="true" />
-                <element signature="e#738#739#0" expanded="true" />
-                <element signature="e#786#787#0" expanded="true" />
-                <element signature="e#828#829#0" expanded="true" />
-                <element signature="e#878#879#0" expanded="true" />
-                <element signature="e#918#919#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="69">
+              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Springdemo/src/test/java/com/zjgyjd/ComputeTest.java">
+        <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/resources/spring/applicationContext-transaction.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="197">
+              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/Triangle.java">
+        <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/java/com/ming/controller/ItemsController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2">
+              <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/java/com/ming/controller/ItemsController3.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2344">
+              <caret line="32" column="44" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/java/com/ming/controller/itemsController2.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="92">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding>
-                <element signature="e#528#529#0" expanded="true" />
-                <element signature="e#560#561#0" expanded="true" />
-                <element signature="e#587#588#0" expanded="true" />
-                <element signature="e#611#612#0" expanded="true" />
-                <element signature="e#645#646#0" expanded="true" />
-                <element signature="e#669#670#0" expanded="true" />
-                <element signature="e#681#682#0" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-              </folding>
+              <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="das://49616996-9912-4c28-8e0a-d196a8f9953f/schema/springmvc/table/items.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -333,8 +277,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/applicationContext-controller.xml" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-mapper.xml" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-controller.xml" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/WEB-INF/web.xml" />
         <option value="$USER_HOME$/Desktop/springmvc/src/main/resources/db.properties" />
@@ -352,20 +294,16 @@
         <option value="D:/springmvc/src/main/java/com/ming/service/ItemsServiceImpl.java" />
         <option value="D:/springmvc/src/main/java/com/ming/service/ItemsService.java" />
         <option value="49616996-9912-4c28-8e0a-d196a8f9953f/schema/springmvc/table/items.sql" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/update.jsp" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.java" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/mybatis/sqlMapConfig.xml" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsCustom.java" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsEx.java" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.xml" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/addTable.jsp" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-service.xml" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/49616996-9912-4c28-8e0a-d196a8f9953f/console_1.sql" />
         <option value="D:/springmvc/src/main/webapp/WEB-INF/jsp/showitems.jsp" />
         <option value="D:/springmvc/src/main/java/com/ming/controller/ItemsController3.java" />
         <option value="D:/springmvc/src/main/resources/spring/applicationContext-controller.xml" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsServiceImp.java" />
-        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsUpdateController.java" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsService.java" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/showitems.jsp" />
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsController.java" />
@@ -384,6 +322,12 @@
         <option value="$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/XmlShapeComputer.java" />
         <option value="$PROJECT_DIR$/Springdemo/src/test/java/com/zjgyjd/TestCompute.java" />
         <option value="$PROJECT_DIR$/Springdemo/src/test/java/com/zjgyjd/ComputeTest.java" />
+        <option value="D:/上课代码及文件/ssmdemo_03/src/main/resources/db.properties" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/update.jsp" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/addTable.jsp" />
+        <option value="$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsUpdateController.java" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/49616996-9912-4c28-8e0a-d196a8f9953f/console_1.sql" />
+        <option value="D:/上课代码及文件/SSMDemoFinal/src/main/resources/db.properties" />
       </list>
     </option>
   </component>
@@ -448,9 +392,9 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="693" />
-    <option name="y" value="-5" />
-    <option name="width" value="683" />
+    <option name="x" value="2" />
+    <option name="y" value="1" />
+    <option name="width" value="1346" />
     <option name="height" value="728" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -481,74 +425,82 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis" type="462c0819:PsiDirectoryNode" />
+              <item name="springmvc (1) (com" type="9c53a853:ProjectViewModuleGroupNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mybatis_demo2" type="462c0819:PsiDirectoryNode" />
+              <item name="SSMDemoFinal" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Springdemo" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Springdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="SSMDemoFinal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Springdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="SSMDemoFinal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Springdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="SSMDemoFinal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Springdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="SSMDemoFinal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Compute" type="462c0819:PsiDirectoryNode" />
+              <item name="ming" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Springdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="SSMDemoFinal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ming" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSMDemoFinal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Springdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="SSMDemoFinal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="spring" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Springdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="SSMDemoFinal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Springdemo" type="462c0819:PsiDirectoryNode" />
+              <item name="SSMDemoFinal" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
@@ -668,29 +620,28 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562249658104" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562592995115" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="D:/springmvc" />
+    <property name="last_opened_file_path" value="D:/上课代码及文件/SSMDemoFinal" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\resources" />
-      <recent name="D:\JavaLearn\WebProjects\mybits_reverstar\src\main\resources" />
-      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\java\com\zjgyjd\po" />
-      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\java\com\zjgyjd\mapper" />
-      <recent name="D:\JavaLearn\WebProjects\mybatis_demo2\src\main\resources" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\resources\mybatis" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis_demo2\src\main\java\com\zjgyjd\mapper" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis\src\main" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis\src" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis\src\main\java\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.ming.controller" />
@@ -699,12 +650,12 @@
       <recent name="com.zjgyjd" />
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\resources\mybatis" />
-      <recent name="D:\JavaLearn\WebProjects\mybatis_demo2\src\main\java\com\zjgyjd\mapper" />
-      <recent name="D:\JavaLearn\WebProjects\mybatis\src\main" />
-      <recent name="D:\JavaLearn\WebProjects\mybatis\src" />
-      <recent name="D:\JavaLearn\WebProjects\mybatis\src\main\java\resources" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\resources" />
+      <recent name="D:\JavaLearn\WebProjects\mybits_reverstar\src\main\resources" />
+      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\java\com\zjgyjd\po" />
+      <recent name="D:\JavaLearn\WebProjects\springmvc_spring_mybits\src\main\java\com\zjgyjd\mapper" />
+      <recent name="D:\JavaLearn\WebProjects\mybatis_demo2\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -719,7 +670,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ComputeTest.ComputeTest">
+  <component name="RunManager" selected="Tomcat Server.SSM">
     <configuration name="ComputeTest.ComputeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Springdemo" />
       <extension name="coverage">
@@ -825,6 +776,79 @@
         </option>
       </MavenSettings>
       <method v="2" />
+    </configuration>
+    <configuration name="SSM" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.40" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="springmvc (1):war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_(1)_WebProjects" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="3688" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="springmvc (1):war exploded" />
+        </option>
+      </method>
     </configuration>
     <configuration name="Unnamed" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.40" ALTERNATIVE_JRE_ENABLED="false">
       <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
@@ -1257,12 +1281,13 @@
     </configuration>
     <list>
       <item itemvalue="Maven.Unnamed" />
+      <item itemvalue="Tomcat Server.SSM" />
       <item itemvalue="Tomcat Server.Unnamed" />
       <item itemvalue="Tomcat Server.springmvc_mybatis" />
       <item itemvalue="Tomcat Server.sp_mybits" />
       <item itemvalue="Tomcat Server.jsp_db" />
       <item itemvalue="Tomcat Server.zjgyjd" />
-      <item itemvalue="JUnit.MybatisTest.testQueryUserById (1)" />
+      <item itemvalue="JUnit.MybatisTest.testQueryUserById" />
       <item itemvalue="JUnit.MybatisTest.testQueryUserByUser" />
       <item itemvalue="JUnit.MyBatisTest_01.testQueryItemsByName" />
       <item itemvalue="JUnit.MyBatisTest_02.testQueryItemsByName" />
@@ -1274,7 +1299,6 @@
         <item itemvalue="JUnit.MyBatisTest_02.testQueryItemsByName" />
         <item itemvalue="JUnit.MyBatisTest_01.testQueryItemsByName" />
         <item itemvalue="JUnit.MybatisTest.testQueryUserByUser" />
-        <item itemvalue="JUnit.MybatisTest.testQueryUserById (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1321,6 +1345,8 @@
       <workItem from="1562117776416" duration="14172000" />
       <workItem from="1562166201432" duration="2500000" />
       <workItem from="1562239232684" duration="4799000" />
+      <workItem from="1562422734513" duration="118000" />
+      <workItem from="1562582171822" duration="9963000" />
     </task>
     <servers />
   </component>
@@ -1357,7 +1383,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="290559000" />
+    <option name="totallyTimeSpent" value="300640000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1370,8 +1396,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49144253" visible="true" weight="0.39712557" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49144253" visible="true" weight="0.408472" />
       <window_info id="Structure" order="1" sideWeight="0.50855744" side_tool="true" weight="0.3774584" />
       <window_info id="Web" order="2" sideWeight="0.50611246" side_tool="true" weight="0.36535552" />
       <window_info id="Image Layers" order="3" />
@@ -1382,7 +1409,7 @@
       <window_info anchor="bottom" id="Spring" order="0" weight="0.3295082" />
       <window_info anchor="bottom" id="Message" order="1" />
       <window_info anchor="bottom" id="Find" order="2" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="3" weight="0.3229508" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49848714" weight="0.3229508" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -1390,7 +1417,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" weight="0.3295082" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.3295082" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.3295082" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5015129" side_tool="true" weight="0.3229508" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.3295082" />
       <window_info anchor="bottom" id="Messages" order="13" sideWeight="0.49848714" weight="0.3295082" />
       <window_info anchor="bottom" id="Database Console" order="14" weight="0.3327869" />
@@ -1445,210 +1472,193 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.5.RELEASE/spring-aop-5.1.5.RELEASE.jar!/org/springframework/aop/support/AopUtils.class">
+    <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/Shape.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
+        <state relative-caret-position="46">
+          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/5.1.5.RELEASE/spring-aop-5.1.5.RELEASE.jar!/org/springframework/aop/framework/JdkDynamicAopProxy.class">
+    <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/Circular.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="131" selection-start-line="131" selection-end-line="131" />
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsCustom.java">
+    <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/Rectangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="43" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <element signature="e#434#435#0" expanded="true" />
+            <element signature="e#463#464#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/Items.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="851">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/po/ItemsEx.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="313">
-          <caret line="117" selection-start-line="117" selection-end-line="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/mybatis/sqlMapConfig.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/springmvc/src/main/java/com/ming/service/ItemsService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/springmvc/src/main/java/com/ming/mapper/ItemsMapperCustom.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/springmvc/src/main/java/com/ming/mapper/ItemsMapperCustom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="30" column="18" lean-forward="true" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/springmvc/src/main/java/com/ming/service/ItemsServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="69" column="30" lean-forward="true" selection-start-line="69" selection-start-column="30" selection-end-line="69" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-287" />
-      </provider>
-    </entry>
-    <entry file="file://D:/springmvc/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="27" column="7" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/springmvc/src/main/java/com/ming/mapper/OrderdetailMapper.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://D:/springmvc/src/main/webapp/WEB-INF/jsp/showitems.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="31" column="46" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://D:/springmvc/src/main/java/com/ming/controller/itemsController2.java">
+    <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/XmlShapeComputer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.5.1/mybatis-3.5.1.jar!/org/apache/ibatis/annotations/Param.class">
+    <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/Triangle.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="15" column="31" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="31" />
+        <state relative-caret-position="92">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Springdemo/src/test/java/com/zjgyjd/ComputeTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ssmdemo01/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/java/com/arvin/convert/DataConvertTools.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/java/com/arvin/service/ItemsServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-99">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/java/com/arvin/tools/PropertyEditClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/webapp/jsp/itemsList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="88" column="55" lean-forward="true" selection-start-line="88" selection-start-column="49" selection-end-line="88" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/webapp/jsp/addItems.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-122" />
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/java/com/arvin/mapper/ItemsMapperCustom.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/java/com/arvin/mapper/ItemsMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2825" />
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/java/com/arvin/mapper/ItemsMapperCustom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="13" column="13" lean-forward="true" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/springmvc/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/springmvc/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="1" column="48" selection-start-line="1" selection-start-column="48" selection-end-line="1" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/java/com/arvin/controller/ItemsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="79">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="30" selection-end-line="29" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://D:/springmvc/src/main/java/com/ming/controller/ItemsController3.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-339">
-          <caret line="82" column="34" selection-start-line="82" selection-start-column="34" selection-end-line="82" selection-end-column="34" />
+        <state relative-caret-position="129">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/springmvc/src/main/resources/spring/applicationContext-controller.xml">
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsController_01.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="52" column="55" selection-start-line="52" selection-start-column="55" selection-end-line="52" selection-end-column="55" />
+        <state relative-caret-position="251">
+          <caret line="29" column="5" selection-start-line="20" selection-start-column="3" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.xml">
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-transaction.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="26" column="98" selection-start-line="26" selection-start-column="89" selection-end-line="26" selection-end-column="98" />
+        <state relative-caret-position="226">
+          <caret line="31" column="37" lean-forward="true" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="37" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.java">
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsServiceImp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="10" column="19" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        <state relative-caret-position="478">
+          <caret line="39" column="20" selection-start-line="39" selection-start-column="20" selection-end-line="39" selection-end-column="20" />
+          <folding>
+            <element signature="e#1182#1183#0" expanded="true" />
+            <element signature="e#1223#1224#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/springmvc/src/main/webapp/WEB-INF/jsp/editshow.jsp">
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="22" column="15" selection-start-line="22" selection-start-column="15" selection-end-line="22" selection-end-column="40" />
+        <state relative-caret-position="121">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="29" />
+          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsServiceImp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="38" column="4" selection-start-line="38" selection-start-column="4" selection-end-line="38" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsController_01.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="29" column="5" selection-start-line="20" selection-start-column="3" selection-end-line="29" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/modifyitems.jsp" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/49616996-9912-4c28-8e0a-d196a8f9953f/console.sql">
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/mapper/ItemsCustomMapper.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/49616996-9912-4c28-8e0a-d196a8f9953f/console_1.sql">
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/update.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsUpdateController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="644">
-          <caret line="46" column="28" selection-start-line="46" selection-start-column="28" selection-end-line="46" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/showitems.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1587">
-          <caret line="69" column="56" selection-start-line="69" selection-start-column="49" selection-end-line="69" selection-end-column="56" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="245">
+          <caret line="13" column="7" lean-forward="true" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -1659,161 +1669,128 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/index.jsp">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/49616996-9912-4c28-8e0a-d196a8f9953f/console.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/update.jsp">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/49616996-9912-4c28-8e0a-d196a8f9953f/console_1.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        <state relative-caret-position="46">
+          <caret line="2" column="22" lean-forward="true" selection-end-line="2" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/service/ItemsService.java">
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="18" column="36" selection-start-line="18" selection-start-column="36" selection-end-line="18" selection-end-column="36" />
+        <state relative-caret-position="174">
+          <caret line="39" column="58" selection-start-line="39" selection-start-column="51" selection-end-line="39" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/addTable.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        <state relative-caret-position="269">
+          <caret line="20" column="71" selection-start-line="20" selection-start-column="71" selection-end-line="20" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/db.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/log4j.properties">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-service.xml">
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/webapp/showitems.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="376">
-          <caret line="19" column="4" selection-start-line="19" selection-start-column="4" selection-end-line="19" selection-end-column="4" />
+        <state relative-caret-position="296">
+          <caret line="60" column="25" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="25" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-controller.xml">
+    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/java/com/zjgyjd/control/ItemsUpdateController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-mapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="39" column="19" selection-start-line="39" selection-start-column="19" selection-end-line="39" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springmvc_spring_mybits/src/main/resources/spring/applicationContext-transaction.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Springdemo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="460">
-          <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Springdemo/src/main/resources/applicationContext-vv.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/Circular.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#129#130#0" expanded="true" />
-            <element signature="e#165#166#0" expanded="true" />
-            <element signature="e#199#200#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#285#286#0" expanded="true" />
-            <element signature="e#328#329#0" expanded="true" />
-            <element signature="e#360#361#0" expanded="true" />
-            <element signature="e#389#390#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/Rectangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-          <folding>
-            <element signature="e#259#260#0" expanded="true" />
-            <element signature="e#296#297#0" expanded="true" />
-            <element signature="e#330#331#0" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#405#406#0" expanded="true" />
-            <element signature="e#434#435#0" expanded="true" />
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/Shape.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#528#529#0" expanded="true" />
-            <element signature="e#560#561#0" expanded="true" />
-            <element signature="e#587#588#0" expanded="true" />
-            <element signature="e#611#612#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-            <element signature="e#669#670#0" expanded="true" />
-            <element signature="e#681#682#0" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/XmlShapeComputer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding>
-            <element signature="e#698#699#0" expanded="true" />
-            <element signature="e#738#739#0" expanded="true" />
-            <element signature="e#786#787#0" expanded="true" />
-            <element signature="e#828#829#0" expanded="true" />
-            <element signature="e#878#879#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="294">
+          <caret line="56" column="50" selection-start-line="56" selection-start-column="50" selection-end-line="56" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Springdemo/src/main/resources/applicationContext.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
+        <state relative-caret-position="178">
           <caret line="35" column="32" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="32" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Springdemo/src/test/java/com/zjgyjd/ComputeTest.java">
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/resources/spring/applicationContext-transaction.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="36" lean-forward="true" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="-618" />
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/resources/spring/applicationContext-dao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-330" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/ssmdemo01/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/resources/spring/applicationContext-controller.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="27" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/ssmdemo_03/src/main/resources/spring/applicationContext-convert.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="271">
+          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-815" />
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/resources/db.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://49616996-9912-4c28-8e0a-d196a8f9953f/schema/springmvc/table/items.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="26" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/java/com/ming/controller/itemsController2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/java/com/ming/controller/ItemsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2">
+          <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/java/com/ming/controller/ItemsController3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2344">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/resources/spring/applicationContext-transaction.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
         </state>
       </provider>
     </entry>
@@ -1871,7 +1848,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|springmvc_spring_mybits</last-edited>
+          <last-edited>Spring|springmvc (1)</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

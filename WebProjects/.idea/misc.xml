@@ -13,6 +13,8 @@
     <file type="web" url="file://$PROJECT_DIR$/springmvc" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc_spring_mybits" />
     <file type="web" url="file://D:/springmvc" />
+    <file type="web" url="file://D:/上课代码及文件/ssmdemo_03" />
+    <file type="web" url="file://D:/上课代码及文件/SSMDemoFinal" />
     <type id="Spring" />
   </component>
   <component name="MavenProjectsManager">
@@ -28,6 +30,7 @@
         <option value="$PROJECT_DIR$/springmvc_spring_mybits/pom.xml" />
         <option value="$USER_HOME$/Desktop/springmvc/pom.xml" />
         <option value="D:/springmvc/pom.xml" />
+        <option value="D:/上课代码及文件/SSMDemoFinal/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

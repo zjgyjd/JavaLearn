@@ -15,6 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.text.DateFormat;
+import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
@@ -34,10 +35,11 @@ public class ItemsUpdateController {
         request.getRequestDispatcher("/update.jsp").forward(request, response);
 
     }
+
     @RequestMapping(value = "/t")
-    public ModelAndView updateItems(HttpServletRequest request,HttpServletResponse response,ItemsEx itemsEx) throws Exception {
+    public ModelAndView addItems(HttpServletRequest request, HttpServletResponse response, ItemsEx itemsEx) throws Exception {
         String time = request.getParameter("createTime");
-        if(time != null) {
+        if (time != null && !time.isEmpty()) {
             DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             itemsEx.setCreatetime(df.parse(time));
         }
@@ -45,5 +47,16 @@ public class ItemsUpdateController {
         ModelAndView modelAndView = new ModelAndView();
         modelAndView.setViewName("/abc");
         return modelAndView;
+    }
+
+    @RequestMapping(value = "/up")
+    public void updateItem(ItemsEx itemsEx, HttpServletRequest request, HttpServletResponse response) throws Exception {
+        String time = request.getParameter("createTime");
+        if (time != null) {
+            DateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+            itemsEx.setCreatetime(df.parse(time));
+        }
+        itemsService.updateItemsById(itemsEx);
+        request.getRequestDispatcher("/abc").forward(request, response);
     }
 }
