@@ -9,6 +9,8 @@ public class InsertSort {
         System.out.println(Arrays.toString(array));
         insertSort1(array);
         System.out.println(Arrays.toString(array));
+        sortByShell(array);
+        System.out.println(Arrays.toString(array));
     }
 
     //排升序
@@ -38,6 +40,39 @@ public class InsertSort {
                 array[j+1] = array[j];
             }
             array[j + 1] = temp;
+        }
+    }
+
+    //希尔排序,进行分组,按照数组长度进行排序,每次分组为gap/3+1,每次逐渐变小然后全排
+    /**
+     * 时间复杂度
+     * 最好为: O(n)
+     * 最坏为: O(n^2)
+     * 但它减少了最坏情况出现的概率
+     * 平均时间为:O(n ^ 1.2 - 1.3)
+     * 空间复杂度: O(1)
+     * 稳定性: 不稳定,不能保证是不是在一个分组
+     * @param array
+     */
+    public static void sortByShell(int[] array){
+        int gap = array.length;
+        while(true){
+            gap = (gap / 3 + 1);
+            gapForShell(array , gap);
+            if(gap == 1){
+                break;
+            }
+        }
+    }
+
+    public static void gapForShell(int[] array, int gap){
+        for(int i = 0 ; i < array.length;i = i + gap){
+            int tem = array[i];
+            int j = i - gap;
+            for(; j>=0 && tem < array[j];j = j - gap){
+                array[j + gap] = array[j];
+            }
+            array[j + gap] = tem;
         }
     }
 }
