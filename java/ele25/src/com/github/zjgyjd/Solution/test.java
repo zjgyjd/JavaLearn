@@ -1,15 +1,16 @@
 package com.github.zjgyjd.Solution;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class test {
     public static void main(String[] args) {
-        int[] a = {4,5,6};
+        int[] a = {1,2,3,4,5};
         sort(a);
-
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int[] array = new int[n];
+        System.out.println(Arrays.toString(a));
+//		Scanner sc = new Scanner(System.in);
+//		int n = sc.nextInt();
+//		int[] array = new int[n];
 
 		
     }
@@ -31,11 +32,14 @@ public class test {
 	
     private static void short1(int[] array, int[] brr, int i, int length) {
         if (i == length){
+            int sum = 0;
             for (int j = 0; j < brr.length; j++) {
                 if (brr[j] == 1){
+                    sum = sum + array[j];
                     System.out.print(array[j]+" ");
                 }
             }
+            System.out.println("sum = "+ sum);
             System.out.println();
         }else {
             brr[i] = 1;
