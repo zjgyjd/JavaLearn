@@ -17,18 +17,18 @@ public class Thread5 {
                     }
             }
         };
-//        new Thread(() -> {
+//        new ThreadTest(() -> {
 ////            while (true) {
 ////                try {
-////                    Thread.sleep(1000);
-////                    System.out.println(Thread.currentThread().getName()+"执行 当前时间"+ LocalDateTime.now());//同样可以获取当前时间
+////                    ThreadTest.sleep(1000);
+////                    System.out.println(ThreadTest.currentThread().getName()+"执行 当前时间"+ LocalDateTime.now());//同样可以获取当前时间
 ////                } catch (InterruptedException e) {
 ////                    e.printStackTrace();
 ////                }
 ////            }
-////        }, "Thread-A").start();
-        new Thread(runnable,"Thread-A").start();//如果加synchronized,只有一个执行,虽然sleep交出了cpu但不会释放资源
-        new Thread(runnable,"Thread-B").start();
-        new Thread(runnable,"Thread-c").start();
+////        }, "ThreadTest-A").start();
+        new Thread(runnable,"ThreadTest-A").start();//如果加synchronized,只有一个执行,虽然sleep交出了cpu但不会释放资源
+        new Thread(runnable,"ThreadTest-B").start();
+        new Thread(runnable,"ThreadTest-c").start();
     }
 }

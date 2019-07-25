@@ -12,9 +12,9 @@ public class Thread3 extends Thread {
 
     public static void main(String[] args) {
 //        Thread3 thread1 = new Thread3();
-//        thread1.setName("Thread-A");
+//        thread1.setName("ThreadTest-A");
 //        Thread3 thread2 = new Thread3();
-//        thread2.setName("Thread-B");//此时票数相互没有干扰,除非将属性改为静态
+//        thread2.setName("ThreadTest-B");//此时票数相互没有干扰,除非将属性改为静态
 //        thread1.start();
 //        thread2.start();
 
@@ -30,8 +30,8 @@ public class Thread3 extends Thread {
                 }
 
         };
-        new Thread(runnable,"Thread-A").start();
-        new Thread(runnable,"Thread-B").start();
+        new Thread(runnable,"ThreadTest-A").start();
+        new Thread(runnable,"ThreadTest-B").start();
 
     }
 }

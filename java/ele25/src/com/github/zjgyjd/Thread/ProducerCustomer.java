@@ -1,4 +1,4 @@
-//package com.github.zjgyjd.Thread;
+//package com.github.zjgyjd.ThreadTest;
 //
 //        import java.util.LinkedList;
 //        import java.util.Queue;
@@ -17,9 +17,9 @@
 //        Producer producer2 = new Producer(queue, monitor, goodsName);
 //        Customer customer = new Customer(queue, monitor);
 //
-//        new Thread(producer1, "生产者1").start();
-//     //   new Thread(producer2, "生产者2").start();
-//        new Thread(customer).start();
+//        new ThreadTest(producer1, "生产者1").start();
+//     //   new ThreadTest(producer2, "生产者2").start();
+//        new ThreadTest(customer).start();
 //    }
 //
 //}
@@ -58,7 +58,7 @@
 //    public void run() {
 //        while (true) {
 //            try {
-//                Thread.sleep(1000);
+//                ThreadTest.sleep(1000);
 //            } catch (InterruptedException e) {
 //                e.printStackTrace();
 //            }
@@ -73,7 +73,7 @@
 //                } else {
 //                    Goods goods = new Goods(String.valueOf(atomicInteger.getAndAdd(1)));
 //                    this.goods.add(goods);
-//                    System.out.println(Thread.currentThread().getName() + "生产：" + goods);
+//                    System.out.println(ThreadTest.currentThread().getName() + "生产：" + goods);
 //
 //                }
 //            }
@@ -96,7 +96,7 @@
 //    public void run() {
 //        while (true) {
 //            try {
-//                Thread.sleep(500);
+//                ThreadTest.sleep(500);
 //            } catch (InterruptedException e) {
 //                e.printStackTrace();
 //            }

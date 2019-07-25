@@ -26,12 +26,12 @@ class MyThread3 implements Runnable {
 //            synchronized(this) { // 表示为程序逻辑上锁,只有第一个进入的访问
 //                if(this.ticket>0) { // 还有票
 //                    try {
-//                        Thread.sleep(1000);
+//                        ThreadTest.sleep(1000);
 //                    } catch (InterruptedException e) {
 //// TODO Auto-generated catch block
 //                        e.printStackTrace();
 //                    } // 模拟网络延迟
-//                    System.out.println(Thread.currentThread().getName()+",还有"
+//                    System.out.println(ThreadTest.currentThread().getName()+",还有"
 //                            +this.ticket -- +" 张票");
 //                }
 //            }

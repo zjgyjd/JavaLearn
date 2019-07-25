@@ -4,7 +4,7 @@ public class Thread11 {
     public static void main(String[] args) {
         Runnable runnable = new PrintRunnable();
         for (int i = 0; i <10 ; i++) {
-            new Thread(runnable,"Thread-" +i).start();
+            new Thread(runnable,"ThreadTest-" +i).start();
         }
     }
 }

@@ -6,10 +6,10 @@ public class TestNotify {
 //        Object object = new Object();
 //        MyRunnable8 waitThread = new MyRunnable8(true, object);
 //        MyRunnable8 notifyThread = new MyRunnable8(false, object);
-//        Thread thread1 = new Thread(waitThread, "wait线程");
-//        Thread thread2 = new Thread(notifyThread, "notify线程");//此时一对一
+//        ThreadTest thread1 = new ThreadTest(waitThread, "wait线程");
+//        ThreadTest thread2 = new ThreadTest(notifyThread, "notify线程");//此时一对一
 //        thread1.start();
-//        Thread.sleep(1000);
+//        ThreadTest.sleep(1000);
 //        thread2.start();
 
         //一对多运用notifyall

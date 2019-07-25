@@ -8,8 +8,8 @@ public class Thread6 {
                 System.out.println(Thread.currentThread().getName()+" i= "+i);
             }
         };
-        new Thread(runnable,"Thread-A").start();
-        new Thread(runnable,"Thread-B").start();
-        new Thread(runnable,"Thread-C").start();
+        new Thread(runnable,"ThreadTest-A").start();
+        new Thread(runnable,"ThreadTest-B").start();
+        new Thread(runnable,"ThreadTest-C").start();
     }
 }

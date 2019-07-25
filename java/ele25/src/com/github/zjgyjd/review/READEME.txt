@@ -185,5 +185,12 @@ put方法:
         为什么要树化?当hash冲突严重时,用链的话会使查找程度变成O(n)而树化可以使查找速率为O(log(n))
         但当红黑树节点小于6时就会发生树退化,变成链表
 8.ConcurrentHashMap  如何高效实现 线程安全？
-
+HashTable锁的是整个哈希表,效率会非常低,因为只有一个锁,造成读读互斥
 9.ConcurrentHashMap JDK 1.7 与 1.8 的区别？
+1.7版本的时候,它的结构是Segment加Hash表,注意Segment不会扩容,扩容会将Segment对应的Hash表进行扩容
+1.7版本的时候,会将Segment进行加锁,即加了16把锁,提高了效率
+Segment是ReentrantLock的子类,使用Lock保证线程安全
+
+1.8版本的时候,结构变成了Hash表加红黑树,Segment不在作用,直接锁hash桶里面的小元素头,锁的个数可以跟随扩容而扩容
+此时使用cas下的synchronized保证了线程的安全性
+        |-->咨询

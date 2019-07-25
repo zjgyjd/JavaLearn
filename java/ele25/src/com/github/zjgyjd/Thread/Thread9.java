@@ -10,11 +10,11 @@ public class Thread9 {
         // 守护线程就在工作；只有当最后一个非守护线程结束时，守护线程才会随着JVM一同停止工作。
         System.out.println(Thread.currentThread().isDaemon());//false说明主线程是非守护线程,为用户线程
         //可以创建一个线程守护线程
-        Thread threadA = new Thread(new A(),"Thread-A");
+        Thread threadA = new Thread(new A(),"ThreadTest-A");
         threadA.setDaemon(true);//变为守护,要一直执行到主线程结束
         threadA.start();
 
-        Thread threadB = new Thread(new A(),"Thread-B");
+        Thread threadB = new Thread(new A(),"ThreadTest-B");
         threadB.start();
 
         try {
