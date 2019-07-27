@@ -51,7 +51,7 @@
     <session id="-586755750">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="114" />
+          <entry key="project.closed" value="115" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="2" />
@@ -85,7 +85,7 @@
           <entry key="project.open.time.54" value="2" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.56" value="1" />
-          <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.57" value="2" />
           <entry key="project.open.time.59" value="1" />
           <entry key="project.open.time.6" value="3" />
           <entry key="project.open.time.60" value="1" />
@@ -93,7 +93,7 @@
           <entry key="project.open.time.67" value="1" />
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="120" />
+          <entry key="project.opened" value="121" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -103,7 +103,7 @@
           <entry key="class" value="1" />
           <entry key="detailOfArrayList" value="4" />
           <entry key="iml" value="2" />
-          <entry key="java" value="593" />
+          <entry key="java" value="595" />
           <entry key="jpg" value="1" />
           <entry key="properties" value="1" />
           <entry key="questionForArrayList" value="2" />
@@ -116,7 +116,7 @@
           <entry key="CLASS" value="1" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="593" />
+          <entry key="JAVA" value="595" />
           <entry key="PLAIN_TEXT" value="27" />
           <entry key="Properties" value="1" />
         </counts>
@@ -126,7 +126,7 @@
           <entry key="README" value="1655" />
           <entry key="Readme" value="206" />
           <entry key="detailOfArrayList" value="1685" />
-          <entry key="java" value="86288" />
+          <entry key="java" value="87343" />
           <entry key="properties" value="64" />
           <entry key="questionForArrayList" value="310" />
           <entry key="search" value="2171" />
@@ -135,7 +135,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="86288" />
+          <entry key="JAVA" value="87343" />
           <entry key="PLAIN_TEXT" value="12160" />
           <entry key="Properties" value="64" />
         </counts>
@@ -147,11 +147,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Chorus.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="77">
-              <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+              <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ChangePUKE.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/EmployeeImportance.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -206,8 +227,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/README.txt" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/SeqList.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/README" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/DList.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/genericType/search" />
@@ -257,6 +276,8 @@
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/Thread.txt" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Valid.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Chorus.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ChangePUKE.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/EmployeeImportance.java" />
       </list>
     </option>
   </component>
@@ -272,7 +293,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1040" />
@@ -287,7 +308,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -369,12 +389,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="set back&#9;ACTION&#9;Images.SetBackgroundImage&#10;TreeNode&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap.TreeNode&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap&#10;invokeShift&#9;PSI&#9;JAVA://jdk.nashorn.internal.runtime.ListAdapter#invokeShift&#10;AssertionError&#9;PSI&#9;JAVA://java.lang.AssertionError&#10;Integer&#9;PSI&#9;JAVA://java.lang.Integer" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564156257669" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564241626457" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../chat-room" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -410,7 +431,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.ThreadTest">
+  <component name="RunManager" selected="Application.ChangePUKE">
+    <configuration name="ChangePUKE" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.ChangePUKE" />
+      <module name="ele25" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.zjgyjd.Solution.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Dictionary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.Dictionary" />
       <module name="ele25" />
@@ -426,19 +460,6 @@
     </configuration>
     <configuration name="NumberTimes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.NumberTimes" />
-      <module name="ele25" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.zjgyjd.Solution.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Sum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.Sum" />
       <module name="ele25" />
       <extension name="coverage">
         <pattern>
@@ -477,19 +498,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.Sum" />
       <item itemvalue="Application.Dictionary" />
       <item itemvalue="Application.NumberTimes" />
       <item itemvalue="Application.WrongNote" />
       <item itemvalue="Application.ThreadTest" />
+      <item itemvalue="Application.ChangePUKE" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ChangePUKE" />
         <item itemvalue="Application.ThreadTest" />
         <item itemvalue="Application.WrongNote" />
         <item itemvalue="Application.NumberTimes" />
         <item itemvalue="Application.Dictionary" />
-        <item itemvalue="Application.Sum" />
       </list>
     </recent_temporary>
   </component>
@@ -627,12 +648,13 @@
       <workItem from="1563939012418" duration="15507000" />
       <workItem from="1564029985827" duration="4249000" />
       <workItem from="1564046199309" duration="10394000" />
-      <workItem from="1564131944435" duration="1537000" />
+      <workItem from="1564131944435" duration="1655000" />
+      <workItem from="1564234653377" duration="6145000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="711404000" />
+    <option name="totallyTimeSpent" value="717667000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -647,7 +669,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.16721311" visible="true" weight="0.23298033" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.16721311" visible="true" weight="0.23676248" />
       <window_info id="Structure" order="1" sideWeight="0.83278686" side_tool="true" weight="0.18154311" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -733,16 +755,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/old/CheckStand.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/HowManyNum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="42" selection-start-line="42" selection-end-line="42" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/SonString.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="414">
@@ -869,9 +881,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="713">
           <caret line="32" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -934,9 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="491">
           <caret line="65" column="1" selection-start-line="2" selection-end-line="65" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -951,9 +957,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="736">
           <caret line="34" column="5" selection-start-line="13" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -971,9 +974,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="299">
           <caret line="15" column="31" selection-start-line="15" selection-start-column="31" selection-end-line="15" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1068,10 +1068,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/AntiOrder.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Chorus.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        <state relative-caret-position="77">
+          <caret line="6" column="12" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1082,10 +1082,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Chorus.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/AntiOrder.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="6" column="12" lean-forward="true" selection-start-line="6" selection-start-column="12" selection-end-line="6" selection-end-column="12" />
+        <state relative-caret-position="529">
+          <caret line="23" column="33" selection-start-line="23" selection-start-column="33" selection-end-line="23" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ChangePUKE.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/EmployeeImportance.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="34" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
