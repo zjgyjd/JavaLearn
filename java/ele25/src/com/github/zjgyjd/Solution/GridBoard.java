@@ -1,5 +1,6 @@
 package com.github.zjgyjd.Solution;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 
@@ -169,53 +170,44 @@ class node {
         this.y = y;
         this.step = step;
     }
-}
 
-class AboutBfs {
-
-    public static void main(String[] args) {
-        int[][] map =
-                {{0,0,0}
-                ,{0,0,0}
-                ,{1,0,0}};
-        new AboutBfs().BFS(map , 0 ,0,2,2);
+    @Override
+    public String
+    toString() {
+        return "node{" +
+                "x=" + x +
+                ", y=" + y +
+                ", step=" + step +
+                '}';
     }
 
-    public void BFS(int[][] map, int startx, int starty, int destx, int desty) {
-        int m = map.length;
-        int n = map[0].length;
-        LinkedList<node> queue = new LinkedList<>();
-        int[][] book = new int[m][n];
+    static class Num{
+        public int num;
+        public Num(int n){
+            num = n;
+        }
 
-        queue.add(new node(startx, starty, 0));
-        book[startx][starty] = 1;
-        int[][] next = {{0, 1}, {1, 0}, {-1, 0}, {0, -1}};
-        boolean flag = false;
-        while (!queue.isEmpty()) {
-            int step = queue.getFirst().step;
-            for (int i = 0; i < 4; i++) {
-                int nx = queue.getFirst().x + next[i][0];
-                int ny = queue.getFirst().y + next[i][1];
-
-                if (nx < 0 || nx >= m
-                        || ny < 0 || ny >= n) {
-                    continue;
-                }
-                if (map[nx][ny] == 0 && book[nx][ny] == 0) {
-
-                    queue.add(new node(nx, ny, step + 1));
-                    book[nx][ny] = 1;
-                }
-                if (nx == destx && ny == desty) {
-                    System.out.println(step + 1);
-                    flag = true;
-                    break;
-                }
-            }
-            if (flag) {
-                break;
-            }
-            queue.remove();
+        @Override
+        public String toString() {
+            return "Num{" +
+                    "num=" + num +
+                    '}';
         }
     }
+
+    public static void main(String[] args) {
+        ArrayList<Num> arrayList = new ArrayList<>();
+        Num target = new Num(0);
+        arrayList.add(target);
+        target = new Num(8);
+        arrayList.add(target);
+        System.out.println(arrayList);
+    }
+    public static void changeNum(int t){
+        t = 1;
+    }
+    public static void changeNum2(Num t){
+        t.num = 1;
+    }
 }
+
