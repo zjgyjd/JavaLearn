@@ -20,7 +20,7 @@ String str = new String ("abc");
 
 字符串 用+ 拼接 就会变成StringBuilder  也就是其.append操作  最后变成String  用的是 toString方法
 该方法  return了个  new String
-纯常量的字符串拼接   和 之前相比的字符穿相等
+纯常量的字符串拼接   和 之前相比的字符串相等
 
 字符串拼接时  只有纯常量拼接  不会转为 StringBuilder
 直接在常量池  中寻找  是否存在已有值
