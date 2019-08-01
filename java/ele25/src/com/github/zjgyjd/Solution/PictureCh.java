@@ -1,5 +1,7 @@
 package com.github.zjgyjd.Solution;
 
+import java.util.Vector;
+
 public class PictureCh {
     public int[][] p = {{0,1},{1,0},{0,-1},{-1,0}};
     public int[][] floodFill(int[][] image, int sr, int sc, int newColor) {
