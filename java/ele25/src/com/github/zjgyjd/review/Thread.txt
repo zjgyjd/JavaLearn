@@ -286,3 +286,45 @@ Executors:线程池工具类
       Thread 类执行Callable
       FutureTask类保证多线程场景下任务之后被执行一次
       Future的get()方法会阻塞线程,直到取得Callable的返回值
+
+      查看jdk的内置线程池(Executors)
+      固定大小线程池
+      应用场景:当服务器负载较重时,限制线程的数量,此时采用此线程池
+
+      public static ExecutorService newFixedThreadPool(int nThreads) {
+              return new ThreadPoolExecutor(nThreads, nThreads,
+                                            0L, TimeUnit.MILLISECONDS,
+                                            new LinkedBlockingQueue<Runnable>());
+      }
+
+      2.单线程池
+       public static ExecutorService newSingleThreadExecutor() {
+               return new FinalizableDelegatedExecutorService
+                   (new ThreadPoolExecutor(1, 1,
+                                           0L, TimeUnit.MILLISECONDS,
+                                           new LinkedBlockingQueue<Runnable>()));
+       }
+       应用场景:某些需要同步处理的场合(任务需要按照顺序处理)
+
+       3.缓存线程池
+       public static ExecutorService newCachedThreadPool() {
+               return new ThreadPoolExecutor(0, Integer.MAX_VALUE,
+                                             60L, TimeUnit.SECONDS,
+                                             new SynchronousQueue<Runnable>());
+       }
+       应用场景:适用于负载较轻的服务器,适用于短期的小任务
+       SynchronousQueue:不存储元素,该队列的出队与入队操作必须同时调用,其他元素在队口等待
+
+       此时线程的速度和两个变量有关
+       提交任务速度 > 执行任务速度 : 此时会不断创建新线程提交任务,此时有可能会将内存写满
+
+       提交任务速度 < 执行任务速度 : 此时缓存线程池只会有固定线程在工作
+
+       4.定时任务线程池
+       public static ScheduledExecutorService newScheduledThreadPool(int corePoolSize) {
+               return new ScheduledThreadPoolExecutor(corePoolSize);
+       }
+       应用场景 :执行定时任务的场合
+
+       线程池 : 工作流程,ThreadPoolExecutor参数会配置(内置四大线程池)
+            内置四大线程池的使用场景
