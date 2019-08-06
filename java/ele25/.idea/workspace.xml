@@ -118,7 +118,7 @@
           <entry key="class" value="3" />
           <entry key="detailOfArrayList" value="4" />
           <entry key="iml" value="2" />
-          <entry key="java" value="614" />
+          <entry key="java" value="615" />
           <entry key="jpg" value="1" />
           <entry key="properties" value="1" />
           <entry key="questionForArrayList" value="2" />
@@ -131,7 +131,7 @@
           <entry key="CLASS" value="3" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="614" />
+          <entry key="JAVA" value="615" />
           <entry key="PLAIN_TEXT" value="31" />
           <entry key="Properties" value="1" />
         </counts>
@@ -141,7 +141,7 @@
           <entry key="README" value="1655" />
           <entry key="Readme" value="206" />
           <entry key="detailOfArrayList" value="1685" />
-          <entry key="java" value="92161" />
+          <entry key="java" value="92193" />
           <entry key="properties" value="64" />
           <entry key="questionForArrayList" value="310" />
           <entry key="search" value="2171" />
@@ -150,7 +150,7 @@
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="92161" />
+          <entry key="JAVA" value="92193" />
           <entry key="PLAIN_TEXT" value="19678" />
           <entry key="Properties" value="64" />
         </counts>
@@ -207,7 +207,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ChineseStringPlus.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1062">
@@ -219,6 +219,20 @@
                 <element signature="e#5479#5502#0" expanded="true" />
                 <element signature="e#5722#5739#0" expanded="true" />
                 <element signature="e#5800#5817#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/MinMutation.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="262">
+              <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1081#1089#0" expanded="true" />
+                <element signature="e#1144#1153#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -296,7 +310,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/RCode.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/changeBubble.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/AntiOrder.java" />
@@ -347,6 +360,7 @@
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/ThreadTest.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/JVM.txt" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ChineseStringPlus.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/MinMutation.java" />
       </list>
     </option>
   </component>
@@ -362,7 +376,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1040" />
@@ -579,7 +593,7 @@
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="FixedThreadPool&#9;null&#9;null&#10;Exchanger&#9;PSI&#9;JAVA://java.util.concurrent.Exchanger&#10;Stack&#9;PSI&#9;JAVA://java.util.Stack&#10;set back&#9;ACTION&#9;Images.SetBackgroundImage&#10;TreeNode&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap.TreeNode&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap&#10;invokeShift&#9;PSI&#9;JAVA://jdk.nashorn.internal.runtime.ListAdapter#invokeShift&#10;AssertionError&#9;PSI&#9;JAVA://java.lang.AssertionError&#10;Integer&#9;PSI&#9;JAVA://java.lang.Integer" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565019570316" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1565104935183" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../chat-room" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -842,12 +856,12 @@
       <workItem from="1564669342743" duration="4964000" />
       <workItem from="1564712922645" duration="2334000" />
       <workItem from="1564882937953" duration="6035000" />
-      <workItem from="1565017302686" duration="1842000" />
+      <workItem from="1565017302686" duration="1968000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="770721000" />
+    <option name="totallyTimeSpent" value="770847000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -859,7 +873,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.64918035" visible="true" weight="0.13615733" />
@@ -948,13 +962,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/BubbleSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="21" column="17" selection-start-line="21" selection-start-column="17" selection-end-line="21" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/InsertSort.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="138">
@@ -1317,6 +1324,18 @@
             <element signature="e#5479#5502#0" expanded="true" />
             <element signature="e#5722#5739#0" expanded="true" />
             <element signature="e#5800#5817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/MinMutation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="262">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1081#1089#0" expanded="true" />
+            <element signature="e#1144#1153#0" expanded="true" />
           </folding>
         </state>
       </provider>
