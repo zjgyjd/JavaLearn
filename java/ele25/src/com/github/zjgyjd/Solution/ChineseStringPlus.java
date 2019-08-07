@@ -12,7 +12,7 @@ public class ChineseStringPlus {
 
         // Dictionary to hold combination of words that can be formed,
         // from any given word. By changing one letter at a time.
-        HashMap<String, ArrayList<String>> allComboDict = new HashMap<String, ArrayList<String>>();
+        HashMap<String, ArrayList<String>> allComboDict = new HashMap<>();
 
         wordList.forEach(
                 word -> {
@@ -21,7 +21,7 @@ public class ChineseStringPlus {
                         // Value is a list of words which have the same intermediate generic word.
                         String newWord = word.substring(0, i) + '*' + word.substring(i + 1, L);
                         ArrayList<String> transformations =
-                                allComboDict.getOrDefault(newWord, new ArrayList<String>());
+                                allComboDict.getOrDefault(newWord, new ArrayList<>());
                         transformations.add(word);
                         allComboDict.put(newWord, transformations);
                     }
@@ -99,7 +99,6 @@ public class ChineseStringPlus {
 
                     // Save the level as the value of the dictionary, to save number of hops.
                     visited.put(adjacentWord, level + 1);
-                    Q.add(new Pair(adjacentWord, level + 1));
                 }
             }
         }
@@ -160,5 +159,136 @@ public class ChineseStringPlus {
         return 0;
     }
 
+    public int ladderLength02(String beginWord, String endWord, List<String> wordList) {
+        HashSet<String> wL = new HashSet<>(wordList);
+        ArrayList<String> visited = new ArrayList<>();
+        LinkedList<String> queue = new LinkedList<>();
+        int len = beginWord.length();
+        int result = 1;
+        queue.add(beginWord);
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            while(size-- != 0){
+                String curStr = queue.poll();
+                for(int i = 0 ; i < len ; i++){
+                    char[] newStr = curStr.toCharArray();
+                    for(char j = 'a' ; j <= 'z' ; j++){
+                        newStr[i] = j;
+                        String t = new String(newStr);
+
+                        if(!wL.contains(t) || visited.contains(t)){
+                            continue;
+                        }
+
+                        if(t.equals(endWord)){
+                            return result + 1;
+                        }
+
+                        queue.add(t);
+                        visited.add(t);
+                    }
+                }
+            }
+            result++;
+        }
+        return 0;
+    }
+
+    public int ladderLength3(String beginWord, String endWord, List<String> wordList) {
+        int length = beginWord.length();
+        HashMap<String , ArrayList<String>> wordDir = new HashMap<>();
+
+        wordList.forEach(
+                word ->{
+
+                    for(int i = 0 ; i < length ; i++){
+                        char[] nStr = word.toCharArray();
+                        nStr[i] = '*';
+                        String newStr = new String(nStr);
+                        ArrayList<String> checkList =
+                                wordDir.getOrDefault(newStr, new ArrayList<>());
+                        checkList.add(word);
+                        wordDir.put(newStr, checkList);
+                    }
+                }
+        );
+
+        LinkedList<String> queue = new LinkedList<>();
+        HashSet<String> visited = new HashSet<>();
+        visited.add(beginWord);
+        queue.add(beginWord);
+        int result = 1;
+        while(!queue.isEmpty()){
+            int size = queue.size();
+            while(size-- != 0){
+                String word = queue.remove();
+                for(int i = 0 ; i < length ; i++){
+                    char[] nStr = word.toCharArray();
+                    nStr[i] = '*';
+                    String newStr = new String(nStr);
+                    for(String curStr : wordDir.getOrDefault(newStr , new ArrayList<>())){
+                        if(curStr.equals(endWord)){
+                            return result + 1;
+                        }
+                        if(!visited.contains(curStr)){
+                            visited.add(curStr);
+                            queue.add(curStr);
+                        }
+                    }
+                }
+            }
+
+            result++;
+        }
+        return 0;
+    }
+
+    public int ladderLength4(String beginWord, String endWord, List<String> wordList) {
+        if (wordList == null || wordList.size() == 0) return 0;
+        //hashset的好处：去重也完成了
+        //开始端
+        Set<String> start = new HashSet<>();
+        //结束端
+        Set<String> end = new HashSet<>();
+        //所有字符串的字典
+        Set<String> dic = new HashSet<>(wordList);
+        start.add(beginWord);
+        end.add(endWord);
+        if (!dic.contains(endWord)) return 0;
+        //经历过上面的一系列判定，到这里的时候，若是有路径，则最小是2，所以以2开始
+        return bfs(start, end, dic, 2);
+
+    }
+
+    public int bfs(Set<String> st, Set<String> ed, Set<String> dic, int l) {
+        //双端查找的时候，若是有任意一段出现了“断裂”，也就是说明不存在能够连上的路径，则直接返回0
+        if (st.size() == 0) return 0;
+        if (st.size() > ed.size()) {//双端查找，为了优化时间，永远用少的去找多的，比如开始的时候塞进了1000个，而结尾只有3个，则肯定是从少的那一端开始走比较好
+            return bfs(ed, st, dic, l);
+        }
+        //BFS的标记行为，即使用过的不重复使用
+        dic.removeAll(st);
+        //收集下一层临近点
+        Set<String> next = new HashSet<>();
+        for (String s : st) {
+            char[] arr = s.toCharArray();
+            for (int i = 0; i < arr.length; i++) {
+                char tmp = arr[i];
+                //变化
+                for (char c = 'a'; c <= 'z'; c++) {
+                    if (tmp == c) continue;
+                    arr[i] = c;
+                    String nstr = new String(arr);
+                    if (dic.contains(nstr)) {
+                        if (ed.contains(nstr)) return l;
+                        else next.add(nstr);
+                    }
+                }
+                //复原
+                arr[i] = tmp;
+            }
+        }
+        return bfs(next, ed, dic, l + 1);
+    }
 }
 
