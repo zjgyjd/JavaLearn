@@ -10,9 +10,9 @@ import java.util.stream.Collectors;
 public class SomeChips {
     public static void main(String[] args) {
         String[] t1 = {};
-        String[] t2 = {"java","C++"};
+        String[] t2 = {"java", "C++"};
         String t3 = "java";
-        threePoint("java","C++","Python");
+        threePoint("java", "C++", "Python");
         threePoint(t1);
         threePoint(t2);
         threePoint(t3);
@@ -38,11 +38,11 @@ public class SomeChips {
     }
 }
 
-class People{
+class People {
     String name;
     String sex;
 
-    public People(String name,String sex) {
+    public People(String name, String sex) {
         this.name = name;
     }
 
@@ -65,9 +65,17 @@ class People{
     public static void main(String[] args) {
         Test s = () -> System.out.println("haha");
         s.test();
+        Thread t1 = new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("no use lambda");
+            }
+        });
+        //使用Lambda
+        Thread t2 = new Thread(() -> System.out.println("use lambda"));
     }
 }
 
-interface Test{
+interface Test {
     public void test();
 }

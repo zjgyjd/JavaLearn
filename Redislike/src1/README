@@ -1,0 +1,25 @@
+1.redis的使用场景
+1. windows版的redis
+
+2.博客系统
+    1.做数据结构的设计
+        从需求出发
+    2.功能
+        1.列表页(所有人的文章,按发表时间倒序排列)
+        2.页表页(作者的所有文章)
+        3.详情页(标题、作者、发表时间、正文)
+        4.发表文章
+    3.string/list/hash/set/zset
+    4.文章
+    {
+        "id"    : xxx   作为类似主键
+        "title" : "今天很高兴"
+        "author":  xxx
+        "date"  :  xxx
+        "content": xxx
+    }
+    此时用hash储存 Map<String , Map<String , String>> hashes
+                        |id           |其他结构
+2.设计
+    1.总体
+    2.ProtocolInputStream extends FilterInputStream
