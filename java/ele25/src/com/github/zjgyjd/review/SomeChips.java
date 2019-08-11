@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
@@ -73,6 +74,7 @@ class People {
         });
         //使用Lambda
         Thread t2 = new Thread(() -> System.out.println("use lambda"));
+
     }
 }
 
