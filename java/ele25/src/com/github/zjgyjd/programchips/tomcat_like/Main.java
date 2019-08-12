@@ -22,10 +22,15 @@ public class Main {
                 Socket socket = serverSocket.accept();
                 Request request = Request.parse(socket.getInputStream());
                 Response response = Response.build(socket.getOutputStream());
-                StaticController staticController = new StaticController();
-                staticController.doGet(request, response);
-                response.flush();
-                socket.close();
+
+                try{
+                    StaticController staticController = new StaticController();
+                    staticController.doGet(request, response);
+                }finally {
+
+                    response.flush();
+                    socket.close();
+                }
                 System.out.println("lalala");
             } catch (Exception e) {
                 e.printStackTrace();

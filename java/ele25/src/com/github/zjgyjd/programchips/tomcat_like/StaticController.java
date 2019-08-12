@@ -10,6 +10,8 @@ public class StaticController {
             put("html","text/html");
             put("css","text/css");
             put("js","application/javascript");
+            put("ico","image/x-icon");
+            put("jpg","application/x-jpg");
         }
     };
     public void doGet(Request request , Response response) throws Exception {
@@ -17,15 +19,14 @@ public class StaticController {
         String filename = getFilename(request.getUrl());
         //根据文件名的后缀决定content-type --->getSuffix
         String s = getSuffix(filename);
-        response.setContentType(s);
+        response.setContentType(CTYPE.get(s));
         System.out.println(s);
         //把文件的所有内容作为response的body发送
-        InputStream is = new FileInputStream(filename);
+        InputStream is = new FileInputStream (filename);
         byte[] buffer = new byte[1024];
         int len;
         while((len = is.read(buffer))!= -1){
             response.write(buffer , 0 , len);
-
         }
     }
 
@@ -42,6 +43,6 @@ public class StaticController {
         if(url.equals("/")){
             url = "/index.html";
         }
-        return HOME + File.separator + "webapps"+ url.replaceAll("/",File.separator);
+        return HOME + File.separator + "webapps"+ url.replaceAll("/","\\\\");
     }
 }

@@ -20,7 +20,7 @@ public class Request {
         Request request = new Request();
         parseRequestLine(reader, request);
         parseRequestHander(reader, request);
-        return null;
+        return request;
     }
 
     private static void parseRequestHander(BufferedReader reader, Request request) throws Exception {
@@ -37,6 +37,7 @@ public class Request {
 
     private static void parseRequestLine(BufferedReader reader, Request request) throws Exception {
         String line = reader.readLine();
+        System.out.println(line);
         if (line == null) {
             throw new Exception("读到了结尾");
         }
@@ -71,12 +72,13 @@ public class Request {
     }
 
     public String getUrl() {
-        return url;
+        return this.url;
     }
 
     public void setUrl(String url) throws UnsupportedEncodingException {
         String[] fragments = url.split("\\?");
         this.url = URLDecoder.decode(fragments[0], "UTF-8");
+        System.out.println(this.url);
         if (fragments.length > 1) {
             parseParam(fragments[1]);
         }

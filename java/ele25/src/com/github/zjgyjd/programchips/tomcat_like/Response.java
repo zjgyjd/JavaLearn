@@ -27,7 +27,7 @@ public class Response {
     }
 
     public void setContentType(String s) {
-        setHeader("Content-Type", s + ";charset=UTF-8");
+        setHeader("Content-Type ", s + ";charset=UTF-8");
     }
 
     private void setHeader(String s, String s1) {
