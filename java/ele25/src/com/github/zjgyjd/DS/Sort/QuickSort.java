@@ -28,7 +28,7 @@ public class QuickSort {
         //现在分成了三部分(分治算法)
         //再次处理左半部分
         quickSortInner(array, left, pivoindex - 1);
-        //再次处理有半部分
+        //再次处理右半部分
         quickSortInner(array, pivoindex + 1, right);
     }
 
@@ -55,10 +55,12 @@ public class QuickSort {
             while (begin < end && array[begin] <= pivot) {
                 begin++;
             }
+
             //此时array[end] < pivot
             while (begin < end && array[end] >= pivot) {
                 end--;
             }
+
             //当两个都走不动时,交换两个数时循环继续,直到begin == end
             swap(array, begin, end);
         }
@@ -78,7 +80,7 @@ public class QuickSort {
             }
             array[end] = array[begin];
 
-            while (begin < end && array[end] <= hock) {
+            while (begin < end && array[end] >= hock) {
                 end--;
             }
             array[begin] = array[end];

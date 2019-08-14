@@ -1,0 +1,11 @@
+<web-app>
+    <controller>
+        <class>PostController</class>
+        <name>Post</name>
+    </controller>
+
+    <mapping>
+        <url-pattern>/post</url-pattern>
+        <name>Post</name>
+    </mapping>
+</web-app>
