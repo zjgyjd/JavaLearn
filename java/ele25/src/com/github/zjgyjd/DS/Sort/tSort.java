@@ -34,8 +34,8 @@ public class tSort {
         if (size <= 1) {
             return;
         }
-        TtHeap.createHeap(array, size);//建大堆
-        QuickSort.swap(array,0,size -1);
+        TtHeap.createHeap(array, size);//建大堆,建堆
+        QuickSort.swap(array,0,size -1);//将末尾最大数认为有序
         //将剩下的在建堆
         heapSort(array, size - 1);
     }

@@ -109,8 +109,9 @@ public class TtHeap {
         int t = tree[index];
         tree[index] = tree[max];
         tree[max] = t;
+        //进行交换
 
-        heapify(tree, max, size);
+        heapify(tree, max, size);//将max要放到合适的位置,也就是可能原来的父亲节点,会不会更小的问题
     }
 
     /**

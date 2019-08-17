@@ -60,7 +60,7 @@ synchronized(对象----任一类的对象或类的class对象)
 修饰类成员方法,锁当前对象this
 修饰类方法(static)锁的是当前类的反射对象(类.class)
 
-synchronized的底层实现:jaca的Monitor机制
+synchronized的底层实现:java的Monitor机制
 即任意Object及其子类对象内部都在java中附加monitor,获取对象的锁,就是获取Monitor
 
 当一个线程尝试获取对象的Monitor时,若此时Monitor为零时,说明没有线程持有,当前线程获取Monitor
@@ -100,7 +100,7 @@ synchronized的底层实现:jaca的Monitor机制
     偏向锁(乐观锁):
     此时默认是只有一个线程在来回进入同步块,
     会直接将加锁和减锁的过程都省略,每次进入同步块之前,只是判断一下同步块是否是当前线程
-    如果有其他线程在不时刻想进入同步块时,升级为轻量锁
+    如果有其他线程在此时刻想进入同步块时,升级为轻量锁
 
     轻量锁:
     当不同的时刻有不同的线程进入同步块
@@ -185,7 +185,7 @@ synchronized的底层实现:jaca的Monitor机制
         notifyAll();//唤醒所有线程
         line2;
     }
-任意一个monitor有一个同步队列和一个等待队列(即生成者,消费者如果用同一个对象锁,所以进同一个队列)
+任意一个monitor有一个同步队列和一个等待队列(即生产者,消费者如果用同一个对象锁,所以进同一个队列)
 只有一个等待队列的时候,唤醒所有线程一定会造成不该唤醒的线程唤醒,然后再次阻塞,造成了性能的不必要开销
 
 await + signal + Lock(此时要搭配Lock使用,synchronized没有作用)

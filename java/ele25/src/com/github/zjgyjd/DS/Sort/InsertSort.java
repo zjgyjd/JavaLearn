@@ -20,7 +20,7 @@ public class InsertSort {
             for (int k = i; k > j + 1; k--) {
                 array[k] = array[k - 1];
             }
-            array[j + 1] = key;
+            array[j + 1] = key;//所有进行移动到指定位置
         }
     }
 
