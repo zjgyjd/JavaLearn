@@ -1,4 +1,4 @@
-package com.github.zjgyjd.review;
+package com.github.zjgyjd.review.DSreview;
 
 //需要去看
 public class MergeSort {
