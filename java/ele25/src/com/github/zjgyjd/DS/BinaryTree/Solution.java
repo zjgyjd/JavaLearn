@@ -83,10 +83,7 @@ public class Solution {
         if (root == null) {
             return 0;
         }
-        if (root.left == null && root.right == null) {
-            return 1;
-        }
-        return Math.max(height(root.left), height(root.left));
+        return Math.max(height(root.left) + 1, height(root.right) + 1);//这里好像有问题
     }
 
     public static int kLevel(TreeNode root, int k) {
@@ -230,6 +227,7 @@ public class Solution {
         return -1;
     }
 
+
     public TreeNode buildTree(int[] inorder, int[] postorder) {
         int lengthI = inorder.length;
         int lengthP = postorder.length;
@@ -245,7 +243,7 @@ public class Solution {
         int[] forPostorderL = Arrays.copyOfRange(postorder, 0, leftCode);
         rootP.left = buildTree(forInorderL, forPostorderL);
 
-        int[] forInorderR = Arrays.copyOfRange(inorder, leftCode + 1, leftCode);
+        int[] forInorderR = Arrays.copyOfRange(inorder, leftCode + 1, inorder.length);
         int[] forPostorderR = Arrays.copyOfRange(postorder, leftCode, lengthP - 1);
         rootP.right = buildTree(forInorderR, forPostorderR);
         return rootP;

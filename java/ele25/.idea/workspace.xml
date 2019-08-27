@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7e43a97d-2330-484a-9356-2c2fcd6806ab" name="Default Changelist" comment="" />
+    <list default="true" id="7e43a97d-2330-484a-9356-2c2fcd6806ab" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../WebProjects/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebProjects/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,7 +67,7 @@
     <session id="-586755750">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="135" />
+          <entry key="project.closed" value="137" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.2" value="2" />
@@ -87,8 +89,8 @@
           <entry key="project.open.time.41" value="6" />
           <entry key="project.open.time.42" value="4" />
           <entry key="project.open.time.43" value="4" />
-          <entry key="project.open.time.44" value="7" />
-          <entry key="project.open.time.45" value="4" />
+          <entry key="project.open.time.44" value="9" />
+          <entry key="project.open.time.45" value="5" />
           <entry key="project.open.time.46" value="2" />
           <entry key="project.open.time.47" value="5" />
           <entry key="project.open.time.48" value="1" />
@@ -110,24 +112,24 @@
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="142" />
+          <entry key="project.opened" value="145" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="README" value="12" />
+          <entry key="README" value="14" />
           <entry key="Readme" value="2" />
           <entry key="class" value="3" />
           <entry key="detailOfArrayList" value="4" />
           <entry key="iml" value="2" />
-          <entry key="java" value="654" />
+          <entry key="java" value="659" />
           <entry key="jpg" value="1" />
           <entry key="md" value="2" />
           <entry key="properties" value="1" />
           <entry key="questionForArrayList" value="2" />
-          <entry key="search" value="4" />
+          <entry key="search" value="5" />
           <entry key="snippet" value="1" />
-          <entry key="txt" value="16" />
+          <entry key="txt" value="19" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -135,9 +137,9 @@
           <entry key="CLASS" value="3" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="654" />
+          <entry key="JAVA" value="659" />
           <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="40" />
+          <entry key="PLAIN_TEXT" value="46" />
           <entry key="Properties" value="1" />
           <entry key="Scratch" value="1" />
         </counts>
@@ -147,19 +149,19 @@
           <entry key="README" value="1655" />
           <entry key="Readme" value="206" />
           <entry key="detailOfArrayList" value="1685" />
-          <entry key="java" value="99117" />
+          <entry key="java" value="100011" />
           <entry key="md" value="226" />
           <entry key="properties" value="64" />
           <entry key="questionForArrayList" value="310" />
           <entry key="search" value="2171" />
-          <entry key="txt" value="13889" />
+          <entry key="txt" value="13994" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="99117" />
+          <entry key="JAVA" value="100011" />
           <entry key="Markdown" value="226" />
-          <entry key="PLAIN_TEXT" value="19916" />
+          <entry key="PLAIN_TEXT" value="20021" />
           <entry key="Properties" value="64" />
         </counts>
       </usages-collector>
@@ -171,31 +173,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/MergeSort.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/HeapSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/README.txt">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="FIRST">
-              <first_editor relative-caret-position="513">
-                <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-              </first_editor>
-              <second_editor />
+            <state relative-caret-position="1035">
+              <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/ListCase.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/tSort.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            <state relative-caret-position="483">
+              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/THeap/README">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="50" />
             </state>
           </provider>
         </entry>
@@ -204,69 +203,57 @@
         <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/JVM.txt">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="69">
-              <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="22" />
+              <caret line="3" column="22" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/ListNode.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Solution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="161">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-              <folding>
-                <element signature="e#128#129#0" expanded="true" />
-                <element signature="e#157#158#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="5474">
+              <caret line="239" column="39" selection-start-line="239" selection-start-column="39" selection-end-line="239" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/EditDistance.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/search">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/Thread.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="284">
-              <caret line="41" column="5" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-              <folding>
-                <element signature="e#1455#1456#0" expanded="true" />
-                <element signature="e#1488#1489#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="539">
+              <caret line="332" selection-start-line="332" selection-end-line="332" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Dq.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="69">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/changeBubble.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/ThreadTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="4991">
+              <caret line="231" column="71" selection-start-line="231" selection-start-column="71" selection-end-line="231" selection-end-column="71" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/GetNumber.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/README">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/InsertSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/BubbleSort.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+            <state relative-caret-position="1104">
+              <caret line="48" selection-start-line="45" selection-start-column="25" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -305,10 +292,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/bubbleSort.java" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/BubbleSort.java" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ReverseString.java" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/CreateNumber.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/test.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Sum.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Dictionary.java" />
@@ -340,9 +323,7 @@
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/programchips/tomcat_like/Response.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/JVM.txt" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/TestMap.java" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/Thread.txt" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/InsertSort.java" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/tSort.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/THeap/TtHeap.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/MergeSort.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/SonString.java" />
@@ -355,7 +336,13 @@
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/ListCase.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/Node.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/ListNode.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Solution.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/README.txt" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/tSort.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/HeapSort.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/README.txt" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/Thread.txt" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Dq.java" />
       </list>
     </option>
   </component>
@@ -385,7 +372,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -418,28 +405,6 @@
               <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
               <item name="DS" type="462c0819:PsiDirectoryNode" />
               <item name="Sort" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ele25" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ele25" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
-              <item name="io" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ele25" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ele25" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
-              <item name="review" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ele25" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ele25" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
-              <item name="review" type="462c0819:PsiDirectoryNode" />
-              <item name="DSreview" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ele25" type="b2602c69:ProjectViewProjectNode" />
@@ -605,13 +570,13 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="FixedThreadPool&#9;null&#9;null&#10;Exchanger&#9;PSI&#9;JAVA://java.util.concurrent.Exchanger&#10;Stack&#9;PSI&#9;JAVA://java.util.Stack&#10;set back&#9;ACTION&#9;Images.SetBackgroundImage&#10;TreeNode&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap.TreeNode&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap&#10;invokeShift&#9;PSI&#9;JAVA://jdk.nashorn.internal.runtime.ListAdapter#invokeShift&#10;AssertionError&#9;PSI&#9;JAVA://java.lang.AssertionError&#10;Integer&#9;PSI&#9;JAVA://java.lang.Integer" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566292180684" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1566830266958" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -622,18 +587,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\JavaLearn\java\ele25\src\com\github\zjgyjd\DS\BinaryTree" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.github.zjgyjd.Chorus2.Choose" />
+      <recent name="com.github.zjgyjd.generic" />
+      <recent name="com.github.zjgyjd.io" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.github.zjgyjd.review" />
       <recent name="com.github.zjgyjd.generic" />
       <recent name="com.github.zjgyjd.Function" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.github.zjgyjd.Chorus2.Choose" />
-      <recent name="com.github.zjgyjd.generic" />
-      <recent name="com.github.zjgyjd.io" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\JavaLearn\java\ele25\src\com\github\zjgyjd\DS\BinaryTree" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -891,11 +856,14 @@
       <workItem from="1566199198120" duration="6676000" />
       <workItem from="1566229106675" duration="1563000" />
       <workItem from="1566274179380" duration="7793000" />
+      <workItem from="1566540361199" duration="12575000" />
+      <workItem from="1566798680667" duration="6905000" />
+      <workItem from="1566829722819" duration="520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="857477000" />
+    <option name="totallyTimeSpent" value="877477000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -908,10 +876,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.62786883" visible="true" weight="0.14750378" />
-      <window_info id="Structure" order="1" sideWeight="0.37213114" side_tool="true" visible="true" weight="0.14750378" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6262295" visible="true" weight="0.22012103" />
+      <window_info id="Structure" order="1" sideWeight="0.3737705" side_tool="true" weight="0.14977308" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.8262295" side_tool="true" weight="0.36384267" />
@@ -940,6 +907,37 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Database" order="9" weight="0.32980332" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6262295" visible="true" weight="0.14977308" />
+      <window_info id="Structure" order="1" sideWeight="0.3737705" side_tool="true" visible="true" weight="0.14977308" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" sideWeight="0.8262295" side_tool="true" weight="0.36384267" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
+      <window_info anchor="bottom" auto_hide="true" id="Run" order="2" sideWeight="0.49546143" weight="0.352459" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39508197" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32786885" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3295082" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32786885" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5045386" side_tool="true" weight="0.352459" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven Projects" order="4" sideWeight="0.49892008" weight="0.32980332" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Coverage" order="6" sideWeight="0.5010799" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Database" order="9" weight="0.32980332" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -971,37 +969,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ChineseStringPlus.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6532">
-          <caret line="286" column="20" selection-start-line="286" selection-start-column="20" selection-end-line="286" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/xx.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="1380">
-            <caret line="60" column="16" selection-start-line="60" selection-start-column="16" selection-end-line="60" selection-end-column="16" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Thread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9637">
-          <caret line="462" column="22" selection-start-line="462" selection-start-column="22" selection-end-line="462" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/SomeChips.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1426">
-          <caret line="80" column="10" selection-start-line="80" selection-start-column="10" selection-end-line="80" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/concurrent/CopyOnWriteArrayList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8717">
@@ -1142,20 +1109,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/ThreadTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="319">
-          <caret line="231" column="71" lean-forward="true" selection-start-line="231" selection-start-column="71" selection-end-line="231" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/Thread.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="264" column="41" lean-forward="true" selection-start-line="264" selection-start-column="29" selection-end-line="264" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/READEME.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="441">
@@ -1170,27 +1123,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/tSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="37" column="52" selection-start-line="37" selection-start-column="52" selection-end-line="37" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/THeap/TtHeap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8">
           <caret line="113" column="69" selection-start-line="113" selection-start-column="69" selection-end-line="113" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/search">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="48" selection-start-line="45" selection-start-column="25" selection-end-line="48" />
         </state>
       </provider>
     </entry>
@@ -1222,13 +1158,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Solution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6049">
-          <caret line="264" selection-start-line="264" selection-end-line="264" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/HashBuckets.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
@@ -1250,21 +1179,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/MergeSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/ListCase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/ListNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/EditDistance.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="284">
-          <caret line="41" column="5" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
-          <folding>
-            <element signature="e#1455#1456#0" expanded="true" />
-            <element signature="e#1488#1489#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="943">
+          <caret line="41" column="5" selection-start-line="20" selection-start-column="4" selection-end-line="41" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/changeBubble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/GetNumber.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="253">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="3" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
+          <caret line="11" column="5" selection-start-line="3" selection-start-column="4" selection-end-line="11" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1282,52 +1235,91 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/changeBubble.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/README.txt">
+      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="513">
+            <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        <state relative-caret-position="759">
+          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1587">
+          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/HeapSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/tSort.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/THeap/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="50" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/JVM.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="69">
-          <caret line="3" column="22" lean-forward="true" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="22" />
+          <caret line="3" column="22" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/MergeSort.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Solution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="5474">
+          <caret line="239" column="39" selection-start-line="239" selection-start-column="39" selection-end-line="239" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/ListNode.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/search">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/ThreadTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-          <folding>
-            <element signature="e#128#129#0" expanded="true" />
-            <element signature="e#157#158#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="4991">
+          <caret line="231" column="71" selection-start-line="231" selection-start-column="71" selection-end-line="231" selection-end-column="71" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/ListCase.java">
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/README">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        <state relative-caret-position="1104">
+          <caret line="48" selection-start-line="45" selection-start-column="25" selection-end-line="48" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/README.txt">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="513">
-            <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/Thread.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="539">
+          <caret line="332" selection-start-line="332" selection-end-line="332" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Dq.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="69">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
         </state>
       </provider>
     </entry>

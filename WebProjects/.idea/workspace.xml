@@ -77,7 +77,8 @@
     <session id="-1978933735">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="37" />
+          <entry key="project.closed" value="38" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.17" value="2" />
           <entry key="project.open.time.293" value="1" />
           <entry key="project.open.time.31" value="1" />
@@ -104,7 +105,7 @@
           <entry key="project.open.time.67" value="2" />
           <entry key="project.open.time.68" value="1" />
           <entry key="project.open.time.7" value="1" />
-          <entry key="project.opened" value="37" />
+          <entry key="project.opened" value="38" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -118,7 +119,7 @@
           <entry key="items" value="5" />
           <entry key="java" value="260" />
           <entry key="jpg" value="2" />
-          <entry key="jsp" value="91" />
+          <entry key="jsp" value="93" />
           <entry key="md" value="1" />
           <entry key="properties" value="28" />
           <entry key="sql" value="10" />
@@ -135,7 +136,7 @@
           <entry key="IDEA_MODULE" value="1" />
           <entry key="Image" value="2" />
           <entry key="JAVA" value="260" />
-          <entry key="JSP" value="91" />
+          <entry key="JSP" value="93" />
           <entry key="Manifest" value="1" />
           <entry key="Markdown" value="1" />
           <entry key="PLAIN_TEXT" value="45" />
@@ -188,24 +189,6 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/resources/db.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/resources/spring/applicationContext-transaction.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="30" column="43" selection-start-line="30" selection-start-column="43" selection-end-line="30" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/resources/spring/applicationContext-controller.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="920">
@@ -214,7 +197,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/resources/spring/applicationContext-mapper.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="368">
@@ -222,6 +205,20 @@
               <folding>
                 <element signature="e#1434#1452#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/webapp/WEB-INF/jsp/showitems.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1108">
+              <caret line="27" column="13" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="27" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -434,6 +431,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -473,6 +472,30 @@
             </path>
             <path>
               <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSMDemoFinal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSMDemoFinal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SSMDemoFinal" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="webapp" type="462c0819:PsiDirectoryNode" />
+              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+              <item name="jsp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="WebProjects" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
             <path>
@@ -490,8 +513,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -499,7 +520,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1562592995115" />
     <property name="database.console.LAST_STATE" value="false" />
-    <property name="last_opened_file_path" value="D:/上课代码及文件/SSMDemoFinal" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -1221,6 +1242,7 @@
       <workItem from="1562582171822" duration="9963000" />
       <workItem from="1562756473728" duration="3851000" />
       <workItem from="1562841897841" duration="1004000" />
+      <workItem from="1566449383961" duration="2233000" />
     </task>
     <servers />
   </component>
@@ -1257,7 +1279,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="305495000" />
+    <option name="totallyTimeSpent" value="307728000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1270,8 +1292,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49144253" visible="true" weight="0.42133132" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49144253" visible="true" weight="0.42813918" />
       <window_info id="Structure" order="1" sideWeight="0.50855744" side_tool="true" weight="0.3774584" />
       <window_info id="Web" order="2" sideWeight="0.50611246" side_tool="true" weight="0.36535552" />
       <window_info id="Image Layers" order="3" />
@@ -1345,20 +1368,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Springdemo/src/main/java/com/zjgyjd/Compute/Triangle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Springdemo/src/test/java/com/zjgyjd/ComputeTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/ssmdemo01/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1642,6 +1651,16 @@
           <folding>
             <element signature="e#1434#1452#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://D:/上课代码及文件/SSMDemoFinal/src/main/webapp/WEB-INF/jsp/showitems.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1108">
+          <caret line="27" column="13" lean-forward="true" selection-start-line="22" selection-start-column="12" selection-end-line="27" selection-end-column="13" />
         </state>
       </provider>
     </entry>
