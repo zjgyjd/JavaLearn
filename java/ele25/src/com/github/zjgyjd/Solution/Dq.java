@@ -1,8 +1,11 @@
 package com.github.zjgyjd.Solution;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
 public class Dq {
     public int backPackII(int m, int[] A, int[] V) {
-        if (A == null  || V == null || m < 1 || A.length == 0 || V.length == 0) {
+        if (A == null || V == null || m < 1 || A.length == 0 || V.length == 0) {
             return 0;
         }
         int N = A.length + 1;
@@ -26,5 +29,49 @@ public class Dq {
             }
         }
         return result[A.length][m];
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        String line = scanner.nextLine();
+        int n = Integer.parseInt(line);
+        int[][] area = new int[n][n];
+
+        for (int i = 0; i < n; i++) {
+            line = scanner.nextLine();
+            String[] split = line.split(",");
+            if (split.length != n) {
+                throw new IllegalArgumentException("错误输入");
+            }
+            int j = 0;
+            for (String num : split) {
+                area[i][j++] = Integer.parseInt(num);
+            }
+        }
+
+        int minimumTimeCost = getMinimumTimeCost(n, area);
+        System.out.println(minimumTimeCost);
+    }
+
+    /** 请完成下面这个函数，实现题目要求的功能 **/
+    /**
+     * 当然，你也可以不按照这个模板来作答，完全按照自己的想法来 ^-^
+     **/
+    private static int getMinimumTimeCost(int n, int[][] area) {
+        int[] sum = new int[n];
+
+        for (int i = 1; i < area.length; i += 2) {
+            for (int j = 0; j < area[i].length; j++) {
+                sum[j] = sum[j] + area[i][j];
+            }
+        }
+        int min = Integer.MAX_VALUE;
+        for(int i = 0 ; i < sum.length ; i++){
+            if(sum[i] < min){
+                min = sum[i];
+            }
+        }
+        return min;
     }
 }
