@@ -19,6 +19,7 @@ public class Solution {
 
         //前序:1,2,4,7,3,5,6,8   -->2,4,7 ps= 1,pe= 4  i = 2;--> 4,7 ps= 2,pe= 3  i=0;-->ps= 3,pe=3--> X 左完
         //中序:4,7,2,1,5,3,8,6   -->4,7,2 is= 0,ie= 3        --> 4,7,2 is= 0,ie= 2
+        //后序:7,4,2,5,8,6,3,1
         /*
                          1
                         / \
@@ -51,6 +52,26 @@ public class Solution {
                         pEnd,//找到前序根的右半边
                         in, i + 1, inEnd);//找到中序根的左半边
                 break;
+            }
+        }
+        return root;
+    }
+
+    public static TreeNode reConstructBinaryTree2(char[] inner, int iStart, int iEnd, char[] back
+            , int bStart, int bEnd) {
+        //通过递归建一颗树,后序求树
+        if (bStart > bEnd || iStart > iEnd) {
+            return null;
+        }
+        //在后序中找到根节点找到根节点
+        TreeNode root = new TreeNode(back[bEnd]);
+        //在中序中遍历找到节点位置区分左右
+        for (int i = iStart; i <= iEnd; i++) {
+            if (inner[i] == back[bEnd]) {
+                //中序:4,7,2,1,5,3,8,6   -->4,7,2 is= 0,ie= 3        --> 4,7,2 is= 0,ie= 2
+                //后序:7,4,2,5,8,6,3,1
+                root.left = reConstructBinaryTree2(inner, iStart, i - 1, back, bStart, bStart + i - iStart - 1);
+                root.right = reConstructBinaryTree2(inner, i + 1, iEnd, back, bStart + i - iStart, bEnd - 1);
             }
         }
         return root;
