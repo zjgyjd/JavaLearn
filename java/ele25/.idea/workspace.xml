@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7e43a97d-2330-484a-9356-2c2fcd6806ab" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../../spring04wiring_interface/src/main/java/com/zjgyjd/demo/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../spring04wiring_interface/src/main/java/com/zjgyjd/demo/service/impl/UserServiceFestival.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../WebProjects/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../WebProjects/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../chat-room/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../chat-room/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../spring01quickstart/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../spring01quickstart/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../spring08factory/src/main/java/com/zjgyjd/demo/Person.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,7 +100,7 @@
           <entry key="project.open.time.51" value="3" />
           <entry key="project.open.time.52" value="2" />
           <entry key="project.open.time.53" value="1" />
-          <entry key="project.open.time.54" value="2" />
+          <entry key="project.open.time.54" value="3" />
           <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.57" value="4" />
@@ -123,24 +119,32 @@
           <entry key="project.open.time.77" value="1" />
           <entry key="project.open.time.78" value="1" />
           <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="159" />
+          <entry key="project.opened" value="160" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="ArrayList" value="2" />
+          <entry key="Collections" value="1" />
+          <entry key="Dictionary" value="1" />
+          <entry key="HashMap" value="2" />
+          <entry key="Hashtable" value="1" />
+          <entry key="LinkedList" value="1" />
           <entry key="README" value="14" />
           <entry key="Readme" value="2" />
+          <entry key="Stack" value="1" />
+          <entry key="Vector" value="1" />
           <entry key="class" value="3" />
           <entry key="detailOfArrayList" value="4" />
           <entry key="iml" value="2" />
-          <entry key="java" value="698" />
+          <entry key="java" value="708" />
           <entry key="jpg" value="1" />
           <entry key="md" value="2" />
           <entry key="properties" value="1" />
           <entry key="questionForArrayList" value="2" />
           <entry key="search" value="5" />
           <entry key="snippet" value="1" />
-          <entry key="txt" value="19" />
+          <entry key="txt" value="22" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
@@ -148,11 +152,12 @@
           <entry key="CLASS" value="3" />
           <entry key="IDEA_MODULE" value="2" />
           <entry key="Image" value="1" />
-          <entry key="JAVA" value="698" />
+          <entry key="JAVA" value="708" />
           <entry key="Markdown" value="2" />
-          <entry key="PLAIN_TEXT" value="46" />
+          <entry key="PLAIN_TEXT" value="49" />
           <entry key="Properties" value="1" />
           <entry key="Scratch" value="1" />
+          <entry key="UML" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -160,19 +165,19 @@
           <entry key="README" value="1655" />
           <entry key="Readme" value="206" />
           <entry key="detailOfArrayList" value="1685" />
-          <entry key="java" value="105984" />
+          <entry key="java" value="107520" />
           <entry key="md" value="226" />
           <entry key="properties" value="64" />
           <entry key="questionForArrayList" value="310" />
           <entry key="search" value="2171" />
-          <entry key="txt" value="13994" />
+          <entry key="txt" value="13995" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="105984" />
+          <entry key="JAVA" value="107520" />
           <entry key="Markdown" value="226" />
-          <entry key="PLAIN_TEXT" value="20021" />
+          <entry key="PLAIN_TEXT" value="20022" />
           <entry key="Properties" value="64" />
         </counts>
       </usages-collector>
@@ -184,49 +189,77 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/closeSon.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="1870">
+              <caret line="195" lean-forward="true" selection-start-line="127" selection-start-column="3" selection-end-line="195" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Solution.java">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/LinkedList.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1334">
-              <caret line="59" selection-start-line="59" selection-end-line="77" selection-end-column="5" />
+            <state relative-caret-position="194">
+              <caret line="266" column="13" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/READEME.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="195" column="10" selection-start-line="195" selection-start-column="10" selection-end-line="195" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/JVM.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="74" column="12" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Main.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/Thread.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="124" column="46" selection-start-line="124" selection-start-column="46" selection-end-line="124" selection-end-column="46" />
+            <state relative-caret-position="317">
+              <caret line="323" column="24" selection-start-line="323" selection-start-column="24" selection-end-line="323" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/TreeNode.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/ThreadTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="10" column="1" selection-start-line="2" selection-start-column="7" selection-end-line="10" selection-end-column="1" />
+            <state relative-caret-position="500">
+              <caret line="246" column="6" selection-start-line="246" selection-start-column="6" selection-end-line="246" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ShutDown.java">
+        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/SomeChips.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="16" column="44" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="44" />
+            <state relative-caret-position="161">
+              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Object.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="106">
+              <caret line="36" selection-start-line="36" selection-end-line="36" />
+              <folding>
+                <element signature="e#5748#5749#0" expanded="true" />
+                <element signature="e#5784#5785#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -241,38 +274,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3174">
-              <caret line="164" selection-start-line="164" selection-end-line="164" />
-              <folding>
-                <element signature="e#6283#6284#0" expanded="true" />
-                <element signature="e#6351#6352#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/design_pattern/factory_method_pattern/SimpleFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/design_pattern/factory_method_pattern/Benz.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/design_pattern/factory_method_pattern/Audi.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="46">
               <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -314,9 +316,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/xx.md" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ChineseStringPlus.java" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/SomeChips.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/programchips/Request.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/programchips/tomcat_like/README.txt" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/programchips/tomcat_like/Status.java" />
@@ -325,7 +324,6 @@
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/programchips/tomcat_like/StaticController.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/QuickSort.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/programchips/tomcat_like/Response.java" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/JVM.txt" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/TestMap.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/InsertSort.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/THeap/TtHeap.java" />
@@ -344,7 +342,6 @@
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/tSort.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/HeapSort.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/README.txt" />
-        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/Thread.txt" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Dq.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/ChTree.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/RbTree.java" />
@@ -364,7 +361,12 @@
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ShutDown.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/Solution/closeSon.java" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Solution.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/SomeChips.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/READEME.txt" />
         <option value="$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Main.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/JVM.txt" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/ThreadTest.java" />
+        <option value="$PROJECT_DIR$/src/com/github/zjgyjd/review/Thread.txt" />
       </list>
     </option>
   </component>
@@ -394,6 +396,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -432,6 +436,15 @@
               <item name="ele25" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
+              <item name="DS" type="462c0819:PsiDirectoryNode" />
+              <item name="BinaryTree" type="462c0819:PsiDirectoryNode" />
+              <item name="Main.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="ele25" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ele25" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
               <item name="review" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -441,6 +454,22 @@
               <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
               <item name="review" type="462c0819:PsiDirectoryNode" />
               <item name="factory_method_pattern" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ele25" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ele25" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
+              <item name="review" type="462c0819:PsiDirectoryNode" />
+              <item name="SomeChips.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="ele25" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ele25" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="zjgyjd" type="462c0819:PsiDirectoryNode" />
+              <item name="review" type="462c0819:PsiDirectoryNode" />
+              <item name="ThreadTest.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="ele25" type="b2602c69:ProjectViewProjectNode" />
@@ -606,14 +635,12 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SearchEverywhereHistoryKey" value="FixedThreadPool&#9;null&#9;null&#10;Exchanger&#9;PSI&#9;JAVA://java.util.concurrent.Exchanger&#10;Stack&#9;PSI&#9;JAVA://java.util.Stack&#10;set back&#9;ACTION&#9;Images.SetBackgroundImage&#10;TreeNode&#9;PSI&#9;JAVA://java.util.concurrent.ConcurrentHashMap.TreeNode&#10;HashMap&#9;PSI&#9;JAVA://java.util.HashMap&#10;invokeShift&#9;PSI&#9;JAVA://jdk.nashorn.internal.runtime.ListAdapter#invokeShift&#10;AssertionError&#9;PSI&#9;JAVA://java.lang.AssertionError&#10;Integer&#9;PSI&#9;JAVA://java.lang.Integer" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568298155821" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1568560629005" />
     <property name="create.test.in.the.same.root" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -690,6 +717,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SomeChips" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.review.SomeChips" />
+      <module name="ele25" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.github.zjgyjd.review.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="closeSon" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.closeSon" />
       <module name="ele25" />
@@ -703,33 +743,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="erNum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.github.zjgyjd.Solution.erNum" />
-      <module name="ele25" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.zjgyjd.Solution.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
-      <item itemvalue="Application.erNum" />
       <item itemvalue="Application.FakeMap" />
       <item itemvalue="Application.closeSon" />
       <item itemvalue="Application.ShutDown" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.SomeChips" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.SomeChips" />
         <item itemvalue="Application.ShutDown" />
         <item itemvalue="Application.closeSon" />
         <item itemvalue="Application.FakeMap" />
-        <item itemvalue="Application.erNum" />
       </list>
     </recent_temporary>
   </component>
@@ -907,11 +934,12 @@
       <workItem from="1568206377279" duration="142000" />
       <workItem from="1568274146035" duration="7228000" />
       <workItem from="1568443779716" duration="691000" />
+      <workItem from="1568535271351" duration="18331000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="919465000" />
+    <option name="totallyTimeSpent" value="937796000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -924,9 +952,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6196721" visible="true" weight="0.18835099" />
-      <window_info id="Structure" order="1" sideWeight="0.38032788" side_tool="true" visible="true" weight="0.18835099" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6180328" visible="true" weight="0.1913767" />
+      <window_info id="Structure" order="1" sideWeight="0.38196722" side_tool="true" visible="true" weight="0.1913767" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" sideWeight="0.8262295" side_tool="true" weight="0.36384267" />
@@ -935,7 +964,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
       <window_info anchor="bottom" auto_hide="true" id="Run" order="2" sideWeight="0.49546143" weight="0.352459" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39508197" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.43114755" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32786885" />
@@ -948,11 +977,11 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Maven Projects" order="4" sideWeight="0.49892008" weight="0.32980332" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info anchor="right" id="Coverage" order="6" sideWeight="0.5010799" side_tool="true" weight="0.32980332" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Coverage" order="5" sideWeight="0.5010799" side_tool="true" weight="0.32980332" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info anchor="right" id="Maven Projects" order="8" sideWeight="0.49892008" weight="0.32980332" />
       <window_info anchor="right" id="Database" order="9" weight="0.32980332" />
     </layout>
     <layout-to-restore>
@@ -1016,9 +1045,15 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Main.java</url>
-          <line>107</line>
+          <line>149</line>
           <properties />
-          <option name="timeStamp" value="10" />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Main.java</url>
+          <line>159</line>
+          <properties />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
@@ -1028,133 +1063,11 @@
     <watches-manager>
       <configuration name="Application">
         <watch expression="number" />
+        <watch expression="end.run" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/changeBubble.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/InsertSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/BubbleSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/README.txt">
-      <provider editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="513">
-            <caret line="25" column="8" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="8" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="759">
-          <caret line="33" column="8" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/README.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1587">
-          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/HeapSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="45" column="9" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/tSort.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/THeap/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/JVM.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="22" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/search">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/Thread.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7153">
-          <caret line="311" column="35" selection-start-line="311" selection-start-column="35" selection-end-line="311" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/ChTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/Dq.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1610">
-          <caret line="71" column="29" selection-start-line="71" selection-start-column="29" selection-end-line="71" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/ThreadTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4991">
-          <caret line="231" column="71" selection-start-line="231" selection-start-column="71" selection-end-line="231" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/Sort/README">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1104">
-          <caret line="48" selection-start-line="45" selection-start-column="25" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/DSreview/RbTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/ShapeTen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/SpecialDistance.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="539">
@@ -1281,13 +1194,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Object.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/AbstractCollection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="114">
@@ -1354,32 +1260,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/SonString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3174">
-          <caret line="164" selection-start-line="164" selection-end-line="164" />
-          <folding>
-            <element signature="e#6283#6284#0" expanded="true" />
-            <element signature="e#6351#6352#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/design_pattern/factory_method_pattern/SimpleFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/design_pattern/factory_method_pattern/Benz.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
@@ -1393,10 +1274,381 @@
         </state>
       </provider>
     </entry>
+    <entry file="uml://JAVA/java.util.Collections">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.util.Collections</OriginalElement>
+          <nodes>
+            <node x="" y="">java.util.Collections</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="55.5" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Collections.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="79" column="18" lean-forward="true" selection-start-line="79" selection-start-column="13" selection-end-line="79" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.util.LinkedList">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.util.LinkedList</OriginalElement>
+          <nodes>
+            <node x="" y="">java.util.AbstractCollection</node>
+            <node x="" y="">java.util.List</node>
+            <node x="" y="">java.lang.Cloneable</node>
+            <node x="" y="">java.util.Collection</node>
+            <node x="" y="">java.util.AbstractList</node>
+            <node x="" y="">java.lang.Object</node>
+            <node x="" y="">java.util.Queue</node>
+            <node x="" y="">java.util.LinkedList</node>
+            <node x="" y="">java.util.Deque</node>
+            <node x="" y="">java.util.AbstractSequentialList</node>
+            <node x="" y="">java.lang.Iterable</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="277.0" y="215.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.util.Vector">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.util.Vector</OriginalElement>
+          <nodes>
+            <node x="0.0" y="240.0">java.util.RandomAccess</node>
+            <node x="242.25" y="160.0">java.util.AbstractCollection</node>
+            <node x="415.25" y="160.0">java.util.List</node>
+            <node x="476.0" y="240.0">java.lang.Cloneable</node>
+            <node x="304.5" y="320.0">java.util.Vector</node>
+            <node x="336.15000000000003" y="80.0">java.util.Collection</node>
+            <node x="290.0" y="240.0">java.util.AbstractList</node>
+            <node x="342.15000000000003" y="0.0">java.lang.Iterable</node>
+            <node x="156.0" y="240.0">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="java.util.Vector" target="java.io.Serializable">
+              <point x="-17.19999999999999" y="-15.0" />
+              <point x="330.3" y="290.0" />
+              <point x="213.0" y="290.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="java.util.Vector" target="java.util.AbstractList">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="java.util.Vector" target="java.lang.Cloneable">
+              <point x="34.39999999999998" y="-15.0" />
+              <point x="381.9" y="300.0" />
+              <point x="529.0" y="300.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="java.util.Vector" target="java.util.List">
+              <point x="17.19999999999999" y="-15.0" />
+              <point x="364.7" y="290.0" />
+              <point x="465.5" y="290.0" />
+              <point x="16.75" y="15.0" />
+            </edge>
+            <edge source="java.util.List" target="java.util.Collection">
+              <point x="0.0" y="-15.0" />
+              <point x="448.75" y="135.0" />
+              <point x="414.90000000000003" y="135.0" />
+              <point x="26.25" y="15.0" />
+            </edge>
+            <edge source="java.util.Collection" target="java.lang.Iterable">
+              <point x="0.0" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="java.util.AbstractList" target="java.util.List">
+              <point x="28.75" y="-15.0" />
+              <point x="376.25" y="215.0" />
+              <point x="432.0" y="215.0" />
+              <point x="-16.75" y="15.0" />
+            </edge>
+            <edge source="java.util.AbstractList" target="java.util.AbstractCollection">
+              <point x="-28.75" y="-15.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="java.util.Vector" target="java.util.RandomAccess">
+              <point x="-34.39999999999998" y="-15.0" />
+              <point x="313.1" y="300.0" />
+              <point x="68.0" y="300.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="java.util.AbstractCollection" target="java.util.Collection">
+              <point x="0.0" y="-15.0" />
+              <point x="318.75" y="135.0" />
+              <point x="362.40000000000003" y="135.0" />
+              <point x="-26.25" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-3.5" y="136.0" />
+          <SelectedNodes>
+            <node>java.util.Vector</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.util.Stack">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.util.Stack</OriginalElement>
+          <nodes>
+            <node x="" y="">java.util.RandomAccess</node>
+            <node x="" y="">java.util.AbstractCollection</node>
+            <node x="" y="">java.util.List</node>
+            <node x="" y="">java.lang.Cloneable</node>
+            <node x="" y="">java.util.Vector</node>
+            <node x="" y="">java.util.Collection</node>
+            <node x="" y="">java.util.AbstractList</node>
+            <node x="" y="">java.lang.Iterable</node>
+            <node x="" y="">java.util.Stack</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="291.0" y="215.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.util.ArrayList">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.util.ArrayList</OriginalElement>
+          <nodes>
+            <node x="" y="">java.util.RandomAccess</node>
+            <node x="" y="">java.util.AbstractCollection</node>
+            <node x="" y="">java.util.List</node>
+            <node x="" y="">java.lang.Cloneable</node>
+            <node x="" y="">java.util.Collection</node>
+            <node x="" y="">java.util.AbstractList</node>
+            <node x="" y="">java.lang.Iterable</node>
+            <node x="" y="">java.util.ArrayList</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="304.5" y="175.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/Solution/SonString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/Arrays.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="278">
+          <caret line="3211" column="75" selection-start-line="3211" selection-start-column="75" selection-end-line="3211" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/ArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="71">
+          <caret line="250" column="29" selection-start-line="250" selection-start-column="21" selection-end-line="250" selection-end-column="29" />
+          <folding>
+            <element signature="e#6283#6284#0" expanded="true" />
+            <element signature="e#6351#6352#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/design_pattern/factory_method_pattern/Benz.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="46">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.util.Dictionary">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.util.Dictionary</OriginalElement>
+          <nodes>
+            <node x="" y="">java.util.Dictionary</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="53.0" y="15.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.util.HashMap">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.util.HashMap</OriginalElement>
+          <nodes>
+            <node x="" y="">java.util.AbstractMap</node>
+            <node x="" y="">java.lang.Cloneable</node>
+            <node x="" y="">java.util.Map</node>
+            <node x="" y="">java.util.HashMap</node>
+            <node x="" y="">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges />
+          <settings layout="Hierarchic Group" zoom="1.0" x="198.5" y="95.0" />
+          <SelectedNodes />
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="uml://JAVA/java.util.Hashtable">
+      <provider selected="true" editor-type-id="UmlEditorProvider">
+        <state>
+          <ID>JAVA</ID>
+          <OriginalElement>java.util.Hashtable</OriginalElement>
+          <nodes>
+            <node x="355.0" y="0.0">java.lang.Cloneable</node>
+            <node x="0.0" y="0.0">java.util.Map</node>
+            <node x="95.0" y="0.0">java.util.Dictionary</node>
+            <node x="160.0" y="80.0">java.util.Hashtable</node>
+            <node x="221.0" y="0.0">java.io.Serializable</node>
+          </nodes>
+          <notes />
+          <edges>
+            <edge source="java.util.Hashtable" target="java.util.Dictionary">
+              <point x="-13.25" y="-15.0" />
+              <point x="199.75" y="50.0" />
+              <point x="148.0" y="50.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="java.util.Hashtable" target="java.util.Map">
+              <point x="-39.75" y="-15.0" />
+              <point x="173.25" y="60.0" />
+              <point x="37.5" y="60.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="java.util.Hashtable" target="java.io.Serializable">
+              <point x="13.25" y="-15.0" />
+              <point x="226.25" y="50.0" />
+              <point x="278.0" y="50.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+            <edge source="java.util.Hashtable" target="java.lang.Cloneable">
+              <point x="39.75" y="-15.0" />
+              <point x="252.75" y="60.0" />
+              <point x="408.0" y="60.0" />
+              <point x="0.0" y="15.0" />
+            </edge>
+          </edges>
+          <settings layout="Hierarchic Group" zoom="1.0" x="-64.0" y="123.5" />
+          <SelectedNodes>
+            <node>java.util.Dictionary</node>
+          </SelectedNodes>
+          <Categories />
+          <SCOPE>All</SCOPE>
+          <VISIBILITY>private</VISIBILITY>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/String.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="975" column="19" selection-start-line="975" selection-start-column="19" selection-end-line="975" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/SomeChips.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/util/LinkedList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="266" column="13" selection-start-line="266" selection-start-column="13" selection-end-line="266" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_191/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="e#5748#5749#0" expanded="true" />
+            <element signature="e#5784#5785#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/DS/BinaryTree/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="124" column="46" selection-start-line="124" selection-start-column="46" selection-end-line="124" selection-end-column="46" />
+        <state relative-caret-position="1870">
+          <caret line="195" lean-forward="true" selection-start-line="127" selection-start-column="3" selection-end-line="195" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/READEME.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="195" column="10" selection-start-line="195" selection-start-column="10" selection-end-line="195" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/JVM.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="74" column="12" lean-forward="true" selection-start-line="74" selection-start-column="12" selection-end-line="74" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/ThreadTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="246" column="6" selection-start-line="246" selection-start-column="6" selection-end-line="246" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/github/zjgyjd/review/Thread.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="317">
+          <caret line="323" column="24" selection-start-line="323" selection-start-column="24" selection-end-line="323" selection-end-column="24" />
         </state>
       </provider>
     </entry>

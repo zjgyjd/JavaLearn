@@ -1,9 +1,6 @@
 package com.github.zjgyjd.review;
 
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
@@ -18,8 +15,17 @@ public class SomeChips {
         threePoint(t2);
         threePoint(t3);
         //threePoint(t1,t2);
-
-
+        System.out.println("从这里开始");
+        HashSet<Object> test = new HashSet<>();
+        Object test1 = new String("hehe");
+        Object test2 = new String("hehe");
+        test.add(test1);
+        test.add(test2);
+        System.out.println(test.size());
+        System.out.println(test1.equals(test2));
+        System.out.println(test1.hashCode() == test2.hashCode());
+        System.out.println(test1.hashCode() + ","+test2.hashCode());
+        System.out.println(test1 == test2);
     }
 
     public static void threePoint(String... s) {

@@ -90,7 +90,7 @@ public class Main {
         return max;
     }
 
-    public static void main(String[] args) {
+    public static void haha(String[] args) {
         //动态规划 F(i , j) = min{F(i - 1 , j) , F(i , j -1 )} + A(i , j)
         Scanner s = new Scanner(System.in);
         int m = Integer.parseInt(s.nextLine());
@@ -123,6 +123,74 @@ public class Main {
             }
         }
         return resultMap[map.length - 1][map[0].length - 1];
+    }
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        String[] line1 = s.nextLine().split(" ");
+        Node end = new Node(Integer.parseInt(line1[0]), Integer.parseInt(line1[1]));
+        int time = Integer.parseInt(line1[2]);
+        Node[] map = new Node[time];
+        for (int i = 0; i < time; i++) {
+            String[] line = s.nextLine().split(" ");
+            map[i] = new Node(Integer.parseInt(line[0]), Integer.parseInt(line[1]));
+        }
+        System.out.println(smallStep(map, end));
+    }
+
+    public static int smallStep(Node[] map, Node end) {
+        //                                    1,1 2,1
+        //2 0 3                   (x,y)  0,0  1,0 2,0
+        //                                    1,-1
+        //1 0
+        //1 1
+        //1 -1
+        //6
+        //先利用队列
+        LinkedList<Node> result = new LinkedList<>();
+        result.add(new Node(0, 0));//将起点存入其中,可以从这个点向上下左右四个方向走
+        int[][] array = {{0, 1}, {0, -1}, {1, 0}, {-1, 0}};
+        int step = 0;
+        while (true) {
+            int size = result.size();
+            while (size-- != 0) {
+                Node target = result.removeFirst();
+                target.run = true;
+                for (int i = 0; i < 4; i++) {
+                    Node test = new Node(target.x + array[i][0], target.y + array[i][1]);
+                    if (!isBlock(map, test)) {
+                        result.add(test);
+                    }
+                    if (test.x == end.x && test.y == end.y) {
+                        return ++step;
+                    }
+                }
+            }
+            step++;
+        }
+    }
+
+    private static boolean isBlock(Node[] map, Node test) {
+        if (test.run) {
+            return true;
+        }
+        for (Node aMap : map) {
+            if (test.x == aMap.x && test.y == aMap.y) {
+                return true;
+            }
+        }
+        return false;
+    }
+}
+
+class Node {
+    public int x;
+    public int y;
+    public boolean run = false;
+
+    public Node(int x, int y) {
+        this.x = x;
+        this.y = y;
     }
 }
 

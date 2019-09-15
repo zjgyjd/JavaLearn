@@ -229,7 +229,7 @@ class ThreadLocalTest {
 class ThreadPoolTest {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         ExecutorService e = new ThreadPoolExecutor(4, 5, 60, TimeUnit.SECONDS, new LinkedBlockingQueue<>());
-        //核心池         // 最大线程池       //存活时间       //单位秒          //阻塞队列
+        //核心池         //最大线程池       //存活时间       //单位秒          //阻塞队列
         CallableTask callableTask = new CallableTask();
         Future<String> submit = null;
         for (int i = 0; i < 4; i++) {
