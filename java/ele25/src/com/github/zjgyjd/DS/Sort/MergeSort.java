@@ -35,7 +35,7 @@ public class MergeSort {
             extra[x++] = array[i++];
         }
 
-        while (j < mid) {
+        while (j < high) {
             extra[x++] = array[j++];
         }
 
@@ -43,6 +43,7 @@ public class MergeSort {
             array[k] = extra[k - low];
         }
     }
+
 
     public static void mergeSortNotR(int[] array) {
         int[] extra = new int[array.length];
