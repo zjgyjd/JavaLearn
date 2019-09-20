@@ -125,7 +125,7 @@ public class Main {
         return resultMap[map.length - 1][map[0].length - 1];
     }
 
-    public static void main(String[] args) {
+    public void test(String[] args) {
         Scanner s = new Scanner(System.in);
         String[] line1 = s.nextLine().split(" ");
         Node end = new Node(Integer.parseInt(line1[0]), Integer.parseInt(line1[1]));
@@ -181,6 +181,84 @@ public class Main {
         }
         return false;
     }
+
+    public static void hah(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = Integer.parseInt(s.nextLine().split(" ")[1]);
+        String[] target = s.nextLine().split(" ");
+        findMin(target, n);
+    }
+
+    public static void findMin(String[] target, int n) {
+        Integer[] temp = new Integer[target.length];
+        for (int i = 0; i < target.length; i++) {
+            temp[i] = Integer.parseInt(target[i]);
+        }
+        Arrays.sort(temp, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o2 - o1;
+            }
+        });
+        int sum = 0;
+        int start = temp.length - 1;
+        for (int i = 0; i < n; i++) {
+            if (i >= temp.length) {
+                System.out.println(0);
+                continue;
+            }
+            int t = temp[start - i];
+            int x = t - sum;
+            if (x == 0) {
+                n++;
+                continue;
+            }
+            System.out.println(t - sum);
+            sum += (t - sum);
+        }
+    }
+    //    4 6 0 0 3 3
+    //    0 5 6 5 0 3
+    //    4 9  10 9  4 7
+    //    6 11 12 11 6 9
+    //    0 5  6  5  0 3
+    //    0 5  6  5  0 3
+    //    3 8  9  8  3 6
+    //    3 8  9  8  3 6
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = Integer.parseInt(s.nextLine());
+        String[] num1 = s.nextLine().split(" ");
+        String[] num2 = s.nextLine().split(" ");
+        Long[] num = parseTwoNum(num1, num2, n);
+        parseNum(num);
+    }
+
+
+    public static Long[] parseTwoNum(String[] n1, String[] n2, int n) {
+        if(n != n1.length || n != n2.length){
+            System.out.println(5);
+        }
+        Long[] result = new Long[n * n];
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                result[i * n + j] = Long.parseLong(n1[i]) + Long.parseLong(n2[j]);
+            }
+        }
+        return result;
+    }
+
+    public static void parseNum(Long[] num) {
+        if(num == null){
+            return;
+        }
+        Long sum = num[0];
+        for (int i = 1; i < num.length; i++) {
+            sum = sum ^ num[i];
+        }
+        System.out.println(sum);
+    }
 }
 
 class Node {
@@ -192,6 +270,7 @@ class Node {
         this.x = x;
         this.y = y;
     }
+
 }
 
 
