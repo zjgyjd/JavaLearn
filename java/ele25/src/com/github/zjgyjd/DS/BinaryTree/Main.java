@@ -270,6 +270,27 @@ class Node {
         this.x = x;
         this.y = y;
     }
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        int k = s.nextInt();
+        int t = k;
+        ArrayList<Integer> list = new ArrayList<>();
+        while(s.hasNextInt()){
+            k = k - 1;
+            list.add(s.nextInt());
+            if(k == 0){
+                for(int i = list.size() - 1 ; i >= 0; i-- ){
+                    System.out.println(list.remove(i));
+                }
+                k = t;
+            }
+        }
+        if (!list.isEmpty()){
+            for(Integer temp : list){
+                System.out.println(temp);
+            }
+        }
+    }
 
 }
 
