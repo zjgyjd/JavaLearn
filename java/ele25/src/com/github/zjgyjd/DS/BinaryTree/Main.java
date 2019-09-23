@@ -237,7 +237,7 @@ public class Main {
 
 
     public static Long[] parseTwoNum(String[] n1, String[] n2, int n) {
-        if(n != n1.length || n != n2.length){
+        if (n != n1.length || n != n2.length) {
             System.out.println(5);
         }
         Long[] result = new Long[n * n];
@@ -250,7 +250,7 @@ public class Main {
     }
 
     public static void parseNum(Long[] num) {
-        if(num == null){
+        if (num == null) {
             return;
         }
         Long sum = num[0];
@@ -270,27 +270,69 @@ class Node {
         this.x = x;
         this.y = y;
     }
-    public static void main(String[] args){
+
+    public static void test(String[] args) {
         Scanner s = new Scanner(System.in);
         int k = s.nextInt();
         int t = k;
         ArrayList<Integer> list = new ArrayList<>();
-        while(s.hasNextInt()){
+        while (s.hasNextInt()) {
             k = k - 1;
             list.add(s.nextInt());
-            if(k == 0){
-                for(int i = list.size() - 1 ; i >= 0; i-- ){
+            if (k == 0) {
+                for (int i = list.size() - 1; i >= 0; i--) {
                     System.out.println(list.remove(i));
                 }
                 k = t;
             }
         }
-        if (!list.isEmpty()){
-            for(Integer temp : list){
+        if (!list.isEmpty()) {
+            for (Integer temp : list) {
                 System.out.println(temp);
             }
         }
     }
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        String[] date = s.nextLine().split(" ");
+        praseDate(date);
+    }
+
+    public static void praseDate(String[] date) {
+        //利用一个HashSet进行存储,先排除多次签到
+        HashSet<String> reDate = new HashSet<>(Arrays.asList(date));
+        HashMap<String, Integer> result = new HashMap<>();
+        for (String s : reDate) {
+            String[] temp = s.split("-");
+            if (!result.containsKey(temp[1])) {
+                result.put(temp[1], 0);
+            }
+            result.put(temp[1], result.get(temp[1]) + 1);
+        }
+        //找到最大的三个
+        int i = 3;
+        while (i > 0) {
+            int max = 0;
+            String maxN = null;
+            for (String s : result.keySet()
+            ) {
+                if (result.get(s) > max) {
+                    max = result.get(s);
+                    maxN = s;
+                } else if (result.get(s) == max) {
+
+                    maxN = s.compareTo(maxN) < 0 ? s : maxN;
+                    max = result.get(maxN);
+                }
+            }
+            System.out.println(maxN + " " + max);
+            result.remove(maxN);
+            --i;
+        }
+    }
+
+
 
 }
 
