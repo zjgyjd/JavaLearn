@@ -18,7 +18,7 @@ public class TestSolution {
             double avg = (double)temp /(double) i;
             if (avg > maxAvg) {
                 maxAvg = avg;
-                
+
             }
         }
         System.out.format("%.3f\n", maxAvg);

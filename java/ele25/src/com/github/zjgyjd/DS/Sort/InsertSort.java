@@ -28,7 +28,7 @@ public class InsertSort {
         for (int i = 0; i < array.length; i++) {
             int key = array[i];
             int j = i - 1;
-            for (; j >= 0 && key < array[i]; j--) {
+            for (; j >= 0 && key < array[j]; j--) {
                 array[j + 1] = array[j];
             }
             array[j + 1] = key;
@@ -39,7 +39,7 @@ public class InsertSort {
         for (int i = 0; i < array.length; i++) {
             int key = array[i];
             int j = i - gap;
-            for (; j >= 0 && key < array[i]; j = j - gap) {
+            for (; j >= 0 && key < array[j]; j = j - gap) {
                 array[j + gap] = array[j];
             }
             array[j + gap] = key;

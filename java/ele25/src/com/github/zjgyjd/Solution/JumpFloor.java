@@ -37,7 +37,7 @@ public class JumpFloor {
         if (n <= 0) {
             return 0;
         }
-        return 1 << (n - 1);
+        return 1 << Jump1(n - 1);
     }
 
     public static void main(String[] args) {

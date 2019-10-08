@@ -97,7 +97,7 @@ public class TtHeap {
 
 
         if (max + 1 < size && tree[max + 1] > tree[max]) {
-            max++;
+                max++;
         }
 
         /**
