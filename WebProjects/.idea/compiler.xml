@@ -22,6 +22,8 @@
       <module name="cookies" target="1.7" />
       <module name="jsp_demo" target="1.7" />
       <module name="jsp_dome" target="1.7" />
+      <module name="springmvc (1) (com.ming)" target="1.7" />
+      <module name="ssmdemo01" target="1.8" />
       <module name="ssmdemo02" target="1.7" />
     </bytecodeTargetLevel>
   </component>

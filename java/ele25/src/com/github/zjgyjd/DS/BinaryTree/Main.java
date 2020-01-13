@@ -58,6 +58,8 @@ public class Main {
     }
 
     public static void maxArray(int[][] array) {
+        LinkedList<Character> s = new LinkedList<>();
+        s.add(0 , 'q');
         if (array == null || array.length == 0) {
             return;
         }
