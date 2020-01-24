@@ -1,0 +1,427 @@
+在maven中导入jar包
+
+首先锁定spring的版本号
+<properties>
+        <spring.version>5.0.2.RELEASE</spring.version>//锁定版本号
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>//锁定编码格式
+        <maven.complier.source>1.8</maven.complier.source>
+        <maven.complier.target>1.8</maven.complier.target>
+ </properties>
+
+导入核心jar包
+<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.version}</version>
+</dependency>
+
+<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-web</artifactId>
+            <version>${spring.version}</version>
+</dependency>
+
+<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.version}</version>
+</dependency>
+
+<dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
+            <scope>provided</scope>//可以防止部署服务器时依赖包冲突
+</dependency>
+
+ <dependency>
+            <groupId>javax.servlet.jsp</groupId>
+            <artifactId>jsp-api</artifactId>
+            <version>2.2</version>
+            <scope>provided</scope>
+ </dependency>
+
+
+在web.xml里面写mvc的Servlet,
+即说明mvc 的入口就是一个以Servlet形式存在的前端控制器DispatcherServlet
+<servlet>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <url-pattern>/</url-pattern> //表示所有的前端页面都要通过这个Servlet
+</servlet-mapping>
+
+
+之后再resource的地方插入一个关于spring的xml,直接新建就可以了
+之后更改里面的命名空间,重点是context和beans以及mvc
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"  
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+            http://www.springframework.org/schema/beans 
+            http://www.springframework.org/schema/beans/spring-beans.xsd
+            http://www.springframework.org/schema/context 
+            http://www.springframework.org/schema/spring-context.xsd
+            http://www.springframework.org/schema/mvc 
+            http://www.springframework.org/schema/spring-mvc.xsd">
+
+
+</beans>
+
+在这个xml中注意开启注解扫描,这样才能将java写的类和spring连接起来
+
+
+之后要将这个xml和前端控制器连接起来,需要到web.xml里将刚刚配置的<Servlet>进行更改
+<servlet>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:springmvc.xml</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+</servlet>
+
+在创建完相关的java控制类以后在类的上方标识上@Controller注解,
+并且写一个方法去接收参数,处理并返回一个字符串,利用视图解析器将字符串跳转到相应的页面
+@Controller
+public class HelloController {
+    @RequestMapping(path = "/hello")
+    public String sayHello(){
+        System.out.println("mvcStart");
+        return "success";
+    }
+}
+
+
+在WEB-INF下创建pages文件夹在里放下success.jsp页面,然后回到web.xml中将视图解析器配置一下
+<bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/pages/"/> //配置前缀地址
+        <property name="suffix" value=".jsp"/>  //配置后缀
+</bean>
+
+
+遇到的问题:
+@RequestMapping路径无法被找到
+解决方案:
+没有建立war包的路径在Artifact下或者是因为常见maven项目时没有点webapp项目
+
+Tomcat端口被占用
+解决方案:
+https://blog.csdn.net/Hyo555/article/details/81773871
+
+编译后target中不含WEB-INF
+解决方案:
+https://blog.csdn.net/weixin_40393575/article/details/89963498
+
+编译后target中不含xml文件
+解决方案:
+https://blog.csdn.net/qq_42219504/article/details/80394379 
+//解决pom文件的 'packaging' with value 'war' is invalid. 问题
+
+记住当未使用自动建设Maven-webapp时,需要将pom文件的packaging改为war
+
+进行参数绑定时如何在JavaBean中嵌套绑定
+解决方案:
+<form action="param/save" method="post">
+    姓名:<input type="text" name="username" /><br>
+    密码:<input type="text" name="password" /><br>
+    金额:<input type="text" name="money" /><br>
+    用户姓名:<input type="text" name="user.uname" /><br>
+    用户年龄:<input type="text" name="user.age" /><br>
+    <input type="submit" value="提交" /><br>
+</form>
+
+配置解决中文乱码的过滤器
+解决方案:
+在web.xml中同一配一个过滤器,解决编码问题,注意最好将过滤器写在Servlet之前
+<!-- 配置解决中文乱码过滤器 -->
+    <filter>
+        <filter-name>encodingFilter</filter-name>
+        <filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+        <init-param>
+            <param-name>encoding</param-name>   //解决初始化参数
+            <param-value>UTF-8</param-value>
+        </init-param>
+    </filter>
+    <filter-mapping>
+        <filter-name>encodingFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+
+进行参数绑定时如何将集合进行参数绑定
+解决方案:
+    用户姓名:<input type="text" name="list[0].uname" /><br>
+    用户年龄:<input type="text" name="list[0].age" /><br>
+
+    用户姓名:<input type="text" name="map['one'].uname" /><br>
+    用户年龄:<input type="text" name="map['one'].age" /><br>
+
+自定义类型转换器 解决时间的格式问题
+解决方案:
+	首先创建一个实现Converter<S, T>的类,S是源字符,T是要转换的目标
+public class StringToDateConverter implements Converter<String, Date> {
+    @Override
+    public Date convert(String s) {
+        //判断
+        if (s == null) {
+            return null;
+        }
+        DateFormat df = new SimpleDateFormat("yyyy-mm-dd");
+        //将字符串转换成日期
+        try {
+            return df.parse(s);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+}
+
+其次将其配置进去
+    <!-- 配置自定义类型转换器 -->
+
+    <bean id="conversionService" class="org.springframework.context.support.ConversionServiceFactoryBean">
+        <property name="converters">
+            <set>
+                <bean class="utils.StringToDateConverter"/>
+            </set>
+        </property>
+    </bean>
+
+//之后再mvc中启动这个转换器即driven
+ <!-- 开启SpringMVC框架注解的支持 -->
+    <mvc:annotation-driven conversion-service="conversionService"/>
+
+常用的注解:
+@RequestParam(需要的参数名字)进行参数绑定
+@RequestBody可以获得请求体的内容
+@PathVariabale 用来绑定url中的占位符,和restful编码风格配用
+即将@RequestMapping("/anno/{id}")//{}此为占位符,此时想要取出id的话就需要方法参数(@PathVariable("id")String id)
+然后访问时的地址就是/anno/10 即10为站位符中的id
+restful编程风格 : 即将同一个类里的请求路径一致,但根据不同请求方式(get post put等)执行不同方法
+@RequestHeader("想要获得的请求头")可以获得请求头的内容
+@CookieValue 拿到指定Value的值
+@ModelAttribute可以用于修饰方法和参数
+[放在方法上会使该方法在控制器方法执行之前执行,可以用来将前端传来的不全的数据进行封装,此时该方法可以返回一个封装完的对象,也可以如下不写返回值]
+[放在参数上的时候就会获取当时在修饰方法时无返回值时写的map里面的value, @ModelAttribute("key")]
+@SessionAttribute()用于执行控制器方法间的参数共享,value指定名称,type指定数据类型
+
+常用的几个接收响应
+方法一:通过视图解析器,直接用return String的方法去处理响应的页面
+此时如果要传输对象可以使用Model类,Model model.addAttribute("key" , value)
+前端用jsp的EL表达式去接收
+${param.name} 等价于 request.getParamter("name")
+${requestScope.name} 等价于 request.getAttribute("name")
+
+方法二:通过requst编写请求转发,返回值为void
+request.getRequestDispatcher("/WEB-INF/pages/success.jsp").forward(request , response);
+此时请求转发不需要写项目名,重定向需要
+response.sendRedirect(request.getContextPath() + "/index.jsp");[此时无法访问WEB-INF的内部文件]
+不跳转直接向浏览器相应
+response.getWriter().print("hello");
+
+方法三:返回值时ModelAndView对象
+//通过key 和 value存储对象
+mv.addObject("user" , user);
+//指定跳转到那个页面
+mv.setViewName("success");
+
+方法四:返回String 使用关键字去触发跳转
+return "forward:/WEB-INF/pages/success.jsp";
+return "redirect:/index.jsp";//此时不需要写全路径,spring框架会帮助补全路径
+
+解决前端控制器会拦截静态文件的问题(如:js css)
+<!-- 告诉前端控制器那些资源不拦截 -->
+    <mvc:resources location="/js/" mapping="/js/**"/>[注意前端一定要写完整]
+****************webapp无法识别到js文件夹问题(未解决)*****************
+
+方法五:后台接收json数据,直接封装,返回异步响应
+第一步: 加入jar包
+  	<dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.8</version>
+ 	</dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.9.8</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+
+第二步: 在封装的对象前加上@RequestBody注解,如:public User testAjax(@RequestBody User user) 
+
+第三步: 前端做一个ajax刷新,显示数据
+此时需要在方法返回参数前加入@ResponseBody注解,如:public @ResponseBody User testAjax(@RequestBody User user)
+之后Spring就会将这个对象传输至页面响应中,前端ajax设置接收和刷新,如:
+    <script>
+        //页面加载,绑定单击事件
+        $(function(){
+            $("#btn").click(function () {
+                // alert("hello btn")
+                //发送ajax请求
+                $.ajax({
+                    url:"user/testAjax",
+                    contentType:"application/json;charset=UTF-8",
+                    data:'{"username":"sandy","password":"123","age":"20"}',
+                    dataType:"json",
+                    type:"post",
+                    success:function (data) {
+                        //data是服务器端响应的json的数据,进行解析
+                        alert(data);
+                        alert(data.username);
+                        alert(data.password);
+                        alert(data.age);
+                    }
+                });
+            })
+        });
+    </script>
+
+SpringMVC实现文件上传
+文件上传必要条件:
+A 将form表单的enctype取值为:multipart/form-data (该属性为表单请求正文的类型,默认为键值对形式)
+B 将method设置为Post
+C 提供一个文件选择域 <input type="file" />
+
+文件上传原理分析:
+当设置为A时,Request.getParameter()将会失效。因为此时form表单会将正文分隔成好几块
+因为自己解析文件过于繁琐,使用第三方组件实现文件上传,此时导入jar包
+
+传统方式文件演示:
+1.写form表单注意更改
+2.导入jar包
+        <dependency>
+            <groupId>commons-fileupload</groupId>
+            <artifactId>commons-fileupload</artifactId>
+            <version>1.3.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+	</dependency>
+3.利用组件和Request在方法中解析文件
+    @RequestMapping("/fileUpload_1")
+    public String fileUpload_1(HttpServletRequest request) throws Exception {
+        System.out.println("文件上传....");
+
+        //使用fileupload组件完成文件上传
+        //上传位置
+        String path = request.getSession().getServletContext().getRealPath("/uploads/");
+        //判断该路径是否存在
+        File file = new File(path);
+        if(!file.exists()){
+            file.mkdirs();
+        }
+
+        //解析request对象,获得上传的文件项
+        DiskFileItemFactory factory = new DiskFileItemFactory();
+        ServletFileUpload upload = new ServletFileUpload(factory);
+        //解析request
+        List<FileItem> items = upload.parseRequest(request);
+        //遍历
+        for (FileItem item : items){
+            //判断当前对象是否是上传文件项,即是不是专门的文件表单
+            if(item.isFormField()){
+
+            }else {
+                String filename = item.getName();
+                //完成文件上传
+                item.write(new File(path , filename));
+                //删除临时文件
+                item.delete();
+
+            }
+        }
+        return "success";
+    }
+
+方法二:使用MVC的方式
+原理分析:
+当前端提交文件请求之后,Request域里的东西会被前端控制器截获,假设此时配置一个文件解析器
+的组件的话就会自动解析请求,即解析Request
+第一步:填写表单,注意上传文件的input的name需要与最后需要参数绑定的对象同名
+<input type="file" name="upload" /> ------------------>fileUpload2(MultipartFile upload)
+第二步:配置文件解析器对象,这个地方什么都不能改
+    <!-- 配置文件解析器对象 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="10485760"/> //设置属性上传文件大小为10兆
+    </bean>
+
+第三步:进行参数绑定,并编写代码
+    @RequestMapping("/fileUpload_2")
+    public String fileUpload_2(HttpServletRequest request, MultipartFile upload) throws Exception {
+        System.out.println("springMVC文件上传....");
+        //使用fileupload组件完成文件上传
+        //上传位置
+        String path = request.getSession().getServletContext().getRealPath("/uploads/");
+        //判断该路径是否存在
+        File file = new File(path);
+        if (!file.exists()) {
+            file.mkdirs();
+        }
+        String filename = upload.getOriginalFilename();
+        //把文件名称设置为唯一值
+        String uuid = UUID.randomUUID().toString().replace("-", "");
+        filename = uuid + "_" + filename;
+        //完成文件上传
+        upload.transferTo(new File(path, filename));
+        return "success";
+
+    }
+
+跨服务器的文件上传
+此时需要两个sun公司的jar包,跨服务器的目的是将应用服务器和图片服务器分开提高响应速度
+此时使用启动两个tomcat的方式模拟两台服务器的效果,注意更改第二的串口号,然后将其启动
+
+
+第一步:启动第二个图片服务器,然后回应用服务器编写代码
+第二步:添加两个jar包
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-core</artifactId>
+            <version>1.12</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.sun.jersey</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>1.12</version>
+        </dependency>
+第三步:编写代码,重点在于修改上传地址,以及跨服务器上传
+1.通过参数解析出文件 2.创建客户端对象 3.和图片服务器进行连接 4.上传文件
+ @RequestMapping("/fileUpload_3")
+    public String fileUpload_3(HttpServletRequest request, MultipartFile upload) throws Exception {
+        System.out.println("springMVC跨服务器文件上传....");
+        //定义上传文件路径,注意要加最后的斜杠
+        String path = "http://localhost:9090/uploads/";
+
+        String filename = upload.getOriginalFilename();
+        //把文件名称设置为唯一值
+        String uuid = UUID.randomUUID().toString().replace("-", "");
+        filename = uuid + "_" + filename;
+        //完成文件上传,跨服务器上传
+        //创建客户端对象
+        Client client = Client.create();
+        //和图片服务器进行连接
+        WebResource webResource = client.resource(path + filename);
+        //上传文件
+        webResource.put(upload.getBytes());
+        return "success";
+
+    }
+
+关于SpringMVC的异常处理
+当后台抛出异常时,应该被前端控制器拦截,即配置一个异常处理器,用于给用户一个友好的提示页面
