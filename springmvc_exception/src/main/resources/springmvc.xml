@@ -28,6 +28,8 @@
     <!-- 告诉前端控制器那些资源不拦截 -->
     <mvc:resources location="/js/" mapping="/js/**"/>
 
+    <!-- 配置异常处理器 -->
+    <bean id="sysExceptionResolver" class="exception.SysExceptionResolver"/>
     <!-- 开启SpringMVC框架注解的支持 -->
     <mvc:annotation-driven/>
 
