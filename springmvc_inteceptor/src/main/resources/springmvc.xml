@@ -23,12 +23,31 @@
     <bean id="internalResourceViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/pages/"/>
         <property name="suffix" value=".jsp"/>
-    </bean> 是
+    </bean>
 
+    <!-- 配置文件解析器对象 -->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <property name="maxUploadSize" value="10485760"/>
+    </bean>
     <!-- 告诉前端控制器那些资源不拦截 -->
     <mvc:resources location="/js/" mapping="/js/**"/>
 
+    <!-- 配置拦截器 -->
+ <mvc:interceptors>
+     <mvc:interceptor>
+         <!-- 要拦截的方法 -->
+         <mvc:mapping path="/user/*"/>
+         <!-- 配置拦截器对象 -->
+         <bean class="interceptor.MyInterceptor1"/>
+     </mvc:interceptor>
+     <mvc:interceptor>
+         <!-- 要拦截的方法 -->
+         <mvc:mapping path="/user/*"/>
+         <!-- 配置拦截器对象 -->
+         <bean class="interceptor.MyInterceptor2"/>
+     </mvc:interceptor>
+ </mvc:interceptors>
     <!-- 开启SpringMVC框架注解的支持 -->
-    <mvc:annotation-driven />
+    <mvc:annotation-driven/>
 
 </beans>

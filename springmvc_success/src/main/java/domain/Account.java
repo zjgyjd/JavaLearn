@@ -7,7 +7,7 @@ import java.io.Serializable;
 import java.util.List;
 import java.util.Map;
 
-//@Component
+
 public class Account implements Serializable {
     private String username;
     private String password;
